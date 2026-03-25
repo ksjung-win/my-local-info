@@ -23,12 +23,13 @@ export default function RootLayout({
             <Link href="/blog" style={{ color: '#fff', textDecoration: 'none', fontWeight: 600, fontSize: '0.9rem', opacity: 0.9 }}>블로그</Link>
           </nav>
           <Link href="/" style={{ textDecoration: 'none', color: 'inherit' }}>
-            <span className="header-emoji">🏘️</span>
-            <h1 className="header-title">성남시 생활 정보</h1>
+            <span className="header-emoji">🍊</span>
+            <h1 className="header-title" style={{ color: '#e67e22' }}>성남시 생활 정보</h1>
           </Link>
           <p className="header-subtitle">
-            우리 동네 행사·축제·혜택 정보를 한곳에서 확인하세요
+            우리 동네의 따끈따끈한 소식을 전해드립니다
           </p>
+
           <span className="header-badge">📡 매일 자동 업데이트</span>
         </header>
 
