@@ -1,5 +1,7 @@
 import fs from "fs";
 import path from "path";
+import { getSortedPostsData } from "@/lib/posts";
+import Link from "next/link";
 
 // ── 타입 정의 ──────────────────────────────────────
 interface LocalInfoItem {
@@ -84,14 +86,45 @@ function InfoCard({ item }: { item: LocalInfoItem }) {
 // ── 메인 페이지 ──────────────────────────────────────
 export default function Home() {
   const data = getLocalInfoData();
+  const allPosts = getSortedPostsData().slice(0, 3); // 최신 글 3개만 가져오기
   const events = data.items.filter((item) => item.category === "행사");
   const benefits = data.items.filter((item) => item.category === "혜택");
 
   return (
     <main className="main-content">
+      
+      {/* ── 최신 블로그 소식 섹션 ── */}
+      <section className="section" style={{ marginTop: "32px" }}>
+        <div className="section-header">
+          <span className="section-icon">📰</span>
+          <h2 className="section-title">최신 블로그 소식</h2>
+          <Link href="/blog" className="view-all">전체보기 →</Link>
+        </div>
+        <div className="card-grid">
+          {allPosts.map((post) => (
+            <Link key={post.slug} href={`/blog/${post.slug}`} className="card">
+              <span className="card-badge badge-info">📝 {post.category || "소식"}</span>
+              <p className="card-name">{post.title}</p>
+              <p className="card-summary">{post.summary}</p>
+              <div className="card-meta">
+                <div className="meta-row">
+                  <span className="meta-icon">📅</span>
+                  <span>{post.date}</span>
+                </div>
+              </div>
+              <div className="card-footer">
+                <span className="card-link">계속 읽기</span>
+                <span className="card-arrow">→</span>
+              </div>
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      <div className="divider" />
 
       {/* ── 행사/축제 섹션 ── */}
-      <section className="section" style={{ marginTop: "32px" }}>
+      <section className="section">
         <div className="section-header">
           <span className="section-icon">🎪</span>
           <h2 className="section-title">이번 달 행사 · 축제</h2>
