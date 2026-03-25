@@ -100,22 +100,22 @@ export default function Home() {
           <h2 className="section-title">최신 블로그 소식</h2>
           <Link href="/blog" className="view-all">전체보기 →</Link>
         </div>
-        <div className="card-grid">
+        <div className="card-grid" style={{ gridTemplateColumns: '1fr', gap: '20px' }}>
           {allPosts.map((post) => (
-            <Link key={post.slug} href={`/blog/${post.slug}`} className="card">
-              <span className="card-badge badge-info">📝 {post.category || "소식"}</span>
-              <p className="card-name">{post.title}</p>
-              <p className="card-summary">{post.summary}</p>
-              <div className="card-meta">
-                <div className="meta-row">
-                  <span className="meta-icon">📅</span>
-                  <span>{post.date}</span>
+            <Link key={post.slug} href={`/blog/${post.slug}`} className="blog-card">
+              <div className="blog-card-header">
+                <span className="blog-category">{post.category || "소식"}</span>
+                <span className="blog-date">{post.date}</span>
+              </div>
+              <h3 className="blog-title">{post.title}</h3>
+              <p className="blog-summary">{post.summary}</p>
+              {post.tags && post.tags.length > 0 && (
+                <div className="card-tags">
+                  {post.tags.map((tag) => (
+                    <span key={tag}>#{tag}</span>
+                  ))}
                 </div>
-              </div>
-              <div className="card-footer">
-                <span className="card-link">계속 읽기</span>
-                <span className="card-arrow">→</span>
-              </div>
+              )}
             </Link>
           ))}
         </div>
