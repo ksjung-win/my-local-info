@@ -86,7 +86,7 @@ export default function RootLayout({
           </nav>
           <Link href="/" style={{ textDecoration: 'none', color: 'inherit' }}>
             <span className="header-emoji">🍊</span>
-            <h1 className="header-title" style={{ color: '#e67e22' }}>성남시 생활 정보</h1>
+            <h1 className="header-title" style={{ color: '#ffffff', textShadow: '0 2px 10px rgba(0,0,0,0.2)' }}>성남시 생활 정보</h1>
           </Link>
           <p className="header-subtitle">
             우리 동네의 따끈따끈한 소식을 전해드립니다
