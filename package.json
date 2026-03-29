@@ -5,7 +5,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "fetch-data": "node --env-file=.env.local scripts/fetch-public-data.js",
+    "generate-post": "node --env-file=.env.local scripts/generate-blog-post.js"
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.5.19",
