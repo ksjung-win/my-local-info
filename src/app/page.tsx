@@ -131,7 +131,7 @@ export default function Home() {
         </div>
         <div className="card-grid" style={{ gridTemplateColumns: '1fr', gap: '20px' }}>
           {allPosts.map((post) => (
-            <Link key={post.slug} href={`/blog/${post.slug}/`} className="blog-card">
+            <a key={post.slug} href={`/blog/${post.slug}`} className="blog-card">
               <div className="blog-card-header">
                 <span className="blog-category">{post.category || "소식"}</span>
                 <span className="blog-date">{post.date}</span>
@@ -145,7 +145,7 @@ export default function Home() {
                   ))}
                 </div>
               )}
-            </Link>
+            </a>
           ))}
         </div>
       </section>
