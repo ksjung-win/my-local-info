@@ -23,6 +23,9 @@ export default function RootLayout({
   const adId = process.env.NEXT_PUBLIC_ADSENSE_ID;
   const showAd = adId && adId !== "나중에_입력";
 
+  const gaId = process.env.NEXT_PUBLIC_GA_ID;
+  const showGa = gaId && gaId !== "나중에_입력";
+
   return (
     <html lang="ko">
       <head>
@@ -32,6 +35,23 @@ export default function RootLayout({
             src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${adId}`}
             crossOrigin="anonymous"
           ></script>
+        )}
+        {showGa && (
+          <>
+            <script async src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`}></script>
+            <script
+              dangerouslySetInnerHTML={{
+                __html: `
+                  window.dataLayer = window.dataLayer || [];
+                  function gtag(){dataLayer.push(arguments);}
+                  gtag('js', new Date());
+                  gtag('config', '${gaId}', {
+                    page_path: window.location.pathname,
+                  });
+                `,
+              }}
+            />
+          </>
         )}
       </head>
       <body style={{ minHeight: "100vh", display: "flex", flexDirection: "column" }}>
