@@ -2,6 +2,7 @@ import fs from "fs";
 import path from "path";
 import { getSortedPostsData } from "@/lib/posts";
 import Link from "next/link";
+import AdBanner from "@/components/AdBanner";
 
 // ── 타입 정의 ──────────────────────────────────────
 interface LocalInfoItem {
@@ -90,8 +91,36 @@ export default function Home() {
   const events = data.items.filter((item) => item.category === "행사");
   const benefits = data.items.filter((item) => item.category === "혜택");
 
+  const eventJsonLds = events.map(item => ({
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": item.name,
+    "startDate": item.startDate,
+    "endDate": item.endDate === "상시" ? "2026-12-31" : item.endDate,
+    "location": {
+      "@type": "Place",
+      "name": item.location || "온라인/성남시 관내"
+    },
+    "description": item.summary
+  }));
+
+  const benefitJsonLds = benefits.map(item => ({
+    "@context": "https://schema.org",
+    "@type": "GovernmentService",
+    "name": item.name,
+    "description": item.summary,
+    "provider": {
+      "@type": "GovernmentOrganization",
+      "name": "성남시"
+    }
+  }));
+
   return (
     <main className="main-content">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify([...eventJsonLds, ...benefitJsonLds]) }}
+      />
       
       {/* ── 최신 블로그 소식 섹션 ── */}
       <section className="section" style={{ marginTop: "32px" }}>
@@ -137,6 +166,8 @@ export default function Home() {
         </div>
       </section>
 
+      <div className="divider" />
+      <AdBanner />
       <div className="divider" />
 
       {/* ── 지원금/혜택 섹션 ── */}

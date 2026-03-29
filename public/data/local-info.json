@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-24",
+  "lastUpdated": "2026-03-29",
   "source": "공공데이터포털 (data.go.kr)",
   "items": [
     {
@@ -67,6 +67,17 @@
       "target": "국공립 및 사립유치원에 다니는 3~5세 유아",
       "summary": "유치원에 다니는 3~5세 아동에게 유아학비, 방과후과정비 등 지원",
       "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/000000465790"
+    },
+    {
+      "id": 7,
+      "name": "근로·자녀장려금",
+      "category": "혜택",
+      "startDate": "2024-04-25",
+      "endDate": "상시",
+      "location": "관할 세무서",
+      "target": "근로소득, 사업소득 또는 종교인소득이 있는 가구",
+      "summary": "소득과 재산이 적은 근로소득자에게 근로장려금을, 자녀가 있을 경우 자녀장려금 지급",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/105100000001"
     }
   ]
 }

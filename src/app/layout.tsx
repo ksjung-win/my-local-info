@@ -3,9 +3,16 @@ import Link from 'next/link';
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "성남시 생활 정보 | 우리 동네 행사·축제·혜택",
-  description:
-    "성남시의 행사, 축제, 지원금, 혜택 정보를 한곳에서 확인하세요. 공공데이터포털 기반으로 매일 자동 업데이트됩니다.",
+  title: "성남시 생활 정보 | 행사·혜택·지원금 안내",
+  description: "성남시 주민을 위한 지역 행사, 축제, 지원금, 혜택 정보를 매일 업데이트합니다.",
+  openGraph: {
+    title: "성남시 생활 정보 | 행사·혜택·지원금 안내",
+    description: "성남시 주민을 위한 지역 행사, 축제, 지원금, 혜택 정보를 매일 업데이트합니다.",
+    url: "https://infos-info.com",
+    siteName: "성남시 생활 정보",
+    locale: "ko_KR",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
@@ -13,13 +20,48 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const adId = process.env.NEXT_PUBLIC_ADSENSE_ID;
+  const showAd = adId && adId !== "나중에_입력";
+
   return (
     <html lang="ko">
+      <head>
+        {showAd && (
+          <script
+            async
+            src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${adId}`}
+            crossOrigin="anonymous"
+          ></script>
+        )}
+      </head>
       <body style={{ minHeight: "100vh", display: "flex", flexDirection: "column" }}>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify([
+              {
+                "@context": "https://schema.org",
+                "@type": "WebSite",
+                "name": "성남시 생활 정보",
+                "url": "https://infos-info.com",
+                "description": "성남시 주민을 위한 지역 행사, 축제, 지원금, 혜택 정보"
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                  { "@type": "ListItem", "position": 1, "name": "홈", "item": "https://infos-info.com" },
+                  { "@type": "ListItem", "position": 2, "name": "블로그", "item": "https://infos-info.com/blog" }
+                ]
+              }
+            ])
+          }}
+        />
         {/* ── 헤더 ── */}
         <header className="site-header">
           <nav style={{ position: 'absolute', top: '20px', right: '24px', zIndex: 10, display: 'flex', gap: '16px' }}>
             <Link href="/" style={{ color: '#fff', textDecoration: 'none', fontWeight: 600, fontSize: '0.9rem', opacity: 0.9 }}>홈</Link>
+            <Link href="/about" style={{ color: '#fff', textDecoration: 'none', fontWeight: 600, fontSize: '0.9rem', opacity: 0.9 }}>소개</Link>
             <Link href="/blog" style={{ color: '#fff', textDecoration: 'none', fontWeight: 600, fontSize: '0.9rem', opacity: 0.9 }}>블로그</Link>
           </nav>
           <Link href="/" style={{ textDecoration: 'none', color: 'inherit' }}>
