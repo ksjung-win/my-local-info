@@ -8,8 +8,9 @@ import path from 'path';
 import AdBanner from '@/components/AdBanner';
 import CoupangBanner from '@/components/CoupangBanner';
 
-export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
-  const postData = getPostData(params.slug);
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const { slug } = await params;
+  const postData = getPostData(slug);
   if (!postData) {
     return { title: "페이지를 찾을 수 없습니다" };
   }
@@ -32,8 +33,8 @@ export async function generateStaticParams() {
   }));
 }
 
-export default async function PostPage({ params }: { params: { slug: string } }) {
-  const { slug } = params;
+export default async function PostPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
   const postData = getPostData(slug);
 
   if (!postData) {
