@@ -14,7 +14,7 @@ export default function BlogPage() {
 
       <div className="card-grid" style={{ gridTemplateColumns: '1fr', gap: '24px' }}>
         {allPostsData.map(({ slug, date, title, summary, category, tags }) => (
-          <Link href={`/blog/${slug}`} key={slug} className="blog-card">
+          <Link href={`/blog/${slug}/`} key={slug} className="blog-card">
             <div className="blog-card-header">
               <span className="blog-category">{category}</span>
               <span className="blog-date">{date}</span>
