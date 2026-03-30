@@ -112,9 +112,9 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
             </p>
           )}
           
-          <div style={{ marginTop: '15px', paddingTop: '15px', borderTop: '1px dashed #e5e7eb', textAlign: 'center' }}>
-             <h3 style={{ fontSize: '1.05rem', fontWeight: 700, color: '#1a1a2e', marginBottom: '10px' }}>
-               🎁 오늘의 추천 상품
+          <div style={{ marginTop: '15px', paddingTop: '15px', borderTop: '1px dashed #e5e7eb', textAlign: 'left' }}>
+             <h3 style={{ fontSize: '1.05rem', fontWeight: 700, color: '#1a1a2e', marginBottom: '10px', display: 'flex', alignItems: 'center', gap: '8px' }}>
+               <span style={{ fontSize: '1.2rem' }}>🎁</span> 오늘의 추천 상품
              </h3>
              <CoupangBanner />
           </div>
