@@ -97,6 +97,8 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
           </ReactMarkdown>
         </div>
 
+        
+
         <div style={{ marginTop: '40px', padding: '20px', backgroundColor: '#f9fafb', borderRadius: '8px', fontSize: '0.95rem', color: '#4b5563', border: '1px solid #e5e7eb' }}>
           <p style={{ marginBottom: '10px', lineHeight: '1.6' }}>
             💡 <strong>이 글은 <a href="http://data.go.kr/" target="_blank" rel="noopener noreferrer" style={{color: '#2563eb', textDecoration: 'underline'}}>공공데이터포털(data.go.kr)</a>의 정보를 바탕으로 AI가 작성하였습니다.</strong><br/>
@@ -104,15 +106,22 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
           </p>
           {originLink !== "#" && (
             <p style={{ marginTop: '10px' }}>
-              🔗 <a href={originLink} target="_blank" rel="noopener noreferrer" style={{color: '#2563eb', textDecoration: 'underline', fontWeight: 600}}>
+              📎 <a href={originLink} target="_blank" rel="noopener noreferrer" style={{color: '#2563eb', textDecoration: 'underline', fontWeight: 600}}>
                 원문 출처 링크 (공식 안내) 바로가기
               </a>
             </p>
           )}
+          
+          <div style={{ marginTop: '15px', paddingTop: '15px', borderTop: '1px dashed #e5e7eb', textAlign: 'center' }}>
+             <h3 style={{ fontSize: '1.05rem', fontWeight: 700, color: '#1a1a2e', marginBottom: '10px' }}>
+               🎁 오늘의 추천 상품
+             </h3>
+             <CoupangBanner />
+          </div>
+
         </div>
 
         <AdBanner />
-        <CoupangBanner />
       </article>
       
       <div style={{ marginTop: '60px', paddingTop: '30px', borderTop: '1px solid var(--border)' }}>
