@@ -115,6 +115,8 @@ body {
 .card-meta {
   @apply flex flex-col gap-2 mb-6;
 }
+
+.meta-row {
   @apply flex items-center gap-2 text-slate-400 font-medium;
 }
 
