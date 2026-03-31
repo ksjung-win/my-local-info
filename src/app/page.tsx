@@ -42,15 +42,17 @@ function getDateRange(startDate: string, endDate: string): string {
 }
 
 // ── 카드 컴포넌트 ────────────────────────────────────
-function InfoCard({ item }: { item: LocalInfoItem }) {
+function InfoCard({ item, slug }: { item: LocalInfoItem, slug?: string }) {
   const isEvent = item.category === "행사";
+  const targetHref = slug ? `/blog/${slug}` : "/blog";
+  
   return (
-    <a href="/blog" className="card">
+    <Link href={targetHref} className="card">
       {/* 카테고리 배지 */}
       <span className={`card-badge ${isEvent ? "badge-event" : "badge-benefit"}`}>
         {isEvent ? "🎪" : "💰"} {item.category}
       </span>
-
+Index
       {/* 제목 */}
       <p className="card-name">{item.name}</p>
 
@@ -80,7 +82,7 @@ function InfoCard({ item }: { item: LocalInfoItem }) {
         <span className="card-link">자세히 보기</span>
         <span className="card-arrow">→</span>
       </div>
-    </a>
+    </Link>
   );
 }
 
@@ -160,9 +162,13 @@ export default function Home() {
           <span className="section-count">{events.length}건</span>
         </div>
         <div className="card-grid">
-          {events.map((item) => (
-            <InfoCard key={item.id} item={item} />
-          ))}
+          {events.map((item) => {
+            // 이름이 포함된 포스트 찾기
+            const matchedPost = allPosts.find(post => 
+              post.title.includes(item.name) || post.content.includes(item.name)
+            );
+            return <InfoCard key={item.id} item={item} slug={matchedPost?.slug} />;
+          })}
         </div>
       </section>
 
@@ -178,9 +184,13 @@ export default function Home() {
           <span className="section-count">{benefits.length}건</span>
         </div>
         <div className="card-grid benefit-grid">
-          {benefits.map((item) => (
-            <InfoCard key={item.id} item={item} />
-          ))}
+          {benefits.map((item) => {
+             // 이름이 포함된 포스트 찾기
+             const matchedPost = allPosts.find(post => 
+               post.title.includes(item.name) || post.content.includes(item.name)
+             );
+             return <InfoCard key={item.id} item={item} slug={matchedPost?.slug} />;
+          })}
         </div>
       </section>
 
