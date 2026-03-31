@@ -153,6 +153,9 @@ export default function Home() {
 
       <script
         type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify([...eventJsonLds, ...benefitJsonLds]) }}
+      />
+
       <AdBanner />
 
       {/* ── 메인 포털 섹션 (사용자 요청: 중복 제거 및 블로그 집중) ── */}
