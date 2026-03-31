@@ -8,8 +8,12 @@ import path from 'path';
 import AdBanner from '@/components/AdBanner';
 import CoupangBanner from '@/components/CoupangBanner';
 
-export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
-  const { slug } = await params;
+export const dynamic = 'force-static';
+export const dynamicParams = false;
+
+export async function generateMetadata(props: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const params = await props.params;
+  const slug = params.slug;
   const postData = getPostData(slug);
   if (!postData) {
     return { title: "페이지를 찾을 수 없습니다" };
@@ -33,8 +37,9 @@ export async function generateStaticParams() {
   }));
 }
 
-export default async function PostPage({ params }: { params: Promise<{ slug: string }> }) {
-  const { slug } = await params;
+export default async function PostPage(props: { params: Promise<{ slug: string }> | { slug: string } }) {
+  const params = await props.params;
+  const { slug } = params;
   const postData = getPostData(slug);
 
   if (!postData) {
@@ -44,10 +49,13 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
   const dataPath = path.join(process.cwd(), "public", "data", "local-info.json");
   let originLink = "#";
   try {
-    const db = JSON.parse(fs.readFileSync(dataPath, "utf-8"));
-    const matchedItem = db.items.find((item: any) => postData.content.includes(item.name) || postData.title.includes(item.name));
-    if (matchedItem && matchedItem.link && matchedItem.link !== "#") {
-      originLink = matchedItem.link;
+    if (fs.existsSync(dataPath)) {
+      const raw = fs.readFileSync(dataPath, "utf-8");
+      const db = JSON.parse(raw);
+      const matchedItem = db.items.find((item: any) => postData.title.includes(item.name));
+      if (matchedItem && matchedItem.link && matchedItem.link !== "#") {
+        originLink = matchedItem.link;
+      }
     }
   } catch (e) {}
 
