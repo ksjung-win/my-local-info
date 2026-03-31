@@ -91,10 +91,15 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
           </div>
         </header>
 
-        {/* 💡 새로 추가된 프리미엄 정보 박스 (상단 배치) */}
+        <div className="prose prose-orange max-w-none">
+          <ReactMarkdown remarkPlugins={[remarkGfm]}>
+            {postData.content}
+          </ReactMarkdown>
+        </div>
+
+        {/* 💡 프리미엄 정보 박스 (본문 하단 배치) */}
         <div style={{ 
-          marginTop: '20px', 
-          marginBottom: '40px',
+          marginTop: '60px', 
           padding: '24px', 
           backgroundColor: '#f0f7ff', 
           borderRadius: '16px', 
@@ -147,12 +152,6 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
                <CoupangBanner />
              </div>
           </div>
-        </div>
-
-        <div className="prose prose-orange max-w-none">
-          <ReactMarkdown remarkPlugins={[remarkGfm]}>
-            {postData.content}
-          </ReactMarkdown>
         </div>
 
         
