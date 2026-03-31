@@ -214,17 +214,8 @@ export default function Home() {
         </div>
         <div className="card-grid benefit-grid">
           {benefits.map((item) => {
-             if (!targetSlug) {
-               const keywords = item.name.split(/\s+/).filter(w => w.length > 1);
-               const matchedPost = allPosts.find(post => {
-                 const fullText = (post.title + " " + post.content).toLowerCase();
-                 const matchCount = keywords.filter(kw => fullText.includes(kw.toLowerCase())).length;
-                 return matchCount >= Math.max(1, Math.ceil(keywords.length * 0.7));
-               });
-               targetSlug = matchedPost?.slug;
-             }
-             
-             return <InfoCard key={item.id} item={item} slug={targetSlug} />;
+            const targetSlug = FIXED_SLUGS[item.id] || item.slug;
+            return <InfoCard key={item.id} item={item} slug={targetSlug} />;
           })}
         </div>
       </section>
