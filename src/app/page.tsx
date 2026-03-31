@@ -167,59 +167,27 @@ export default function Home() {
           {recentPosts.map((post) => (
             <a key={post.slug} href={`/blog/${post.slug}`} className="blog-card">
               <div className="blog-card-header">
-                <span className="blog-category">{post.category || "소식"}</span>
-                <span className="blog-date">{post.date}</span>
-              </div>
-              <h3 className="blog-title">{post.title}</h3>
-              <p className="blog-summary">{post.summary}</p>
-              {post.tags && post.tags.length > 0 && (
-                <div className="card-tags">
-                  {post.tags.map((tag) => (
-                    <span key={tag}>#{tag}</span>
-                  ))}
-                </div>
-              )}
-            </a>
-          ))}
-        </div>
-      </section>
+      <AdBanner />
 
-      <div className="divider" />
-
-      {/* ── 행사/축제 섹션 ── */}
-      <section className="section">
-        <div className="section-header">
-          <span className="section-icon">🎪</span>
-          <h2 className="section-title">이번 달 행사 · 축제</h2>
-          <span className="section-count">{events.length}건</span>
-        </div>
-        <div className="card-grid">
-          {events.map((item) => {
-            const targetSlug = FIXED_SLUGS[item.id] || item.slug;
-            return <InfoCard key={item.id} item={item} slug={targetSlug} />;
-          })}
-        </div>
+      {/* ── 메인 포털 섹션 (중복 제거) ── */}
+      <section className="bg-white rounded-3xl p-10 shadow-xl border border-orange-100 text-center my-12">
+        <h2 className="text-3xl font-black text-slate-800 mb-6">모든 생활 정보 바로가기</h2>
+        <p className="text-lg text-slate-600 leading-relaxed mb-10 max-w-2xl mx-auto">
+          축제, 행사, 지원금, 복지 혜택 등 검색하신 모든 정보가<br/>
+          <strong>블로그 전체보기</strong> 게시판에 상세히 정리되어 있습니다.
+        </p>
+        
+        <Link href="/blog" className="inline-flex items-center justify-center bg-orange-600 hover:bg-orange-700 text-white text-xl font-black px-12 py-6 rounded-2xl shadow-lg transition-all hover:scale-105 hover:shadow-orange-200 gap-3 group">
+          <span>무조건 정확한 블로그로 이동하기</span>
+          <span className="text-2xl group-hover:translate-x-2 transition-transform">→</span>
+        </Link>
+        <p className="mt-8 text-sm text-slate-400">
+          ※ 현재 화면이 예전과 같다면 브라우저를 한 번 껐다 켜주세요!
+        </p>
       </section>
 
       <div className="divider" />
       <AdBanner />
-      <div className="divider" />
-
-      {/* ── 지원금/혜택 섹션 ── */}
-      <section className="section">
-        <div className="section-header">
-          <span className="section-icon">💰</span>
-          <h2 className="section-title">지원금 · 혜택 정보</h2>
-          <span className="section-count">{benefits.length}건</span>
-        </div>
-        <div className="card-grid benefit-grid">
-          {benefits.map((item) => {
-            const targetSlug = FIXED_SLUGS[item.id] || item.slug;
-            return <InfoCard key={item.id} item={item} slug={targetSlug} />;
-          })}
-        </div>
-      </section>
-
     </main>
   );
 }
