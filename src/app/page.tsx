@@ -153,41 +153,35 @@ export default function Home() {
 
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify([...eventJsonLds, ...benefitJsonLds]) }}
-      />
-      
-      {/* ── 최신 블로그 소식 섹션 ── */}
-      <section className="section" style={{ marginTop: "32px" }}>
-        <div className="section-header">
-          <span className="section-icon">📰</span>
-          <h2 className="section-title">최신 블로그 소식</h2>
-          <Link href="/blog" className="view-all">전체보기 →</Link>
-        </div>
-        <div className="card-grid" style={{ gridTemplateColumns: '1fr', gap: '20px' }}>
-          {recentPosts.map((post) => (
-            <a key={post.slug} href={`/blog/${post.slug}`} className="blog-card">
-              <div className="blog-card-header">
       <AdBanner />
 
-      {/* ── 메인 포털 섹션 (중복 제거) ── */}
-      <section className="bg-white rounded-3xl p-10 shadow-xl border border-orange-100 text-center my-12">
-        <h2 className="text-3xl font-black text-slate-800 mb-6">모든 생활 정보 바로가기</h2>
-        <p className="text-lg text-slate-600 leading-relaxed mb-10 max-w-2xl mx-auto">
+      {/* ── 메인 포털 섹션 (사용자 요청: 중복 제거 및 블로그 집중) ── */}
+      <section className="bg-white rounded-3xl p-12 shadow-2xl border border-orange-100 text-center my-16 max-w-3xl mx-auto">
+        <div className="text-5xl mb-6">📝</div>
+        <h2 className="text-4xl font-black text-slate-800 mb-6 tracking-tight">모든 생활 정보 바로가기</h2>
+        <p className="text-xl text-slate-600 leading-relaxed mb-12">
           축제, 행사, 지원금, 복지 혜택 등 검색하신 모든 정보가<br/>
-          <strong>블로그 전체보기</strong> 게시판에 상세히 정리되어 있습니다.
+          <span className="text-orange-600 font-bold underline decoration-wavy">블로그 전체보기</span> 게시판에 상세히 정리되어 있습니다.
         </p>
         
-        <Link href="/blog" className="inline-flex items-center justify-center bg-orange-600 hover:bg-orange-700 text-white text-xl font-black px-12 py-6 rounded-2xl shadow-lg transition-all hover:scale-105 hover:shadow-orange-200 gap-3 group">
-          <span>무조건 정확한 블로그로 이동하기</span>
-          <span className="text-2xl group-hover:translate-x-2 transition-transform">→</span>
+        <Link href="/blog" className="inline-flex items-center justify-center bg-orange-600 hover:bg-orange-700 text-white text-2xl font-black px-16 py-8 rounded-3xl shadow-xl transition-all hover:scale-105 hover:shadow-orange-200 gap-4 group">
+          <span>블로그 전체보기 이동</span>
+          <span className="text-3xl group-hover:translate-x-3 transition-transform">→</span>
         </Link>
-        <p className="mt-8 text-sm text-slate-400">
-          ※ 현재 화면이 예전과 같다면 브라우저를 한 번 껐다 켜주세요!
-        </p>
+
+        <div className="mt-12 pt-8 border-t border-slate-100 flex flex-col gap-3">
+          <p className="text-slate-400 text-sm">
+            ※ 화면이 예전과 같다면 브라우저를 한 번 껐다 켜주세요!
+          </p>
+          <p className="text-slate-300 text-xs">
+            (메인 페이지의 중복 정보는 사용자 요청에 의해 블로그 리스트로 통합되었습니다)
+          </p>
+        </div>
       </section>
 
-      <div className="divider" />
+      <div className="divider opacity-20" />
       <AdBanner />
+      <div className="divider opacity-20" />
     </main>
   );
 }
