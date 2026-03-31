@@ -92,7 +92,7 @@ export default function RootLayout({
             우리 동네의 따끈따끈한 소식을 전해드립니다
           </p>
 
-          <span className="header-badge">📡 매일 자동 업데이트</span>
+          <span className="header-badge">📡 매일 업데이트</span>
         </header>
 
         {children}
