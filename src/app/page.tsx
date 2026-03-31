@@ -164,10 +164,13 @@ export default function Home() {
         </div>
         <div className="card-grid">
           {events.map((item) => {
-            // 이름이 포함된 포스트 찾기
-            const matchedPost = allPosts.find(post => 
-              post.title.includes(item.name) || post.content.includes(item.name)
-            );
+            // 더 유연한 매칭 로직 (공백 제거 후 비교)
+            const cleanName = item.name.replace(/\s+/g, '').toLowerCase();
+            const matchedPost = allPosts.find(post => {
+              const cleanTitle = post.title.replace(/\s+/g, '').toLowerCase();
+              const cleanContent = post.content.replace(/\s+/g, '').toLowerCase();
+              return cleanTitle.includes(cleanName) || cleanContent.includes(cleanName);
+            });
             return <InfoCard key={item.id} item={item} slug={matchedPost?.slug} />;
           })}
         </div>
@@ -186,10 +189,13 @@ export default function Home() {
         </div>
         <div className="card-grid benefit-grid">
           {benefits.map((item) => {
-             // 이름이 포함된 포스트 찾기
-             const matchedPost = allPosts.find(post => 
-               post.title.includes(item.name) || post.content.includes(item.name)
-             );
+             // 더 유연한 매칭 로직 (공백 제거 후 비교)
+             const cleanName = item.name.replace(/\s+/g, '').toLowerCase();
+             const matchedPost = allPosts.find(post => {
+               const cleanTitle = post.title.replace(/\s+/g, '').toLowerCase();
+               const cleanContent = post.content.replace(/\s+/g, '').toLowerCase();
+               return cleanTitle.includes(cleanName) || cleanContent.includes(cleanName);
+             });
              return <InfoCard key={item.id} item={item} slug={matchedPost?.slug} />;
           })}
         </div>
