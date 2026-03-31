@@ -50,7 +50,7 @@ function InfoCard({ item, slug }: { item: LocalInfoItem, slug?: string }) {
   const targetHref = slug ? `/blog/${slug}` : "/blog";
   
   return (
-    <Link href={targetHref} className="card" data-slug={slug || "none"}>
+    <a href={targetHref} className="card" data-slug={slug || "none"}>
       {/* 카테고리 배지 */}
       <span className={`card-badge ${isEvent ? "badge-event" : "badge-benefit"}`}>
         {isEvent ? "🎪" : "💰"} {item.category}
@@ -85,7 +85,7 @@ function InfoCard({ item, slug }: { item: LocalInfoItem, slug?: string }) {
         <span className="card-link">자세히 보기</span>
         <span className="card-arrow">→</span>
       </div>
-    </Link>
+    </a>
   );
 }
 
