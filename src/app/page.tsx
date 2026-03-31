@@ -167,9 +167,15 @@ export default function Home() {
         </div>
         <div className="card-grid">
           {events.map((item) => {
-            // 1순위: 데이터에 명시된 slug 사용
-            // 2순위: 기존 키워드 기반 매칭 (하위 호환성)
-            let targetSlug = item.slug;
+            // ── 최후의 보루: 하드코딩된 매핑 (데이터 파일 동기화 문제 해결) ──
+            const SLUG_MAP: Record<number, string> = {
+              1: "blog-event-1", // 성남시 봄꽃 축제
+              2: "blog-event-2", // 판교 청년 창업 박람회
+              3: "blog-event-3"  // 성남시 어린이날 큰잔치
+            };
+            
+            // 1순위: 하드코딩된 맵, 2순위: 데이터파일 slug, 3순위: AI 매칭
+            let targetSlug = SLUG_MAP[item.id] || item.slug;
             
             if (!targetSlug) {
               const keywords = item.name.split(/\s+/).filter(w => w.length > 1);
@@ -199,7 +205,12 @@ export default function Home() {
         </div>
         <div className="card-grid benefit-grid">
           {benefits.map((item) => {
-             let targetSlug = item.slug;
+             const SLUG_MAP: Record<number, string> = {
+               4: "blog-benefit-1", // 성남시 청년 월세 지원금
+               9: "blog-benefit-2"  // 친환경 에너지절감장비 보급
+             };
+
+             let targetSlug = SLUG_MAP[item.id] || item.slug;
 
              if (!targetSlug) {
                const keywords = item.name.split(/\s+/).filter(w => w.length > 1);
