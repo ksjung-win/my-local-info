@@ -81,8 +81,8 @@ startDate가 없으면 오늘 날짜, endDate가 없으면 '상시'로 넣어.
 
     const geminiResult = await geminiResponse.json();
     
-    if (!geminiResult.candidates || !geminiResult.candidates[0].content.parts[0].text) {
-      console.error("Gemini API로부터 올바른 응답을 받지 못했습니다.");
+    if (!geminiResult.candidates || !geminiResult.candidates[0].content || !geminiResult.candidates[0].content.parts[0].text) {
+      console.error("Gemini API로부터 올바른 응답을 받지 못했습니다. 응답 객체:", JSON.stringify(geminiResult, null, 2));
       return;
     }
 

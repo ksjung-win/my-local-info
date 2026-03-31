@@ -72,8 +72,8 @@ tags: [태그1, 태그2, 태그3]
     });
 
     const result = await response.json();
-    if (!result.candidates || !result.candidates[0].content.parts[0].text) {
-      console.error("Gemini API 응답이 올바르지 않습니다.");
+    if (!result.candidates || !result.candidates[0].content || !result.candidates[0].content.parts[0].text) {
+      console.error("Gemini API 응답이 올바르지 않습니다. 응답 객체:", JSON.stringify(result, null, 2));
       return;
     }
 
