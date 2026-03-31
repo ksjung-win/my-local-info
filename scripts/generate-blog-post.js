@@ -59,7 +59,16 @@ category: 정보
 tags: [태그1, 태그2, 태그3]
 ---
 
-(본문: 800자 이상, 친근한 블로그 톤, 추천 이유 3가지 포함, 신청 방법 안내)
+(본문 작성 규칙)
+1. **가독성 최우선**: 문장은 짧게 쓰고, 2~3문장마다 문단을 나누어 빈 줄(Line Break)을 두 번 넣어서 빽빽하지 않게 작성해.
+2. **시각적 요소**: 중요 키워드는 **굵게** 강조하고, 적절한 이모지를 사용하여 친근하게 작성해.
+3. **구조화**: ### 소제목을 활용하여 내용을 체계적으로 나누고, 목록이나 불렛 포인트를 적극 활용해.
+4. **구성**:
+   - 인사 및 도입부 (친근하게)
+   - ### 💡 핵심 내용 요약 (간략히)
+   - ### ✅ 이런 분들께 추천해요 (3가지 이유)
+   - ### 📝 신청 방법은? (상세 절차 및 링크 안내)
+   - 맺음말 (응원의 메시지)
 
 마지막 줄에 FILENAME: YYYY-MM-DD-keyword 형식으로 파일명도 출력해줘. 키워드는 영문으로.`;
 
@@ -88,8 +97,11 @@ tags: [태그1, 태그2, 태그3]
     let finalPostContent = aiResponse;
 
     if (filenameMatch) {
-      filename = filenameMatch[1].trim();
-      if (!filename.endsWith(".md")) filename += ".md";
+      let rawFilename = filenameMatch[1].trim();
+      // AI가 과거 날짜를 포함하더라도 항상 오늘 날짜(today)를 앞에 붙이도록 강제
+      const keyword = rawFilename.replace(/^\d{4}-\d{2}-\d{2}-/, "").replace(/\.md$/, "");
+      filename = `${today}-${keyword}.md`;
+      
       // 본문에서 FILENAME 라인 제거
       finalPostContent = aiResponse.replace(filenameMatch[0], "").trim();
     } else {

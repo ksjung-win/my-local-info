@@ -34,7 +34,8 @@ body {
   font-family: 'Noto Sans KR', sans-serif;
   background: var(--bg);
   color: var(--text-main);
-  line-height: 1.6;
+  line-height: 1.7; /* ì¤„ ê°„ê²© ì•½ê°„ í™•ëŒ€ */
+  word-break: keep-all; /* í•œê¸€ ê°€ë…ì„± ê°œì„  */
 }
 
 /* â”€â”€ í—¤ë” â”€â”€ */
@@ -355,4 +356,32 @@ body {
   margin-top: 8px;
   font-size: 0.75rem;
   color: var(--text-muted);
+}
+
+/* ¦¡¦¡ ºí·Î±× º»¹® ½ºÅ¸ÀÏ (°¡µ¶¼º °­È­) ¦¡¦¡ */
+.prose {
+  color: #334155;
+  font-size: 1.05rem;
+}
+.prose p {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  line-height: 1.8;
+}
+.prose h3 {
+  margin-top: 2.5em;
+  margin-bottom: 1em;
+  color: var(--text-main);
+  font-weight: 800;
+}
+.prose strong {
+  color: var(--primary-dark);
+}
+.prose ul, .prose ol {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding-left: 1.5em;
+}
+.prose li {
+  margin-bottom: 0.5em;
 }
