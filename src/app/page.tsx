@@ -89,7 +89,8 @@ function InfoCard({ item, slug }: { item: LocalInfoItem, slug?: string }) {
 // ── 메인 페이지 ──────────────────────────────────────
 export default function Home() {
   const data = getLocalInfoData();
-  const allPosts = getSortedPostsData().slice(0, 3); // 최신 글 3개만 가져오기
+  const allPosts = getSortedPostsData(); // 전체 글 가져오기 (매칭용)
+  const recentPosts = allPosts.slice(0, 3); // 최신 글 3개만 (표시용)
   const events = data.items.filter((item) => item.category === "행사");
   const benefits = data.items.filter((item) => item.category === "혜택");
 
@@ -132,7 +133,7 @@ export default function Home() {
           <Link href="/blog" className="view-all">전체보기 →</Link>
         </div>
         <div className="card-grid" style={{ gridTemplateColumns: '1fr', gap: '20px' }}>
-          {allPosts.map((post) => (
+          {recentPosts.map((post) => (
             <a key={post.slug} href={`/blog/${post.slug}`} className="blog-card">
               <div className="blog-card-header">
                 <span className="blog-category">{post.category || "소식"}</span>
