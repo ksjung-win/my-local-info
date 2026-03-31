@@ -164,12 +164,12 @@ export default function Home() {
         </div>
         <div className="card-grid">
           {events.map((item) => {
-            // 더 유연한 매칭 로직 (공백 제거 후 비교)
-            const cleanName = item.name.replace(/\s+/g, '').toLowerCase();
+            // 더 강력한 키워드 기반 매칭 (단어 50% 이상 매칭 시 성공)
+            const keywords = item.name.split(/\s+/).filter(w => w.length > 1);
             const matchedPost = allPosts.find(post => {
-              const cleanTitle = post.title.replace(/\s+/g, '').toLowerCase();
-              const cleanContent = post.content.replace(/\s+/g, '').toLowerCase();
-              return cleanTitle.includes(cleanName) || cleanContent.includes(cleanName);
+              const fullText = (post.title + " " + post.content).toLowerCase();
+              const matchCount = keywords.filter(kw => fullText.includes(kw.toLowerCase())).length;
+              return matchCount >= Math.max(1, Math.floor(keywords.length * 0.5));
             });
             return <InfoCard key={item.id} item={item} slug={matchedPost?.slug} />;
           })}
@@ -189,12 +189,12 @@ export default function Home() {
         </div>
         <div className="card-grid benefit-grid">
           {benefits.map((item) => {
-             // 더 유연한 매칭 로직 (공백 제거 후 비교)
-             const cleanName = item.name.replace(/\s+/g, '').toLowerCase();
+             // 더 강력한 키워드 기반 매칭 (단어 50% 이상 매칭 시 성공)
+             const keywords = item.name.split(/\s+/).filter(w => w.length > 1);
              const matchedPost = allPosts.find(post => {
-               const cleanTitle = post.title.replace(/\s+/g, '').toLowerCase();
-               const cleanContent = post.content.replace(/\s+/g, '').toLowerCase();
-               return cleanTitle.includes(cleanName) || cleanContent.includes(cleanName);
+               const fullText = (post.title + " " + post.content).toLowerCase();
+               const matchCount = keywords.filter(kw => fullText.includes(kw.toLowerCase())).length;
+               return matchCount >= Math.max(1, Math.floor(keywords.length * 0.5));
              });
              return <InfoCard key={item.id} item={item} slug={matchedPost?.slug} />;
           })}
