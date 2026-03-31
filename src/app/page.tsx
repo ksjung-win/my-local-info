@@ -164,12 +164,13 @@ export default function Home() {
         </div>
         <div className="card-grid">
           {events.map((item) => {
-            // 더 강력한 키워드 기반 매칭 (단어 50% 이상 매칭 시 성공)
+            // 더 강력한 키워드 기반 매칭 (단어 70% 이상 매칭 시 성공)
             const keywords = item.name.split(/\s+/).filter(w => w.length > 1);
             const matchedPost = allPosts.find(post => {
               const fullText = (post.title + " " + post.content).toLowerCase();
               const matchCount = keywords.filter(kw => fullText.includes(kw.toLowerCase())).length;
-              return matchCount >= Math.max(1, Math.floor(keywords.length * 0.5));
+              // 최소 70% 이상의 키워드가 포함되어야 연결 (엉뚱한 연결 방지)
+              return matchCount >= Math.max(1, Math.ceil(keywords.length * 0.7));
             });
             return <InfoCard key={item.id} item={item} slug={matchedPost?.slug} />;
           })}
@@ -189,12 +190,13 @@ export default function Home() {
         </div>
         <div className="card-grid benefit-grid">
           {benefits.map((item) => {
-             // 더 강력한 키워드 기반 매칭 (단어 50% 이상 매칭 시 성공)
+             // 더 강력한 키워드 기반 매칭 (단어 70% 이상 매칭 시 성공)
              const keywords = item.name.split(/\s+/).filter(w => w.length > 1);
              const matchedPost = allPosts.find(post => {
                const fullText = (post.title + " " + post.content).toLowerCase();
                const matchCount = keywords.filter(kw => fullText.includes(kw.toLowerCase())).length;
-               return matchCount >= Math.max(1, Math.floor(keywords.length * 0.5));
+               // 최소 70% 이상의 키워드가 포함되어야 연결 (엉뚱한 연결 방지)
+               return matchCount >= Math.max(1, Math.ceil(keywords.length * 0.7));
              });
              return <InfoCard key={item.id} item={item} slug={matchedPost?.slug} />;
           })}
