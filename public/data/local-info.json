@@ -12,7 +12,7 @@
       "target": "성남시 전체 시민",
       "summary": "봄을 맞이하여 성남 중앙공원에서 열리는 봄꽃 축제입니다. 벚꽃, 튤립, 유채꽃 등 다양한 봄꽃을 감상할 수 있으며, 먹거리 장터와 공연도 함께 열립니다.",
       "link": "#",
-      "slug": "2026-03-31-seongnam-spring-flower-festival"
+      "slug": "blog-event-1"
     },
     {
       "id": 2,
@@ -24,7 +24,7 @@
       "target": "청년 창업자 및 취업 희망자",
       "summary": "판교 테크노밸리에서 열리는 청년 창업 박람회. 스타트업 기업 50여 곳이 참여하며, 투자자 매칭, 멘토링, 취업 상담 등의 프로그램이 진행됩니다.",
       "link": "#",
-      "slug": "2026-03-31-pangyo-youth-startup-fair"
+      "slug": "blog-event-2"
     },
     {
       "id": 3,
@@ -36,7 +36,7 @@
       "target": "어린이 및 가족",
       "summary": "어린이날을 맞아 성남종합운동장에서 열리는 대규모 가족 축제. 놀이기구, 체험 부스, 공연, 캐릭터 이벤트 등 다양한 프로그램이 무료로 제공됩니다.",
       "link": "#",
-      "slug": "2026-03-31-seongnam-childrens-day-festival"
+      "slug": "blog-event-3"
     },
     {
       "id": 4,
@@ -48,7 +48,7 @@
       "target": "만 19~34세 성남시 거주 청년",
       "summary": "성남시에 거주하는 청년을 대상으로 월세 부담을 줄여주는 지원 사업입니다. 소득 기준 충족 시 월 최대 20만원을 최대 12개월간 지원받을 수 있습니다.",
       "link": "#",
-      "slug": "2026-03-30-monthly-rent-guarantee"
+      "slug": "blog-benefit-1"
     },
     {
       "id": 5,
@@ -104,7 +104,7 @@
       "target": "어선의 기관, 고효율 등(燈)(집어등, 작업등) 외 에너지 절감 장비의 대체 또는 설치 희망하는 연근해 허가를 가진 어업인",
       "summary": "연근해 어업인을 대상으로 노후기관, 장비, 설비를 대체 보급",
       "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000001",
-      "slug": "2026-03-31-fishermen-energysaving-equipment"
+      "slug": "blog-benefit-2"
     }
   ]
 }
