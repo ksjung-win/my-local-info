@@ -55,7 +55,10 @@ body {
   @apply text-sm text-slate-500 font-medium;
 }
 
-/* ── 카드 그리드 및 카드 ── */
+.card {
+  @apply bg-white rounded-2xl p-6 border border-slate-100 shadow-sm transition-all duration-300 hover:shadow-xl hover:-translate-y-1 block relative no-underline text-inherit;
+}
+
 .card-grid {
   @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6;
 }
@@ -101,7 +104,17 @@ body {
   @apply bg-orange-100 text-orange-600;
 }
 
-.meta-row {
+.card-name {
+  @apply text-xl font-extrabold text-slate-800 leading-tight mb-3;
+}
+
+.card-summary {
+  @apply text-sm text-slate-600 leading-relaxed mb-6 line-clamp-3;
+}
+
+.card-meta {
+  @apply flex flex-col gap-2 mb-6;
+}
   @apply flex items-center gap-2 text-slate-400 font-medium;
 }
 

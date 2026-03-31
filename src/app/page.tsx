@@ -45,17 +45,19 @@ function getDateRange(startDate: string, endDate: string): string {
 // ── 카드 컴포넌트 ────────────────────────────────────
 function InfoCard({ item, slug }: { item: LocalInfoItem, slug?: string }) {
   const isEvent = item.category === "행사";
+  
+  // 확실한 링크 생성 (slug가 있으면 상세페이지, 없으면 블로그 목록)
   const targetHref = slug ? `/blog/${slug}` : "/blog";
   
   return (
-    <Link href={targetHref} className="card">
+    <Link href={targetHref} className="card" data-slug={slug || "none"}>
       {/* 카테고리 배지 */}
       <span className={`card-badge ${isEvent ? "badge-event" : "badge-benefit"}`}>
         {isEvent ? "🎪" : "💰"} {item.category}
       </span>
 
       {/* 제목 */}
-      <p className="card-name">{item.name}</p>
+      <h3 className="card-name">{item.name}</h3>
 
       {/* 요약 */}
       <p className="card-summary">{item.summary}</p>
