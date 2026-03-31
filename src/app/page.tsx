@@ -52,7 +52,7 @@ function InfoCard({ item, slug }: { item: LocalInfoItem, slug?: string }) {
       <span className={`card-badge ${isEvent ? "badge-event" : "badge-benefit"}`}>
         {isEvent ? "🎪" : "💰"} {item.category}
       </span>
-Index
+
       {/* 제목 */}
       <p className="card-name">{item.name}</p>
 
