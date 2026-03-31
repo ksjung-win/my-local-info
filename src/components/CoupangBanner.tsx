@@ -3,7 +3,7 @@ import React from 'react';
 export default function CoupangBanner() {
   return (
     <div style={{ textAlign: 'left' }}>
-      <p style={{ fontSize: '0.75rem', color: '#9ca3af', marginBottom: '12px' }}>
+      <p style={{ fontSize: '0.7rem', color: '#9ca3af', marginBottom: '8px', lineHeight: '1.4' }}>
         이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.
       </p>
       <div style={{ textAlign: 'center' }}>

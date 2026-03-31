@@ -91,6 +91,64 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
           </div>
         </header>
 
+        {/* 💡 새로 추가된 프리미엄 정보 박스 (상단 배치) */}
+        <div style={{ 
+          marginTop: '20px', 
+          marginBottom: '40px',
+          padding: '24px', 
+          backgroundColor: '#f0f7ff', 
+          borderRadius: '16px', 
+          fontSize: '0.95rem', 
+          color: '#1e293b', 
+          border: '2px solid #bae6fd',
+          boxShadow: '0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1)'
+        }}>
+          <div style={{ marginBottom: '24px', paddingBottom: '20px', borderBottom: '1px dashed #bae6fd' }}>
+            <p style={{ marginBottom: '16px', lineHeight: '1.6', display: 'flex', alignItems: 'flex-start', gap: '8px', fontWeight: 500 }}>
+              <span style={{ fontSize: '1.2rem' }}>💡</span>
+              <span>
+                이 글은 <a href="http://data.go.kr/" target="_blank" rel="noopener noreferrer" style={{color: '#0369a1', fontWeight: 700, textDecoration: 'underline'}}>공공데이터포털</a>의 정보를 바탕으로 AI가 작성하였습니다. 정확한 내용은 아래 링크를 통해 확인해 주세요.
+              </span>
+            </p>
+            {originLink !== "#" && (
+              <div style={{ marginTop: '12px', paddingLeft: '28px' }}>
+                <a href={originLink} target="_blank" rel="noopener noreferrer" style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '8px',
+                  color: '#ffffff', 
+                  textDecoration: 'none', 
+                  fontWeight: 700,
+                  backgroundColor: '#0284c7',
+                  padding: '12px 24px',
+                  borderRadius: '12px',
+                  boxShadow: '0 4px 6px -1px rgba(2, 132, 199, 0.3)',
+                  transition: 'transform 0.2s'
+                }}>
+                  📎 공식 원문 페이지 바로가기 (클릭)
+                </a>
+              </div>
+            )}
+          </div>
+          
+          <div style={{ textAlign: 'left' }}>
+             <h3 style={{ 
+               fontSize: '1.15rem', 
+               fontWeight: 800, 
+               color: '#0c4a6e', 
+               marginBottom: '16px', 
+               display: 'flex', 
+               alignItems: 'center', 
+               gap: '8px' 
+             }}>
+               <span style={{ fontSize: '1.4rem' }}>🎁</span> 오늘의 추천 상품
+             </h3>
+             <div style={{ backgroundColor: '#ffffff', borderRadius: '12px', padding: '12px', border: '1px solid #e0f2fe' }}>
+               <CoupangBanner />
+             </div>
+          </div>
+        </div>
+
         <div className="prose prose-orange max-w-none">
           <ReactMarkdown remarkPlugins={[remarkGfm]}>
             {postData.content}
@@ -99,27 +157,6 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
 
         
 
-        <div style={{ marginTop: '40px', padding: '20px', backgroundColor: '#f9fafb', borderRadius: '8px', fontSize: '0.95rem', color: '#4b5563', border: '1px solid #e5e7eb' }}>
-          <p style={{ marginBottom: '10px', lineHeight: '1.6' }}>
-            💡 <strong>이 글은 <a href="http://data.go.kr/" target="_blank" rel="noopener noreferrer" style={{color: '#2563eb', textDecoration: 'underline'}}>공공데이터포털(data.go.kr)</a>의 정보를 바탕으로 AI가 작성하였습니다.</strong><br/>
-            정확한 내용은 원문 링크를 통해 확인해주세요.
-          </p>
-          {originLink !== "#" && (
-            <p style={{ marginTop: '10px' }}>
-              📎 <a href={originLink} target="_blank" rel="noopener noreferrer" style={{color: '#2563eb', textDecoration: 'underline', fontWeight: 600}}>
-                원문 출처 링크 (공식 안내) 바로가기
-              </a>
-            </p>
-          )}
-          
-          <div style={{ marginTop: '15px', paddingTop: '15px', borderTop: '1px dashed #e5e7eb', textAlign: 'left' }}>
-             <h3 style={{ fontSize: '1.05rem', fontWeight: 700, color: '#1a1a2e', marginBottom: '10px', display: 'flex', alignItems: 'center', gap: '8px' }}>
-               <span style={{ fontSize: '1.2rem' }}>🎁</span> 오늘의 추천 상품
-             </h3>
-             <CoupangBanner />
-          </div>
-
-        </div>
 
         <AdBanner />
       </article>
