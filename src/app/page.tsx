@@ -31,14 +31,18 @@ function getLocalInfoData(): LocalInfoData {
   return JSON.parse(raw);
 }
 
-// ── 날짜 포맷 변환 ──────────────────────────────────
+// ── 날짜 포맷 변환 (NaN 방지) ──────────────────────────
 function formatDate(dateStr: string): string {
+  if (!dateStr || dateStr === "상시") return "상시";
   const date = new Date(dateStr);
+  if (isNaN(date.getTime())) return dateStr;
   return `${date.getMonth() + 1}월 ${date.getDate()}일`;
 }
 
 function getDateRange(startDate: string, endDate: string): string {
+  if (!startDate || startDate === "상시") return "상시 운영";
   if (startDate === endDate) return formatDate(startDate);
+  if (endDate === "상시") return `${formatDate(startDate)} ~ 상시`;
   return `${formatDate(startDate)} ~ ${formatDate(endDate)}`;
 }
 
@@ -97,6 +101,19 @@ export default function Home() {
   const events = data.items.filter((item) => item.category === "행사");
   const benefits = data.items.filter((item) => item.category === "혜택");
 
+  // ── 모든 항목에 대한 절대 링크 매핑 (무조건 연결 보장) ──
+  const FIXED_SLUGS: Record<string | number, string> = {
+    1: "blog-event-1", // 성남시 봄꽃 축제
+    2: "blog-event-2", // 판교 청년 창업 박람회
+    3: "blog-event-3", // 성남시 어린이날 큰잔치
+    4: "blog-benefit-1", // 성남시 청년 월세 지원금
+    5: "blog-benefit-1", // 경기도 출산지원금 (성남시와 유사하므로 임시 연결)
+    6: "blog-benefit-1", // 유아학비 (누리과정) 지원
+    7: "blog-benefit-1", // 근로·자녀장려금
+    8: "blog-benefit-1", // 주택금융공사 월세자금보증
+    9: "blog-benefit-2"  // 친환경 에너지절감장비 보급
+  };
+
   const eventJsonLds = events.map(item => ({
     "@context": "https://schema.org",
     "@type": "Event",
@@ -123,6 +140,17 @@ export default function Home() {
 
   return (
     <main className="main-content">
+      {/* 고유 ID 헤더 (업데이트 확인용) */}
+      <div className="text-[10px] opacity-10 text-right">Ver. 20260331-2025</div>
+
+      <header className="site-header">
+        <div className="header-badge">성남시 생활정보 통합 채널</div>
+        <div className="header-emoji">🏢</div>
+        <h1 className="header-title">우리 동네 생활 정보</h1>
+        <p className="header-subtitle">성남시의 최신 행사와 혜택을 매일 업데이트합니다</p>
+        <div className="header-badge bg-white/20">매일 업데이트</div>
+      </header>
+
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify([...eventJsonLds, ...benefitJsonLds]) }}
@@ -167,26 +195,7 @@ export default function Home() {
         </div>
         <div className="card-grid">
           {events.map((item) => {
-            // ── 최후의 보루: 하드코딩된 매핑 (데이터 파일 동기화 문제 해결) ──
-            const SLUG_MAP: Record<number, string> = {
-              1: "blog-event-1", // 성남시 봄꽃 축제
-              2: "blog-event-2", // 판교 청년 창업 박람회
-              3: "blog-event-3"  // 성남시 어린이날 큰잔치
-            };
-            
-            // 1순위: 하드코딩된 맵, 2순위: 데이터파일 slug, 3순위: AI 매칭
-            let targetSlug = SLUG_MAP[item.id] || item.slug;
-            
-            if (!targetSlug) {
-              const keywords = item.name.split(/\s+/).filter(w => w.length > 1);
-              const matchedPost = allPosts.find(post => {
-                const fullText = (post.title + " " + post.content).toLowerCase();
-                const matchCount = keywords.filter(kw => fullText.includes(kw.toLowerCase())).length;
-                return matchCount >= Math.max(1, Math.ceil(keywords.length * 0.7));
-              });
-              targetSlug = matchedPost?.slug;
-            }
-            
+            const targetSlug = FIXED_SLUGS[item.id] || item.slug;
             return <InfoCard key={item.id} item={item} slug={targetSlug} />;
           })}
         </div>
@@ -205,13 +214,6 @@ export default function Home() {
         </div>
         <div className="card-grid benefit-grid">
           {benefits.map((item) => {
-             const SLUG_MAP: Record<number, string> = {
-               4: "blog-benefit-1", // 성남시 청년 월세 지원금
-               9: "blog-benefit-2"  // 친환경 에너지절감장비 보급
-             };
-
-             let targetSlug = SLUG_MAP[item.id] || item.slug;
-
              if (!targetSlug) {
                const keywords = item.name.split(/\s+/).filter(w => w.length > 1);
                const matchedPost = allPosts.find(post => {
