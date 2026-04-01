@@ -78,15 +78,19 @@ export default function RootLayout({
           }}
         />
         {/* ── 헤더 ── */}
-        <header className="site-header" style={{ paddingBottom: '60px' }}>
+        <header className="site-header" style={{ paddingBottom: '40px' }}>
           <nav style={{ position: 'absolute', top: '20px', right: '24px', zIndex: 10, display: 'flex', gap: '16px' }}>
             <Link href="/" style={{ color: '#fff', textDecoration: 'none', fontWeight: 600, fontSize: '0.9rem', opacity: 0.9 }}>홈</Link>
             <Link href="/about" style={{ color: '#fff', textDecoration: 'none', fontWeight: 600, fontSize: '0.9rem', opacity: 0.9 }}>소개</Link>
             <Link href="/blog" style={{ color: '#fff', textDecoration: 'none', fontWeight: 600, fontSize: '0.9rem', opacity: 0.9 }}>블로그</Link>
           </nav>
-          <Link href="/" style={{ textDecoration: 'none', color: 'inherit', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-            <span className="header-emoji" style={{ fontSize: '4rem', marginBottom: '16px' }}>🍊</span>
-            <h1 className="header-title" style={{ color: '#ffffff', textShadow: '0 2px 10px rgba(0,0,0,0.2)', margin: 0 }}>성남시 생활 정보</h1>
+          <Link href="/" style={{ textDecoration: 'none', color: 'inherit', textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+            <div className="header-badge" style={{ backgroundColor: 'rgba(255,255,255,0.2)', marginBottom: '16px', fontSize: '0.8rem' }}>매일 업데이트</div>
+            <span className="header-emoji" style={{ fontSize: '3.5rem', marginBottom: '16px' }}>🍊</span>
+            <h1 className="header-title" style={{ color: '#ffffff', fontSize: '2.8rem', fontWeight: 900, marginBottom: '16px', textShadow: '0 4px 15px rgba(0,0,0,0.1)' }}>성남시 생활 정보</h1>
+            <p className="header-subtitle" style={{ color: 'rgba(255,255,255,0.95)', fontSize: '1.1rem', maxWidth: '600px', margin: '0 auto', lineHeight: '1.6', wordBreak: 'keep-all' }}>
+              지역 주민들에게 유익한 행사, 축제, 지원금, 혜택 정보를 <br/>한곳에서 빠르고 쉽게 제공해드립니다
+            </p>
           </Link>
         </header>
 

@@ -118,14 +118,43 @@ export default function Home() {
 
   return (
     <main className="main-content">
-      {/* 고유 ID 헤더 (최종 복원 버전) */}
-      <div className="text-[10px] opacity-10 text-right">Ver. 20260401-ORIGINAL-RESTORED</div>
+      {/* 고유 ID 헤더 (최종 최적화 버전) */}
+      <div className="text-[10px] opacity-10 text-right">Ver. 20260401-FINAL-RESTORED</div>
 
       <AdBanner />
 
-      <section className="mt-12">
+      {/* [1] 최근 소식 프리뷰 (맨 상단) */}
+      <section className="mt-8 mb-16">
         <div className="section-header">
-          <h2 className="section-title">성남시 주요 행사</h2>
+          <h2 className="section-title">✨ 최근 업데이트 소식</h2>
+        </div>
+        <div className="card-grid">
+          {recentPosts.map((post) => {
+            const matchedItem = data.items.find(item => post.title.includes(item.name)) || {
+              category: post.category || "정보",
+              summary: post.summary,
+              startDate: post.date,
+              endDate: "상시",
+              location: "성남시",
+              target: "성남 시민",
+              name: post.title
+            };
+            return <InfoCard key={post.slug} item={matchedItem as any} slug={post.slug} />;
+          })}
+        </div>
+        <div className="mt-8 text-center">
+          <Link href="/blog" className="text-orange-600 font-bold border-b-2 border-orange-600 pb-1 hover:text-orange-700 transition-all">
+            전체 블로그 바로가기 →
+          </Link>
+        </div>
+      </section>
+
+      <div className="divider opacity-10" />
+
+      {/* [2] 카테고리별 정보 (행사) */}
+      <section className="mt-16">
+        <div className="section-header">
+          <h2 className="section-title">🎭 성남시 주요 행사/축제</h2>
           <span className="section-count">{events.length}건</span>
         </div>
         <div className="card-grid">
@@ -138,9 +167,10 @@ export default function Home() {
 
       <AdBanner />
 
-      <section className="mt-12">
+      {/* [3] 카테고리별 정보 (복지/혜택) */}
+      <section className="mt-16 pb-20">
         <div className="section-header">
-          <h2 className="section-title">주민 복지 혜택</h2>
+          <h2 className="section-title">💎 주민 맞춤형 복지 혜택</h2>
           <span className="section-count">{benefits.length}건</span>
         </div>
         <div className="card-grid">
@@ -150,13 +180,6 @@ export default function Home() {
           })}
         </div>
       </section>
-
-      <div className="mt-16 text-center pb-20">
-        <Link href="/blog" className="inline-flex items-center gap-2 bg-slate-800 text-white px-10 py-5 rounded-2xl font-bold hover:bg-slate-700 transition-all shadow-xl hover:-translate-y-1">
-          <span>모든 소식 블로그에서 보기</span>
-          <span className="text-2xl">→</span>
-        </Link>
-      </div>
 
       <AdBanner />
     </main>
