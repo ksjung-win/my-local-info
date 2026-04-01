@@ -127,21 +127,10 @@ export default function Home() {
     "description": item.summary
   }));
 
-  const benefitJsonLds = benefits.map(item => ({
-    "@context": "https://schema.org",
-    "@type": "GovernmentService",
-    "name": item.name,
-    "description": item.summary,
-    "provider": {
-      "@type": "GovernmentOrganization",
-      "name": "성남시"
-    }
-  }));
-
   return (
     <main className="main-content">
       {/* 고유 ID 헤더 (업데이트 확인용) */}
-      <div className="text-[10px] opacity-10 text-right">Ver. 20260331-2025</div>
+      <div className="text-[10px] opacity-10 text-right">Ver. 20260401-FINAL</div>
 
       <header className="site-header">
         <div className="header-badge">성남시 생활정보 통합 채널</div>
@@ -151,62 +140,11 @@ export default function Home() {
 
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify([...eventJsonLds, ...benefitJsonLds]) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify([...eventJsonLds]) }}
       />
 
       <AdBanner />
-
-      {/* ── 최신 생활 정보 프리뷰 섹션 ── */}
-      <section className="mt-12 mb-16">
-        <div className="section-header">
-          <span className="section-icon">🆕</span>
-          <h2 className="section-title">최신 업데이트 정보</h2>
-          <span className="section-count">성남시 최신 소식 {recentPosts.length}건</span>
-        </div>
-        
-        <div className="card-grid">
-          {recentPosts.map((post) => {
-            // 해당 포스트에 맞는 데이터 매칭 시도
-            const matchedItem = data.items.find(item => post.title.includes(item.name)) || {
-              category: post.category || "정보",
-              summary: post.summary,
-              startDate: "2026-04-01",
-              endDate: "상시",
-              location: "성남시",
-              target: "성남 시민",
-              name: post.title
-            };
-            return <InfoCard key={post.slug} item={matchedItem as any} slug={post.slug} />;
-          })}
-        </div>
-
-        <div className="mt-10 text-center">
-          <Link href="/blog" className="inline-flex items-center gap-2 bg-slate-800 text-white px-8 py-4 rounded-2xl font-bold hover:bg-slate-700 transition-all shadow-lg hover:-translate-y-1">
-            <span>나머지 {allPosts.length - recentPosts.length}개의 정보 더 보기</span>
-            <span className="text-xl">→</span>
-          </Link>
-        </div>
-      </section>
-
-      {/* ── 주요 서비스 포털 안내 ── */}
-      <section className="bg-orange-50 rounded-3xl p-10 border border-orange-100 text-center mb-16 shadow-inner">
-        <h3 className="text-2xl font-black text-slate-800 mb-4 tracking-tight">원하는 정보를 찾으시나요?</h3>
-        <p className="text-slate-600 mb-8 max-w-2xl mx-auto leading-relaxed">
-          축제, 행사, 지원금 등 모든 카테고리의 정보를 한눈에 보시려면 <br/> 
-          <strong>블로그 전체보기</strong> 게시판을 이용해 보세요.
-        </p>
-        
-        <div className="flex flex-wrap justify-center gap-4">
-          <Link href="/blog" className="bg-white text-orange-600 border-2 border-orange-200 px-6 py-3 rounded-xl font-bold hover:bg-orange-600 hover:text-white transition-all shadow-sm">
-            🎡 축제/행사 전체보기
-          </Link>
-          <Link href="/blog" className="bg-white text-indigo-600 border-2 border-indigo-200 px-6 py-3 rounded-xl font-bold hover:bg-indigo-600 hover:text-white transition-all shadow-sm">
-            💰 복지/혜택 전체보기
-          </Link>
-        </div>
-      </section>
-
-      <div className="divider opacity-20" />
+      <div className="divider opacity-20" style={{ margin: '100px 0' }} />
       <AdBanner />
     </main>
   );
