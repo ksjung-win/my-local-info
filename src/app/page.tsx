@@ -129,42 +129,48 @@ export default function Home() {
 
   return (
     <main className="main-content">
-      {/* 고유 ID 헤더 (업데이트 확인용) */}
-      <div className="text-[10px] opacity-10 text-right">Ver. 20260401-RESTORED</div>
+      {/* 고유 ID 헤더 (최종 복원 버전) */}
+      <div className="text-[10px] opacity-10 text-right">Ver. 20260401-ORIGINAL-RESTORED</div>
 
       <AdBanner />
 
-      <section className="mt-12 mb-16">
+      <section className="mt-12">
         <div className="section-header">
-          <span className="section-icon">🆕</span>
-          <h2 className="section-title">최신 업데이트 정보</h2>
-          <span className="section-count">성남시 최신 소식 {allPosts.length}건</span>
+          <span className="section-icon">🎪</span>
+          <h2 className="section-title">성남시 주요 행사</h2>
+          <span className="section-count">{events.length}건</span>
         </div>
-        
         <div className="card-grid">
-          {recentPosts.map((post) => {
-            const matchedItem = data.items.find(item => post.title.includes(item.name)) || {
-              category: post.category || "정보",
-              summary: post.summary,
-              startDate: post.date,
-              endDate: "상시",
-              location: "성남시",
-              target: "성남 시민",
-              name: post.title
-            };
-            return <InfoCard key={post.slug} item={matchedItem as any} slug={post.slug} />;
+          {events.map((item) => {
+            const slug = FIXED_SLUGS[item.id] || (allPosts.find(p => p.title.includes(item.name))?.slug);
+            return <InfoCard key={item.id} item={item} slug={slug} />;
           })}
-        </div>
-
-        <div className="mt-10 text-center">
-          <Link href="/blog" className="inline-flex items-center gap-2 bg-slate-800 text-white px-8 py-4 rounded-2xl font-bold hover:bg-slate-700 transition-all shadow-lg">
-            <span>블로그 소식 전체보기</span>
-            <span className="text-xl">→</span>
-          </Link>
         </div>
       </section>
 
-      <div className="divider opacity-20" />
+      <AdBanner />
+
+      <section className="mt-12">
+        <div className="section-header">
+          <span className="section-icon">💰</span>
+          <h2 className="section-title">주민 복지 혜택</h2>
+          <span className="section-count">{benefits.length}건</span>
+        </div>
+        <div className="card-grid">
+          {benefits.map((item) => {
+            const slug = FIXED_SLUGS[item.id] || (allPosts.find(p => p.title.includes(item.name))?.slug);
+            return <InfoCard key={item.id} item={item} slug={slug} />;
+          })}
+        </div>
+      </section>
+
+      <div className="mt-16 text-center pb-20">
+        <Link href="/blog" className="inline-flex items-center gap-2 bg-slate-800 text-white px-10 py-5 rounded-2xl font-bold hover:bg-slate-700 transition-all shadow-xl hover:-translate-y-1">
+          <span>모든 소식 블로그에서 보기</span>
+          <span className="text-2xl">→</span>
+        </Link>
+      </div>
+
       <AdBanner />
     </main>
   );
