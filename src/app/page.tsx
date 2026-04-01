@@ -118,13 +118,11 @@ export default function Home() {
 
   return (
     <main className="main-content">
-      {/* 고유 ID 헤더 (최종 최적화 버전) */}
-      <div className="text-[10px] opacity-10 text-right">Ver. 20260401-FINAL-RESTORED</div>
+      {/* 고유 ID 헤더 (간격 최적화 버전) */}
+      <div className="text-[10px] opacity-10 text-right">Ver. 20260401-SPACING-FIX</div>
 
-      <AdBanner />
-
-      {/* [1] 최근 소식 프리뷰 (맨 상단) */}
-      <section className="mt-8 mb-16">
+      {/* [1] 최근 소식 프리뷰 (맨 상단 - 간격 없이 밀착) */}
+      <section className="mt-0 mb-16">
         <div className="section-header">
           <h2 className="section-title">✨ 최근 업데이트 소식</h2>
         </div>
