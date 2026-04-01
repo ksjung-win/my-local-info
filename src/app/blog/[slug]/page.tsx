@@ -80,26 +80,26 @@ export default async function PostPage(props: { params: Promise<{ slug: string }
   };
 
   return (
-    <main className="main-content" style={{ marginTop: '40px', paddingBottom: '80px' }}>
+    <main className="main-content" style={{ marginTop: '20px', paddingBottom: '60px' }}>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify([blogJsonLd, breadcrumbJsonLd]) }}
       />
       <article>
-        <header style={{ marginBottom: '40px' }}>
+        <header style={{ marginBottom: '32px' }}>
           <div className="card-badge badge-event" style={{ marginBottom: '12px' }}>
             {postData.category}
           </div>
-          <h1 className="header-title" style={{ color: 'var(--text-main)', fontSize: '2.5rem', marginBottom: '16px', textShadow: 'none' }}>
+          <h1 className="header-title" style={{ color: '#1e293b', fontSize: 'clamp(1.75rem, 5vw, 2.5rem)', lineHeight: '1.2', marginBottom: '16px', textShadow: 'none' }}>
             {postData.title}
           </h1>
-          <div className="meta-row" style={{ fontSize: '1rem' }}>
+          <div className="meta-row" style={{ fontSize: '0.9rem' }}>
             <span className="meta-icon">📅</span>
             <span>최종 업데이트: {postData.date}</span>
           </div>
         </header>
 
-        <div className="prose prose-orange max-w-none">
+        <div className="prose prose-orange max-w-none prose-slate sm:prose-lg" style={{ fontSize: '1.05rem', lineHeight: '1.8' }}>
           <ReactMarkdown remarkPlugins={[remarkGfm]}>
             {postData.content}
           </ReactMarkdown>
@@ -107,38 +107,42 @@ export default async function PostPage(props: { params: Promise<{ slug: string }
 
         {/* 💡 프리미엄 정보 박스 (본문 하단 배치) */}
         <div style={{ 
-          marginTop: '60px', 
-          padding: '24px', 
-          backgroundColor: '#f0f7ff', 
+          marginTop: '40px', 
+          padding: '20px', 
+          backgroundColor: '#f8fafc', 
           borderRadius: '16px', 
           fontSize: '0.95rem', 
-          color: '#1e293b', 
-          border: '2px solid #bae6fd',
-          boxShadow: '0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1)'
+          color: '#334155', 
+          border: '1px solid #e2e8f0',
+          boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.05)'
         }}>
-          <div style={{ marginBottom: '24px', paddingBottom: '20px', borderBottom: '1px dashed #bae6fd' }}>
+          <div style={{ marginBottom: '20px', paddingBottom: '16px', borderBottom: '1px dashed #e2e8f0' }}>
             <p style={{ marginBottom: '16px', lineHeight: '1.6', display: 'flex', alignItems: 'flex-start', gap: '8px', fontWeight: 500 }}>
-              <span style={{ fontSize: '1.2rem' }}>💡</span>
-              <span>
-                이 글은 <a href="http://data.go.kr/" target="_blank" rel="noopener noreferrer" style={{color: '#0369a1', fontWeight: 700, textDecoration: 'underline'}}>공공데이터포털</a>의 정보를 바탕으로 AI가 작성하였습니다. 정확한 내용은 아래 링크를 통해 확인해 주세요.
+              <span style={{ fontSize: '1.1rem' }}>💡</span>
+              <span style={{ wordBreak: 'keep-all' }}>
+                이 글은 <a href="http://data.go.kr/" target="_blank" rel="noopener noreferrer" style={{color: '#0284c7', fontWeight: 700, textDecoration: 'underline'}}>공공데이터포털</a>의 정보를 바탕으로 AI가 작성하였습니다. 정확한 내용은 아래 링크를 통해 확인해 주세요.
               </span>
             </p>
             {originLink !== "#" && (
-              <div style={{ marginTop: '12px', paddingLeft: '28px' }}>
+              <div style={{ marginTop: '12px' }}>
                 <a href={originLink} target="_blank" rel="noopener noreferrer" style={{
-                  display: 'inline-flex',
+                  display: 'flex',
+                  justifyContent: 'center',
                   alignItems: 'center',
                   gap: '8px',
                   color: '#ffffff', 
                   textDecoration: 'none', 
                   fontWeight: 700,
                   backgroundColor: '#0284c7',
-                  padding: '12px 24px',
+                  padding: '14px 20px',
                   borderRadius: '12px',
                   boxShadow: '0 4px 6px -1px rgba(2, 132, 199, 0.3)',
-                  transition: 'transform 0.2s'
+                  transition: 'transform 0.2s',
+                  width: '100%',
+                  maxWidth: '300px',
+                  margin: '0 auto'
                 }}>
-                  📎 공식 원문 페이지 바로가기 (클릭)
+                  📎 공식 원문 페이지 바로가기
                 </a>
               </div>
             )}

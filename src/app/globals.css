@@ -13,7 +13,7 @@ body {
 }
 
 .main-content {
-  @apply max-w-4xl mx-auto px-6 py-12;
+  @apply max-w-4xl mx-auto px-4 sm:px-6 py-8 sm:py-12;
 }
 
 /* ── 헤더 디자인 ── */
@@ -27,7 +27,7 @@ body {
 }
 
 .header-title {
-  @apply text-4xl font-black mb-3 tracking-tight;
+  @apply text-3xl sm:text-4xl font-black mb-3 tracking-tight break-keep;
 }
 
 .header-subtitle {

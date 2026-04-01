@@ -30,17 +30,21 @@ async function fetchPublicData() {
 
     const rawData = result.data;
 
-    // 필터링 로직
-    const checkKeyword = (item, keyword) => {
+    // 필터링 로직 (성남 -> 경기 -> 전체 순서로 검색 범위 확대)
+    const checkKeyword = (item, keywords) => {
       const fields = [item.서비스명, item.서비스목적요약, item.지원대상, item.소관기관명];
-      return fields.some(field => field && field.includes(keyword));
+      return keywords.some(keyword => 
+        fields.some(field => field && field.includes(keyword))
+      );
     };
 
-    let filtered = rawData.filter(item => checkKeyword(item, "성남"));
+    let filtered = rawData.filter(item => checkKeyword(item, ["성남", "분당", "판교", "수정구", "중원구"]));
     if (filtered.length === 0) {
-      filtered = rawData.filter(item => checkKeyword(item, "경기"));
+      console.log("성남 관련 데이터가 없어 '경기'로 범위를 넓힙니다.");
+      filtered = rawData.filter(item => checkKeyword(item, ["경기"]));
     }
     if (filtered.length === 0) {
+      console.log("경기 관련 데이터가 없어 전체 데이터를 대상으로 합니다.");
       filtered = rawData;
     }
 
@@ -53,21 +57,33 @@ async function fetchPublicData() {
     const newItems = filtered.filter(item => !existingNames.has(item.서비스명));
 
     if (newItems.length === 0) {
-      console.log("새로운 데이터가 없습니다");
+      console.log("새로운 데이터가 없습니다. 기존 데이터 중 무작위로 하나를 선택하거나 오늘은 건너뜁니다.");
+      // 새로운 데이터가 없으면 종료 (중복 방지)
       return;
     }
 
-    // 가장 위에 있는 새 항목 1개 선택
+    // 새 항목 중 하나 선택
     const targetItem = newItems[0];
 
-    // [3단계] Gemini AI로 새 항목 1개만 가공
+    // [3단계] Gemini AI로 새 항목 가공
     const geminiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${GEMINI_API_KEY}`;
     
-    const prompt = `아래 공공데이터 1건을 분석해서 JSON 객체로 변환해줘. 형식:
-{id: 숫자, name: 서비스명, category: '행사' 또는 '혜택', startDate: 'YYYY-MM-DD', endDate: 'YYYY-MM-DD', location: 장소 또는 기관명, target: 지원대상, summary: 한줄요약, link: 상세URL}
-category는 내용을 보고 행사/축제면 '행사', 지원금/서비스면 '혜택'으로 판단해.
-startDate가 없으면 오늘 날짜, endDate가 없으면 '상시'로 넣어.
-반드시 JSON 객체만 출력해. 다른 텍스트 없이.
+    const prompt = `아래 공공데이터 1건을 분석해서 반드시 JSON 객체 형식으로만 변환해줘. 다른 텍스트는 절대 포함하지 마.
+{
+  "id": 숫자,
+  "name": "서비스명",
+  "category": "행사" 또는 "혜택",
+  "startDate": "YYYY-MM-DD",
+  "endDate": "YYYY-MM-DD",
+  "location": "장소 또는 기관명",
+  "target": "지원대상",
+  "summary": "핵심 내용을 포함한 한줄요약 (50자 내외)",
+  "link": "상세정보 확인 가능한 URL (없으면 데이터의 상세주소 또는 원문안내 URL 사용)"
+}
+
+category는 축제, 전시, 공연, 교육 등 일시적인 것이면 '행사', 지원금, 바우처, 상시 서비스면 '혜택'으로 분류해.
+startDate가 없으면 오늘(${new Date().toISOString().split('T')[0]})로 넣어.
+endDate가 없어나 찾기 어려우면 '상시'라고 적어.
 
 데이터: ${JSON.stringify(targetItem)}`;
 
@@ -78,6 +94,12 @@ startDate가 없으면 오늘 날짜, endDate가 없으면 '상시'로 넣어.
         contents: [{ parts: [{ text: prompt }] }]
       })
     });
+
+    if (!geminiResponse.ok) {
+      const errorText = await geminiResponse.text();
+      console.error(`Gemini API 오류 (${geminiResponse.status}):`, errorText);
+      return;
+    }
 
     const geminiResult = await geminiResponse.json();
     
