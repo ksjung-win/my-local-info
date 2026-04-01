@@ -158,33 +158,58 @@ export default function Home() {
 
       <AdBanner />
 
-      {/* ── 메인 포털 섹션 (사용자 요청: 중복 제거 및 블로그 집중) ── */}
-      <section className="bg-white rounded-3xl p-12 shadow-2xl border border-orange-100 text-center my-16 max-w-3xl mx-auto">
-        <div className="text-5xl mb-6">📝</div>
-        <h2 className="text-4xl font-black text-slate-800 mb-6 tracking-tight">모든 생활 정보 바로가기</h2>
-        <p className="text-xl text-slate-600 leading-relaxed mb-12">
-          축제, 행사, 지원금, 복지 혜택 등 검색하신 모든 정보가<br/>
-          <span className="text-orange-600 font-bold underline decoration-wavy">블로그 전체보기</span> 게시판에 상세히 정리되어 있습니다.
+      {/* ── 최신 생활 정보 프리뷰 섹션 ── */}
+      <section className="mt-12 mb-16">
+        <div className="section-header">
+          <span className="section-icon">🆕</span>
+          <h2 className="section-title">최신 업데이트 정보</h2>
+          <span className="section-count">성남시 최신 소식 {recentPosts.length}건</span>
+        </div>
+        
+        <div className="card-grid">
+          {recentPosts.map((post) => {
+            // 해당 포스트에 맞는 데이터 매칭 시도
+            const matchedItem = data.items.find(item => post.title.includes(item.name)) || {
+              category: post.category || "정보",
+              summary: post.summary,
+              startDate: "2026-04-01",
+              endDate: "상시",
+              location: "성남시",
+              target: "성남 시민",
+              name: post.title
+            };
+            return <InfoCard key={post.slug} item={matchedItem as any} slug={post.slug} />;
+          })}
+        </div>
+
+        <div className="mt-10 text-center">
+          <Link href="/blog" className="inline-flex items-center gap-2 bg-slate-800 text-white px-8 py-4 rounded-2xl font-bold hover:bg-slate-700 transition-all shadow-lg hover:-translate-y-1">
+            <span>나머지 {allPosts.length - recentPosts.length}개의 정보 더 보기</span>
+            <span className="text-xl">→</span>
+          </Link>
+        </div>
+      </section>
+
+      {/* ── 주요 서비스 포털 안내 ── */}
+      <section className="bg-orange-50 rounded-3xl p-10 border border-orange-100 text-center mb-16 shadow-inner">
+        <h3 className="text-2xl font-black text-slate-800 mb-4 tracking-tight">원하는 정보를 찾으시나요?</h3>
+        <p className="text-slate-600 mb-8 max-w-2xl mx-auto leading-relaxed">
+          축제, 행사, 지원금 등 모든 카테고리의 정보를 한눈에 보시려면 <br/> 
+          <strong>블로그 전체보기</strong> 게시판을 이용해 보세요.
         </p>
         
-        <Link href="/blog" className="inline-flex items-center justify-center bg-orange-600 hover:bg-orange-700 text-white text-2xl font-black px-16 py-8 rounded-3xl shadow-xl transition-all hover:scale-105 hover:shadow-orange-200 gap-4 group">
-          <span>블로그 전체보기 이동</span>
-          <span className="text-3xl group-hover:translate-x-3 transition-transform">→</span>
-        </Link>
-
-        <div className="mt-12 pt-8 border-t border-slate-100 flex flex-col gap-3">
-          <p className="text-slate-400 text-sm">
-            ※ 화면이 예전과 같다면 브라우저를 한 번 껐다 켜주세요!
-          </p>
-          <p className="text-slate-300 text-xs">
-            (메인 페이지의 중복 정보는 사용자 요청에 의해 블로그 리스트로 통합되었습니다)
-          </p>
+        <div className="flex flex-wrap justify-center gap-4">
+          <Link href="/blog" className="bg-white text-orange-600 border-2 border-orange-200 px-6 py-3 rounded-xl font-bold hover:bg-orange-600 hover:text-white transition-all shadow-sm">
+            🎡 축제/행사 전체보기
+          </Link>
+          <Link href="/blog" className="bg-white text-indigo-600 border-2 border-indigo-200 px-6 py-3 rounded-xl font-bold hover:bg-indigo-600 hover:text-white transition-all shadow-sm">
+            💰 복지/혜택 전체보기
+          </Link>
         </div>
       </section>
 
       <div className="divider opacity-20" />
       <AdBanner />
-      <div className="divider opacity-20" />
     </main>
   );
 }
