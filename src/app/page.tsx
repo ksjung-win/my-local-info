@@ -130,21 +130,41 @@ export default function Home() {
   return (
     <main className="main-content">
       {/* 고유 ID 헤더 (업데이트 확인용) */}
-      <div className="text-[10px] opacity-10 text-right">Ver. 20260401-FINAL</div>
-
-      <header className="site-header">
-        <div className="header-badge">성남시 생활정보 통합 채널</div>
-        <h1 className="header-title" style={{ marginTop: '24px' }}>우리 동네 생활 정보</h1>
-        <p className="header-subtitle">성남시의 최신 행사와 혜택을 매일 업데이트합니다</p>
-      </header>
-
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify([...eventJsonLds]) }}
-      />
+      <div className="text-[10px] opacity-10 text-right">Ver. 20260401-RESTORED</div>
 
       <AdBanner />
-      <div className="divider opacity-20" style={{ margin: '100px 0' }} />
+
+      <section className="mt-12 mb-16">
+        <div className="section-header">
+          <span className="section-icon">🆕</span>
+          <h2 className="section-title">최신 업데이트 정보</h2>
+          <span className="section-count">성남시 최신 소식 {allPosts.length}건</span>
+        </div>
+        
+        <div className="card-grid">
+          {recentPosts.map((post) => {
+            const matchedItem = data.items.find(item => post.title.includes(item.name)) || {
+              category: post.category || "정보",
+              summary: post.summary,
+              startDate: post.date,
+              endDate: "상시",
+              location: "성남시",
+              target: "성남 시민",
+              name: post.title
+            };
+            return <InfoCard key={post.slug} item={matchedItem as any} slug={post.slug} />;
+          })}
+        </div>
+
+        <div className="mt-10 text-center">
+          <Link href="/blog" className="inline-flex items-center gap-2 bg-slate-800 text-white px-8 py-4 rounded-2xl font-bold hover:bg-slate-700 transition-all shadow-lg">
+            <span>블로그 소식 전체보기</span>
+            <span className="text-xl">→</span>
+          </Link>
+        </div>
+      </section>
+
+      <div className="divider opacity-20" />
       <AdBanner />
     </main>
   );

@@ -78,21 +78,16 @@ export default function RootLayout({
           }}
         />
         {/* ── 헤더 ── */}
-        <header className="site-header">
+        <header className="site-header" style={{ paddingBottom: '60px' }}>
           <nav style={{ position: 'absolute', top: '20px', right: '24px', zIndex: 10, display: 'flex', gap: '16px' }}>
             <Link href="/" style={{ color: '#fff', textDecoration: 'none', fontWeight: 600, fontSize: '0.9rem', opacity: 0.9 }}>홈</Link>
             <Link href="/about" style={{ color: '#fff', textDecoration: 'none', fontWeight: 600, fontSize: '0.9rem', opacity: 0.9 }}>소개</Link>
             <Link href="/blog" style={{ color: '#fff', textDecoration: 'none', fontWeight: 600, fontSize: '0.9rem', opacity: 0.9 }}>블로그</Link>
           </nav>
-          <Link href="/" style={{ textDecoration: 'none', color: 'inherit' }}>
-            <span className="header-emoji">🍊</span>
-            <h1 className="header-title" style={{ color: '#ffffff', textShadow: '0 2px 10px rgba(0,0,0,0.2)' }}>성남시 생활 정보</h1>
+          <Link href="/" style={{ textDecoration: 'none', color: 'inherit', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+            <span className="header-emoji" style={{ fontSize: '4rem', marginBottom: '16px' }}>🍊</span>
+            <h1 className="header-title" style={{ color: '#ffffff', textShadow: '0 2px 10px rgba(0,0,0,0.2)', margin: 0 }}>성남시 생활 정보</h1>
           </Link>
-          <p className="header-subtitle">
-            우리 동네의 따끈따끈한 소식을 전해드립니다
-          </p>
-
-          <span className="header-badge">📡 매일 업데이트</span>
         </header>
 
         {children}
