@@ -145,10 +145,8 @@ export default function Home() {
 
       <header className="site-header">
         <div className="header-badge">성남시 생활정보 통합 채널</div>
-        <div className="header-emoji">🏢</div>
-        <h1 className="header-title">우리 동네 생활 정보</h1>
+        <h1 className="header-title" style={{ marginTop: '24px' }}>우리 동네 생활 정보</h1>
         <p className="header-subtitle">성남시의 최신 행사와 혜택을 매일 업데이트합니다</p>
-        <div className="header-badge bg-white/20">매일 업데이트</div>
       </header>
 
       <script
