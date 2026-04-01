@@ -57,7 +57,7 @@ function InfoCard({ item, slug }: { item: LocalInfoItem, slug?: string }) {
     <a href={targetHref} className="card" data-slug={slug || "none"}>
       {/* 카테고리 배지 */}
       <span className={`card-badge ${isEvent ? "badge-event" : "badge-benefit"}`}>
-        {isEvent ? "🎪" : "💰"} {item.category}
+        {item.category}
       </span>
 
       {/* 제목 */}
@@ -68,20 +68,9 @@ function InfoCard({ item, slug }: { item: LocalInfoItem, slug?: string }) {
 
       {/* 메타 정보 */}
       <div className="card-meta">
-        <div className="meta-row">
-          <span className="meta-icon">📅</span>
           <span>{getDateRange(item.startDate, item.endDate)}</span>
-        </div>
-        {item.location && (
-          <div className="meta-row">
-            <span className="meta-icon">📍</span>
             <span>{item.location}</span>
-          </div>
-        )}
-        <div className="meta-row">
-          <span className="meta-icon">👤</span>
           <span>{item.target}</span>
-        </div>
       </div>
 
       {/* 하단 링크 */}
@@ -136,7 +125,6 @@ export default function Home() {
 
       <section className="mt-12">
         <div className="section-header">
-          <span className="section-icon">🎪</span>
           <h2 className="section-title">성남시 주요 행사</h2>
           <span className="section-count">{events.length}건</span>
         </div>
@@ -152,7 +140,6 @@ export default function Home() {
 
       <section className="mt-12">
         <div className="section-header">
-          <span className="section-icon">💰</span>
           <h2 className="section-title">주민 복지 혜택</h2>
           <span className="section-count">{benefits.length}건</span>
         </div>
