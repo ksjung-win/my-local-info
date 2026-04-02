@@ -46,37 +46,53 @@ function getDateRange(startDate: string, endDate: string): string {
   return `${formatDate(startDate)} ~ ${formatDate(endDate)}`;
 }
 
-// ── 카드 컴포넌트 ────────────────────────────────────
+// ── 카드 컴포넌트 (고도화 버전) ────────────────────────────────────
 function InfoCard({ item, slug }: { item: LocalInfoItem, slug?: string }) {
   const isEvent = item.category === "행사";
-  
-  // 확실한 링크 생성 (slug가 있으면 상세페이지, 없으면 블로그 목록)
   const targetHref = slug ? `/blog/${slug}` : "/blog";
   
+  // 날짜 계산 (마감 임박 배지용)
+  const today = new Date();
+  const endDate = item.endDate === "상시" ? null : new Date(item.endDate);
+  const isClosingSoon = endDate && (endDate.getTime() - today.getTime()) / (1000 * 3600 * 24) <= 7 && (endDate.getTime() - today.getTime()) > 0;
+  
   return (
-    <a href={targetHref} className="card" data-slug={slug || "none"}>
-      {/* 카테고리 배지 */}
-      <span className={`card-badge ${isEvent ? "badge-event" : "badge-benefit"}`}>
-        {item.category}
-      </span>
-
-      {/* 제목 */}
-      <h3 className="card-name">{item.name}</h3>
-
-      {/* 요약 */}
-      <p className="card-summary">{item.summary}</p>
-
-      {/* 메타 정보 */}
-      <div className="card-meta">
-          <span>{getDateRange(item.startDate, item.endDate)}</span>
-            <span>{item.location}</span>
-          <span>{item.target}</span>
+    <a href={targetHref} className="card group" data-slug={slug || "none"}>
+      <div className="flex justify-between items-start mb-4">
+        <span className={`card-badge ${isEvent ? "badge-event" : "badge-benefit"}`}>
+          {isEvent ? "🎨 행사/축제" : "🎁 복지/혜택"}
+        </span>
+        {isClosingSoon && <span className="card-badge badge-urgent">🔥 마감임박</span>}
       </div>
 
-      {/* 하단 링크 */}
+      <h3 className="card-name">{item.name}</h3>
+      <p className="card-summary">{item.summary}</p>
+
+      <div className="card-meta">
+        {item.target && (
+          <div className="meta-row">
+            <span className="meta-icon">🎯</span>
+            <span className="meta-label">대상</span>
+            <span className="text-slate-800 line-clamp-1">{item.target}</span>
+          </div>
+        )}
+        <div className="meta-row">
+          <span className="meta-icon">📅</span>
+          <span className="meta-label">기간</span>
+          <span>{getDateRange(item.startDate, item.endDate)}</span>
+        </div>
+        {item.location && item.location !== "성남시" && (
+          <div className="meta-row">
+            <span className="meta-icon">📍</span>
+            <span className="meta-label">장소</span>
+            <span>{item.location}</span>
+          </div>
+        )}
+      </div>
+
       <div className="card-footer">
-        <span className="card-link">자세히 보기</span>
-        <span className="card-arrow">→</span>
+        <span className="card-link group-hover:text-brand transition-colors">상세 정보 보기</span>
+        <span className="card-arrow text-brand transition-all">→</span>
       </div>
     </a>
   );
@@ -85,10 +101,10 @@ function InfoCard({ item, slug }: { item: LocalInfoItem, slug?: string }) {
 // ── 메인 페이지 ──────────────────────────────────────
 export default function Home() {
   const data = getLocalInfoData();
-  const allPosts = getSortedPostsData(); // 전체 글 가져오기 (매칭용)
-  const recentPosts = allPosts.slice(0, 3); // 최신 글 3개만 (표시용)
-  const events = data.items.filter((item) => item.category === "행사");
-  const benefits = data.items.filter((item) => item.category === "혜택");
+  const allPosts = getSortedPostsData();
+  const recentPosts = allPosts.slice(0, 3);
+  const events = data.items.filter((item) => item.category === "행사").slice(0, 6);
+  const benefits = data.items.filter((item) => item.category === "혜택").slice(0, 6);
 
   // ── 모든 항목에 대한 절대 링크 매핑 (무조건 연결 보장) ──
   const FIXED_SLUGS: Record<string | number, string> = {
@@ -96,35 +112,24 @@ export default function Home() {
     2: "blog-event-2", // 판교 청년 창업 박람회
     3: "blog-event-3", // 성남시 어린이날 큰잔치
     4: "blog-benefit-1", // 성남시 청년 월세 지원금
-    5: "blog-benefit-1", // 경기도 출산지원금 (성남시와 유사하므로 임시 연결)
+    5: "blog-benefit-1", // 경기도 출산지원금
     6: "blog-benefit-1", // 유아학비 (누리과정) 지원
     7: "blog-benefit-1", // 근로·자녀장려금
     8: "blog-benefit-1", // 주택금융공사 월세자금보증
-    9: "blog-benefit-2"  // 친환경 에너지절감장비 보급
+    9: "blog-benefit-2",  // 친환경 에너지절감장비 보급
+    11: "2026-04-02-observer-boarding-support" // 최신 글 추가
   };
-
-  const eventJsonLds = events.map(item => ({
-    "@context": "https://schema.org",
-    "@type": "Event",
-    "name": item.name,
-    "startDate": item.startDate,
-    "endDate": item.endDate === "상시" ? "2026-12-31" : item.endDate,
-    "location": {
-      "@type": "Place",
-      "name": item.location || "온라인/성남시 관내"
-    },
-    "description": item.summary
-  }));
 
   return (
     <main className="main-content">
-      {/* 고유 ID 헤더 (간격 최적화 버전) */}
-      <div className="text-[10px] opacity-10 text-right">Ver. 20260401-SPACING-FIX</div>
-
-      {/* [1] 최근 소식 프리뷰 (맨 상단 - 간격 없이 밀착) */}
-      <section className="mt-0 mb-16">
+      {/* [1] 최근 소식 (상단 강조) */}
+      <section className="mt-16 mb-24">
         <div className="section-header">
-          <h2 className="section-title">✨ 최근 업데이트 소식</h2>
+          <div className="section-title-wrap">
+            <span className="text-2xl">✨</span>
+            <h2 className="section-title">최근 업데이트 소식</h2>
+          </div>
+          <Link href="/blog" className="text-sm font-bold text-slate-400 hover:text-brand transition-colors">전체보기 →</Link>
         </div>
         <div className="card-grid">
           {recentPosts.map((post) => {
@@ -134,26 +139,24 @@ export default function Home() {
               startDate: post.date,
               endDate: "상시",
               location: "성남시",
-              target: "성남 시민",
+              target: "주민 누구나",
               name: post.title
             };
             return <InfoCard key={post.slug} item={matchedItem as any} slug={post.slug} />;
           })}
         </div>
-        <div className="mt-8 text-center">
-          <Link href="/blog" className="text-orange-600 font-bold border-b-2 border-orange-600 pb-1 hover:text-orange-700 transition-all">
-            전체 블로그 바로가기 →
-          </Link>
-        </div>
       </section>
 
-      <div className="divider opacity-10" />
+      <div className="divider" />
 
-      {/* [2] 카테고리별 정보 (행사) */}
-      <section className="mt-16">
+      {/* [2] 행사/축제 섹션 */}
+      <section className="my-24">
         <div className="section-header">
-          <h2 className="section-title">🎭 성남시 주요 행사/축제</h2>
-          <span className="section-count">{events.length}건</span>
+          <div className="section-title-wrap">
+            <span className="text-2xl">🎭</span>
+            <h2 className="section-title">우리 동네 주요 행사</h2>
+            <span className="section-count">{events.length}건</span>
+          </div>
         </div>
         <div className="card-grid">
           {events.map((item) => {
@@ -165,11 +168,14 @@ export default function Home() {
 
       <AdBanner />
 
-      {/* [3] 카테고리별 정보 (복지/혜택) */}
-      <section className="mt-16 pb-20">
+      {/* [3] 복지/혜택 섹션 */}
+      <section className="my-24 pb-20">
         <div className="section-header">
-          <h2 className="section-title">💎 주민 맞춤형 복지 혜택</h2>
-          <span className="section-count">{benefits.length}건</span>
+          <div className="section-title-wrap">
+            <span className="text-2xl">💎</span>
+            <h2 className="section-title">정부 및 지자체 지원금</h2>
+            <span className="section-count">{benefits.length}건</span>
+          </div>
         </div>
         <div className="card-grid">
           {benefits.map((item) => {

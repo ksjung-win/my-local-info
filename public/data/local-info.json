@@ -116,6 +116,29 @@
       "target": "사회적 약자(연령, 장애, 빈곤, 교육정도 등)에 해당하는 해양사고관련자",
       "summary": "해양사고 사회적 약자를 위한 국선 심판변론인 선정 및 법률자문 지원",
       "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000007"
+    },
+    {
+      "id": 11,
+      "name": "옵서버 승선경비 지원",
+      "category": "혜택",
+      "startDate": "2026-04-01",
+      "endDate": "상시",
+      "location": "한국수산자원공단",
+      "target": "국제옵서버를 승선시킨 원양선사",
+      "summary": "국제옵서버를 승선시킨 원양선사에 승선경비 및 활동 등을 지원",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/119200000008"
+    },
+    {
+      "id": 13,
+      "name": "성남시 임산부 교통비 지원",
+      "category": "혜택",
+      "startDate": "2026-04-02",
+      "endDate": "상시",
+      "location": "성남시 보건소 및 온라인 신청",
+      "target": "성남시 거주 6개월 이상 임산부 (소득 무관)",
+      "summary": "안전하고 편안한 이동을 위해 성남시에서 임산부 1인당 50만원의 교통비를 전용 포인트로 지급합니다.",
+      "link": "https://www.seongnam.go.kr",
+      "slug": "seongnam-pregnant-transport-support"
     }
   ]
 }

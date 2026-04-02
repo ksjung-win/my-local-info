@@ -9,171 +9,179 @@
 
 /* ── 기본 레이아웃 ── */
 body {
-  @apply font-sans bg-slate-50 text-slate-900;
+  @apply font-sans bg-slate-50 text-slate-900 antialiased;
 }
 
 .main-content {
-  @apply max-w-4xl mx-auto px-4 sm:px-6 pb-8 sm:pb-12 pt-0 sm:pt-0;
+  @apply max-w-5xl mx-auto px-4 sm:px-6 pb-12 sm:pb-20 pt-0 sm:pt-0;
 }
 
-/* ── 헤더 디자인 ── */
+/* ── 헤더 및 히어로 섹션 ── */
 .site-header {
-  @apply relative bg-orange-600 text-white py-16 px-6 text-center shadow-lg;
-  background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+  @apply relative overflow-hidden text-white pt-20 pb-24 px-6 text-center shadow-xl;
+  background: linear-gradient(135deg, #f97316 0%, #d946ef 100%); /* 오렌지-퍼플 그라데이션 */
 }
 
-.header-emoji {
-  @apply text-5xl block mb-4;
-}
-
-.header-title {
-  @apply text-3xl sm:text-4xl font-black mb-3 tracking-tight break-keep;
-}
-
-.header-subtitle {
-  @apply text-lg opacity-90 font-medium;
+/* 배경 장식 패턴 */
+.site-header::before {
+  content: "";
+  @apply absolute inset-0 opacity-10;
+  background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0);
+  background-size: 24px 24px;
 }
 
 .header-badge {
-  @apply inline-block bg-white/20 backdrop-blur-md px-4 py-1.5 rounded-full text-sm font-bold mt-6 border border-white/30;
+  @apply inline-flex items-center gap-2 bg-white/20 backdrop-blur-md px-4 py-1.5 rounded-full text-xs font-bold mb-6 border border-white/30 tracking-tight;
 }
 
-/* ── 섹션 헤더 ── */
+.header-title {
+  @apply text-4xl sm:text-6xl font-black mb-6 tracking-tight leading-[1.1] break-keep;
+}
+
+.header-subtitle {
+  @apply text-lg sm:text-xl opacity-80 font-medium max-w-2xl mx-auto leading-relaxed break-keep;
+}
+
+/* ── 섹션 디자인 ── */
 .section-header {
-  @apply flex items-center gap-3 mb-8;
+  @apply flex items-center justify-between mb-8 pb-3 border-b-2 border-slate-100;
 }
 
-.section-icon {
-  @apply text-2xl;
+.section-title-wrap {
+  @apply flex items-center gap-3;
 }
 
 .section-title {
-  @apply text-2xl font-bold text-slate-800;
+  @apply text-2xl font-black text-slate-800 tracking-tight;
 }
 
 .section-count {
-  @apply text-sm text-slate-500 font-medium;
+  @apply bg-slate-100 text-slate-500 text-[10px] font-bold px-2.5 py-1 rounded-full;
 }
 
-.card {
-  @apply bg-white rounded-2xl p-6 border border-slate-100 shadow-sm transition-all duration-300 hover:shadow-xl hover:-translate-y-1 block relative no-underline text-inherit;
-}
-
+/* ── 카드 스타일 (고도화) ── */
 .card-grid {
   @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6;
 }
 
-.blog-card {
-  @apply bg-white rounded-2xl p-6 border border-slate-100 shadow-sm transition-all duration-300 hover:shadow-xl hover:-translate-y-1;
+.card {
+  @apply bg-white rounded-2xl p-7 border border-slate-100 shadow-[0_4px_20px_rgba(0,0,0,0.03)] transition-all duration-300 hover:shadow-[0_12px_40px_rgba(0,0,0,0.08)] hover:-translate-y-2 block relative no-underline text-inherit;
 }
 
-.blog-card-header {
-  @apply flex justify-between items-center mb-4;
-}
-
-.blog-category {
-  @apply text-xs font-bold text-orange-600 bg-orange-50 px-2.5 py-1 rounded-md;
-}
-
-.blog-date {
-  @apply text-xs text-slate-400;
-}
-
-.blog-title {
-  @apply text-xl font-extrabold text-slate-800 leading-tight hover:text-orange-600 transition-colors;
-}
-
-.blog-summary {
-  @apply text-sm text-slate-600 leading-relaxed mt-3 line-clamp-3;
-}
-
-.card-tags {
-  @apply flex flex-wrap gap-1.5 mt-4;
-}
-
-.card-tags span {
-  @apply text-[10px] font-semibold text-slate-500 bg-slate-100 px-2 py-0.5 rounded;
-}
-
-/* ── 블로그 상세 메타 ── */
 .card-badge {
-  @apply inline-block px-3 py-1 rounded-full text-xs font-black uppercase tracking-wider mb-4;
+  @apply inline-block px-3 py-1 rounded-lg text-[10px] font-black uppercase tracking-wider mb-4;
 }
 
-.badge-event {
-  @apply bg-orange-100 text-orange-600;
-}
+.badge-event { @apply bg-blue-50 text-blue-600; }
+.badge-benefit { @apply bg-emerald-50 text-emerald-600; }
+.badge-urgent { @apply bg-rose-50 text-rose-600 border border-rose-100; }
+.badge-new { @apply bg-orange-50 text-orange-600 border border-orange-100; }
 
 .card-name {
-  @apply text-xl font-extrabold text-slate-800 leading-tight mb-3;
+  @apply text-xl font-bold text-slate-900 leading-tight mb-3 line-clamp-2 min-h-[3rem];
 }
 
 .card-summary {
-  @apply text-sm text-slate-600 leading-relaxed mb-6 line-clamp-3;
+  @apply text-sm text-slate-500 leading-relaxed mb-6 line-clamp-2 h-10;
 }
 
+/* 카드 내 정보 행 (Target 등 강조) */
 .card-meta {
-  @apply flex flex-col gap-2 mb-6;
+  @apply space-y-2.5 mb-6 pt-4 border-t border-slate-50;
 }
 
 .meta-row {
-  @apply flex items-center gap-2 text-slate-400 font-medium;
+  @apply flex items-start gap-2.5 text-sm font-medium text-slate-600;
 }
 
 .meta-icon {
-  @apply opacity-70;
+  @apply text-lg leading-none;
+}
+
+.meta-label {
+  @apply text-slate-400 font-bold text-xs min-w-[50px];
+}
+
+.card-footer {
+  @apply flex justify-between items-center mt-auto pt-4 border-t border-slate-50;
+}
+
+.card-link {
+  @apply text-sm font-bold text-slate-400 transition-colors group-hover:text-brand;
+}
+
+.card-arrow {
+  @apply opacity-0 -translate-x-2 transition-all group-hover:opacity-100 group-hover:translate-x-0;
+}
+
+/* ── 블로그 상세: 3줄 요약 박스 ── */
+.summary-box {
+  @apply bg-slate-50 rounded-2xl p-6 sm:p-8 my-10 border border-slate-100 grid grid-cols-1 sm:grid-cols-3 gap-6;
+}
+
+.summary-item {
+  @apply flex flex-col gap-1;
+}
+
+.summary-label {
+  @apply text-[10px] font-bold text-slate-400 uppercase tracking-widest;
+}
+
+.summary-value {
+  @apply text-base font-bold text-slate-800 break-keep;
 }
 
 /* ── 푸터 ── */
 .site-footer {
-  @apply bg-slate-900 text-white py-12 px-6 text-center mt-auto;
+  @apply bg-slate-950 text-white py-16 px-6 text-center mt-20;
+}
+
+.footer-logo {
+  @apply text-2xl font-black mb-6 block;
 }
 
 .footer-row {
-  @apply flex flex-wrap justify-center items-center gap-2 text-sm opacity-60 mb-4;
+  @apply flex flex-wrap justify-center items-center gap-4 text-sm opacity-50 mb-8;
 }
 
 .footer-link {
-  @apply font-bold hover:text-orange-400 transition-colors underline;
-}
-
-.footer-dot {
-  @apply opacity-30;
+  @apply hover:text-white transition-colors;
 }
 
 .footer-copy {
-  @apply text-xs opacity-40 leading-relaxed;
+  @apply text-xs opacity-30 leading-relaxed max-w-md mx-auto;
 }
 
-/* ── 유틸리티 및 기타 ── */
-.card-link {
-  @apply inline-flex items-center gap-1.5 text-orange-600 font-bold hover:gap-2 transition-all;
-}
-
+/* ── 본문 스타일 (Prose) ── */
 .prose {
-  @apply text-slate-700 leading-relaxed;
+  @apply text-lg text-slate-700 leading-loose max-w-none;
 }
 
 .prose h2 {
-  @apply text-2xl font-bold text-slate-800 mt-12 mb-6 pb-2 border-b-2 border-slate-100;
+  @apply text-3xl font-black text-slate-900 mt-20 mb-8 pb-3 border-b-4 border-orange-500/20;
 }
 
 .prose h3 {
-  @apply text-xl font-bold text-slate-800 mt-8 mb-4;
+  @apply text-2xl font-bold text-slate-800 mt-12 mb-6 flex items-center gap-3;
 }
 
 .prose p {
-  @apply mb-6;
+  @apply mb-8;
 }
 
 .prose strong {
-  @apply font-bold text-slate-900;
+  @apply font-black text-slate-950 bg-yellow-100 px-1;
 }
 
 .prose ul, .prose ol {
-  @apply my-6 pl-6 space-y-3;
+  @apply my-10 pl-6 space-y-4;
 }
 
 .prose li {
-  @apply relative;
+  @apply pl-2;
+}
+
+/* 구분선 */
+.divider {
+  @apply h-px w-full bg-slate-100 my-20;
 }

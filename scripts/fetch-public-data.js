@@ -67,6 +67,7 @@ async function fetchPublicData() {
 
     // [3단계] Gemini AI로 새 항목 가공
     const geminiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${GEMINI_API_KEY}`;
+    const today = new Date(new Date().getTime() + 9 * 60 * 60 * 1000).toISOString().split('T')[0];
     
     const prompt = `아래 공공데이터 1건을 분석해서 반드시 JSON 객체 형식으로만 변환해줘. 다른 텍스트는 절대 포함하지 마.
 {
@@ -82,7 +83,7 @@ async function fetchPublicData() {
 }
 
 category는 축제, 전시, 공연, 교육 등 일시적인 것이면 '행사', 지원금, 바우처, 상시 서비스면 '혜택'으로 분류해.
-startDate가 없으면 오늘(${new Date().toISOString().split('T')[0]})로 넣어.
+startDate가 없으면 오늘(${today})로 넣어.
 endDate가 없어나 찾기 어려우면 '상시'라고 적어.
 
 데이터: ${JSON.stringify(targetItem)}`;
@@ -120,7 +121,7 @@ endDate가 없어나 찾기 어려우면 '상시'라고 적어.
 
     // [4단계] 기존 데이터에 추가
     db.items.push(newItem);
-    db.lastUpdated = new Date().toISOString().split("T")[0];
+    db.lastUpdated = new Date(new Date().getTime() + 9 * 60 * 60 * 1000).toISOString().split("T")[0];
 
     fs.writeFileSync(dataPath, JSON.stringify(db, null, 2), "utf-8");
     console.log(`성공: [${newItem.name}] 항목이 추가되었습니다.`);

@@ -54,42 +54,23 @@ export default function RootLayout({
           </>
         )}
       </head>
-      <body style={{ minHeight: "100vh", display: "flex", flexDirection: "column" }}>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify([
-              {
-                "@context": "https://schema.org",
-                "@type": "WebSite",
-                "name": "성남시 생활 정보",
-                "url": "https://infos-info.com",
-                "description": "성남시 주민을 위한 지역 행사, 축제, 지원금, 혜택 정보"
-              },
-              {
-                "@context": "https://schema.org",
-                "@type": "BreadcrumbList",
-                "itemListElement": [
-                  { "@type": "ListItem", "position": 1, "name": "홈", "item": "https://infos-info.com" },
-                  { "@type": "ListItem", "position": 2, "name": "블로그", "item": "https://infos-info.com/blog" }
-                ]
-              }
-            ])
-          }}
-        />
+      <body className="flex flex-col min-h-screen">
         {/* ── 헤더 ── */}
-        <header className="site-header" style={{ paddingBottom: '40px' }}>
-          <nav style={{ position: 'absolute', top: '20px', right: '24px', zIndex: 10, display: 'flex', gap: '16px' }}>
-            <Link href="/" style={{ color: '#fff', textDecoration: 'none', fontWeight: 600, fontSize: '0.9rem', opacity: 0.9 }}>홈</Link>
-            <Link href="/about" style={{ color: '#fff', textDecoration: 'none', fontWeight: 600, fontSize: '0.9rem', opacity: 0.9 }}>소개</Link>
-            <Link href="/blog" style={{ color: '#fff', textDecoration: 'none', fontWeight: 600, fontSize: '0.9rem', opacity: 0.9 }}>블로그</Link>
+        <header className="site-header">
+          <nav className="absolute top-6 right-6 z-10 flex gap-6">
+            <Link href="/" className="text-white/80 hover:text-white font-bold text-sm transition-colors">홈</Link>
+            <Link href="/about" className="text-white/80 hover:text-white font-bold text-sm transition-colors">소개</Link>
+            <Link href="/blog" className="text-white/80 hover:text-white font-bold text-sm transition-colors">블로그</Link>
           </nav>
-          <Link href="/" style={{ textDecoration: 'none', color: 'inherit', textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-            <div className="header-badge" style={{ backgroundColor: 'rgba(255,255,255,0.2)', marginBottom: '16px', fontSize: '0.8rem' }}>매일 업데이트</div>
-            <span className="header-emoji" style={{ fontSize: '3.5rem', marginBottom: '16px' }}>🍊</span>
-            <h1 className="header-title" style={{ color: '#ffffff', fontSize: '2.8rem', fontWeight: 900, marginBottom: '16px', textShadow: '0 4px 15px rgba(0,0,0,0.1)' }}>성남시 생활 정보</h1>
-            <p className="header-subtitle" style={{ color: 'rgba(255,255,255,0.95)', fontSize: '1.1rem', maxWidth: '600px', margin: '0 auto', lineHeight: '1.6', wordBreak: 'keep-all' }}>
-              지역 주민들에게 유익한 행사, 축제, 지원금, 혜택 정보를 <br/>한곳에서 빠르고 쉽게 제공해드립니다
+          
+          <Link href="/" className="inline-block">
+            <div className="header-badge">
+              <span className="animate-pulse">●</span> 매일 업데이트되는 생활정보
+            </div>
+            <h1 className="header-title">성남시 생활 정보</h1>
+            <p className="header-subtitle">
+              성남시 주민들을 위한 맞춤형 혜택과 즐거운 행사 소식을 <br/>
+              공공데이터 기반으로 가장 빠르게 전달해 드립니다.
             </p>
           </Link>
         </header>
@@ -97,22 +78,17 @@ export default function RootLayout({
         {children}
 
         {/* ── 푸터 ── */}
-        <footer className="site-footer" style={{ marginTop: 'auto' }}>
+        <footer className="site-footer">
+          <span className="footer-logo">성남시 생활 정보</span>
           <div className="footer-row">
-            <span>데이터 출처:</span>
-            <a
-              href="https://www.data.go.kr"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="footer-link"
-            >
-              공공데이터포털 (data.go.kr)
-            </a>
+            <a href="https://www.data.go.kr" target="_blank" rel="noopener noreferrer" className="footer-link">공공데이터포털</a>
             <span className="footer-dot">•</span>
-            <span>성남시 생활 정보</span>
+            <Link href="/about" className="footer-link">사이트 소개</Link>
+            <span className="footer-dot">•</span>
+            <Link href="/privacy" className="footer-link">개인정보처리방침</Link>
           </div>
           <p className="footer-copy">
-            © 2026 성남시 생활 정보 · 본 사이트의 데이터는 공공데이터를 기반으로 합니다.
+            © 2026 성남시 생활 정보 · 모든 정보는 공공데이터 API를 통해 실시간으로 수집 및 분석됩니다.
           </p>
         </footer>
       </body>

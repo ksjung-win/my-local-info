@@ -43,8 +43,8 @@ async function generateBlogPost() {
     }
 
     // [2단계] Gemini AI로 블로그 글 생성
-    const geminiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${GEMINI_API_KEY}`;
-    const today = new Date().toISOString().split("T")[0];
+    const geminiUrl = `https://generativelanguage.googleapis.com/v1/models/gemini-2.5-flash:generateContent?key=${GEMINI_API_KEY}`;
+    const today = new Date(new Date().getTime() + 9 * 60 * 60 * 1000).toISOString().split("T")[0];
 
     const prompt = `아래 공공서비스 정보를 바탕으로 블로그 글을 작성해줘.
     
@@ -55,25 +55,35 @@ async function generateBlogPost() {
 title: (독자의 클릭을 부르는 친근하고 유익한 제목)
 date: ${today}
 summary: (전체 내용을 관통하는 매력적인 한 줄 요약)
-category: 정보
-tags: [태그1, 태그2, 태그3]
+category: ${lastItem.category}
+tags: [성남시, ${lastItem.category}, 실생활정보, ${lastItem.name}]
+---
+
+(도입부: 해당 정보를 필요로 할 독자의 상황에 공감하며 따뜻하고 친절하게 인사하고 시작해줘.)
+
+### 💡 3줄 핵심 요약 바로가기
+- **🎯 누구에게?**: ${lastItem.target}
+- **💰 무엇을?**: ${lastItem.summary}
+- **📅 언제까지?**: ${lastItem.endDate === "상시" ? "기한 제한 없음" : lastItem.endDate + "까지"}
+
 ---
 
 (본문 작성 규칙)
-1. **모바일 가독성 극대화**: 
-   - 한 문장은 짧게(30자 내외) 작성해.
-   - 2문장마다 문단을 나누고 **반드시 빈 줄을 두 번** 넣어 (빽빽해 보이지 않게).
-   - 전문 용어보다는 초등학생도 이해할 수 있는 쉬운 표현을 사용해.
-2. **풍성한 분량**: 공백 포함 **1,500자 이상**으로 상세하게 작성해. 각 섹션마다 유용한 설명과 친절한 팁을 듬뿍 넣어줘.
-3. **시각적 요소**: 중요 키워드는 **굵게** 강조하고, 적절한 이모지를 문장 시작이나 끝에 사용해.
-4. **체계적 구조**: ### 소제목을 사용하고, 목록(1., 2., 3.)이나 불렛 포인트(-)를 적극 활용해 정보를 정리해줘.
-5. **구성**:
-   - 도입부 (독자의 상황에 공감하며 따뜻하게 인사)
-   - ### 💡 한눈에 보는 핵심 요약 (중요 정보를 리스트 형태로 정리)
-   - ### ✅ 상세 지원 내용 및 자격 (누가, 무엇을 받는지 아주 자세히 설명)
-   - ### 📝 신청 방법 및 준비물 (어디서 어떻게 하는지 단계별 가이드)
-   - ### 🧐 이용 전 꼭 알아두어야 할 꿀팁 (2-3가지 상세 팁)
-   - 맺음말 (따뜻한 격려와 함께 마무리)
+1. **가독성 최우선**: 한 문장은 짧고 간결하게 작성해. 2-3문장마다 문단을 나누고 반드시 빈 줄을 두 번 넣어 시각적 여백을 줘.
+2. **풍성한 상세 설명**: ### 소제목을 사용해서 [상세 지원 내용], [신청 방법], [준비물 및 팁] 순서로 아주 자세하게 설명해줘. 분량은 공백 포함 1,500자 이상으로 넉넉하게!
+3. **친근한 말투**: "~해요", "~입니다" 등 부드럽고 다정한 존댓말을 사용해.
+4. **강조와 이모지**: 중요한 키워드는 **굵게** 표시하고, 문장 곳곳에 적절한 이모지(✨, ✅, 📍 등)를 사용해 활력을 불어넣어줘.
+
+### ✅ 상세 지원 내용 및 자격
+(항목별로 나누어 아주 상세하게 설명)
+
+### 📝 신청 방법 및 준비물
+(어디서 어떻게 하는지 단계별로 친절하게 안내)
+
+### 🧐 놓치면 후회하는 꿀팁
+(2-3가지 유용한 팁이나 유의사항 정리)
+
+맺음말 (축복과 응원의 메시지로 마무리)
 
 마지막 줄에 FILENAME: YYYY-MM-DD-keyword 형식으로 파일명도 출력해줘. 키워드는 영문으로.`;
 
@@ -95,6 +105,16 @@ tags: [태그1, 태그2, 태그3]
     
     // 마크다운 코드 블록 제거
     aiResponse = aiResponse.replace(/```markdown/g, "").replace(/```/g, "").trim();
+
+    // 제목(title)에 콜론(:)이 포함되어 있으면 따옴표로 감싸기 (YAMLException 방지)
+    aiResponse = aiResponse.replace(/^title:\s*(.*)$/m, (match, title) => {
+      let trimmedTitle = title.trim();
+      // 이미 따옴표로 감싸져 있지 않고 콜론이 포함된 경우
+      if (trimmedTitle.includes(':') && !(/^["'].*["']$/.test(trimmedTitle))) {
+        return `title: "${trimmedTitle.replace(/"/g, '\\"')}"`;
+      }
+      return `title: ${trimmedTitle}`;
+    });
 
     // FILENAME 추출
     const filenameMatch = aiResponse.match(/FILENAME:\s*([^\n\r]+)/i);
