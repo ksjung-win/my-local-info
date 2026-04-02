@@ -1,0 +1,24 @@
+﻿Fetching Page 1 from: https://api.odcloud.kr/api/gov24/v3/serviceList?page=1&perPage=100&returnType=JSON&serviceKey=315b45688cab695f5e882a41e8910757fe4d957605fe00e5603c59dda77de27a
+Page 1: Total items returned: 100
+Page 1: Filtered items (Seongnam): 0
+Page 1: Filtered items (Gyeonggi): 0
+Fetching Page 2 from: https://api.odcloud.kr/api/gov24/v3/serviceList?page=2&perPage=100&returnType=JSON&serviceKey=315b45688cab695f5e882a41e8910757fe4d957605fe00e5603c59dda77de27a
+Page 2: Total items returned: 100
+Page 2: Filtered items (Seongnam): 0
+Page 2: Filtered items (Gyeonggi): 2
+Fetching Page 3 from: https://api.odcloud.kr/api/gov24/v3/serviceList?page=3&perPage=100&returnType=JSON&serviceKey=315b45688cab695f5e882a41e8910757fe4d957605fe00e5603c59dda77de27a
+Page 3: Total items returned: 100
+Page 3: Filtered items (Seongnam): 0
+Page 3: Filtered items (Gyeonggi): 0
+Fetching Page 4 from: https://api.odcloud.kr/api/gov24/v3/serviceList?page=4&perPage=100&returnType=JSON&serviceKey=315b45688cab695f5e882a41e8910757fe4d957605fe00e5603c59dda77de27a
+Page 4: Total items returned: 100
+Page 4: Filtered items (Seongnam): 0
+Page 4: Filtered items (Gyeonggi): 2
+Fetching Page 5 from: https://api.odcloud.kr/api/gov24/v3/serviceList?page=5&perPage=100&returnType=JSON&serviceKey=315b45688cab695f5e882a41e8910757fe4d957605fe00e5603c59dda77de27a
+Page 5: Total items returned: 100
+Page 5: Filtered items (Seongnam): 0
+Page 5: Filtered items (Gyeonggi): 2
+Total Filtered Items across 5 pages: 6
+-  ?쒓뎅???곷퀝?섎떦 ?쒕쾾?ъ뾽
+-  ?μ븷 泥댁쑁???ν븰湲?吏??-  以묒냼?섍꼍湲곗뾽 ?ъ뾽??吏??-  ?쒓컯?섍퀎 二쇰?吏???쇰컲吏?먯궗??
+-  ?곗옱洹쇰줈??耳?댁꽱??吏??-  ?곗닔?숇젴 湲곗닠???곕?吏??

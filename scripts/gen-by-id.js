@@ -16,25 +16,18 @@ async function generateBlogPost() {
       return;
     }
 
-    let db;
-    try {
-      db = JSON.parse(fs.readFileSync(dataPath, "utf-8"));
-    } catch (e) {
-      console.error("데이터 파일 파싱 중 오류 발생. 백업 파일을 확인합니다.");
-      const backupPath = dataPath + ".bak";
-      if (fs.existsSync(backupPath)) {
-        db = JSON.parse(fs.readFileSync(backupPath, "utf-8"));
-      } else {
-        throw new Error("데이터 파일이 없거나 손상되었습니다.");
-      }
-    }
-    
+    const db = JSON.parse(fs.readFileSync(dataPath, "utf-8"));
     if (!db.items || db.items.length === 0) {
       console.log("처리할 데이터가 없습니다.");
       return;
     }
 
-    const lastItem = db.items[db.items.length - 1];
+    const targetId = parseInt(process.argv[2]) || 4;
+    const lastItem = db.items.find(item => item.id === targetId);
+    if (!lastItem) {
+      console.error(`ID ${targetId}를 찾을 수 없습니다.`);
+      return;
+    }
     const postsDir = path.join(process.cwd(), "src", "content", "posts");
     
     if (!fs.existsSync(postsDir)) {
@@ -125,7 +118,7 @@ tags: [성남시, ${lastItem.category}, 실생활정보, ${lastItem.name}]
       if (trimmedTitle.includes(':') && !(/^["'].*["']$/.test(trimmedTitle))) {
         return `title: "${trimmedTitle.replace(/"/g, '\\"')}"`;
       }
-      return `title: "${trimmedTitle}"`;
+      return `title: ${trimmedTitle}`;
     });
 
     // FILENAME 추출
