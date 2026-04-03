@@ -35,8 +35,18 @@ async function generateBlogPost() {
     }
 
     const lastItem = db.items[db.items.length - 1];
+    const todayKst = new Date(new Date().getTime() + 9 * 60 * 60 * 1000);
+    const todayStr = todayKst.toISOString().split("T")[0];
+
+    // 1. 기간 만료 확인 (최종 안전장치)
+    if (lastItem.endDate && lastItem.endDate !== "상시") {
+      if (lastItem.endDate < todayStr) {
+        console.log(`알림: [${lastItem.name}] 항목은 지원 기간이 종료되었습니다 (${lastItem.endDate}). 글 생성을 취소합니다.`);
+        return;
+      }
+    }
+
     const postsDir = path.join(process.cwd(), "src", "content", "posts");
-    
     if (!fs.existsSync(postsDir)) {
       fs.mkdirSync(postsDir, { recursive: true });
     }
@@ -50,7 +60,7 @@ async function generateBlogPost() {
     });
 
     if (isAlreadyWritten) {
-      console.log("이미 작성된 글입니다");
+      console.log(`알림: [${lastItem.name}] 항목은 이미 작성된 글입니다.`);
       return;
     }
 
