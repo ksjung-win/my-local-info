@@ -117,7 +117,8 @@ export default function Home() {
     7: "blog-benefit-1", // 근로·자녀장려금
     8: "blog-benefit-1", // 주택금융공사 월세자금보증
     9: "blog-benefit-2",  // 친환경 에너지절감장비 보급
-    11: "2026-04-02-observer-boarding-support" // 최신 글 추가
+    11: "2026-04-03-NuriEducationSupport", // 고정 슬러그 매핑 추가
+    16: "2026-04-03-NuriEducationSupport" // 신규 항목 매핑 추가
   };
 
   return (
