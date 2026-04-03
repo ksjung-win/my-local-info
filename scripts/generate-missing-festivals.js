@@ -20,7 +20,7 @@ async function generateMissingPosts() {
     console.log(`Generating post for: ${item.name}...`);
     
     const today = new Date().toISOString().split("T")[0];
-    const geminiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${GEMINI_API_KEY}`;
+    const geminiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-8b-8b:generateContent?key=${GEMINI_API_KEY}`;
     
     const prompt = `아래 공공서비스 정보를 바탕으로 블로그 글을 작성해줘.
     
@@ -28,7 +28,7 @@ async function generateMissingPosts() {
 
 아래 형식으로 출력해줘:
 ---
-title: (친근하고 흥미로운 제목)
+title: "(친근하고 흥미로운 제목)"
 date: ${today}
 summary: (한 줄 요약)
 category: 정보
@@ -51,6 +51,10 @@ tags: [태그1, 태그2, 태그3]
       });
 
       const result = await response.json();
+      if (!result.candidates || !result.candidates[0].content) {
+          console.error("API Error or Blocked:", JSON.stringify(result, null, 2));
+          continue;
+      }
       let aiResponse = result.candidates[0].content.parts[0].text;
       aiResponse = aiResponse.replace(/```markdown/g, "").replace(/```/g, "").trim();
 

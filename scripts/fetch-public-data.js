@@ -7,40 +7,28 @@ async function fetchPublicData() {
     const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
 
     if (!PUBLIC_DATA_API_KEY || !GEMINI_API_KEY) {
-      console.error("환경 변수(PUBLIC_DATA_API_KEY, GEMINI_API_KEY)가 설정되어 있지 않습�    // [1단계] 공공데이터포털 API에서 데이터 가져오기 (여러 페이지 검색)
-    const baseUrl = "https://api.odcloud.kr/api/gov24/v3/serviceList";
-    const maxPages = 5;
-    let rawData = [];
-    
-    console.log("공공데이터 API에서 최신 정보를 수집합니다. (최대 5페이지 검색)");
-    
-    for (let page = 1; page <= maxPages; page++) {
-      const queryParams = new URLSearchParams({
-        page: page.toString(),
-        perPage: "100",
-        returnType: "JSON",
-        serviceKey: PUBLIC_DATA_API_KEY
-      });
-
-      const response = await fetch(`${baseUrl}?${queryParams.toString()}`);
-      if (!response.ok) {
-        console.error(`API 호출 실패 (Page ${page}): ${response.status}`);
-        continue;
-      }
-      
-      const result = await response.json();
-      if (result.data && Array.isArray(result.data)) {
-        rawData = rawData.concat(result.data);
-        console.log(`Page ${page} 수집 완료: 총 ${rawData.length}개 항목 확보`);
-      } else {
-        break;
-      }
+      console.error("환경 변수(PUBLIC_DATA_API_KEY, GEMINI_API_KEY)가 설정되어 있지 않습니다.");
+      return;
     }
 
-    if (rawData.length === 0) {
+    // [1단계] 공공데이터포털 API에서 데이터 가져오기
+    const baseUrl = "https://api.odcloud.kr/api/gov24/v3/serviceList";
+    const queryParams = new URLSearchParams({
+      page: "1",
+      perPage: "20",
+      returnType: "JSON",
+      serviceKey: PUBLIC_DATA_API_KEY
+    });
+
+    const response = await fetch(`${baseUrl}?${queryParams.toString()}`);
+    const result = await response.json();
+
+    if (!result.data || !Array.isArray(result.data)) {
       console.error("데이터를 불러오지 못했거나 데이터 형식이 올바르지 않습니다.");
       return;
     }
+
+    const rawData = result.data;
 
     // 필터링 로직 (성남 -> 경기 -> 전체 순서로 검색 범위 확대)
     const checkKeyword = (item, keywords) => {
@@ -51,55 +39,34 @@ async function fetchPublicData() {
     };
 
     let filtered = rawData.filter(item => checkKeyword(item, ["성남", "분당", "판교", "수정구", "중원구"]));
-    
     if (filtered.length === 0) {
       console.log("성남 관련 데이터가 없어 '경기'로 범위를 넓힙니다.");
       filtered = rawData.filter(item => checkKeyword(item, ["경기"]));
     }
-    
+    if (filtered.length === 0) {
+      console.log("경기 관련 데이터가 없어 전체 데이터를 대상으로 합니다.");
+      filtered = rawData;
+    }
+
     // [2단계] 기존 데이터와 비교
     const dataPath = path.join(process.cwd(), "public", "data", "local-info.json");
-    if (!fs.existsSync(dataPath)) {
-      console.error("데이터 파일(local-info.json)이 존재하지 않습니다. 초기 파일을 생성합니다.");
-      fs.writeFileSync(dataPath, JSON.stringify({ lastUpdated: "2026-04-02", source: "초기화", items: [] }, null, 2), "utf-8");
-    }
-    
     const existingFile = fs.readFileSync(dataPath, "utf-8");
-    let db;
-    try {
-      db = JSON.parse(existingFile);
-      if (!db.items) db.items = [];
-    } catch (e) {
-      console.error("JSON 파싱 오류! 백업 파일에서 복구를 시도합니다.");
-      const backupPath = dataPath + ".bak";
-      if (fs.existsSync(backupPath)) {
-        db = JSON.parse(fs.readFileSync(backupPath, "utf-8"));
-      } else {
-        throw new Error("데이터 파일이 손상되었고 백업도 없습니다.");
-      }
-    }
-    
-    const existingNames = new Set(db.items.map(item => item.서비스명 || item.name));
-    let newItems = filtered.filter(item => !existingNames.has(item.서비스명));
+    const db = JSON.parse(existingFile);
+    const existingNames = new Set(db.items.map(item => item.name));
+
+    const newItems = filtered.filter(item => !existingNames.has(item.서비스명));
 
     if (newItems.length === 0) {
-      console.log("필터링된 항목 중 새로운 데이터가 없습니다. 전체 데이터에서 새로운 항목을 찾습니다.");
-      newItems = rawData.filter(item => !existingNames.has(item.서비스명));
-      
-      if (newItems.length === 0) {
-        console.log("완전히 새로운 데이터가 없습니다. 기존 항목 중 무작위로 하나를 선택하여 리프레시합니다.");
-        // 폴백: 기존 항목 중 하나 무작위 선택
-        const randomIndex = Math.floor(Math.random() * rawData.length);
-        newItems = [rawData[randomIndex]];
-      }
+      console.log("새로운 데이터가 없습니다. 기존 데이터 중 무작위로 하나를 선택하거나 오늘은 건너뜁니다.");
+      // 새로운 데이터가 없으면 종료 (중복 방지)
+      return;
     }
 
-    // 새 항목 중 하나 선택 (가급적 첫 번째 새로운 것)
+    // 새 항목 중 하나 선택
     const targetItem = newItems[0];
-    console.log(`대상 항목 선정: ${targetItem.서비스명}`);
 
     // [3단계] Gemini AI로 새 항목 가공
-    const geminiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${GEMINI_API_KEY}`;
+    const geminiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${GEMINI_API_KEY}`;
     const today = new Date(new Date().getTime() + 9 * 60 * 60 * 1000).toISOString().split('T')[0];
     
     const prompt = `아래 공공데이터 1건을 분석해서 반드시 JSON 객체 형식으로만 변환해줘. 다른 텍스트는 절대 포함하지 마.
@@ -138,29 +105,6 @@ endDate가 없어나 찾기 어려우면 '상시'라고 적어.
     const geminiResult = await geminiResponse.json();
     
     if (!geminiResult.candidates || !geminiResult.candidates[0].content || !geminiResult.candidates[0].content.parts[0].text) {
-      console.error("Gemini API로부터 올바른 응답을 받지 못했습니다.");
-      return;
-    }
-
-    let aiText = geminiResult.candidates[0].content.parts[0].text;
-    aiText = aiText.replace(/```json/g, "").replace(/```/g, "").trim();
-    const newItem = JSON.parse(aiText);
-
-    // 고유 ID 부여
-    const maxId = db.items.reduce((max, item) => Math.max(max, item.id || 0), 0);
-    newItem.id = maxId + 1;
-
-    // [4단계] 기존 데이터에 추가
-    db.items.push(newItem);
-    db.lastUpdated = today;
-
-    // 백업 생성 후 저장
-    fs.copyFileSync(dataPath, dataPath + ".bak");
-    fs.writeFileSync(dataPath, JSON.stringify(db, null, 2), "utf-8");
-    console.log(`성공: [${newItem.name}] 항목이 추가되었습니다.`);
-;
-    
-    if (!geminiResult.candidates || !geminiResult.candidates[0].content || !geminiResult.candidates[0].content.parts[0].text) {
       console.error("Gemini API로부터 올바른 응답을 받지 못했습니다. 응답 객체:", JSON.stringify(geminiResult, null, 2));
       return;
     }
@@ -179,10 +123,8 @@ endDate가 없어나 찾기 어려우면 '상시'라고 적어.
     db.items.push(newItem);
     db.lastUpdated = new Date(new Date().getTime() + 9 * 60 * 60 * 1000).toISOString().split("T")[0];
 
-    // 백업 생성 후 저장
-    fs.copyFileSync(dataPath, dataPath + ".bak");
     fs.writeFileSync(dataPath, JSON.stringify(db, null, 2), "utf-8");
-    console.log(`성공: [${newItem.name}] 항목이 추가되었습니다. (백업 완료)`);
+    console.log(`성공: [${newItem.name}] 항목이 추가되었습니다.`);
 
   } catch (error) {
     console.error("스크립트 실행 중 오류 발생:", error);
