@@ -84,13 +84,13 @@ async function fetchPublicData() {
       validNewItems.push(anyNewItem);
     }
 
-    // 새 항목 중 하나 선택
-    const targetItem = validNewItems[0];
-
     // [3단계] Gemini AI로 새 항목 가공 (기간 검증 포함)
     const geminiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${GEMINI_API_KEY}`;
     
-    const prompt = `아래 공공데이터 1건을 분석해서 반드시 JSON 객체 형식으로만 변환해줘. 
+    let successfullyAdded = false;
+
+    for (const targetItem of validNewItems) {
+      const prompt = `아래 공공데이터 1건을 분석해서 반드시 JSON 객체 형식으로만 변환해줘. 
 오늘 날짜는 ${todayStr}이야. 
 **중요: 만약 데이터의 지원 기간(종료일)이 오늘(${todayStr})보다 이전이라면, "expired": true 필드를 추가해줘.**
 
@@ -110,41 +110,59 @@ async function fetchPublicData() {
 
 데이터: ${JSON.stringify(targetItem)}`;
 
-    const geminiResponse = await fetch(geminiUrl, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        contents: [{ parts: [{ text: prompt }] }]
-      })
-    });
+      const geminiResponse = await fetch(geminiUrl, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          contents: [{ parts: [{ text: prompt }] }]
+        })
+      });
 
-    if (!geminiResponse.ok) {
-      const errorText = await geminiResponse.text();
-      console.error(`Gemini API 오류 (${geminiResponse.status}):`, errorText);
-      return;
+      if (!geminiResponse.ok) {
+        const errorText = await geminiResponse.text();
+        console.error(`Gemini API 오류 (${geminiResponse.status}):`, errorText);
+        continue;
+      }
+
+      const geminiResult = await geminiResponse.json();
+      if (!geminiResult.candidates || !geminiResult.candidates[0].content || !geminiResult.candidates[0].content.parts[0].text) {
+        console.error("Gemini 응답 이상:", JSON.stringify(geminiResult));
+        continue;
+      }
+
+      let aiText = geminiResult.candidates[0].content.parts[0].text;
+      aiText = aiText.replace(/```json/g, "").replace(/```/g, "").trim();
+      let newItem;
+      try {
+        newItem = JSON.parse(aiText);
+      } catch(e) {
+        console.error("JSON 파싱 오류:", e);
+        continue;
+      }
+
+      // [4단계] 최종 유효성 검사 및 저장
+      if (newItem.expired === true) {
+        console.log(`알림: [${newItem.name}] 항목은 지원 기간이 종료되어 제외합니다. 다음 항목 시도.`);
+        continue;
+      }
+
+      // 고유 ID 부여
+      const maxId = db.items.reduce((max, item) => Math.max(max, item.id || 0), 0);
+      newItem.id = maxId + 1;
+      delete newItem.expired; // 저장할 때는 필드 삭제
+
+      db.items.push(newItem);
+      db.lastUpdated = todayStr;
+
+      fs.writeFileSync(dataPath, JSON.stringify(db, null, 2), "utf-8");
+      console.log(`성공: [${newItem.name}] 항목이 추가되었습니다.`);
+      successfullyAdded = true;
+      break; // 성공 시 루프 탈출
     }
 
-    const geminiResult = await geminiResponse.json();
-    let aiText = geminiResult.candidates[0].content.parts[0].text;
-    aiText = aiText.replace(/```json/g, "").replace(/```/g, "").trim();
-    const newItem = JSON.parse(aiText);
-
-    // [4단계] 최종 유효성 검사 및 저장
-    if (newItem.expired === true) {
-      console.log(`알림: [${newItem.name}] 항목은 지원 기간이 종료되어 제외합니다.`);
-      return;
+    if (!successfullyAdded) {
+      console.log("모든 항목 시도 실패: 추가 가능한 유효한 항목이 없습니다.");
     }
-
-    // 고유 ID 부여
-    const maxId = db.items.reduce((max, item) => Math.max(max, item.id || 0), 0);
-    newItem.id = maxId + 1;
-    delete newItem.expired; // 저장할 때는 필드 삭제
-
-    db.items.push(newItem);
-    db.lastUpdated = todayStr;
-
-    fs.writeFileSync(dataPath, JSON.stringify(db, null, 2), "utf-8");
-    console.log(`성공: [${newItem.name}] 항목이 추가되었습니다.`);
 
   } catch (error) {
     console.error("스크립트 실행 중 오류 발생:", error);
