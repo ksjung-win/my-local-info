@@ -34,33 +34,43 @@ async function generateBlogPost() {
       return;
     }
 
-    const lastItem = db.items[db.items.length - 1];
     const todayKst = new Date(new Date().getTime() + 9 * 60 * 60 * 1000);
     const todayStr = todayKst.toISOString().split("T")[0];
-
-    // 1. 기간 만료 확인 (최종 안전장치)
-    if (lastItem.endDate && lastItem.endDate !== "상시") {
-      if (lastItem.endDate < todayStr) {
-        console.log(`알림: [${lastItem.name}] 항목은 지원 기간이 종료되었습니다 (${lastItem.endDate}). 글 생성을 취소합니다.`);
-        return;
-      }
-    }
 
     const postsDir = path.join(process.cwd(), "src", "content", "posts");
     if (!fs.existsSync(postsDir)) {
       fs.mkdirSync(postsDir, { recursive: true });
     }
 
-    // 이미 같은 name으로 글이 있는지 확인 (파일명 또는 본문 내용 검색)
     const existingFiles = fs.readdirSync(postsDir);
-    const isAlreadyWritten = existingFiles.some(file => {
-      if (!file.endsWith(".md")) return false;
-      const content = fs.readFileSync(path.join(postsDir, file), "utf-8");
-      return content.includes(lastItem.name);
-    });
+    let targetItem = null;
 
-    if (isAlreadyWritten) {
-      console.log(`알림: [${lastItem.name}] 항목은 이미 작성된 글입니다.`);
+    // 뒤에서부터(최신부터) 순회하며 아직 안 쓴 항목 찾기
+    for (let i = db.items.length - 1; i >= 0; i--) {
+      const item = db.items[i];
+
+      // 1. 기간 만료 확인
+      if (item.endDate && item.endDate !== "상시") {
+        if (item.endDate < todayStr) {
+          continue; // 만료된 것은 건너뜀
+        }
+      }
+
+      // 2. 이미 작성된 글인지 확인
+      const isAlreadyWritten = existingFiles.some(file => {
+        if (!file.endsWith(".md")) return false;
+        const content = fs.readFileSync(path.join(postsDir, file), "utf-8");
+        return content.includes(item.name);
+      });
+
+      if (!isAlreadyWritten) {
+        targetItem = item;
+        break; // 안 쓴 항목을 찾으면 종료
+      }
+    }
+
+    if (!targetItem) {
+      console.log("새로 작성할 블로그 글감(공공데이터)이 없습니다.");
       return;
     }
 
@@ -70,23 +80,23 @@ async function generateBlogPost() {
 
     const prompt = `아래 공공서비스 정보를 바탕으로 블로그 글을 작성해줘.
     
-정보: ${JSON.stringify(lastItem)}
+정보: ${JSON.stringify(targetItem)}
 
 아래 형식으로 출력해줘. 반드시 이 형식만 출력하고 다른 텍스트는 없이:
 ---
 title: (독자의 클릭을 부르는 친근하고 유익한 제목)
 date: ${today}
 summary: (전체 내용을 관통하는 매력적인 한 줄 요약)
-category: ${lastItem.category}
-tags: [성남시, ${lastItem.category}, 실생활정보, ${lastItem.name}]
+category: ${targetItem.category}
+tags: [성남시, ${targetItem.category}, 실생활정보, ${targetItem.name}]
 ---
 
 (도입부: 해당 정보를 필요로 할 독자의 상황에 공감하며 따뜻하고 친절하게 인사하고 시작해줘.)
 
 ### 💡 3줄 핵심 요약 바로가기
-- **🎯 누구에게?**: ${lastItem.target}
-- **💰 무엇을?**: ${lastItem.summary}
-- **📅 언제까지?**: ${lastItem.endDate === "상시" ? "기한 제한 없음" : lastItem.endDate + "까지"}
+- **🎯 누구에게?**: ${targetItem.target}
+- **💰 무엇을?**: ${targetItem.summary}
+- **📅 언제까지?**: ${targetItem.endDate === "상시" ? "기한 제한 없음" : targetItem.endDate + "까지"}
 
 ---
 
