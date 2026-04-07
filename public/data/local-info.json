@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-06",
+  "lastUpdated": "2026-04-07",
   "source": "공공데이터포털(재구성)",
   "items": [
     {
@@ -236,6 +236,28 @@
       "target": "소득 및 재산이 일정 기준 이하인 근로·사업·종교인소득 가구",
       "summary": "소득과 재산이 적은 근로소득자에게 근로장려금을, 자녀가 있을 경우 자녀장려금 지급",
       "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/105100000001"
+    },
+    {
+      "id": 21,
+      "name": "우수숙련 기술인 우대지원",
+      "category": "혜택",
+      "startDate": "2020-12-17",
+      "endDate": "상시",
+      "location": "한국산업인력공단 글로벌숙련기술진흥원",
+      "target": "대한민국명장, 우수숙련기술자, 숙련기술전수자 등 선정자 및 기능경기대회 출전자 및 수상자",
+      "summary": "우수숙련기술인 등에게 장려금, 증서, 명판 수여 등 우대 서비스 제공",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/149200000125"
+    },
+    {
+      "id": 22,
+      "name": "기술보증 지원",
+      "category": "혜택",
+      "startDate": "2020-12-17",
+      "endDate": "상시",
+      "location": "기술보증기금",
+      "target": "신기술사업을 영위하는 중소기업 및 총자산액 5천억원 미만 기업 등",
+      "summary": "신기술사업자에게 기술평가를 거쳐 기업당 최고 30억 원 한도의 자금 보증을 지원합니다.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/142100000007"
     }
   ]
 }

@@ -75,8 +75,32 @@ async function generateBlogPost() {
     }
 
     // [2단계] Gemini AI로 블로그 글 생성
-    const geminiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${GEMINI_API_KEY}`;
+    const geminiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent?key=${GEMINI_API_KEY}`;
+    
+    // 재시도 로직을 포함한 fetch 함수
+    async function fetchWithRetry(url, options, retries = 3, backoff = 2000) {
+      for (let i = 0; i < retries; i++) {
+        try {
+          const response = await fetch(url, options);
+          if (response.ok) return response;
+          if (response.status === 429) {
+            console.log(`사용량 제한(429) 발생. ${backoff}ms 후 다시 시도합니다... (시도 ${i + 1}/${retries})`);
+            await new Promise(resolve => setTimeout(resolve, backoff));
+            backoff *= 2; 
+            continue;
+          }
+          const errorText = await response.text();
+          throw new Error(`API 오류 (${response.status}): ${errorText}`);
+        } catch (err) {
+          if (i === retries - 1) throw err;
+          console.log(`오류 발생: ${err.message}. 다시 시도합니다...`);
+          await new Promise(resolve => setTimeout(resolve, backoff));
+        }
+      }
+    }
+
     const today = new Date(new Date().getTime() + 9 * 60 * 60 * 1000).toISOString().split("T")[0];
+
 
     const prompt = `아래 공공서비스 정보를 바탕으로 블로그 글을 작성해줘.
     
@@ -119,7 +143,7 @@ tags: [성남시, ${targetItem.category}, 실생활정보, ${targetItem.name}]
 
 마지막 줄에 FILENAME: YYYY-MM-DD-keyword 형식으로 파일명도 출력해줘. 키워드는 영문으로.`;
 
-    const response = await fetch(geminiUrl, {
+    const response = await fetchWithRetry(geminiUrl, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({

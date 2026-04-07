@@ -93,11 +93,36 @@ async function fetchPublicData() {
     }
 
     // [3단계] Gemini AI로 새 항목 가공 (기간 검증 포함)
-    const geminiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${GEMINI_API_KEY}`;
+    const geminiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent?key=${GEMINI_API_KEY}`;
     
+    // 재시도 로직을 포함한 fetch 함수
+    async function fetchWithRetry(url, options, retries = 3, backoff = 2000) {
+      for (let i = 0; i < retries; i++) {
+        try {
+          const response = await fetch(url, options);
+          if (response.ok) return response;
+          
+          if (response.status === 429) {
+            console.log(`사용량 제한(429) 발생. ${backoff}ms 후 다시 시도합니다... (시도 ${i + 1}/${retries})`);
+            await new Promise(resolve => setTimeout(resolve, backoff));
+            backoff *= 2; // 지수 백오프
+            continue;
+          }
+          
+          const errorText = await response.text();
+          throw new Error(`API 오류 (${response.status}): ${errorText}`);
+        } catch (err) {
+          if (i === retries - 1) throw err;
+          console.log(`오류 발생: ${err.message}. 다시 시도합니다...`);
+          await new Promise(resolve => setTimeout(resolve, backoff));
+        }
+      }
+    }
+
     let successfullyAdded = false;
 
     for (const targetItem of validNewItems) {
+
       const prompt = `아래 공공데이터 1건을 분석해서 반드시 JSON 객체 형식으로만 변환해줘. 
 오늘 날짜는 ${todayStr}이야. 
 **중요: 만약 데이터의 지원 기간(종료일)이 오늘(${todayStr})보다 이전이라면, "expired": true 필드를 추가해줘.**
@@ -118,19 +143,13 @@ async function fetchPublicData() {
 
 데이터: ${JSON.stringify(targetItem)}`;
 
-      const geminiResponse = await fetch(geminiUrl, {
+      const geminiResponse = await fetchWithRetry(geminiUrl, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           contents: [{ parts: [{ text: prompt }] }]
         })
       });
-
-      if (!geminiResponse.ok) {
-        const errorText = await geminiResponse.text();
-        console.error(`Gemini API 오류 (${geminiResponse.status}):`, errorText);
-        continue;
-      }
 
       const geminiResult = await geminiResponse.json();
       if (!geminiResult.candidates || !geminiResult.candidates[0].content || !geminiResult.candidates[0].content.parts[0].text) {
