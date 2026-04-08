@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-07",
+  "lastUpdated": "2026-04-08",
   "source": "공공데이터포털(재구성)",
   "items": [
     {
@@ -258,6 +258,17 @@
       "target": "신기술사업을 영위하는 중소기업 및 총자산액 5천억원 미만 기업 등",
       "summary": "신기술사업자에게 기술평가를 거쳐 기업당 최고 30억 원 한도의 자금 보증을 지원합니다.",
       "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/142100000007"
+    },
+    {
+      "id": 23,
+      "name": "동부여성문화센터 문화·체육 프로그램 제공",
+      "category": "혜택",
+      "startDate": "2022-11-08",
+      "endDate": "상시",
+      "location": "서울특별시 종로구 동부여성문화센터",
+      "target": "남녀 누구나 (프로그램별 일부 상이)",
+      "summary": "헬스, 라인댄스, 어르신 행복운동 등 맞춤형 문화·체육 프로그램을 유·무료로 운영합니다.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/300000000172"
     }
   ]
 }

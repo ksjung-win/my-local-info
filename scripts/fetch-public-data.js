@@ -93,16 +93,17 @@ async function fetchPublicData() {
     }
 
     // [3단계] Gemini AI로 새 항목 가공 (기간 검증 포함)
-    const geminiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent?key=${GEMINI_API_KEY}`;
+    const geminiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-preview:generateContent?key=${GEMINI_API_KEY}`;
     
     // 재시도 로직을 포함한 fetch 함수
-    async function fetchWithRetry(url, options, retries = 3, backoff = 2000) {
+    async function fetchWithRetry(url, options, retries = 8, backoff = 10000) {
       for (let i = 0; i < retries; i++) {
         try {
           const response = await fetch(url, options);
           if (response.ok) return response;
           
           if (response.status === 429) {
+            if (i === retries - 1) throw new Error("사용량 제한(429)이 반복되어 작업을 중단합니다.");
             console.log(`사용량 제한(429) 발생. ${backoff}ms 후 다시 시도합니다... (시도 ${i + 1}/${retries})`);
             await new Promise(resolve => setTimeout(resolve, backoff));
             backoff *= 2; // 지수 백오프
