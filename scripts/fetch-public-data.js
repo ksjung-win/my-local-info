@@ -23,7 +23,7 @@ async function fetchPublicData() {
 
     let rawData = [];
     let validNewItems = [];
-    const maxRetries = 5;
+    const maxRetries = 15;
 
     // [1단계] 공공데이터포털 API에서 데이터 가져오기 (최대 5번 재시도)
     for (let attempt = 1; attempt <= maxRetries; attempt++) {
@@ -92,8 +92,7 @@ async function fetchPublicData() {
       validNewItems.push(anyNewItem);
     }
 
-    // [3단계] Gemini AI로 새 항목 가공 (기간 검증 포함)
-    const geminiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-preview:generateContent?key=${GEMINI_API_KEY}`;
+    const geminiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent?key=${GEMINI_API_KEY}`;
     
     // 재시도 로직을 포함한 fetch 함수
     async function fetchWithRetry(url, options, retries = 8, backoff = 10000) {

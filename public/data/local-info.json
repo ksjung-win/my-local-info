@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-08",
+  "lastUpdated": "2026-04-10",
   "source": "공공데이터포털(재구성)",
   "items": [
     {
@@ -269,6 +269,28 @@
       "target": "남녀 누구나 (프로그램별 일부 상이)",
       "summary": "헬스, 라인댄스, 어르신 행복운동 등 맞춤형 문화·체육 프로그램을 유·무료로 운영합니다.",
       "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/300000000172"
+    },
+    {
+      "id": 24,
+      "name": "행복일자리사업",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "서울특별시 광진구",
+      "target": "만 18세 이상 근로능력 있는 광진구민",
+      "summary": "만 18세 이상 광진구민을 대상으로 지역사회 문제해결을 위한 공공일자리를 제공합니다.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/304000000161"
+    },
+    {
+      "id": 25,
+      "name": "자전거 및 PM 안전모 무료 대여",
+      "category": "혜택",
+      "startDate": "2022-04-27",
+      "endDate": "상시",
+      "location": "자전거종합서비스센터(구의강변로 84 구의공원 앞)",
+      "target": "광진구민",
+      "summary": "자전거종합서비스센터에서 광진구민을 대상으로 자전거 및 개인형이동장치(PM) 안전모를 무료로 대여합니다.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/304000000196"
     }
   ]
 }

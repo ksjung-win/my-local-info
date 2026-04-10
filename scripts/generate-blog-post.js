@@ -74,8 +74,7 @@ async function generateBlogPost() {
       return;
     }
 
-    // [2단계] Gemini AI로 블로그 글 생성
-    const geminiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-preview:generateContent?key=${GEMINI_API_KEY}`;
+    const geminiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent?key=${GEMINI_API_KEY}`;
     
     // 재시도 로직을 포함한 fetch 함수
     async function fetchWithRetry(url, options, retries = 8, backoff = 10000) {
