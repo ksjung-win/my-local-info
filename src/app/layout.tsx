@@ -55,22 +55,29 @@ export default function RootLayout({
         )}
       </head>
       <body className="flex flex-col min-h-screen">
-        {/* ── 헤더 ── */}
-        <header className="site-header">
-          <nav className="absolute top-6 right-6 z-10 flex gap-6">
-            <Link href="/" className="text-white/80 hover:text-white font-bold text-sm transition-colors">홈</Link>
-            <Link href="/about" className="text-white/80 hover:text-white font-bold text-sm transition-colors">소개</Link>
-            <Link href="/blog" className="text-white/80 hover:text-white font-bold text-sm transition-colors">블로그</Link>
-          </nav>
-          
-          <Link href="/" className="inline-block">
-            <div className="header-badge">
-              <span className="animate-pulse">●</span> 매일 업데이트되는 생활정보
+        {/* ── 상단 네비게이션 (Sticky Glassmorphism) ── */}
+        <nav className="fixed top-0 left-0 w-full z-50 bg-slate-900/80 backdrop-blur-xl border-b border-white/10 transition-all">
+          <div className="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
+            <Link href="/" className="text-white font-black text-xl tracking-wider flex items-center gap-1">
+              LOCAL<span className="text-[#7950f2]">INFO</span><span className="text-xs font-medium ml-2 px-2 py-0.5 bg-white/10 rounded-full opacity-80">생활정보</span>
+            </Link>
+            <div className="flex gap-6">
+              <Link href="/" className="text-sm font-bold text-white/70 hover:text-white transition-colors">홈</Link>
+              <Link href="/blog" className="text-sm font-bold text-white/70 hover:text-white transition-colors">모든 혜택</Link>
             </div>
-            <h1 className="header-title">성남시 생활 정보</h1>
+          </div>
+        </nav>
+
+        {/* ── 메인 헤더 ── */}
+        <header className="site-header">
+          <Link href="/" className="inline-block mt-8">
+            <div className="header-badge">
+              <span className="animate-pulse text-[#7950f2]">●</span> 실시간 전국 혜택 업데이트
+            </div>
+            <h1 className="header-title">전국 꿀정보 & 혜택</h1>
             <p className="header-subtitle">
-              성남시 주민들을 위한 맞춤형 혜택과 즐거운 행사 소식을 <br/>
-              공공데이터 기반으로 가장 빠르게 전달해 드립니다.
+              숨어있는 전국 지원금, 혜택, 그리고 즐거운 축제 소식을 <br/>
+              가장 빠르고 정확하게 분석하여 전달해 드립니다.
             </p>
           </Link>
         </header>

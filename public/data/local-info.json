@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-10",
+  "lastUpdated": "2026-04-12",
   "source": "공공데이터포털(재구성)",
   "items": [
     {
@@ -291,6 +291,41 @@
       "target": "광진구민",
       "summary": "자전거종합서비스센터에서 광진구민을 대상으로 자전거 및 개인형이동장치(PM) 안전모를 무료로 대여합니다.",
       "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/304000000196"
+    },
+    {
+      "id": 26,
+      "name": "출산지원금 지원 (울산 북구)",
+      "category": "혜택",
+      "startDate": "2021-09-23",
+      "endDate": "상시",
+      "location": "울산광역시 북구",
+      "target": "울산 북구에 거주하는 출산 가정",
+      "summary": "울산 북구 출산 가정에 첫째아 60만원, 둘째아 이상 100만원 현금 지원",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/372000000118"
+    },
+    {
+      "id": 27,
+      "name": "글로벌 현장학습 프로그램 운영",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "전국",
+      "target": "대학생, 전문대학생",
+      "summary": "대학생 해외 연수/인턴십을 위한 항공료, 체재비 등 지원",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/134200000008",
+      "attraction_score": 95
+    },
+    {
+      "id": 28,
+      "name": "농번기 돌봄 지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "전국 농촌지역",
+      "target": "농촌 거주 영유아 양육 가정 및 관련 법인/단체",
+      "summary": "농번기, 주말에도 안심! 농촌 아이돌봄방 운영 시설비와 운영비를 지원해요.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/154300000056",
+      "attractiveness": 85
     }
   ]
 }

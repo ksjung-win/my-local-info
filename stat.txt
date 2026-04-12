@@ -1,0 +1,26 @@
+﻿commit 09327f2b5800376a04155c7c2f62d6cf947dc0bd
+Author: ?뺢탳??<al-local-info@example.com>
+Date:   Sat Apr 11 09:13:34 2026 +0900
+
+    fix(script): change model to gemini-2.5-flash and generate today's post
+
+ build_log.txt                                      | Bin 5736 -> 0 bytes
+ check_data.js                                      |  17 ++
+ err.txt                                            | Bin 2624 -> 1212 bytes
+ err_msg.txt                                        |  59 ++++++
+ out.txt                                            | Bin 496 -> 326 bytes
+ public/data/local-info.json                        |  11 ++
+ scripts/fetch-public-data.js                       | 163 ++++++++--------
+ scripts/generate-blog-post.js                      |   2 +-
+ src/app/blog/[slug]/page.tsx                       |  50 ++++-
+ src/app/globals.css                                | 152 +++++++++------
+ src/app/layout.tsx                                 |  31 +--
+ src/app/page.tsx                                   | 156 +--------------
+ src/components/CategoryBoard.tsx                   | 215 +++++++++++++++++++++
+ .../2026-04-11-UlsanBukguChildbirthSupport.md      |  76 ++++++++
+ test_3_pro.js                                      |  19 ++
+ test_3_pro_full.js                                 |  16 ++
+ test_api_v2.js                                     |  32 +++
+ test_res.txt                                       | Bin 0 -> 5268 bytes
+ test_retry.js                                      |  33 ++++
+ 19 files changed, 722 insertions(+), 310 deletions(-)

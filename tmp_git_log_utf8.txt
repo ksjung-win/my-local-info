@@ -1,0 +1,14 @@
+﻿09327f2 fix(script): change model to gemini-2.5-flash and generate today's post
+2827003 Fix blog generator scripts and add missing posts
+9698029 feat: add blog post for 2026-04-08 and adjust retry logics
+47f9431 fix: Gemini 紐⑤뜽紐??섏젙(Gemini 3 Flash) 諛??ъ떆??濡쒖쭅 異붽?
+aa91a1c fix(script): resolve duplicate post prevention logic & generate today's post
+b381c7a Update blog post for 04-05 and fix fetch script
+4ae53fd fix(automation): ?ㅽ겕由쏀듃 留뚮즺 ?곗씠???꾪꽣留?異붽? 諛??ㅻ뒛???섎룞 ?앹꽦 諛섏쁺
+87e1b90 Fix homepage mapping for April 3rd post
+53a7fb5 Create blog post for April 3rd: Nuri Education Support and fix API model configuration
+da45538 Fix YAML formatting issues in posts and script
+776ca29 Design upgrade and AI prompt optimization (Inspired by benchmark)
+79069ba ?덊럹?댁? ?곷떒 ?щ갚 ?쒓굅: ?ㅻ뜑? 蹂몃Ц 媛꾧꺽 理쒖쟻???꾨즺
+d7ba868 ?덊럹?댁? ?꾨㈃ 蹂듦뎄: ?ㅻ뜑 臾멸뎄 蹂듦뎄 諛?理쒓렐 ?뚯떇 ?곷떒 ?щ같移?fa10754 ?덊럹?댁? ?먰삎 蹂듭썝 諛?蹂댁“ ?꾩씠肄??쒓굅 理쒖쥌 ?꾨즺
+9e99a79 ?덊럹?댁? ?먰삎 蹂듭썝: ?됱궗/?쒗깮 由ъ뒪???꾩껜 蹂듦뎄 諛??꾩씠肄??뺣━
