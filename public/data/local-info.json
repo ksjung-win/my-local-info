@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-12",
+  "lastUpdated": "2026-04-13",
   "source": "공공데이터포털(재구성)",
   "items": [
     {
@@ -326,6 +326,18 @@
       "summary": "농번기, 주말에도 안심! 농촌 아이돌봄방 운영 시설비와 운영비를 지원해요.",
       "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/154300000056",
       "attractiveness": 85
+    },
+    {
+      "id": 29,
+      "name": "지역화폐(동구사랑상품권)",
+      "category": "혜택",
+      "attractiveness_score": 85,
+      "startDate": "2021-09-23",
+      "endDate": "상시",
+      "location": "인천광역시 동구",
+      "target": "인천 동구 주민 및 소상공인",
+      "summary": "인천 동구에서 결제 시 상시 6% 할인! 소비자와 소상공인 모두에게 혜택",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/350000000101"
     }
   ]
 }
