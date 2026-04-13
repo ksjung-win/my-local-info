@@ -106,20 +106,6 @@ export default function Home() {
   const events = data.items.filter((item) => item.category === "행사").slice(0, 6);
   const benefits = data.items.filter((item) => item.category === "혜택").slice(0, 6);
 
-  // ── 모든 항목에 대한 절대 링크 매핑 (무조건 연결 보장) ──
-  const FIXED_SLUGS: Record<string | number, string> = {
-    1: "blog-event-1", // 성남시 봄꽃 축제
-    2: "blog-event-2", // 판교 청년 창업 박람회
-    3: "blog-event-3", // 성남시 어린이날 큰잔치
-    4: "blog-benefit-1", // 성남시 청년 월세 지원금
-    5: "blog-benefit-1", // 경기도 출산지원금
-    6: "blog-benefit-1", // 유아학비 (누리과정) 지원
-    7: "blog-benefit-1", // 근로·자녀장려금
-    8: "blog-benefit-1", // 주택금융공사 월세자금보증
-    9: "blog-benefit-2",  // 친환경 에너지절감장비 보급
-    11: "2026-04-02-observer-boarding-support" // 최신 글 추가
-  };
-
   return (
     <main className="main-content">
       {/* [1] 최근 소식 (상단 강조) */}
@@ -160,7 +146,7 @@ export default function Home() {
         </div>
         <div className="card-grid">
           {events.map((item) => {
-            const slug = FIXED_SLUGS[item.id] || (allPosts.find(p => p.title.includes(item.name))?.slug);
+            const slug = item.slug || (allPosts.find(p => p.title.includes(item.name))?.slug);
             return <InfoCard key={item.id} item={item} slug={slug} />;
           })}
         </div>
@@ -179,7 +165,7 @@ export default function Home() {
         </div>
         <div className="card-grid">
           {benefits.map((item) => {
-            const slug = FIXED_SLUGS[item.id] || (allPosts.find(p => p.title.includes(item.name))?.slug);
+            const slug = item.slug || (allPosts.find(p => p.title.includes(item.name))?.slug);
             return <InfoCard key={item.id} item={item} slug={slug} />;
           })}
         </div>
