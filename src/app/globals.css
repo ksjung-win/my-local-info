@@ -1,69 +1,50 @@
 @import "tailwindcss";
 
 @theme {
-  --color-brand: #ff6b6b;
-  --color-brand-light: #fff0f0;
-  --color-brand-dark: #e03131;
-  --color-accent: #7950f2;
-  --color-accent-light: #f3f0ff;
-  --font-sans: "Pretendard Variable", "Pretendard", "Inter", -apple-system, sans-serif;
-}
-
-/* Hide scrollbar for Chrome, Safari and Opera */
-.no-scrollbar::-webkit-scrollbar {
-  display: none;
-}
-/* Hide scrollbar for IE, Edge and Firefox */
-.no-scrollbar {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  --color-brand: #f97316;
+  --color-brand-light: #fff7ed;
+  --color-brand-dark: #ea580c;
+  --font-sans: "Inter", "Pretendard", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
 /* ── 기본 레이아웃 ── */
 body {
-  @apply font-sans bg-slate-50 text-slate-900 antialiased selection:bg-brand selection:text-white;
+  @apply font-sans bg-slate-50 text-slate-900 antialiased;
 }
 
 .main-content {
-  @apply max-w-5xl mx-auto px-4 sm:px-6 pb-20 pt-0 relative z-10;
+  @apply max-w-5xl mx-auto px-4 sm:px-6 pb-12 sm:pb-20 pt-0 sm:pt-0;
 }
 
-/* ── 헤더 (그라데이션 & 글래스모피즘) ── */
+/* ── 헤더 및 히어로 섹션 ── */
 .site-header {
-  @apply relative overflow-hidden text-white pt-32 pb-32 px-6 text-center shadow-2xl;
-  background: linear-gradient(135deg, #1e1e2f 0%, #3a3a5a 40%, #7950f2 100%);
-  background-size: 200% 200%;
-  animation: gradientFlow 10s ease infinite;
+  @apply relative overflow-hidden text-white pt-20 pb-24 px-6 text-center shadow-xl;
+  background: linear-gradient(135deg, #f97316 0%, #d946ef 100%); /* 오렌지-퍼플 그라데이션 */
 }
 
-@keyframes gradientFlow {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-
+/* 배경 장식 패턴 */
 .site-header::before {
   content: "";
-  @apply absolute inset-0 opacity-20 pointer-events-none;
-  background-image: radial-gradient(circle at 2px 2px, rgba(255,255,255,0.8) 1px, transparent 0);
-  background-size: 32px 32px;
+  @apply absolute inset-0 opacity-10;
+  background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0);
+  background-size: 24px 24px;
 }
 
 .header-badge {
-  @apply inline-flex items-center gap-2 bg-white/10 backdrop-blur-lg px-5 py-2 rounded-full text-xs font-black tracking-widest mb-8 border border-white/20 shadow-[0_4px_12px_rgba(0,0,0,0.1)];
+  @apply inline-flex items-center gap-2 bg-white/20 backdrop-blur-md px-4 py-1.5 rounded-full text-xs font-bold mb-6 border border-white/30 tracking-tight;
 }
 
 .header-title {
-  @apply text-5xl sm:text-7xl font-black mb-8 tracking-tight leading-tight text-transparent bg-clip-text bg-gradient-to-r from-white via-white to-white/60 drop-shadow-sm;
+  @apply text-4xl sm:text-6xl font-black mb-6 tracking-tight leading-[1.1] break-keep;
 }
 
 .header-subtitle {
-  @apply text-lg sm:text-xl font-medium max-w-2xl mx-auto leading-relaxed text-white/80;
+  @apply text-lg sm:text-xl opacity-80 font-medium max-w-2xl mx-auto leading-relaxed break-keep;
 }
 
 /* ── 섹션 디자인 ── */
 .section-header {
-  @apply flex items-end justify-between mb-10 pb-4 border-b border-slate-200/60;
+  @apply flex items-center justify-between mb-8 pb-3 border-b-2 border-slate-100;
 }
 
 .section-title-wrap {
@@ -71,142 +52,117 @@ body {
 }
 
 .section-title {
-  @apply text-3xl font-black text-slate-900 tracking-tight;
+  @apply text-2xl font-black text-slate-800 tracking-tight;
 }
 
 .section-count {
-  @apply bg-slate-900 text-white text-[11px] font-bold px-3 py-1 rounded-full shadow-sm;
+  @apply bg-slate-100 text-slate-500 text-[10px] font-bold px-2.5 py-1 rounded-full;
 }
 
-/* ── 인포그래픽 카드 스타일 (글래스모피즘 & hover 애니메이션) ── */
+/* ── 카드 스타일 (고도화) ── */
 .card-grid {
-  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8;
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6;
 }
 
 .card {
-  @apply bg-white/80 backdrop-blur-md rounded-2xl p-7 border border-white shadow-[0_8px_30px_rgba(0,0,0,0.04)] transition-all duration-500 hover:shadow-[0_20px_40px_rgba(121,80,242,0.12)] hover:-translate-y-2 block relative no-underline text-inherit overflow-hidden;
-}
-
-/* 호버 시 은은한 그라데이션 빛 효과 */
-.card::before {
-  content: '';
-  @apply absolute -inset-1 bg-gradient-to-r from-brand to-accent opacity-0 blur-xl transition-opacity duration-500 -z-10 rounded-3xl;
-}
-.card:hover::before {
-  @apply opacity-20;
+  @apply bg-white rounded-2xl p-7 border border-slate-100 shadow-[0_4px_20px_rgba(0,0,0,0.03)] transition-all duration-300 hover:shadow-[0_12px_40px_rgba(0,0,0,0.08)] hover:-translate-y-2 block relative no-underline text-inherit;
 }
 
 .card-badge {
-  @apply inline-flex items-center px-3 py-1 rounded-md text-[11px] font-black tracking-wide mb-5 shadow-sm;
+  @apply inline-block px-3 py-1 rounded-lg text-[10px] font-black uppercase tracking-wider mb-4;
 }
 
-.badge-event { @apply bg-accent-light text-accent border border-accent/10; }
-.badge-benefit { @apply bg-brand-light text-brand border border-brand/10; }
-.badge-urgent { @apply bg-rose-50 text-rose-600 border border-rose-200 animate-pulse; }
+.badge-event { @apply bg-blue-50 text-blue-600; }
+.badge-benefit { @apply bg-emerald-50 text-emerald-600; }
+.badge-urgent { @apply bg-rose-50 text-rose-600 border border-rose-100; }
+.badge-new { @apply bg-orange-50 text-orange-600 border border-orange-100; }
 
 .card-name {
-  @apply text-xl font-black text-slate-900 leading-[1.4] mb-3 line-clamp-2 min-h-[3.5rem] transition-colors;
-}
-.card:hover .card-name {
-  @apply text-accent;
+  @apply text-xl font-bold text-slate-900 leading-tight mb-3 line-clamp-2 min-h-[3rem];
 }
 
 .card-summary {
-  @apply text-sm text-slate-500 leading-relaxed mb-6 line-clamp-2 h-10 font-medium;
+  @apply text-sm text-slate-500 leading-relaxed mb-6 line-clamp-2 h-10;
 }
 
+/* 카드 내 정보 행 (Target 등 강조) */
 .card-meta {
-  @apply space-y-3 mb-6 pt-5 border-t border-slate-100;
+  @apply space-y-2.5 mb-6 pt-4 border-t border-slate-50;
 }
 
 .meta-row {
-  @apply flex items-center gap-3 text-sm font-semibold text-slate-700;
+  @apply flex items-start gap-2.5 text-sm font-medium text-slate-600;
 }
 
 .meta-icon {
-  @apply flex items-center justify-center w-8 h-8 rounded-full bg-slate-50 text-base shadow-inner;
+  @apply text-lg leading-none;
 }
 
 .meta-label {
-  @apply text-slate-400 font-bold text-[11px] uppercase tracking-wider min-w-[40px];
+  @apply text-slate-400 font-bold text-xs min-w-[50px];
 }
 
 .card-footer {
-  @apply flex justify-between items-center mt-auto pt-5 border-t border-slate-100;
+  @apply flex justify-between items-center mt-auto pt-4 border-t border-slate-50;
 }
 
 .card-link {
-  @apply text-sm font-bold text-slate-400 transition-colors;
-}
-.card:hover .card-link {
-  @apply text-accent;
+  @apply text-sm font-bold text-slate-400 transition-colors group-hover:text-brand;
 }
 
 .card-arrow {
-  @apply opacity-0 -translate-x-3 transition-all duration-300 w-8 h-8 rounded-full bg-accent text-white flex items-center justify-center font-bold;
-}
-.card:hover .card-arrow {
-  @apply opacity-100 translate-x-0;
+  @apply opacity-0 -translate-x-2 transition-all group-hover:opacity-100 group-hover:translate-x-0;
 }
 
-/* ── 블로그 상세: 3줄 요약 박스 (프리미엄 버전) ── */
+/* ── 블로그 상세: 3줄 요약 박스 ── */
 .summary-box {
-  @apply bg-white/60 backdrop-blur-xl rounded-3xl p-8 my-12 border border-white shadow-[0_10px_40px_rgba(0,0,0,0.05)] grid grid-cols-1 md:grid-cols-3 gap-8 relative overflow-hidden;
-}
-
-.summary-box::after {
-  content: '';
-  @apply absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-brand to-accent;
+  @apply bg-slate-50 rounded-2xl p-6 sm:p-8 my-10 border border-slate-100 grid grid-cols-1 sm:grid-cols-3 gap-6;
 }
 
 .summary-item {
-  @apply flex flex-col gap-2 relative z-10;
+  @apply flex flex-col gap-1;
 }
 
 .summary-label {
-  @apply text-[11px] font-black text-accent uppercase tracking-widest bg-accent-light inline-block px-2 py-1 rounded w-max mb-1;
+  @apply text-[10px] font-bold text-slate-400 uppercase tracking-widest;
 }
 
 .summary-value {
-  @apply text-lg font-bold text-slate-800 leading-snug break-keep;
+  @apply text-base font-bold text-slate-800 break-keep;
 }
 
 /* ── 푸터 ── */
 .site-footer {
-  @apply bg-slate-900 text-slate-300 py-16 px-6 text-center mt-auto border-t border-slate-800;
+  @apply bg-slate-950 text-white py-16 px-6 text-center mt-20;
 }
 
 .footer-logo {
-  @apply text-2xl font-black mb-6 block text-white tracking-widest;
+  @apply text-2xl font-black mb-6 block;
 }
 
 .footer-row {
-  @apply flex flex-wrap justify-center items-center gap-4 text-sm font-medium mb-8 text-slate-400;
+  @apply flex flex-wrap justify-center items-center gap-4 text-sm opacity-50 mb-8;
 }
 
 .footer-link {
   @apply hover:text-white transition-colors;
 }
 
-.footer-dot {
-  @apply opacity-30;
-}
-
 .footer-copy {
-  @apply text-[11px] text-slate-500 leading-relaxed max-w-md mx-auto font-medium tracking-wide;
+  @apply text-xs opacity-30 leading-relaxed max-w-md mx-auto;
 }
 
-/* ── 본문 스타일 (Prose 확장) ── */
+/* ── 본문 스타일 (Prose) ── */
 .prose {
-  @apply text-[1.1rem] text-slate-700 leading-[1.8] max-w-none font-medium;
+  @apply text-lg text-slate-700 leading-loose max-w-none;
 }
 
 .prose h2 {
-  @apply text-3xl font-black text-slate-900 mt-20 mb-8 pb-4 border-b-2 border-slate-100 flex items-center gap-3;
+  @apply text-3xl font-black text-slate-900 mt-20 mb-8 pb-3 border-b-4 border-orange-500/20;
 }
 
 .prose h3 {
-  @apply text-xl font-black text-slate-800 mt-12 mb-6 px-4 py-2 bg-slate-50 rounded-lg inline-block text-accent;
+  @apply text-2xl font-bold text-slate-800 mt-12 mb-6 flex items-center gap-3;
 }
 
 .prose p {
@@ -214,18 +170,18 @@ body {
 }
 
 .prose strong {
-  @apply font-black text-slate-900 bg-accent-light px-1.5 py-0.5 rounded text-accent;
+  @apply font-black text-slate-950 bg-yellow-100 px-1;
 }
 
 .prose ul, .prose ol {
-  @apply my-10 pl-6 space-y-4 bg-slate-50/50 p-6 rounded-2xl border border-slate-100;
+  @apply my-10 pl-6 space-y-4;
 }
 
 .prose li {
-  @apply pl-2 marker:text-brand;
+  @apply pl-2;
 }
 
 /* 구분선 */
 .divider {
-  @apply h-px w-full bg-gradient-to-r from-transparent via-slate-200 to-transparent my-24;
+  @apply h-px w-full bg-slate-100 my-20;
 }

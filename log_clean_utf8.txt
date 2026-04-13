@@ -1,0 +1,25 @@
+a57b63c Update: Fix fetch script and add today blog post
+876b87b fix(script): change model to gemini-2.5-flash and generate today's post
+2827003 Fix blog generator scripts and add missing posts
+9698029 feat: add blog post for 2026-04-08 and adjust retry logics
+47f9431 fix: Gemini 모델명 수정(Gemini 3 Flash) 및 재시도 로직 추가
+aa91a1c fix(script): resolve duplicate post prevention logic & generate today's post
+b381c7a Update blog post for 04-05 and fix fetch script
+4ae53fd fix(automation): 스크립트 만료 데이터 필터링 추가 및 오늘자 수동 생성 반영
+87e1b90 Fix homepage mapping for April 3rd post
+53a7fb5 Create blog post for April 3rd: Nuri Education Support and fix API model configuration
+da45538 Fix YAML formatting issues in posts and script
+776ca29 Design upgrade and AI prompt optimization (Inspired by benchmark)
+79069ba 홈페이지 상단 여백 제거: 헤더와 본문 간격 최적화 완료
+d7ba868 홈페이지 전면 복구: 헤더 문구 복구 및 최근 소식 상단 재배치
+fa10754 홈페이지 원형 복원 및 보조 아이콘 제거 최종 완료
+9e99a79 홈페이지 원형 복원: 행사/혜택 리스트 전체 복구 및 아이콘 정리
+7297108 홈페이지 복구 및 디자인 최종 최적화: 중복 제거 및 리스트 복원
+0791d0d 홈페이지 디자인 최종 수정: 미니멀 헤더 전용 레이아웃 적용
+332a25b 헤더 디자인 정리: 불필요한 이모지 및 중복 배지 제거
+d7a65e2 홈페이지 가독성 개선: 최신 포스트 미리보기 복원
+6ccb9a5 오늘의 블로그 포스트 업로드 및 시스템 개선
+8d984da 빌드 성공: 마크다운 YAML 문법 오류 수정 및 메인 페이지 대개편 최종 반영
+b23667d 버그 수정: page.tsx script 태그 구문 오류 해결 및 최종 구조 정착
+dafa85a 최종 대개편: 중복 데이터 제거 및 블로그 중심 포털 구조 완성 (캐시 방지 및 디자인 최적화)
+34cc9ea 메인 페이지 대개편: 중복된 행사/혜택 카드 섹션 제거 및 블로그 중심 포털 구조 적용

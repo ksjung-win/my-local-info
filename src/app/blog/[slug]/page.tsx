@@ -79,22 +79,6 @@ export default async function PostPage(props: { params: Promise<{ slug: string }
     ]
   };
 
-  let mainContent = postData.content;
-  let summaryWho = "";
-  let summaryWhat = "";
-  let summaryWhen = "";
-
-  // 정규식으로 3줄 요약 추출
-  const summaryRegex = /### 💡 3줄 핵심 요약 바로가기[\s\S]*?- \*\*🎯 누구에게\?\*\*:\s*(.*?)[\r\n]+- \*\*💰 무엇을\?\*\*:\s*(.*?)[\r\n]+- \*\*📅 언제까지\?\*\*:\s*(.*?)([\r\n]+---|$)/;
-  const summaryMatch = postData.content.match(summaryRegex);
-  
-  if (summaryMatch) {
-    summaryWho = summaryMatch[1].trim();
-    summaryWhat = summaryMatch[2].trim();
-    summaryWhen = summaryMatch[3].trim();
-    mainContent = postData.content.replace(summaryMatch[0], "");
-  }
-
   return (
     <main className="main-content" style={{ marginTop: '20px', paddingBottom: '60px' }}>
       <script
@@ -102,40 +86,22 @@ export default async function PostPage(props: { params: Promise<{ slug: string }
         dangerouslySetInnerHTML={{ __html: JSON.stringify([blogJsonLd, breadcrumbJsonLd]) }}
       />
       <article>
-        <header style={{ marginBottom: '32px', paddingTop: '40px' }}>
-          <div className="card-badge badge-event" style={{ marginBottom: '16px' }}>
+        <header style={{ marginBottom: '32px' }}>
+          <div className="card-badge badge-event" style={{ marginBottom: '12px' }}>
             {postData.category}
           </div>
-          <h1 className="header-title" style={{ color: '#1e293b', fontSize: 'clamp(2rem, 5vw, 3rem)', lineHeight: '1.3', marginBottom: '20px', textShadow: 'none', background: 'none' }}>
+          <h1 className="header-title" style={{ color: '#1e293b', fontSize: 'clamp(1.75rem, 5vw, 2.5rem)', lineHeight: '1.2', marginBottom: '16px', textShadow: 'none' }}>
             {postData.title}
           </h1>
-          <div className="meta-row" style={{ fontSize: '1rem', color: '#64748b' }}>
-            <span className="meta-icon bg-slate-100 flex items-center justify-center w-8 h-8 rounded-full shadow-sm">📅</span>
-            <span className="font-semibold tracking-wide">최종 업데이트: {postData.date}</span>
+          <div className="meta-row" style={{ fontSize: '0.9rem' }}>
+            <span className="meta-icon">📅</span>
+            <span>최종 업데이트: {postData.date}</span>
           </div>
         </header>
 
-        {/* 💡 3줄 핵심 요약 프리미엄 박스 (Pick-N-Joy 스타일) */}
-        {summaryWho && (
-          <div className="summary-box">
-            <div className="summary-item">
-              <span className="summary-label text-[#7950f2] bg-[#f3f0ff]">🎯 지원 대상</span>
-              <span className="summary-value text-xl leading-relaxed">{summaryWho}</span>
-            </div>
-            <div className="summary-item">
-              <span className="summary-label text-[#e03131] bg-[#fff0f0]">💰 지원 혜택</span>
-              <span className="summary-value text-xl leading-relaxed">{summaryWhat}</span>
-            </div>
-            <div className="summary-item">
-              <span className="summary-label text-emerald-600 bg-emerald-50">📅 신청 기한</span>
-              <span className="summary-value text-xl leading-relaxed">{summaryWhen}</span>
-            </div>
-          </div>
-        )}
-
-        <div className="prose prose-orange max-w-none prose-slate sm:prose-lg" style={{ fontSize: '1.1rem', lineHeight: '1.9' }}>
+        <div className="prose prose-orange max-w-none prose-slate sm:prose-lg" style={{ fontSize: '1.05rem', lineHeight: '1.8' }}>
           <ReactMarkdown remarkPlugins={[remarkGfm]}>
-            {mainContent}
+            {postData.content}
           </ReactMarkdown>
         </div>
 
