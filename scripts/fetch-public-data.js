@@ -32,7 +32,8 @@ async function fetchPublicData() {
     let rawData = [];
     let validNewItems = [];
     const maxRetries = 15;
-    let successfullyAdded = false;
+    let addedCount = 0;
+    const targetAddCount = 5;
 
     const geminiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent?key=${GEMINI_API_KEY}`;
     
@@ -168,18 +169,21 @@ async function fetchPublicData() {
 
         fs.writeFileSync(dataPath, JSON.stringify(db, null, 2), "utf-8");
         console.log(`✨ 성공: [${newItem.name}] - 고품질 항목 데이터베이스 추가 완료.`);
-        successfullyAdded = true;
-        break; // inner gemini loop
+        addedCount++;
+
+        if (addedCount >= targetAddCount) {
+          break; // inner gemini loop
+        }
       }
 
-      if (successfullyAdded) {
+      if (addedCount >= targetAddCount) {
         break; // attempt loop
       } else {
-        console.log("이번 페이지의 아이템들이 모두 AI 평가를 통과하지 못했습니다. 다음 페이지를 계속 시도합니다.");
+        console.log(`현재 ${addedCount}개 추가됨. 목표(${targetAddCount}개)를 채우기 위해 다음 페이지를 계속 시도합니다.`);
       }
     }
 
-    if (!successfullyAdded) {
+    if (addedCount === 0) {
       console.log("모든 항목 검증 실패 (또는 새 데이터 없음/모두 AI 커트라인 미달). 업데이트 없음.");
     }
 

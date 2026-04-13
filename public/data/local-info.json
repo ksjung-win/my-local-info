@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-13",
+  "lastUpdated": "2026-04-14",
   "source": "공공데이터포털(재구성)",
   "items": [
     {
@@ -338,6 +338,17 @@
       "target": "인천 동구 주민 및 소상공인",
       "summary": "인천 동구에서 결제 시 상시 6% 할인! 소비자와 소상공인 모두에게 혜택",
       "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/350000000101"
+    },
+    {
+      "id": 30,
+      "name": "서울특별시 강서구 구민 생활안전보험",
+      "category": "혜택",
+      "startDate": "2026-02-01",
+      "endDate": "2027-01-31",
+      "location": "서울특별시 강서구",
+      "target": "강서구 주민(등록외국인, 거소등록동포 포함)",
+      "summary": "강서구 주민이면 별도 가입 없이 상해사고 시 최대 500만원까지 보장받는 무료 안전 보험.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/315000000277"
     }
   ]
 }
