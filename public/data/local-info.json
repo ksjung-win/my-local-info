@@ -349,6 +349,64 @@
       "target": "강서구 주민(등록외국인, 거소등록동포 포함)",
       "summary": "강서구 주민이면 별도 가입 없이 상해사고 시 최대 500만원까지 보장받는 무료 안전 보험.",
       "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/315000000277"
+    },
+    {
+      "id": 31,
+      "name": "원스톱기업애로종합지원",
+      "category": "혜택",
+      "startDate": "2022-07-08",
+      "endDate": "상시",
+      "location": "전국",
+      "target": "소상공인, 예비창업자, 중소기업",
+      "summary": "창업, 경영, 법률 등 전문가 상담부터 현장 컨설팅까지 원스톱으로 지원!",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/142100000022",
+      "attractiveness": 85
+    },
+    {
+      "id": 32,
+      "name": "전통시장 안전관리패키지",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "전국",
+      "target": "전통시장 소상공인",
+      "summary": "화재 위험이 큰 우리 시장의 노후 전기·가스·소방시설 개선 지원",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/142100000035"
+    },
+    {
+      "id": 33,
+      "name": "청년상인육성지원사업",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "전국",
+      "target": "만 39세 이하 예비·현직 청년상인",
+      "summary": "전통시장 창업을 꿈꾸는 청년에게 교육, 컨설팅, 마케팅 등 사업 전반을 종합 지원합니다.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/142100000037",
+      "attractiveness": 90
+    },
+    {
+      "id": 34,
+      "name": "전통시장 화재공제",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "전국",
+      "target": "전통시장 소상공인",
+      "summary": "화재 위험에 노출된 전통시장 소상공인을 위한 저렴한 화재공제(보험) 가입 지원",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/142100000041",
+      "attractiveness": 85
+    },
+    {
+      "id": 35,
+      "name": "재도약지원자금",
+      "category": "혜택",
+      "startDate": "2025-07-03",
+      "endDate": "상시",
+      "location": "전국",
+      "target": "소상공인, 재창업 희망 기업",
+      "summary": "사업 전환이나 실패 후 재도약을 꿈꾸는 소상공인을 위한 융자 지원.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/142100000044"
     }
   ]
 }
