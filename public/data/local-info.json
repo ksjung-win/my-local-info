@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-14",
+  "lastUpdated": "2026-04-15",
   "source": "공공데이터포털(재구성)",
   "items": [
     {
@@ -407,6 +407,17 @@
       "target": "소상공인, 재창업 희망 기업",
       "summary": "사업 전환이나 실패 후 재도약을 꿈꾸는 소상공인을 위한 융자 지원.",
       "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/142100000044"
+    },
+    {
+      "id": 36,
+      "name": "국민내일배움카드",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "전국 (고용노동부)",
+      "target": "취업 및 역량개발을 희망하는 대한민국 국민",
+      "summary": "5년간 300~500만원의 훈련비를 지원받아 원하는 직무능력을 키울 수 있는 카드",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/149200000026"
     }
   ]
 }
