@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-15",
+  "lastUpdated": "2026-04-16",
   "source": "공공데이터포털(재구성)",
   "items": [
     {
@@ -418,6 +418,61 @@
       "target": "취업 및 역량개발을 희망하는 대한민국 국민",
       "summary": "5년간 300~500만원의 훈련비를 지원받아 원하는 직무능력을 키울 수 있는 카드",
       "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/149200000026"
+    },
+    {
+      "id": 37,
+      "name": "청년 국가자격시험 응시료 지원",
+      "category": "혜택",
+      "startDate": "2026-01-01",
+      "endDate": "상시",
+      "location": "서울특별시 영등포구",
+      "target": "영등포구에 거주하는 19~39세 미취업 청년",
+      "summary": "취업 준비에 필요한 국가자격시험 응시료를 실비로 지원해 드려요.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/318000000413"
+    },
+    {
+      "id": 38,
+      "name": "취약계층을 위한 공공일자리 제공",
+      "category": "혜택",
+      "startDate": "2026-01-01",
+      "endDate": "2026-12-31",
+      "location": "서울특별시 영등포구",
+      "target": "서울 영등포구 거주 만 18세 이상 취약계층(청년, 중장년, 어르신 등)",
+      "summary": "영등포구 취약계층을 위한 공공일자리! 최대 일급 62,000원 지원",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/318000000414"
+    },
+    {
+      "id": 39,
+      "name": "지방세 불복청구 선정대리인 무료지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "서울특별시 영등포구",
+      "target": "영등포구의 영세납세자(개인, 소상공인)",
+      "summary": "억울한 지방세, 세무대리인이 무료로 이의신청을 도와드려요.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/318000000416"
+    },
+    {
+      "id": 40,
+      "name": "어린이 대상 불소도포 서비스 제공",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "서울특별시 영등포구",
+      "target": "영등포구 거주 3세 ~ 초등학생 아동",
+      "summary": "우리 아이 충치 예방! 영등포구보건소에서 무료 불소도포 받으세요.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/318000000425"
+    },
+    {
+      "id": 41,
+      "name": "음식점 주방 정리수납 지원 컨설팅",
+      "category": "혜택",
+      "startDate": "2026-03-03",
+      "endDate": "2026-04-17",
+      "location": "서울특별시 영등포구",
+      "target": "영등포구 내 소규모(100㎡ 이하) 음식점/제과점 운영 소상공인",
+      "summary": "가게 주방 효율을 높여주는 무료 정리수납 컨설팅! 위생과 공간활용을 한번에!",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/318000000430"
     }
   ]
 }
