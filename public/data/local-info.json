@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-18",
+  "lastUpdated": "2026-04-19",
   "source": "공공데이터포털(재구성)",
   "items": [
     {
@@ -588,6 +588,64 @@
       "target": "부산 기장군 거주, 어린이집 입학 영유아 가정",
       "summary": "부산 기장군에서 어린이집에 처음 입학하는 아기에게 10만원을 드려요.",
       "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/340000000112"
+    },
+    {
+      "id": 52,
+      "name": "출산 장려 활성화 서비스",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "인천광역시 동구",
+      "target": "인천 동구 거주 출산 가정 및 아빠 육아휴직자",
+      "summary": "인천 동구 출산가정에 출산용품, 아빠육아휴직장려금(최대 300만원), 첫만남이용권(200만원)을 지원해요.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/350000000105",
+      "attractiveness": 95
+    },
+    {
+      "id": 53,
+      "name": "청년 정책 활성화 지원",
+      "category": "혜택",
+      "startDate": "2021-09-23",
+      "endDate": "상시",
+      "location": "인천광역시 동구",
+      "target": "인천 동구 거주 만 19~39세 청년 구직자",
+      "summary": "인천 동구 청년, 취업 준비에 필요한 사진촬영·이미용비 지원!",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/350000000107"
+    },
+    {
+      "id": 54,
+      "name": "여성청소년 위생용품 지원",
+      "category": "혜택",
+      "startDate": "2022-07-25",
+      "endDate": "상시",
+      "location": "인천광역시 동구",
+      "target": "9~24세 저소득 여성청소년 (기초생활수급자, 차상위계층 등)",
+      "summary": "매월 13,000원, 연 최대 156,000원의 위생용품 구매 바우처 지원",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/350000000117",
+      "attractiveness_score": 90
+    },
+    {
+      "id": 55,
+      "name": "여성장애인 출산비용 지원",
+      "category": "혜택",
+      "startDate": "2025-01-01",
+      "endDate": "상시",
+      "location": "인천광역시 미추홀구",
+      "target": "출산(유산·사산 포함)한 등록 여성장애인",
+      "summary": "인천 미추홀구 거주 등록 여성장애인이 출산 시, 태아 1명당 120만원을 지원합니다.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/351050000104"
+    },
+    {
+      "id": 56,
+      "name": "아빠 육아휴직 장려금 지원",
+      "category": "혜택",
+      "startDate": "2020-01-01",
+      "endDate": "상시",
+      "location": "인천광역시 연수구",
+      "target": "인천 연수구 거주 남성 육아휴직자",
+      "summary": "인천 연수구 아빠들 주목! 육아휴직 시 월 50만원씩 최대 300만원 현금 지원",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/352000000106",
+      "attractiveness_score": 85
     }
   ]
 }
