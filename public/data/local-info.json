@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-20",
+  "lastUpdated": "2026-04-21",
   "source": "공공데이터포털(재구성)",
   "items": [
     {
@@ -703,6 +703,64 @@
       "target": "어린이집에 다니는 3~5세 유아를 둔 가족",
       "summary": "어린이집 보육료 걱정 끝! 누리과정 차액을 지원받아 양육비 부담을 줄여보세요.",
       "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/316000000101"
+    },
+    {
+      "id": 62,
+      "name": "모자보건사업운영 지원",
+      "category": "혜택",
+      "startDate": "2021-09-23",
+      "endDate": "상시",
+      "location": "대구광역시 동구",
+      "target": "예비부부 및 임산부",
+      "summary": "결혼과 임신을 준비 중인 대구 동구 주민에게 필수 건강검진(9종)을 무료 지원해요.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/342000000106",
+      "score": 80
+    },
+    {
+      "id": 63,
+      "name": "임신부 엽산제·철분제 지원",
+      "category": "혜택",
+      "startDate": "2021-09-23",
+      "endDate": "상시",
+      "location": "대구광역시 서구",
+      "target": "대구 서구 관내 임신부",
+      "summary": "대구 서구 보건소에서 임신 주수에 맞춰 필수 영양제인 엽산제와 철분제를 무료로 지원해요.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/343000000104"
+    },
+    {
+      "id": 64,
+      "name": "어린이집 간식비 지원",
+      "category": "혜택",
+      "attractiveness_score": 85,
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "대구광역시 서구",
+      "target": "대구 서구 관내 어린이집 재원 아동 (0~5세) 가족",
+      "summary": "대구 서구 어린이집에 다니는 0~5세 아동에게 매월 3,700원의 간식비를 지원하여 양육 부담을 덜어줍니다.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/343000000126"
+    },
+    {
+      "id": 65,
+      "name": "공동육아나눔터 운영 지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "대구광역시 서구",
+      "target": "만 18세 미만 자녀를 둔 가정",
+      "summary": "장난감과 도서가 있는 안전한 공간에서 육아 품앗이 및 다양한 돌봄 프로그램을 이용하세요.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/343000000128",
+      "attractiveness": 88
+    },
+    {
+      "id": 66,
+      "name": "아동복지시설 퇴소자 지원 (자립정착금)",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "대구광역시 남구",
+      "target": "만 18세 이상 보호종료 청년 (자립준비청년)",
+      "summary": "보호시설을 떠나 사회에 첫발을 내딛는 청년에게 현금 자립정착금을 지원합니다.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/344000000101"
     }
   ]
 }
