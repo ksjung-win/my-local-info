@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-21",
+  "lastUpdated": "2026-04-22",
   "source": "공공데이터포털(재구성)",
   "items": [
     {
@@ -761,6 +761,63 @@
       "target": "만 18세 이상 보호종료 청년 (자립준비청년)",
       "summary": "보호시설을 떠나 사회에 첫발을 내딛는 청년에게 현금 자립정착금을 지원합니다.",
       "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/344000000101"
+    },
+    {
+      "id": 67,
+      "name": "출산준비교육(안양시 동안구)",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "경기도 안양시 동안구",
+      "target": "임신부 및 예비부모",
+      "summary": "신생아 돌보기, 모유수유, 베이비마사지 등 실용적인 육아 정보를 배워요.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/383000000157",
+      "attraction_score": 90
+    },
+    {
+      "id": 68,
+      "name": "주택 태양광시설 설치지원",
+      "category": "혜택",
+      "startDate": "2025-04-01",
+      "endDate": "상시",
+      "location": "경기도 안양시",
+      "target": "안양시 단독주택 소유자 또는 소유예정자",
+      "summary": "전기료 절약! 우리집 태양광 설치비 최대 50% 이상 지원받으세요.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/383000000162"
+    },
+    {
+      "id": 69,
+      "name": "청년창업 (기업) 상시지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "경기도 안양시",
+      "target": "안양시 예비창업자, 창업초기기업, 청년 기업",
+      "summary": "안양시 청년 창업가에게 사무공간부터 컨설팅, 사업화까지 맞춤 지원",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/383000000165"
+    },
+    {
+      "id": 70,
+      "name": "안양시 소상공인 이자보전 지원",
+      "category": "혜택",
+      "startDate": "2021-11-04",
+      "endDate": "상시 (자금 소진 시까지)",
+      "location": "경기도 안양시",
+      "target": "안양시 저신용 소상공인",
+      "summary": "신용도가 낮아 대출이 어려운 안양시 소상공인에게 대출 이자 연 2%를 지원합니다.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/383000000168",
+      "score": 85
+    },
+    {
+      "id": 71,
+      "name": "어린이집 공기청정기 지원",
+      "category": "혜택",
+      "startDate": "2026-01-01",
+      "endDate": "상시",
+      "location": "경기도 안양시",
+      "target": "안양시 관내 어린이집",
+      "summary": "안양시 어린이집의 공기청정기 렌탈·유지비를 지원해 아이들에게 쾌적한 보육환경을 제공해요.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/383000000176"
     }
   ]
 }
