@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-22",
+  "lastUpdated": "2026-04-23",
   "source": "공공데이터포털(재구성)",
   "items": [
     {
@@ -818,6 +818,64 @@
       "target": "안양시 관내 어린이집",
       "summary": "안양시 어린이집의 공기청정기 렌탈·유지비를 지원해 아이들에게 쾌적한 보육환경을 제공해요.",
       "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/383000000176"
+    },
+    {
+      "id": 72,
+      "name": "소상공인 손실보상금 지원",
+      "category": "혜택",
+      "startDate": "2025-10-27",
+      "endDate": "상시",
+      "location": "서울특별시 성동구",
+      "target": "코로나 방역조치로 피해를 입은 소상공인 및 소기업",
+      "summary": "코로나19 방역조치로 매출이 감소한 소상공인에게 손실보상금을 지원합니다.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/303000000326"
+    },
+    {
+      "id": 73,
+      "name": "임산부 건강관리 지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "서울특별시 광진구",
+      "target": "광진구 거주 임산부 및 출산 후 6개월 미만 여성",
+      "summary": "임신 초기검사, 엽산/철분제, 유축기 대여 등 필수 지원을 무료로 받으세요.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/304000000127"
+    },
+    {
+      "id": 74,
+      "name": "광진구 장난감도서관",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "서울특별시 광진구",
+      "target": "광진구 거주 또는 재직 중인 6세 미만 영유아 가정",
+      "summary": "비싼 영유아 장난감, 이제 사지 말고 저렴하게 대여해서 사용하세요!",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/304000000139",
+      "attractiveness_score": 85
+    },
+    {
+      "id": 75,
+      "name": "출산지원금 및 출산축하용품 지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "부산광역시 영도구",
+      "target": "부산 영도구에 주민등록 된 출산 가정",
+      "summary": "부산 영도구 출생아에게 현금 500만원과 기저귀 등 축하용품 지원",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/328000000105",
+      "attractiveness_score": 90
+    },
+    {
+      "id": 76,
+      "name": "영도구 초등학교 입학지원금 지원",
+      "category": "혜택",
+      "attractiveness": 85,
+      "startDate": "2026-03-01",
+      "endDate": "2026-10-31",
+      "location": "부산광역시 영도구",
+      "target": "영도구 거주 초등학교 1학년 입학생 가족",
+      "summary": "부산 영도구 초등학생 1학년 자녀 입학 시 20만원을 지원해드려요.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/328000000110"
     }
   ]
 }
