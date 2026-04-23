@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-23",
+  "lastUpdated": "2026-04-24",
   "source": "공공데이터포털(재구성)",
   "items": [
     {
@@ -876,6 +876,63 @@
       "target": "영도구 거주 초등학교 1학년 입학생 가족",
       "summary": "부산 영도구 초등학생 1학년 자녀 입학 시 20만원을 지원해드려요.",
       "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/328000000110"
+    },
+    {
+      "id": 77,
+      "name": "귀농귀촌종합센터 운영",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "귀농귀촌종합센터",
+      "target": "귀농/귀촌을 희망하는 청년, 도시민",
+      "summary": "성공적인 귀농귀촌을 위한 상담, 교육, 정보를 원스톱으로 지원합니다.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/154300000321"
+    },
+    {
+      "id": 78,
+      "name": "식생활교육 지원",
+      "category": "혜택",
+      "score": 85,
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "전국",
+      "target": "영유아, 청년, 노인 등 전 국민",
+      "summary": "올바른 식습관 형성을 위해 모든 국민에게 맞춤형 식생활 교육을 지원합니다.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/154300000329"
+    },
+    {
+      "id": 79,
+      "name": "바른 식생활교육 지원(지자체사업)",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "전국 (각 지자체 문의)",
+      "target": "영유아, 청소년, 청년, 노인 등 전국민",
+      "summary": "영유아부터 어르신까지, 우리 가족 건강을 위한 맞춤형 식생활 교육!",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/154300000330"
+    },
+    {
+      "id": 80,
+      "name": "농식품분야 해외인턴십 지원",
+      "category": "혜택",
+      "startDate": "상시 (기관 문의)",
+      "endDate": "상시 (기관 문의)",
+      "location": "전국",
+      "target": "만 19~34세 청년 (대학 2학년 이상 재/휴학생 및 졸업생)",
+      "summary": "농식품 분야 해외 취업을 꿈꾸는 청년에게 체재비, 왕복항공료 등을 지원합니다.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/154300000395",
+      "attraction_score": 88
+    },
+    {
+      "id": 81,
+      "name": "경영실습 임대농장 조성",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "전국 (관할 시군구청 또는 농업기술센터)",
+      "target": "만 40세 미만, 영농경력 3년 이하 청년농업인",
+      "summary": "농지나 시설이 없는 청년농업인에게 저렴한 임대농장을 제공해 드립니다.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/154300000397"
     }
   ]
 }
