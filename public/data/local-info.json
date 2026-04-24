@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-24",
+  "lastUpdated": "2026-04-25",
   "source": "공공데이터포털(재구성)",
   "items": [
     {
@@ -933,6 +933,63 @@
       "target": "만 40세 미만, 영농경력 3년 이하 청년농업인",
       "summary": "농지나 시설이 없는 청년농업인에게 저렴한 임대농장을 제공해 드립니다.",
       "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/154300000397"
+    },
+    {
+      "id": 82,
+      "name": "동작구 미혼모부 아동양육비 등 지원",
+      "category": "혜택",
+      "startDate": "2021-09-23",
+      "endDate": "상시",
+      "location": "서울특별시 동작구",
+      "target": "동작구 거주 미혼모·부",
+      "summary": "동작구 거주 만 5세 이하 아동을 양육하는 미혼모·부에게 월 10만원을 지원합니다.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/319000000111"
+    },
+    {
+      "id": 83,
+      "name": "보훈예우수당",
+      "category": "혜택",
+      "startDate": "2021-09-23",
+      "endDate": "상시",
+      "location": "서울특별시 동작구",
+      "target": "동작구 거주 국가보훈대상자",
+      "summary": "동작구에 거주하는 국가보훈대상자에게 매월 10만원을 지급합니다.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/319000000112"
+    },
+    {
+      "id": 84,
+      "name": "아동·청소년 정서발달지원서비스",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "서울특별시 동작구",
+      "target": "중위소득 140% 이하 가정의 만 6세~18세 아동·청소년",
+      "summary": "정서적 어려움을 겪는 아동·청소년에게 악기교육, 심리치료를 지원해요.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/319000000115"
+    },
+    {
+      "id": 85,
+      "name": "부모성장을 위한 심리지원서비스",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "서울특별시 동작구",
+      "target": "서울 동작구의 임산부 및 만 18세 이하 자녀를 둔 부모",
+      "summary": "양육 스트레스로 지친 부모님을 위해 월 2만 4천원부터 전문 심리상담을 지원해요.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/319000000117",
+      "attractiveness": 85
+    },
+    {
+      "id": 86,
+      "name": "아동·청소년 심리지원서비스",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "서울특별시 동작구",
+      "target": "기준 중위소득 160% 이하 가정의 만 18세 이하 아동·청소년",
+      "summary": "월 1만 8천원부터 심리상담, 언어/놀이/미술치료 등 마음건강 서비스를 지원받으세요.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/319000000121",
+      "attractiveness_score": 90
     }
   ]
 }
