@@ -2,4 +2,8 @@ name = "my-local-info"
 pages_build_output_dir = "out"
 
 [ai]
-binding = "AI" 
+binding = "AI"
+
+[[kv_namespaces]]
+binding = "CHAT_KV"
+id = "0d44230ec14c4a878a92e43ba31c360f"
