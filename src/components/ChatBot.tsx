@@ -15,9 +15,11 @@ export default function ChatBot() {
     {
       id: Date.now(),
       type: "bot",
-      text: "안녕하세요! 궁금하신 점이 있으신가요? 아래 질문을 클릭해 보세요.",
+      text: "안녕하세요! 궁금하신 점이 있으신가요? 아래 질문을 클릭하거나 직접 입력해 보세요.",
     },
   ]);
+  const [inputValue, setInputValue] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
   const scrollRef = useRef<HTMLDivElement>(null);
 
   // 메시지가 추가될 때마다 하단으로 스크롤
@@ -25,9 +27,38 @@ export default function ChatBot() {
     if (scrollRef.current) {
       scrollRef.current.scrollTop = scrollRef.current.scrollHeight;
     }
-  }, [messages, isOpen]);
+  }, [messages, isOpen, isLoading]);
+
+  const handleSend = async (text: string) => {
+    if (!text.trim() || isLoading) return;
+
+    const userMsg: Message = { id: Date.now(), type: "user", text };
+    setMessages((prev) => [...prev, userMsg]);
+    setInputValue("");
+    setIsLoading(true);
+
+    try {
+      const response = await fetch("/api/chat", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ prompt: text }),
+      });
+
+      if (!response.ok) throw new Error("API 요청 실패");
+
+      const data = await response.json();
+      const botMsg: Message = { id: Date.now() + 1, type: "bot", text: data.response || "죄송합니다. 답변을 생성하는 중에 문제가 발생했습니다." };
+      setMessages((prev) => [...prev, botMsg]);
+    } catch (error) {
+      const errorMsg: Message = { id: Date.now() + 1, type: "bot", text: "상담원 연결에 실패했습니다. 잠시 후 다시 시도해 주세요." };
+      setMessages((prev) => [...prev, errorMsg]);
+    } finally {
+      setIsLoading(false);
+    }
+  };
 
   const handleQuestionClick = (question: string, answer: string) => {
+    if (isLoading) return;
     // 사용자 질문 추가
     const userMsg: Message = { id: Date.now(), type: "user", text: question };
     setMessages((prev) => [...prev, userMsg]);
@@ -109,21 +140,59 @@ export default function ChatBot() {
               </div>
             </div>
           ))}
+          {isLoading && (
+            <div className="flex justify-start">
+              <div className="bg-white text-slate-400 border border-slate-100 px-4 py-2 rounded-2xl rounded-bl-none shadow-sm flex items-center gap-2">
+                <span className="w-1.5 h-1.5 bg-slate-300 rounded-full animate-bounce [animation-delay:-0.3s]"></span>
+                <span className="w-1.5 h-1.5 bg-slate-300 rounded-full animate-bounce [animation-delay:-0.15s]"></span>
+                <span className="w-1.5 h-1.5 bg-slate-300 rounded-full animate-bounce"></span>
+              </div>
+            </div>
+          )}
         </div>
 
-        {/* 질문 버튼 영역 */}
-        <div className="p-4 bg-white border-t border-slate-100 mb-safe">
-          <div className="flex flex-wrap gap-2 text-xs">
+        {/* 챗봇 입력창 및 질문 리스트 */}
+        <div className="p-4 bg-white border-t border-slate-100 space-y-3">
+          {/* 질문 버튼 목록 */}
+          <div className="flex flex-wrap gap-2 text-[10px]">
             {chatData.map((item, idx) => (
               <button
                 key={idx}
+                disabled={isLoading}
                 onClick={() => handleQuestionClick(item.question, item.answer)}
-                className="px-3 py-1.5 bg-blue-50 text-blue-600 rounded-full border border-blue-100 hover:bg-blue-100 transition-colors text-left"
+                className="px-2.5 py-1.5 bg-blue-50 text-blue-600 rounded-full border border-blue-100 hover:bg-blue-100 transition-colors text-left disabled:opacity-50"
               >
                 {item.question}
               </button>
             ))}
           </div>
+
+          {/* 텍스트 입력창 */}
+          <form 
+            onSubmit={(e) => {
+              e.preventDefault();
+              handleSend(inputValue);
+            }}
+            className="flex items-center gap-2"
+          >
+            <input
+              type="text"
+              value={inputValue}
+              onChange={(e) => setInputValue(e.target.value)}
+              disabled={isLoading}
+              placeholder="무엇이든 물어보세요..."
+              className="flex-1 bg-slate-100 border-none rounded-full px-4 py-2.5 text-sm focus:ring-2 focus:ring-blue-500 outline-none transition-all disabled:opacity-50"
+            />
+            <button
+              type="submit"
+              disabled={!inputValue.trim() || isLoading}
+              className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center text-white hover:bg-blue-700 transition-colors disabled:bg-slate-300"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z" />
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </>
