@@ -31,7 +31,7 @@ async function fetchPublicData() {
 
     let rawData = [];
     let validNewItems = [];
-    const maxRetries = 15;
+    const maxRetries = 25;
     let addedCount = 0;
     const targetAddCount = 5;
 

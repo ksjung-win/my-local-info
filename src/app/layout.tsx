@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from 'next/link';
 import "./globals.css";
+import ChatBot from "@/components/ChatBot";
 
 export const metadata: Metadata = {
   title: "성남시 생활 정보 | 행사·혜택·지원금 안내",
@@ -91,6 +92,9 @@ export default function RootLayout({
             © 2026 성남시 생활 정보 · 모든 정보는 공공데이터 API를 통해 실시간으로 수집 및 분석됩니다.
           </p>
         </footer>
+
+        {/* ── 챗봇 ── */}
+        <ChatBot />
       </body>
     </html>
   );

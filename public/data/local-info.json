@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-14",
+  "lastUpdated": "2026-04-16",
   "source": "공공데이터포털(재구성)",
   "items": [
     {
@@ -349,6 +349,112 @@
       "target": "강서구 주민(등록외국인, 거소등록동포 포함)",
       "summary": "강서구 주민이면 별도 가입 없이 상해사고 시 최대 500만원까지 보장받는 무료 안전 보험.",
       "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/315000000277"
+    },
+    {
+      "id": 31,
+      "name": "취약계층 통신요금감면",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "전국",
+      "target": "기초생활수급자, 차상위계층, 장애인, 국가유공자, 기초연금수급자",
+      "summary": "기초수급자, 장애인 등 취약계층의 통신요금을 월 최대 33,500원까지 감면하는 혜택",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/172100000012"
+    },
+    {
+      "id": 32,
+      "name": "사망자 및 피후견인 재산조회 통합처리 신청(안심상속서비스)",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "전국",
+      "target": "상속인, 후견인 등 사망자/피후견인의 재산 조회가 필요한 국민",
+      "summary": "사망한 가족의 금융, 토지, 연금 등 흩어진 재산을 한 번에 조회하는 원스톱 상속 서비스",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/174000000013",
+      "attractiveness_score": 95
+    },
+    {
+      "id": 33,
+      "name": "출산 관련 서비스 통합처리 신청(행복출산)",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "전국 주민센터",
+      "target": "출산가정",
+      "summary": "출생신고와 함께 첫만남이용권, 부모급여 등 각종 출산 혜택을 한 번에 신청하세요!",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/174000000029",
+      "attractiveness": 95
+    },
+    {
+      "id": 34,
+      "name": "청년성장프로젝트",
+      "category": "혜택",
+      "startDate": "2024-12-18",
+      "endDate": "상시",
+      "location": "전국 (사업 수행 자치단체)",
+      "target": "15~34세 미취업 청년",
+      "summary": "구직에 지친 청년에게 맞춤형 상담과 취업 프로그램을 지원해요.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/174100000087",
+      "attractiveness_score": 90
+    },
+    {
+      "id": 35,
+      "name": "지역화폐(강북사랑상품권)",
+      "category": "혜택",
+      "startDate": "2021-09-23",
+      "endDate": "상시",
+      "location": "서울특별시 강북구",
+      "target": "강북구 소상공인 및 강북구민",
+      "summary": "강북구민과 소상공인 모두에게! 5% 할인된 상품권으로 알뜰 소비하세요.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/308000000127"
+    },
+    {
+      "id": 36,
+      "name": "모성보건사업 지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "서울특별시 강북구",
+      "target": "강북구 관내 임산부",
+      "summary": "강북구 예비맘 필수! 엽산/철분제, 각종 검사, 유축기 대여 무료 지원",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/308000000128",
+      "attractiveness_score": 95
+    },
+    {
+      "id": 37,
+      "name": "여성과 어린이 건강증진 지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "서울특별시 도봉구",
+      "target": "도봉구 거주 임산부 및 영유아",
+      "summary": "도봉구 임산부에게 임신초기·기형아검사와 출산·육아교실을 지원해요.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/309000000124",
+      "attraction_score": 88
+    },
+    {
+      "id": 38,
+      "name": "장애인가정 출산지원금 지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "서울특별시 도봉구",
+      "target": "도봉구 거주 출산 장애인 가정",
+      "summary": "서울 도봉구에 거주하는 장애인 가정의 출산 시, 자녀 1인당 30만원을 지원합니다.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/309000000132",
+      "attractiveness": 85
+    },
+    {
+      "id": 39,
+      "name": "도봉구민 안전보험",
+      "category": "혜택",
+      "startDate": "2025-05-20",
+      "endDate": "2026-05-19",
+      "location": "서울특별시 도봉구",
+      "target": "도봉구 모든 구민",
+      "summary": "도봉구민이라면 자동 가입! 갑작스런 사고 시 의료비와 장례비를 지원합니다.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/309000000284",
+      "attractiveness": 85
     }
   ]
 }
