@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-25",
+  "lastUpdated": "2026-04-26",
   "source": "공공데이터포털(재구성)",
   "items": [
     {
@@ -990,6 +990,63 @@
       "summary": "월 1만 8천원부터 심리상담, 언어/놀이/미술치료 등 마음건강 서비스를 지원받으세요.",
       "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/319000000121",
       "attractiveness_score": 90
+    },
+    {
+      "id": 87,
+      "name": "동작구 착한가격업소 지원",
+      "category": "혜택",
+      "startDate": "2026-03-01",
+      "endDate": "2026-04-30",
+      "location": "서울특별시 동작구",
+      "target": "동작구 소상공인 (5인 미만 개인서비스업)",
+      "summary": "물가 안정에 기여하는 우리동네 착한 가게에 소모품, 정기 방역/청소 지원",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/319000000149",
+      "attractiveness_score": 75
+    },
+    {
+      "id": 88,
+      "name": "창업지원센터 운영",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "서울특별시 동작구",
+      "target": "동작구 예비창업자 및 7년 이내 창업기업",
+      "summary": "서울 동작구의 예비·초기 창업가에게 저렴한 사무공간과 창업 프로그램을 지원합니다.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/319000000151"
+    },
+    {
+      "id": 89,
+      "name": "중소기업육성기금 융자 지원",
+      "category": "혜택",
+      "startDate": "2026-01-01",
+      "endDate": "2026-12-31",
+      "location": "서울특별시 동작구",
+      "target": "동작구 소상공인 및 중소기업",
+      "summary": "동작구 소상공인 주목! 연 1.5% 초저금리로 사업자금 최대 2억원을 융자해드려요.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/319000000153"
+    },
+    {
+      "id": 90,
+      "name": "동작구 전세피해임차인 소송비용 지원",
+      "category": "혜택",
+      "startDate": "2025-03-17",
+      "endDate": "예산 소진 시까지",
+      "location": "서울특별시 동작구",
+      "target": "동작구 거주 전세사기 피해자",
+      "summary": "전세사기 피해로 힘든 동작구민에게 소송 관련 비용을 최대 100만원까지 지원합니다.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/319000000166"
+    },
+    {
+      "id": 91,
+      "name": "동작구 전세피해임차인 심리치료비 지원",
+      "category": "혜택",
+      "startDate": "2025-07-14",
+      "endDate": "예산 소진 시까지",
+      "location": "서울특별시 동작구",
+      "target": "동작구 거주 전세사기 피해자",
+      "summary": "전세사기 피해로 지친 마음을 위로! 심리치료비 최대 100만원 지원",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/319000000170",
+      "attraction_score": 88
     }
   ]
 }
