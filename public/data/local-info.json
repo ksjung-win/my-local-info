@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-26",
+  "lastUpdated": "2026-04-27",
   "source": "공공데이터포털(재구성)",
   "items": [
     {
@@ -1047,6 +1047,62 @@
       "summary": "전세사기 피해로 지친 마음을 위로! 심리치료비 최대 100만원 지원",
       "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/319000000170",
       "attraction_score": 88
+    },
+    {
+      "id": 92,
+      "name": "산모·신생아 건강관리 지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "대구광역시 달서구",
+      "target": "모든 출산가정",
+      "summary": "출산 가정의 산후조리 부담을 덜어주는 산모 및 신생아 돌봄 서비스를 지원합니다.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/347000000106"
+    },
+    {
+      "id": 93,
+      "name": "달서구 출산축하금 지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "대구광역시 달서구",
+      "target": "대구 달서구 거주, 둘째 이상 자녀 출산 가정",
+      "summary": "대구 달서구에서 둘째 이상 자녀 출산 시, 최대 500만원의 축하금을 지원합니다.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/347000000112"
+    },
+    {
+      "id": 94,
+      "name": "달서구 임산부 산전관리 및 검사 지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "대구광역시 달서구",
+      "target": "대구 달서구 거주 임산부 (임신 12주 이내 또는 24~28주)",
+      "summary": "대구 달서구 임산부에게 필수 산전 기초검사와 당뇨검사를 무료로 지원해요.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/347000000113",
+      "attractiveness_score": 85
+    },
+    {
+      "id": 95,
+      "name": "임산부 영양제 지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "대구광역시 달성군",
+      "target": "달성군에 등록된 임산부",
+      "summary": "임신 주수에 맞춰 필수 영양제인 엽산과 철분제를 무료로 지원합니다.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/348000000375"
+    },
+    {
+      "id": 96,
+      "name": "도전숙 입주자 모집",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "서울특별시 성북구",
+      "target": "성북구 거주 1인 창조기업인 및 예비창업자",
+      "summary": "성북구 창업가를 위한 사무실+주거 통합 공공임대주택, 최대 10년 거주!",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/307000000167"
     }
   ]
 }
