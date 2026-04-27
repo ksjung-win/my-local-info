@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-27",
+  "lastUpdated": "2026-04-28",
   "source": "공공데이터포털(재구성)",
   "items": [
     {
@@ -1103,6 +1103,63 @@
       "target": "성북구 거주 1인 창조기업인 및 예비창업자",
       "summary": "성북구 창업가를 위한 사무실+주거 통합 공공임대주택, 최대 10년 거주!",
       "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/307000000167"
+    },
+    {
+      "id": 97,
+      "name": "울주 청소년 성장지원금 지원",
+      "category": "혜택",
+      "startDate": "2026-02-09",
+      "endDate": "2026-11-30",
+      "location": "울산광역시 울주군",
+      "target": "울주군에 1년 이상 거주한 19세 청소년",
+      "summary": "울주군 19세 청소년에게 도서, 전자기기, 문화활동비 등 바우처 100만원 지원!",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/373000000113"
+    },
+    {
+      "id": 98,
+      "name": "울주군 신혼부부 주거비용 지원",
+      "category": "혜택",
+      "startDate": "2021-09-23",
+      "endDate": "상시",
+      "location": "울산광역시 울주군",
+      "target": "울주군 거주 소득요건을 충족하는 혼인 1년 이내 신혼부부",
+      "summary": "울주군 신혼부부에게 최대 2년간 월 9만원의 주거비를 현금 지원합니다.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/373000000116"
+    },
+    {
+      "id": 99,
+      "name": "울주군 출산장려금 지원",
+      "category": "혜택",
+      "startDate": "2021-09-23",
+      "endDate": "상시",
+      "location": "울산광역시 울주군",
+      "target": "울주군에 6개월 이상 거주한 출산 가정",
+      "summary": "울주군 출산가정에 첫째 70만원, 둘째 250만원, 셋째 500만원 현금 지원!",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/373000000119"
+    },
+    {
+      "id": 100,
+      "name": "울주군 신혼부부 주택 매입/전세자금 대출이자 지원",
+      "category": "혜택",
+      "attractiveness_score": 90,
+      "startDate": "2021-09-23",
+      "endDate": "상시",
+      "location": "울산광역시 울주군",
+      "target": "울주군 거주(예정) 신혼부부 및 예비부부",
+      "summary": "울주군 신혼부부에게 최대 2억 대출이자를 연 2%, 최장 8년간 지원해요.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/373000000128"
+    },
+    {
+      "id": 101,
+      "name": "울주군 산후회복지원금 지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "울산광역시 울주군",
+      "target": "울주군 거주 출산 가정",
+      "summary": "울주군 출산 가정에 아이 1명당 산후회복지원금 50만원을 현금으로 지원합니다.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/373000000135",
+      "attraction_score": 90
     }
   ]
 }
