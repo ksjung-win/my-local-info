@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-28",
+  "lastUpdated": "2026-04-29",
   "source": "공공데이터포털(재구성)",
   "items": [
     {
@@ -1160,6 +1160,62 @@
       "summary": "울주군 출산 가정에 아이 1명당 산후회복지원금 50만원을 현금으로 지원합니다.",
       "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/373000000135",
       "attraction_score": 90
+    },
+    {
+      "id": 102,
+      "name": "임신축하금 지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "서울특별시 서대문구",
+      "target": "서대문구 거주 임신부",
+      "summary": "서대문구 거주 임산부에게 태아 수에 따라 30~90만원의 현금을 지원해요.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/312000000125"
+    },
+    {
+      "id": 103,
+      "name": "서대문구 아빠 육아휴직장려금",
+      "category": "혜택",
+      "startDate": "2026-01-02",
+      "endDate": "예산 소진 시까지",
+      "location": "서울특별시 서대문구",
+      "target": "서대문구 1년 이상 거주 남성 육아휴직자",
+      "summary": "서대문구 아빠들 주목! 육아휴직 기간 동안 월 30만원, 최대 150만원의 현금 장려금을 지원해요.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/312000000315",
+      "attractiveness": 90
+    },
+    {
+      "id": 104,
+      "name": "(서대문구) 난임부부 시술 후 약제비 지원",
+      "category": "혜택",
+      "startDate": "2026-04-27",
+      "endDate": "상시",
+      "location": "서울시 서대문구",
+      "target": "서울 서대문구 거주 난임부부",
+      "summary": "난임시술에 필요한 원외처방 약제비의 본인부담금 90%를 현금으로 지원합니다.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/312000000318"
+    },
+    {
+      "id": 105,
+      "name": "임산부 건강관리 서비스",
+      "category": "혜택",
+      "startDate": "2021-09-23",
+      "endDate": "상시",
+      "location": "서울특별시 마포구",
+      "target": "임산부",
+      "summary": "마포구 임산부에게 엽산제, 철분제, 필수검사, 유축기 대여를 무료로 지원해요.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/313000000102"
+    },
+    {
+      "id": 106,
+      "name": "미혼모부 양육비 지원",
+      "category": "혜택",
+      "startDate": "2021-09-23",
+      "endDate": "상시",
+      "location": "서울특별시 마포구",
+      "target": "마포구 거주 미혼모·부 (만 5세 이하 아동 양육)",
+      "summary": "마포구 미혼모·부 가정에 만 5세 이하 자녀 1인당 월 10만원의 양육비를 지원합니다.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/313000000103"
     }
   ]
 }
