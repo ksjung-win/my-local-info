@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-29",
+  "lastUpdated": "2026-04-30",
   "source": "공공데이터포털(재구성)",
   "items": [
     {
@@ -1216,6 +1216,63 @@
       "target": "마포구 거주 미혼모·부 (만 5세 이하 아동 양육)",
       "summary": "마포구 미혼모·부 가정에 만 5세 이하 자녀 1인당 월 10만원의 양육비를 지원합니다.",
       "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/313000000103"
+    },
+    {
+      "id": 107,
+      "name": "통합문화이용권(문화누리카드)",
+      "category": "혜택",
+      "startDate": "2026-02-02",
+      "endDate": "2026-11-30",
+      "location": "전국",
+      "target": "6세 이상 기초생활수급자 및 차상위계층",
+      "summary": "저소득층의 문화생활, 국내여행, 체육활동을 위해 연 15만원을 지원하는 카드 발급",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/137100000236",
+      "attraction_score": 95
+    },
+    {
+      "id": 108,
+      "name": "청년 문화예술패스",
+      "category": "혜택",
+      "startDate": "2026-02-25",
+      "endDate": "2026-06-30",
+      "location": "전국",
+      "target": "19~20세 청년 (2006~2007년 출생자)",
+      "summary": "19~20세 청년에게 공연, 전시, 영화 관람비를 지원하는 문화 바우처!",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/137100000239"
+    },
+    {
+      "id": 109,
+      "name": "다문화가족 이중언어 교육지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "전국",
+      "target": "18세 이하 자녀를 둔 다문화가족",
+      "summary": "우리 아이의 미래 경쟁력! 다문화가족 자녀를 위한 이중언어 교육 지원",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/138300000021"
+    },
+    {
+      "id": 110,
+      "name": "청소년 상담 서비스 제공",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "전국 청소년상담복지센터",
+      "target": "9세~24세 위기 청소년",
+      "summary": "힘든 9~24세 청소년에게 상담, 긴급구조, 학업, 자립을 지원하는 든든한 버팀목!",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/138300000030",
+      "attractiveness_score": 90
+    },
+    {
+      "id": 111,
+      "name": "학교 밖 청소년 건강검진 지원",
+      "category": "혜택",
+      "startDate": "2020-12-17",
+      "endDate": "상시",
+      "location": "전국 학교밖청소년지원센터",
+      "target": "9세~18세 학교 밖 청소년",
+      "summary": "학교 밖 청소년이라면 누구나! 본인 부담금 없이 무료 건강검진 받으세요.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/138300000033"
     }
   ]
 }
