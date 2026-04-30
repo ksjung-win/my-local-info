@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-30",
+  "lastUpdated": "2026-05-01",
   "source": "공공데이터포털(재구성)",
   "items": [
     {
@@ -1273,6 +1273,64 @@
       "target": "9세~18세 학교 밖 청소년",
       "summary": "학교 밖 청소년이라면 누구나! 본인 부담금 없이 무료 건강검진 받으세요.",
       "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/138300000033"
+    },
+    {
+      "id": 112,
+      "name": "저소득주민 무료중개서비스 대상자 지원",
+      "category": "혜택",
+      "startDate": "2025-10-22",
+      "endDate": "상시",
+      "location": "서울특별시 양천구",
+      "target": "기초생활수급자",
+      "summary": "양천구 기초수급자 대상, 1억 이하 주택 임대차 계약 시 중개보수 최대 30만원 지원!",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/314000000255"
+    },
+    {
+      "id": 113,
+      "name": "청년 취업교육 프로그램 지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "서울특별시 양천구",
+      "target": "양천구 거주 19~39세 미취업 청년",
+      "summary": "양천구 청년들의 취업을 돕는 전문 직업 교육 프로그램을 지원합니다.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/314000000267",
+      "attraction_score": 85
+    },
+    {
+      "id": 114,
+      "name": "양천형 밤샘 긴급돌봄 어린이집 운영",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "서울특별시 양천구",
+      "target": "양천구 거주 1~6세 영유아를 둔 가족",
+      "summary": "갑작스러운 야근에도 걱정 끝! 시간당 1천원으로 이용하는 밤샘 긴급돌봄",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/314000000272",
+      "score": 90
+    },
+    {
+      "id": 115,
+      "name": "양천구민 자전거보험",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "서울특별시 양천구",
+      "target": "양천구에 주민등록된 모든 구민",
+      "summary": "양천구민이라면 누구나! 자전거 사고 시 최대 3천만원까지 자동 보장",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/314000000274"
+    },
+    {
+      "id": 116,
+      "name": "장애인 이동보조기기 수리비 지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "서울특별시 강서구",
+      "target": "강서구 거주 등록 장애인",
+      "summary": "장애인 이동보조기기(휠체어, 실버카 등) 수리 비용을 연 최대 25만원까지 지원합니다.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/315000000107",
+      "attractiveness_score": 85
     }
   ]
 }
