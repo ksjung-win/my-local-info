@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-01",
+  "lastUpdated": "2026-05-02",
   "source": "공공데이터포털(재구성)",
   "items": [
     {
@@ -1331,6 +1331,63 @@
       "summary": "장애인 이동보조기기(휠체어, 실버카 등) 수리 비용을 연 최대 25만원까지 지원합니다.",
       "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/315000000107",
       "attractiveness_score": 85
+    },
+    {
+      "id": 117,
+      "name": "임산부 산전 및 기형아 검사비 지원",
+      "category": "혜택",
+      "startDate": "2021-09-23",
+      "endDate": "상시",
+      "location": "경기도 광명시",
+      "target": "광명시에 거주하며 보건소에 등록한 임산부",
+      "summary": "광명시 거주 임산부라면 필수 산전/기형아 검사비 쿠폰 받으세요!",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/390000000106"
+    },
+    {
+      "id": 118,
+      "name": "시설퇴소 및 가정위탁종결아동 자립정착금 지급",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "경기도 광명시",
+      "target": "만 18세 이상 보호종료아동(자립준비청년)",
+      "summary": "경기도 광명시 보호종료아동에게 사회 첫 출발 자립정착금 1,500만원 지원",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/390000000108"
+    },
+    {
+      "id": 119,
+      "name": "광명시 노인 대중교통비 지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "경기도 광명시",
+      "target": "광명시 거주 만 65세 이상 어르신",
+      "summary": "광명시 어르신께 연간 16만원의 대중교통비를 지원해드려요.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/390000000127",
+      "attraction_score": 85
+    },
+    {
+      "id": 120,
+      "name": "광명시 난임부부 시술비 및 약제비 지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "경기도 광명시",
+      "target": "광명시 거주 난임부부",
+      "summary": "광명시 난임부부의 경제적 부담을 덜어드리기 위해 약제비를 지원합니다.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/390000000436"
+    },
+    {
+      "id": 121,
+      "name": "퇴소 및 보호종결아동 자립정착금 지원",
+      "category": "혜택",
+      "startDate": "2021-09-23",
+      "endDate": "상시",
+      "location": "경기도 평택시",
+      "target": "경기도 평택시 내 보호종료아동 (자립준비청년)",
+      "summary": "시설 퇴소 청년의 사회 정착을 위해 자립정착금 1,500만원을 지원하는 핵심 정책",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/391000000103",
+      "attractiveness_score": 95
     }
   ]
 }
