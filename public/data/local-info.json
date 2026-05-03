@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-03",
+  "lastUpdated": "2026-05-04",
   "source": "공공데이터포털(재구성)",
   "items": [
     {
@@ -1444,6 +1444,63 @@
       "summary": "산후조리 서비스 이용 후, 본인부담금 일부를 현금으로 지원해 드려요.",
       "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/358000000143",
       "attractiveness": 85
+    },
+    {
+      "id": 127,
+      "name": "돌봄 취약가구 반려동물 의료서비스 등 지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "경기도 안양시",
+      "target": "안양시 돌봄 취약가구 (저소득층, 1인가구, 한부모가정 등)",
+      "summary": "안양시 취약가구의 반려동물 의료, 미용, 돌봄, 장례 비용을 최대 20만원까지 지원해요.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/383000000146",
+      "attractiveness": 85
+    },
+    {
+      "id": 128,
+      "name": "임산부 자동차표지 제공",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "경기도 안양시",
+      "target": "안양시에 거주하는 임산부 또는 분만 후 6개월 미만 여성",
+      "summary": "안양시 임산부 전용주차구역 이용 및 공영주차장 요금 50% 할인 혜택을 받으세요.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/383000000147"
+    },
+    {
+      "id": 129,
+      "name": "안양시 중소기업육성자금 융자 이자차액보전 지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "경기도 안양시",
+      "target": "안양시 중소기업, 소상공인, 청년창업기업",
+      "summary": "안양시 소상공인·중소기업을 위한 최대 30억 저금리 융자 및 이자 지원",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/383000000148"
+    },
+    {
+      "id": 130,
+      "name": "안양시 청년창업 특례보증",
+      "category": "혜택",
+      "startDate": "2021-11-02",
+      "endDate": "상시",
+      "location": "경기도 안양시",
+      "target": "안양시 거주 만 19~39세 청년 창업가 (사업 5년 이하)",
+      "summary": "담보 없이 최대 5천만원! 안양시 청년 창업가를 위한 특례보증 융자 지원",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/383000000151",
+      "score": 90
+    },
+    {
+      "id": 131,
+      "name": "출산준비교육 (안양시 동안구)",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "경기도 안양시 동안구",
+      "target": "임신부 및 예비부모",
+      "summary": "예비 부모를 위해 신생아 돌보기, 모유수유, 베이비마사지 등 필수 육아 교육을 제공해요.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/383000000157"
     }
   ]
 }
