@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-06",
+  "lastUpdated": "2026-05-07",
   "source": "공공데이터포털(재구성)",
   "items": [
     {
@@ -1617,6 +1617,64 @@
       "target": "용산구 거주 임산부 및 배우자",
       "summary": "신생아의 건강을 위해, 용산구 거주 임산부와 배우자에게 백일해 예방접종을 지원합니다.",
       "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/302000000126"
+    },
+    {
+      "id": 142,
+      "name": "맞춤형농지지원사업",
+      "category": "혜택",
+      "startDate": "2025-07-01",
+      "endDate": "상시",
+      "location": "전국 (주관: 한국농어촌공사)",
+      "target": "청년농업인, 후계농업인, 귀농인",
+      "summary": "농사를 시작하려는 청년·귀농인에게 농지 매입자금 융자 및 저렴한 장기 임대 지원",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/154300005035",
+      "attractiveness_score": 85
+    },
+    {
+      "id": 143,
+      "name": "천원의 아침밥",
+      "category": "혜택",
+      "attraction_score": 95,
+      "startDate": "2025-09-17",
+      "endDate": "상시",
+      "location": "전국 200개 참여대학",
+      "target": "전국 대학교 재학생",
+      "summary": "대학생에게 단돈 1,000원으로 든든한 아침밥을 제공하는 지원 사업",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/154300005045"
+    },
+    {
+      "id": 144,
+      "name": "4대궁, 종묘 및 조선왕릉 무료 관람",
+      "category": "혜택",
+      "startDate": "2020-12-17",
+      "endDate": "상시",
+      "location": "4대궁(경복궁, 창덕궁, 창경궁, 덕수궁), 종묘, 조선왕릉",
+      "target": "만 24세 이하 청년, 만 65세 이상 어르신, 한복 착용자, 다자녀 부모 등",
+      "summary": "한복만 입어도, 만 24세 이하라면 누구나! 고궁과 왕릉 무료 입장.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/155000000015"
+    },
+    {
+      "id": 145,
+      "name": "버팀목전세자금대출",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "전국",
+      "target": "무주택 서민, 청년, 신혼부부",
+      "summary": "무주택 서민·청년을 위한 저금리 전세자금 대출, 최대 3억 지원!",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/161300000076"
+    },
+    {
+      "id": 146,
+      "name": "청년주택드림 청약통장",
+      "category": "혜택",
+      "startDate": "2024-02-21",
+      "endDate": "상시",
+      "location": "전국 (주택도시기금 수탁은행)",
+      "target": "19~34세 무주택 청년 (연소득 5천만원 이하)",
+      "summary": "무주택 청년에게 우대금리, 이자소득 비과세 혜택을 주는 주택청약통장",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/161300000088",
+      "attractiveness": 98
     }
   ]
 }
