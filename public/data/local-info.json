@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-08",
+  "lastUpdated": "2026-05-09",
   "source": "공공데이터포털(재구성)",
   "items": [
     {
@@ -1731,6 +1731,63 @@
       "target": "다문화/외국인/난민 가족의 미취학 및 초등학생 자녀",
       "summary": "다문화가족 자녀의 학교 적응을 돕는 한글, 수학 등 기초학습 지원",
       "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/138300000058"
+    },
+    {
+      "id": 152,
+      "name": "자립준비청년(보호종료아동) 자립정착금 지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "인천광역시 남동구",
+      "target": "자립준비청년 (보호종료아동)",
+      "summary": "보호종료 청년의 사회 첫걸음을 위해 자립정착금 1천만원을 지원합니다.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/353000000105"
+    },
+    {
+      "id": 153,
+      "name": "저소득주민 국민건강보험료 지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "인천광역시 부평구",
+      "target": "인천 부평구 거주 저소득 노인, 장애인, 한부모가족",
+      "summary": "인천 부평구 저소득 어르신·장애인·한부모가족의 건강보험료 부담을 덜어드립니다.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/354000000105"
+    },
+    {
+      "id": 154,
+      "name": "소상공인 특례보증",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "예산 소진 시까지",
+      "location": "인천광역시 부평구",
+      "target": "담보가 부족한 인천 부평구 소상공인",
+      "summary": "담보가 부족해 대출이 어려운 인천 부평구 소상공인을 위한 사업자금 신용보증 지원",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/354000000112",
+      "attractiveness_score": 85
+    },
+    {
+      "id": 155,
+      "name": "노란우산공제부금 가입장려금 지급",
+      "category": "혜택",
+      "startDate": "2022-06-07",
+      "endDate": "상시",
+      "location": "인천광역시 계양구",
+      "target": "인천 계양구 소상공인",
+      "summary": "계양구 소상공인 노란우산 신규 가입 시, 1년간 최대 36만원 현금 지원!",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/355000000111",
+      "attractiveness_score": 85
+    },
+    {
+      "id": 156,
+      "name": "소상공인 특례보증",
+      "category": "혜택",
+      "startDate": "2026-05-04",
+      "endDate": "상시 (자금 소진 시까지)",
+      "location": "인천광역시 계양구",
+      "target": "인천 계양구의 담보력이 부족한 소상공인",
+      "summary": "인천 계양구 소상공인에게 최대 3천만원 대출보증 및 이자(최대 2.5%) 지원!",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/355000000112"
     }
   ]
 }
