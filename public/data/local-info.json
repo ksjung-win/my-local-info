@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-09",
+  "lastUpdated": "2026-05-10",
   "source": "공공데이터포털(재구성)",
   "items": [
     {
@@ -1788,6 +1788,64 @@
       "target": "인천 계양구의 담보력이 부족한 소상공인",
       "summary": "인천 계양구 소상공인에게 최대 3천만원 대출보증 및 이자(최대 2.5%) 지원!",
       "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/355000000112"
+    },
+    {
+      "id": 157,
+      "name": "학대피해아동 심리검사 및 의료비 지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "서울특별시 강서구",
+      "target": "만18세 미만의 학대피해아동",
+      "summary": "학대피해아동의 몸과 마음의 상처 치유를 위한 심리검사 및 의료비 지원",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/315000000113"
+    },
+    {
+      "id": 158,
+      "name": "미혼모·부 양육지원 (서울 강서구)",
+      "category": "혜택",
+      "startDate": "2022-02-08",
+      "endDate": "상시",
+      "location": "서울특별시 강서구",
+      "target": "서울 강서구 거주 미혼모·부",
+      "summary": "서울 강서구 미혼모·부 가정에 아동양육비, 냉난방비, 의료비를 지원합니다.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/315000000114",
+      "attractiveness_score": 85
+    },
+    {
+      "id": 159,
+      "name": "강서구 전세피해지원금(보증료) 지원",
+      "category": "혜택",
+      "startDate": "2023-09-06",
+      "endDate": "2027-07-25",
+      "location": "서울특별시 강서구",
+      "target": "서울 강서구 전세사기 피해자",
+      "summary": "전세사기 피해로 새로 이사한 강서구 무주택 세대주에게 보증보험료를 최대 100만원 지원합니다.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/315000000268",
+      "attraction_score": 85
+    },
+    {
+      "id": 160,
+      "name": "강서구 전세피해 청년 월세 지원",
+      "category": "혜택",
+      "startDate": "2023-09-06",
+      "endDate": "2027-07-25",
+      "location": "서울특별시 강서구",
+      "target": "강서구 거주 전세사기피해 무주택 청년 (19~39세)",
+      "summary": "전세사기 피해를 입은 강서구 청년에게 월 20만원씩 최대 1년간 월세를 지원합니다.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/315000000269"
+    },
+    {
+      "id": 161,
+      "name": "강서구 전세피해지원금(소송수행경비) 지원",
+      "category": "혜택",
+      "startDate": "2023-12-15",
+      "endDate": "2027-07-25",
+      "location": "서울 강서구",
+      "target": "서울 강서구 거주 전세사기 피해 무주택자",
+      "summary": "전세사기 피해로 소송 중인 강서구 무주택 세대에게 소송비용 100만원을 지원합니다.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/315000000271",
+      "attractiveness": 85
     }
   ]
 }
