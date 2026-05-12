@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-12",
+  "lastUpdated": "2026-05-13",
   "source": "공공데이터포털(재구성)",
   "items": [
     {
@@ -1960,6 +1960,64 @@
       "summary": "쪽방, 고시원 등 열악한 곳에서 안전한 임대주택으로 이사하도록 보증금과 이사비를 지원합니다.",
       "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/161300000106",
       "attraction_score": 90
+    },
+    {
+      "id": 172,
+      "name": "저소득 한부모가족 명절격려금 및 학습참고서비 지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "서울특별시 성동구",
+      "target": "성동구 저소득 한부모가족 (중위소득 65% 이하)",
+      "summary": "성동구 저소득 한부모가족에게 명절 격려금과 자녀 학습 참고서비를 지원합니다.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/303000000110",
+      "score": 85
+    },
+    {
+      "id": 173,
+      "name": "성동사랑상품권 (지역화폐)",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "서울시 성동구",
+      "target": "전국민, 성동구 소상공인",
+      "summary": "성동구에서 할인된 금액으로 구매하고 30% 소득공제까지 받는 지역화폐",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/303000000113",
+      "attractiveness": 95
+    },
+    {
+      "id": 174,
+      "name": "(성동구) 난임부부 시술비 약제비 지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "서울특별시 성동구",
+      "target": "성동구 거주 난임부부",
+      "summary": "아이를 기다리는 성동구 난임부부에게 시술 관련 약제비를 지원합니다.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/303000000311"
+    },
+    {
+      "id": 175,
+      "name": "성동구민 생활안전보험",
+      "category": "혜택",
+      "attractiveness": 90,
+      "startDate": "2025-01-01",
+      "endDate": "상시",
+      "location": "서울특별시 성동구",
+      "target": "성동구민",
+      "summary": "성동구민이라면 자동 가입! 재난·사고 시 의료비와 장례비를 최대 1,500만원까지 보장받으세요.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/303000000315"
+    },
+    {
+      "id": 176,
+      "name": "서울시 전세보증금 반환보증 보증료 지원",
+      "category": "혜택",
+      "startDate": "2024-08-05",
+      "endDate": "상시",
+      "location": "서울특별시",
+      "target": "서울시 무주택 임차인 (청년, 신혼부부 등 전연령)",
+      "summary": "전세 사기 걱정 끝! 서울시가 전세보증보험료를 최대 40만원까지 지원합니다.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/313000000126"
     }
   ]
 }
