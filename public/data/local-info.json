@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-14",
+  "lastUpdated": "2026-05-15",
   "source": "공공데이터포털(재구성)",
   "items": [
     {
@@ -2074,6 +2074,63 @@
       "target": "수원시 영통구 거주 난임부부",
       "summary": "난임 시술에 필요한 약제비를 지원받아 경제적 부담을 덜어보세요.",
       "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/374000000558"
+    },
+    {
+      "id": 182,
+      "name": "영도 청년 자격증 응시료 지원",
+      "category": "혜택",
+      "startDate": "2026-01-01",
+      "endDate": "2026-12-31",
+      "location": "부산광역시 영도구",
+      "target": "부산 영도구에 1년 이상 거주한 19~39세 미취업 청년",
+      "summary": "취업에 필요한 어학, 국가기술자격증 시험 응시료를 최대 10만원까지 지원해드려요.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/328000000108",
+      "attractiveness": 85
+    },
+    {
+      "id": 183,
+      "name": "부산진구 교복구입비 지원",
+      "category": "혜택",
+      "startDate": "2026-03-03",
+      "endDate": "2026-12-04",
+      "location": "부산광역시 부산진구",
+      "target": "부산진구 거주 고등학교 신입생 등",
+      "summary": "부산진구 고등학교 신입생 가정에 교복 구입비 30만원 현금 지원!",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/329000000109"
+    },
+    {
+      "id": 184,
+      "name": "부산진구 초등학교 입학지원금 지원",
+      "category": "혜택",
+      "startDate": "2026-03-03",
+      "endDate": "2026-12-04",
+      "location": "부산광역시 부산진구",
+      "target": "부산진구 거주 초등학교 신입생 가정",
+      "summary": "자녀의 첫 초등학교 입학을 축하하며, 준비 비용 부담을 덜어줄 현금 30만원을 지원합니다.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/329000000113",
+      "attractiveness": 85
+    },
+    {
+      "id": 185,
+      "name": "저소득 국민건강보험료 및 장기요양보험료 지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "부산광역시 동래구",
+      "target": "부산 동래구 저소득층 (노인, 장애인, 한부모, 만성질환 세대 등)",
+      "summary": "부산 동래구 저소득 취약계층의 건강보험료 부담을 덜어주는 자동 지원 제도",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/330000000102"
+    },
+    {
+      "id": 186,
+      "name": "출산장려금 지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "부산광역시 동래구",
+      "target": "자녀 출산 가정",
+      "summary": "동래구 출산 가정에 출생아 1인당 100만원 현금을 드립니다!",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/330000000109"
     }
   ]
 }
