@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-15",
+  "lastUpdated": "2026-05-16",
   "source": "공공데이터포털(재구성)",
   "items": [
     {
@@ -2131,6 +2131,63 @@
       "target": "자녀 출산 가정",
       "summary": "동래구 출산 가정에 출생아 1인당 100만원 현금을 드립니다!",
       "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/330000000109"
+    },
+    {
+      "id": 187,
+      "name": "다문화가족 자녀 기초학습 지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "전국 (가까운 가족센터 문의)",
+      "target": "다문화/외국인/난민가족 자녀 (미취학 및 초등학생)",
+      "summary": "다문화가족 자녀의 학교 적응을 돕는 기초학습(국어, 수학) 지원 프로그램",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/138300000058",
+      "attractiveness": 90
+    },
+    {
+      "id": 188,
+      "name": "가정 밖 청소년 자립지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "전국",
+      "target": "가정 밖 청소년 (청소년복지시설 이용자)",
+      "summary": "위기 청소년에게 주거, 의료, 학업, 취업 등 건강한 사회 진출을 위한 통합 서비스를 지원합니다.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/138300000063"
+    },
+    {
+      "id": 189,
+      "name": "청소년복지시설 퇴소청소년 자립지원수당",
+      "category": "혜택",
+      "attractiveness": 95,
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "전국",
+      "target": "자립준비청년(보호종료아동)",
+      "summary": "보호종료 후 5년간 매월 50만 원의 자립수당으로 안정적인 사회 첫걸음을 지원해요.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/138300000067"
+    },
+    {
+      "id": 190,
+      "name": "국립수목원 관람료 할인/면제 혜택",
+      "category": "혜택",
+      "startDate": "2020-12-17",
+      "endDate": "상시",
+      "location": "국립수목원 (경기도 포천시)",
+      "target": "국가유공자, 장애인, 다자녀가족, 지역주민 및 매월 마지막 주 수요일 방문객",
+      "summary": "국가유공자, 다자녀 가족 등은 무료! 매월 마지막 수요일엔 누구나 무료!",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/140000000002"
+    },
+    {
+      "id": 191,
+      "name": "국가유공자 등의 국가정원 관람료 면제",
+      "category": "혜택",
+      "startDate": "2020-12-17",
+      "endDate": "상시",
+      "location": "국가정원 (순천만 등)",
+      "target": "국가유공자, 장애인, 65세 이상, 7세 이하 아동 등",
+      "summary": "어르신, 어린이, 국가유공자 등 해당된다면 국가정원 무료 입장!",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/140000000171"
     }
   ]
 }
