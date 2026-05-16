@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-16",
+  "lastUpdated": "2026-05-17",
   "source": "공공데이터포털(재구성)",
   "items": [
     {
@@ -2188,6 +2188,63 @@
       "target": "국가유공자, 장애인, 65세 이상, 7세 이하 아동 등",
       "summary": "어르신, 어린이, 국가유공자 등 해당된다면 국가정원 무료 입장!",
       "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/140000000171"
+    },
+    {
+      "id": 192,
+      "name": "[연수구] 난임부부 시술 개인약제비 지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "인천광역시 연수구",
+      "target": "인천 연수구에 거주하는 난임부부",
+      "summary": "인천 연수구 거주 난임부부에게 시술 후 발생하는 원외 약제비를 현금으로 지원합니다.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/352000000117",
+      "attraction_score": 85
+    },
+    {
+      "id": 193,
+      "name": "[연수구] 산모·신생아 건강관리서비스 본인부담금 지원",
+      "category": "혜택",
+      "startDate": "2024-04-23",
+      "endDate": "상시",
+      "location": "인천광역시 연수구",
+      "target": "인천 연수구 내 출산가정 (중위소득 150% 이하 등)",
+      "summary": "산후조리 서비스 이용 시 발생하는 본인부담금을 최대 전액까지 지원해 드려요.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/352000000119",
+      "attractiveness": 95
+    },
+    {
+      "id": 194,
+      "name": "소기업, 소공인 특례보증",
+      "category": "혜택",
+      "startDate": "2026-02-01",
+      "endDate": "자금 소진 시까지",
+      "location": "인천광역시 남동구",
+      "target": "인천 남동구 소재 소기업(제조업) 및 소공인",
+      "summary": "담보가 부족한 남동구 소상공인을 위한 최대 3천만원 금융 보증 지원",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/353000000117"
+    },
+    {
+      "id": 195,
+      "name": "노란우산 가입장려금 지원",
+      "category": "혜택",
+      "startDate": "2022-07-14",
+      "endDate": "상시",
+      "location": "인천광역시 부평구",
+      "target": "인천 부평구 연매출 3억 이하 신규 소상공인",
+      "summary": "노란우산 신규 가입 시, 1년간 매월 1만원씩 최대 12만원을 지원합니다.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/354000000111"
+    },
+    {
+      "id": 196,
+      "name": "다자녀가정 양육비 지원 (인천 계양구)",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "인천광역시 계양구",
+      "target": "인천 계양구 1년 이상 거주 다자녀가정",
+      "summary": "인천 계양구 다자녀 가정이라면? 6세 미만 자녀 1명당 월 10만원 받아가세요!",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/355000000103"
     }
   ]
 }
