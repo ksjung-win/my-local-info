@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-17",
+  "lastUpdated": "2026-05-18",
   "source": "공공데이터포털(재구성)",
   "items": [
     {
@@ -2245,6 +2245,63 @@
       "target": "인천 계양구 1년 이상 거주 다자녀가정",
       "summary": "인천 계양구 다자녀 가정이라면? 6세 미만 자녀 1명당 월 10만원 받아가세요!",
       "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/355000000103"
+    },
+    {
+      "id": 197,
+      "name": "청년월세 지원",
+      "category": "혜택",
+      "startDate": "2026-01-01",
+      "endDate": "2026-06-30",
+      "location": "전국",
+      "target": "만 19~34세 무주택 청년",
+      "summary": "월세 부담에 힘든 청년에게 월 최대 20만원씩 24개월간 지원금을 드려요.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/161300000099"
+    },
+    {
+      "id": 198,
+      "name": "국토교통부 전세보증금반환보증 보증료 지원",
+      "category": "혜택",
+      "startDate": "2024-11-01",
+      "endDate": "상시",
+      "location": "전국",
+      "target": "소득 기준을 충족하는 무주택 청년, 신혼부부 등",
+      "summary": "전세 사기 걱정 끝! 납부한 전세보증보험료 최대 40만원 환급!",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/161300000103",
+      "attraction_score": 95
+    },
+    {
+      "id": 199,
+      "name": "상해보험 가입비 지원(만원의행복보험)",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "전국 우체국",
+      "target": "만 15~65세 기초생활수급자, 차상위계층",
+      "summary": "기초생활수급자·차상위계층이 1만원으로 재해사망시 최대 2천만원을 보장받는 상해보험 가입 지원",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/171000000005"
+    },
+    {
+      "id": 200,
+      "name": "취약계층 통신요금감면",
+      "category": "혜택",
+      "startDate": "2023-08-23",
+      "endDate": "상시",
+      "location": "전국",
+      "target": "기초생활수급자, 차상위계층, 장애인, 국가유공자, 기초연금수급자 등",
+      "summary": "기초생활수급자, 장애인 등 통신비 부담을 최대 33,500원까지 덜어주는 요금감면 혜택",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/172100000012",
+      "attractiveness": 95
+    },
+    {
+      "id": 201,
+      "name": "광진구 청년 행정아르바이트",
+      "category": "혜택",
+      "startDate": "2026-06-01",
+      "endDate": "2026-06-30",
+      "location": "서울특별시 광진구",
+      "target": "광진구 거주 청년 (만 19~29세)",
+      "summary": "여름방학 시즌, 광진구청에서 생활임금 받으며 행정 실무를 경험할 절호의 기회!",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/304000000162"
     }
   ]
 }
