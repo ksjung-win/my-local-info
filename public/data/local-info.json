@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-18",
+  "lastUpdated": "2026-05-19",
   "source": "공공데이터포털(재구성)",
   "items": [
     {
@@ -2302,6 +2302,63 @@
       "target": "광진구 거주 청년 (만 19~29세)",
       "summary": "여름방학 시즌, 광진구청에서 생활임금 받으며 행정 실무를 경험할 절호의 기회!",
       "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/304000000162"
+    },
+    {
+      "id": 202,
+      "name": "광진동행버스(교통약자) 무료 버스 지원",
+      "category": "혜택",
+      "startDate": "2025-05-19",
+      "endDate": "상시",
+      "location": "서울특별시 광진구",
+      "target": "광진구 어르신, 장애인, 임산부 등 교통약자 및 보호자",
+      "summary": "광진구 내 어르신, 장애인, 임산부를 위해 무료로 운행하는 셔틀버스입니다.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/304000000160",
+      "attraction_score": 85
+    },
+    {
+      "id": 203,
+      "name": "광진구 청년 행정아르바이트",
+      "category": "혜택",
+      "startDate": "2026-06-01",
+      "endDate": "2026-06-30",
+      "location": "서울특별시 광진구",
+      "target": "광진구 거주 청년 (만 19세~29세)",
+      "summary": "광진구 청년들에게 행정 경험과 생활임금 기준 급여를 제공하는 꿀알바!",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/304000000162"
+    },
+    {
+      "id": 204,
+      "name": "광진형 소상공인 특별보증추천 지원(광진형 특별융자)",
+      "category": "혜택",
+      "startDate": "2021-11-04",
+      "endDate": "상시",
+      "location": "서울시 광진구",
+      "target": "서울 광진구 소상공인 및 자영업자",
+      "summary": "담보가 부족해 대출이 어려운 광진구 소상공인에게 최대 7천만원 특별보증 지원!",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/304000000165",
+      "attractiveness_score": 85
+    },
+    {
+      "id": 205,
+      "name": "다자녀 입학축하금 지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "서울특별시 동대문구",
+      "target": "서울 동대문구의 셋째 이상 자녀를 둔 부모",
+      "summary": "서울 동대문구 셋째 이상 자녀의 초·중·고 입학 시 최대 100만원을 지원합니다.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/305000000103"
+    },
+    {
+      "id": 206,
+      "name": "임산부 등록 지원",
+      "category": "혜택",
+      "startDate": "2021-09-23",
+      "endDate": "상시",
+      "location": "서울특별시 동대문구",
+      "target": "동대문구 거주 임산부 및 산모",
+      "summary": "동대문구 임산부·산모에게 필수 검사, 영양제, 유축기 대여를 지원해요.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/305000000109"
     }
   ]
 }
