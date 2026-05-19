@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-19",
+  "lastUpdated": "2026-05-20",
   "source": "공공데이터포털(재구성)",
   "items": [
     {
@@ -2359,6 +2359,62 @@
       "target": "동대문구 거주 임산부 및 산모",
       "summary": "동대문구 임산부·산모에게 필수 검사, 영양제, 유축기 대여를 지원해요.",
       "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/305000000109"
+    },
+    {
+      "id": 207,
+      "name": "농식품 벤처 창업 활성화 지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "전국",
+      "target": "농식품 분야 예비창업자 및 창업자",
+      "summary": "농식품 분야 유망 예비창업자에게 사업화 자금, 기술, 판로 등을 지원합니다.",
+      "link": "https://www.a-startups.or.kr"
+    },
+    {
+      "id": 208,
+      "name": "귀농·귀촌인 귀농귀촌 교육 지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "전국 (지자체 및 위탁 교육기관)",
+      "target": "예비 귀농귀촌인",
+      "summary": "귀농귀촌의 꿈, 정부 교육비 지원(70~90%) 받고 시작하세요!",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/154300000138"
+    },
+    {
+      "id": 209,
+      "name": "성폭력, 아동학대 등 범죄 피해자 국선변호사 지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "법무부 (전국)",
+      "target": "성폭력, 아동/장애인/인신매매/스토킹 범죄 피해자",
+      "summary": "힘든 일을 겪은 범죄 피해자에게 든든한 국선변호사를 지원합니다.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/127000000026"
+    },
+    {
+      "id": 210,
+      "name": "전역예정장병 취업활동지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "전국",
+      "target": "전역예정장병",
+      "summary": "군 복무 후 사회 진출을 준비하는 장병에게 맞춤형 진로설계 및 취업 상담 지원",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/129000000015",
+      "attractiveness": 90
+    },
+    {
+      "id": 211,
+      "name": "장애인가정 출산 지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "경기도 수원시",
+      "target": "수원시 거주 등록 장애인 출산 가정",
+      "summary": "수원시에 거주하는 등록 장애인 가정에 출산지원금 100만원을 드려요.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/374000000130"
     }
   ]
 }
