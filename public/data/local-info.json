@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-20",
+  "lastUpdated": "2026-05-21",
   "source": "공공데이터포털(재구성)",
   "items": [
     {
@@ -2415,6 +2415,63 @@
       "target": "수원시 거주 등록 장애인 출산 가정",
       "summary": "수원시에 거주하는 등록 장애인 가정에 출산지원금 100만원을 드려요.",
       "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/374000000130"
+    },
+    {
+      "id": 212,
+      "name": "동작구 전세피해임차인 소송비용 지원",
+      "category": "혜택",
+      "score": 95,
+      "startDate": "2025-03-17",
+      "endDate": "예산 소진 시까지",
+      "location": "서울특별시 동작구",
+      "target": "전세사기피해자로 결정된 동작구민",
+      "summary": "전세사기 피해로 소송이 막막할 때, 법률 비용을 최대 100만원까지 지원해 드려요.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/319000000166"
+    },
+    {
+      "id": 213,
+      "name": "동작구 전세피해임차인 보증금반환보증료 지원",
+      "category": "혜택",
+      "startDate": "2025-07-14",
+      "endDate": "예산 소진 시까지",
+      "location": "서울특별시 동작구",
+      "target": "전세사기 피해자로 결정된 무주택 동작구민",
+      "summary": "동작구 전세사기 피해 구민에게 보증금반환보증료를 최대 100만원까지 지원합니다.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/319000000167"
+    },
+    {
+      "id": 214,
+      "name": "동작구 전세피해임차인 지원금(월세 실비 지원)",
+      "category": "혜택",
+      "startDate": "2025-07-14",
+      "endDate": "예산 소진 시까지",
+      "location": "서울특별시 동작구",
+      "target": "전세사기피해자로 결정된 동작구민",
+      "summary": "전세사기 피해를 입은 동작구민에게 월세 비용을 최대 100만원까지 현금 지원합니다.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/319000000169"
+    },
+    {
+      "id": 215,
+      "name": "동작구 전세피해임차인 주거안정 지원금",
+      "category": "혜택",
+      "startDate": "2025-07-14",
+      "endDate": "예산 소진 시까지",
+      "location": "서울특별시 동작구",
+      "target": "전세사기 피해자로 결정된 무주택 동작구민",
+      "summary": "전세사기 피해로 힘든 동작구민에게 주거안정을 위해 50만원을 지원합니다.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/319000000171",
+      "attraction_score": 90
+    },
+    {
+      "id": 216,
+      "name": "으뜸관악 청년통장 지원",
+      "category": "혜택",
+      "startDate": "2026-06-01",
+      "endDate": "2026-06-30",
+      "location": "서울특별시 관악구",
+      "target": "관악구에 거주하는 만 18~34세 근로 청년",
+      "summary": "월 15만원 저축 시 100% 매칭! 2~3년 후 든든한 목돈 마련의 기회",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/320000000102"
     }
   ]
 }
