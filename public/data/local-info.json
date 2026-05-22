@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-22",
+  "lastUpdated": "2026-05-23",
   "source": "공공데이터포털(재구성)",
   "items": [
     {
@@ -2531,6 +2531,64 @@
       "target": "난임으로 어려움을 겪는 서울시 마포구 거주 부부",
       "summary": "마포구 난임부부 대상, 시술 과정에 필요한 약제비를 현금으로 지원해드려요.",
       "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/313000000131"
+    },
+    {
+      "id": 222,
+      "name": "임산부 등록관리 지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "서울특별시 은평구",
+      "target": "임산부",
+      "summary": "은평구 예비 엄마 필수! 엽산제, 철분제, 기형아 검사를 무료로 지원받으세요.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/311000000113"
+    },
+    {
+      "id": 223,
+      "name": "아동청소년 심리지원서비스",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "서울특별시 은평구",
+      "target": "정서·행동 문제로 어려움을 겪는 만 18세 이하 아동·청소년 (중위소득 140% 이하)",
+      "summary": "월 1.8만원~5.4만원으로 심리상담, 언어/미술치료 등 전문 서비스를 받는 바우처",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/311000000134",
+      "attractiveness_score": 95
+    },
+    {
+      "id": 224,
+      "name": "임산부 및 영유아가정 아이맘택시",
+      "category": "혜택",
+      "startDate": "2022-10-27",
+      "endDate": "상시",
+      "location": "서울특별시 은평구",
+      "target": "은평구 거주 임산부 및 0~24개월 영유아 가정",
+      "summary": "은평구 임산부·영유아 가정, 병원 방문 전용 택시 연 10회 지원",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/311000000137"
+    },
+    {
+      "id": 225,
+      "name": "유축기 대여",
+      "category": "혜택",
+      "attractiveness_score": 85,
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "서울특별시 은평구",
+      "target": "은평구 거주 임산부 및 수유부",
+      "summary": "출산 후 꼭 필요한 유축기를 은평구 주민이라면 1개월간 무료로 빌려드려요.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/311000000140"
+    },
+    {
+      "id": 226,
+      "name": "공동육아나눔터 운영 (서울 은평구)",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "서울시 은평구 (녹번점, 대조점)",
+      "target": "영유아 및 아동을 둔 가족",
+      "summary": "장난감, 도서, 놀이공간을 무료로 이용하며 육아정보를 나누는 우리동네 쉼터",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/311000000151",
+      "attractiveness_score": 90
     }
   ]
 }
