@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-23",
+  "lastUpdated": "2026-05-24",
   "source": "공공데이터포털(재구성)",
   "items": [
     {
@@ -2589,6 +2589,62 @@
       "summary": "장난감, 도서, 놀이공간을 무료로 이용하며 육아정보를 나누는 우리동네 쉼터",
       "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/311000000151",
       "attractiveness_score": 90
+    },
+    {
+      "id": 227,
+      "name": "주택금융공사 월세자금보증",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "전국",
+      "target": "월세 거주 청년, 사회초년생, 저소득 가구 등 주거안정 월세대출 대상자",
+      "summary": "월세 부담을 덜어주는 정부 보증 대출! 최대 1,152만원까지 보증 지원.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/116010000001"
+    },
+    {
+      "id": 228,
+      "name": "지역사랑상품권(인천e음) 상생가맹점 인센티브 지원",
+      "category": "혜택",
+      "startDate": "2022-06-03",
+      "endDate": "상시",
+      "location": "인천광역시 중구",
+      "target": "인천 중구 소상공인",
+      "summary": "인천e음 가맹점 사장님, 카드결제액의 최대 5%(월 30만원)를 지원받으세요!",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/349000000115"
+    },
+    {
+      "id": 229,
+      "name": "아빠 육아휴직 장려금 지원",
+      "category": "혜택",
+      "attractiveness_score": 88,
+      "startDate": "2024-09-05",
+      "endDate": "상시",
+      "location": "인천광역시 중구",
+      "target": "인천 중구 1년 이상 거주하며 육아휴직 중인 아빠",
+      "summary": "인천 중구 아빠들 주목! 육아휴직 시 월 50만원, 최대 300만원 현금 지원",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/349000000126"
+    },
+    {
+      "id": 230,
+      "name": "중소기업 및 소상공인 특례보증 지원사업",
+      "category": "혜택",
+      "startDate": "2022-06-03",
+      "endDate": "상시",
+      "location": "인천광역시 동구",
+      "target": "인천 동구 중소기업 및 소상공인",
+      "summary": "담보가 부족한 인천 동구 소상공인에게 최대 2천만원의 특례보증 융자를 지원합니다.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/350000000115"
+    },
+    {
+      "id": 231,
+      "name": "미추홀구 난임부부 시술 약제비 지원",
+      "category": "혜택",
+      "startDate": "2026-04-14",
+      "endDate": "상시",
+      "location": "인천광역시 미추홀구",
+      "target": "인천 미추홀구 거주 난임부부",
+      "summary": "인천 미추홀구 난임부부 대상, 시술 관련 개인 약제비를 지원해 드려요.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/351050000130"
     }
   ]
 }
