@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-24",
+  "lastUpdated": "2026-05-25",
   "source": "공공데이터포털(재구성)",
   "items": [
     {
@@ -2645,6 +2645,62 @@
       "target": "인천 미추홀구 거주 난임부부",
       "summary": "인천 미추홀구 난임부부 대상, 시술 관련 개인 약제비를 지원해 드려요.",
       "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/351050000130"
+    },
+    {
+      "id": 232,
+      "name": "청년 창업인의 집 운영",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "서울특별시 은평구",
+      "target": "소득요건을 만족하는 만 19~39세 청년 (예비)창업가",
+      "summary": "창업과 주거 문제를 한번에! 은평구가 청년 창업가에게 집을 지원합니다.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/311000000131"
+    },
+    {
+      "id": 233,
+      "name": "은평구 드림스타트",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "서울특별시 은평구",
+      "target": "은평구 내 만 12세 이하 취약계층 아동, 가족, 임산부",
+      "summary": "은평구 취약계층 아동의 건강한 성장을 위한 학습, 심리, 가족 활동 통합 지원!",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/311000000133"
+    },
+    {
+      "id": 234,
+      "name": "공동육아나눔터 운영",
+      "category": "혜택",
+      "startDate": "2022-11-08",
+      "endDate": "상시",
+      "location": "서울특별시 은평구",
+      "target": "자녀(만 3개월~18세)를 둔 가족",
+      "summary": "은평구 우리동네 무료 실내 놀이터! 장난감·도서 이용과 육아 소통까지.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/311000000151"
+    },
+    {
+      "id": 235,
+      "name": "입양가정 입양축하금 지급",
+      "category": "혜택",
+      "attractiveness_score": 85,
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "서울특별시 서대문구",
+      "target": "서대문구 거주 입양가정",
+      "summary": "서대문구 입양가정을 위해 최대 200만원의 축하금을 현금으로 지원합니다.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/312000000105"
+    },
+    {
+      "id": 236,
+      "name": "다자녀가족 둘째아 이상 초등학교 입학축하상품권 지원",
+      "category": "혜택",
+      "startDate": "2026-03-01",
+      "endDate": "2026-10-31",
+      "location": "서울특별시 서대문구",
+      "target": "서대문구 거주, 초등학교에 입학하는 둘째 이상 자녀를 둔 가족",
+      "summary": "서대문구 다자녀 가족 초등학교 입학 시, 둘째 10만원, 셋째 이상 20만원 상품권 지원!",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/312000000107"
     }
   ]
 }
