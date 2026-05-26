@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-26",
+  "lastUpdated": "2026-05-27",
   "source": "공공데이터포털(재구성)",
   "items": [
     {
@@ -2761,6 +2761,62 @@
       "summary": "취업 준비에 필수인 어학·자격시험 응시료를 최대 10만원까지 지원해드려요.",
       "link": "https://www.bsnamgu.go.kr",
       "attractiveness_score": 80
+    },
+    {
+      "id": 242,
+      "name": "태아기형아(쿼드) 검사비 지원",
+      "category": "혜택",
+      "attractiveness": 85,
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "부산광역시 부산진구",
+      "target": "부산진구 거주 임산부",
+      "summary": "부산진구 거주 임산부라면 필수 검사인 태아 기형아 검사비 부담을 덜어드려요.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/329000000101"
+    },
+    {
+      "id": 243,
+      "name": "자립준비청년 자립정착금",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "대구광역시 수성구",
+      "target": "만 18세 이상 보호종료 아동(자립준비청년)",
+      "summary": "시설 퇴소 후 자립하는 청년에게 주거 및 생활 정착비용 1,100만원을 지원합니다.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/346000000105"
+    },
+    {
+      "id": 244,
+      "name": "달서구 청년부부 결혼축하금 지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "대구광역시 달서구",
+      "target": "대구 달서구에 6개월 이상 거주한 19~39세 신혼부부",
+      "summary": "대구 달서구 청년 신혼부부라면 결혼축하금 30만원(온누리상품권)을 드려요!",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/347000000501"
+    },
+    {
+      "id": 245,
+      "name": "신혼부부 결혼 축하 바우처 지원",
+      "category": "혜택",
+      "startDate": "2026-01-01",
+      "endDate": "상시",
+      "location": "대구광역시 달성군",
+      "target": "대구 달성군 신혼부부",
+      "summary": "대구 달성군에서 혼인신고한 신혼부부에게 호텔 1박 숙박권과 조식권을 드려요!",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/348000000363"
+    },
+    {
+      "id": 246,
+      "name": "광진동행버스(교통약자) 무료버스 지원",
+      "category": "혜택",
+      "startDate": "2025-05-19",
+      "endDate": "상시",
+      "location": "서울특별시 광진구",
+      "target": "광진구 거주 어르신, 장애인, 임산부 등 교통약자 및 보호자",
+      "summary": "광진구 어르신, 장애인 등 교통약자를 위해 2개 노선으로 운행되는 무료 셔틀버스!",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/304000000160"
     }
   ]
 }
