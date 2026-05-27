@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-27",
+  "lastUpdated": "2026-05-28",
   "source": "공공데이터포털(재구성)",
   "items": [
     {
@@ -2817,6 +2817,64 @@
       "target": "광진구 거주 어르신, 장애인, 임산부 등 교통약자 및 보호자",
       "summary": "광진구 어르신, 장애인 등 교통약자를 위해 2개 노선으로 운행되는 무료 셔틀버스!",
       "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/304000000160"
+    },
+    {
+      "id": 247,
+      "name": "착한가격업소 지원",
+      "category": "혜택",
+      "startDate": "2022-06-03",
+      "endDate": "상시",
+      "location": "인천광역시 중구",
+      "target": "인천 중구 소상공인",
+      "summary": "물가 안정에 기여하는 인천 중구 소상공인에게 착한가격업소 인증 및 인센티브를 지원합니다.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/349000000113"
+    },
+    {
+      "id": 248,
+      "name": "소상공인 특례협약보증 이차보전",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "인천광역시 중구",
+      "target": "인천광역시 중구 소상공인",
+      "summary": "인천 중구 소상공인에게 최대 1억 원 융자 보증과 3년간 이자 2.5%를 지원합니다.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/349000000116",
+      "attractiveness_score": 75
+    },
+    {
+      "id": 249,
+      "name": "아빠 육아휴직 장려금",
+      "category": "혜택",
+      "startDate": "2024-09-05",
+      "endDate": "상시",
+      "location": "인천광역시 중구",
+      "target": "인천 중구 거주 아빠 육아휴직자",
+      "summary": "인천 중구 아빠들 주목! 육아휴직하면 최대 300만원 현금 지원!",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/349000000126",
+      "attractiveness_score": 85
+    },
+    {
+      "id": 250,
+      "name": "미추홀구 청년 면접수당 지원",
+      "category": "혜택",
+      "attractiveness_score": 85,
+      "startDate": "2026-01-01",
+      "endDate": "예산 소진 시",
+      "location": "인천광역시 미추홀구",
+      "target": "미추홀구 거주 18~39세 미취업 청년",
+      "summary": "취업 면접만 봐도 현금 수당 지급! 미추홀구 미취업 청년이라면 신청하세요.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/351050000123"
+    },
+    {
+      "id": 251,
+      "name": "신재생 에너지 미니태양광 지원사업",
+      "category": "혜택",
+      "startDate": "2026-03-01",
+      "endDate": "2026-11-30",
+      "location": "인천광역시 미추홀구",
+      "target": "인천 미추홀구 내 주택/상가 소유자 또는 거주자",
+      "summary": "전기요금 절약! 우리 집에 미니 태양광 설치하고 보조금(최대 80%) 받으세요.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/352000000103"
     }
   ]
 }
