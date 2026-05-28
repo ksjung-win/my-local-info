@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-28",
+  "lastUpdated": "2026-05-29",
   "source": "공공데이터포털(재구성)",
   "items": [
     {
@@ -2875,6 +2875,62 @@
       "target": "인천 미추홀구 내 주택/상가 소유자 또는 거주자",
       "summary": "전기요금 절약! 우리 집에 미니 태양광 설치하고 보조금(최대 80%) 받으세요.",
       "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/352000000103"
+    },
+    {
+      "id": 252,
+      "name": "청년농업인 영농정착지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "전국",
+      "target": "만 18세 이상 만 40세 미만, 영농경력 3년 이하 청년 농업인",
+      "summary": "귀농을 꿈꾸는 청년에게 3년간 월 최대 110만원의 정착지원금 지급",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/154300000396"
+    },
+    {
+      "id": 253,
+      "name": "외식업체 육성자금(융자)",
+      "category": "혜택",
+      "startDate": "2026-01-01",
+      "endDate": "상시",
+      "location": "전국",
+      "target": "외식업 소상공인 및 법인",
+      "summary": "외식업 창업 및 운영에 필요한 자금을 2%대 저금리로 빌려주는 융자 지원",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/154300000407"
+    },
+    {
+      "id": 254,
+      "name": "고용안정장려금지원(정규직전환지원)",
+      "category": "혜택",
+      "startDate": "2026-05-11",
+      "endDate": "상시",
+      "location": "전국",
+      "target": "30인 미만 사업주, 소상공인",
+      "summary": "비정규직을 정규직으로 전환하는 사업주에게 최대 1년간 월 60만원 지원",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/149200000093"
+    },
+    {
+      "id": 255,
+      "name": "한국폴리텍대학 훈련생 훈련장려금 지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "한국폴리텍대학",
+      "target": "15세 이상 미취업자인 폴리텍대학 훈련생",
+      "summary": "직업훈련을 받는 폴리텍대학 훈련생에게 매월 교통비와 장려금을 현금으로 지원해요.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/149200000135",
+      "attractiveness": 85
+    },
+    {
+      "id": 256,
+      "name": "심리안정지원 프로그램",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "전국 고용센터",
+      "target": "구직자, 실업급여 수급자, 장기실직자 등",
+      "summary": "실직으로 지쳤나요? 스트레스, 우울감 해소를 위한 전문 심리상담을 무료로 지원해 드려요.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/149200000146"
     }
   ]
 }
