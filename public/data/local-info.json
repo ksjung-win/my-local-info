@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-29",
+  "lastUpdated": "2026-05-30",
   "source": "공공데이터포털(재구성)",
   "items": [
     {
@@ -2931,6 +2931,64 @@
       "target": "구직자, 실업급여 수급자, 장기실직자 등",
       "summary": "실직으로 지쳤나요? 스트레스, 우울감 해소를 위한 전문 심리상담을 무료로 지원해 드려요.",
       "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/149200000146"
+    },
+    {
+      "id": 257,
+      "name": "도박문제 전화·온라인 상담(헬프라인 1336) 서비스",
+      "category": "혜택",
+      "attractiveness": 85,
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "전국",
+      "target": "도박 문제로 어려움을 겪는 국민 및 그 가족",
+      "summary": "도박 문제로 힘든 분들을 위한 365일 24시간 무료 전화/온라인 상담",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/137100000173"
+    },
+    {
+      "id": 258,
+      "name": "다문화가족 자녀 기초학습 지원",
+      "category": "혜택",
+      "startDate": "2025-07-08",
+      "endDate": "상시",
+      "location": "전국 (가족센터 등)",
+      "target": "다문화·외국인·난민 가족의 미취학 및 초등학생 자녀",
+      "summary": "우리 아이 학교 적응을 돕는 한글, 수학 등 기초학습을 지원해요.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/138300000058"
+    },
+    {
+      "id": 259,
+      "name": "국가유공자 등의 국립수목원 관람료 할인",
+      "category": "혜택",
+      "startDate": "2020-12-17",
+      "endDate": "상시",
+      "location": "국립수목원",
+      "target": "국가유공자, 장애인, 다자녀 가족, 어르신, 지역주민 등",
+      "summary": "국가유공자, 다자녀 가족 등 대상, 아름다운 국립수목원 무료 입장 혜택",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/140000000002",
+      "attraction_score": 85
+    },
+    {
+      "id": 260,
+      "name": "국가유공자 등 국가정원 관람료 면제",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "순천만국가정원 등 국가정원",
+      "target": "국가유공자, 65세 이상, 7세 이하, 장애인, 다자녀가구 등",
+      "summary": "국가유공자, 어르신, 어린이, 다자녀 가족 등이라면 국가정원을 무료로 즐기세요!",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/140000000171",
+      "attractiveness_score": 85
+    },
+    {
+      "id": 261,
+      "name": "소상공인 보증지원",
+      "category": "혜택",
+      "startDate": "2022-06-03",
+      "endDate": "상시",
+      "location": "인천광역시 연수구",
+      "target": "인천 연수구 소상공인",
+      "summary": "담보가 부족한 인천 연수구 소상공인에게 사업 자금을 빌릴 수 있도록 신용보증서를 발급합니다.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/352000000111"
     }
   ]
 }
