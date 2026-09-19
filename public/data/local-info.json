@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-19",
+  "lastUpdated": "2026-09-20",
   "source": "공공데이터포털(재구성)",
   "items": [
     {
@@ -3159,6 +3159,64 @@
       "target": "성남시 거주 출산 및 다자녀 가정",
       "summary": "성남시 출산 가정에 첫째 30만원부터, 셋째 이상 월 10만원 양육수당까지 지원!",
       "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/378000000143"
+    },
+    {
+      "id": 277,
+      "name": "2026년 고등학교 입학생 교복구입비 지원",
+      "category": "혜택",
+      "startDate": "2026-03-03",
+      "endDate": "2026-11-30",
+      "location": "부산광역시 사하구",
+      "target": "부산 사하구 거주 고등학교 입학생",
+      "summary": "부산 사하구 고등학교 신입생에게 교복 구입비 30만원을 현금으로 지원해요.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/334000000128",
+      "attraction_score": 90
+    },
+    {
+      "id": 278,
+      "name": "청년 구직응원 패키지 지원",
+      "category": "혜택",
+      "startDate": "2026-04-01",
+      "endDate": "2026-12-10",
+      "location": "부산광역시 금정구",
+      "target": "부산 금정구 거주 18~39세 미취업 청년",
+      "summary": "부산 금정구 미취업 청년에게 자격증 응시료(최대 10만원)와 이력서 사진 촬영비(3만원)를 지원합니다.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/335000000110",
+      "attractiveness": 85
+    },
+    {
+      "id": 279,
+      "name": "의료급여 건강생활 유지비 지원",
+      "category": "혜택",
+      "score": 88,
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "전국",
+      "target": "의료급여 1종 수급권자",
+      "summary": "의료급여 1종 수급자에게 외래진료 본인부담금으로 쓸 수 있는 월 6천원을 지원해요.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/337000000013"
+    },
+    {
+      "id": 280,
+      "name": "연제구 자녀 출생축하금 지원",
+      "category": "혜택",
+      "startDate": "2026-01-01",
+      "endDate": "상시",
+      "location": "부산광역시 연제구",
+      "target": "부산 연제구 내 2026년 이후 출산 가정",
+      "summary": "부산 연제구 출산 가정에 첫째 20만원, 둘째 50만원, 셋째 100만원 축하금 지원!",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/337000000480"
+    },
+    {
+      "id": 281,
+      "name": "예비부부 및 신혼부부 무료 건강검진",
+      "category": "혜택",
+      "startDate": "2021-09-23",
+      "endDate": "상시",
+      "location": "부산광역시 수영구",
+      "target": "부산 수영구에 거주하는 예비부부 및 신혼부부",
+      "summary": "결혼과 건강한 임신을 준비하는 커플에게 필수 검진을 무료로!",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/338000000101"
     }
   ]
 }
