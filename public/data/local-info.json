@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-21",
+  "lastUpdated": "2026-09-22",
   "source": "공공데이터포털(재구성)",
   "items": [
     {
@@ -3273,6 +3273,62 @@
       "summary": "부산 남구 초·고등학교 신입생에게 지역화폐로 입학준비금 30만원을 지원해요.",
       "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/331000000120",
       "attractiveness": 95
+    },
+    {
+      "id": 287,
+      "name": "결식아동 급식지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "인천광역시 연수구",
+      "target": "저소득층 결식우려 아동 (만 18세 미만)",
+      "summary": "보호자의 식사 제공이 어려운 저소득층 아동에게 급식카드(1만원) 또는 단체급식을 지원합니다.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/352000000115"
+    },
+    {
+      "id": 288,
+      "name": "[연수구] 난임부부 시술 개인약제비 지원",
+      "category": "혜택",
+      "startDate": "2024-04-17",
+      "endDate": "상시",
+      "location": "인천광역시 연수구",
+      "target": "인천 연수구에 거주하는 난임부부",
+      "summary": "난임 시술 과정에서 발생하는 개인 부담 약제비를 현금으로 지원해 드려요.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/352000000117"
+    },
+    {
+      "id": 289,
+      "name": "연수구 산모·신생아 건강관리서비스 본인부담금 지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "인천광역시 연수구",
+      "target": "인천 연수구 내 출산가정 (중위소득 150% 이하 등)",
+      "summary": "산후조리 서비스 이용 시 발생하는 본인부담금을 최대 전액까지 지원받아요.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/352000000119"
+    },
+    {
+      "id": 290,
+      "name": "소상인 특례보증",
+      "category": "혜택",
+      "startDate": "2026-02-01",
+      "endDate": "자금 소진 시까지",
+      "location": "인천광역시 남동구",
+      "target": "인천 남동구 내 담보력이 부족한 소기업 및 소공인",
+      "summary": "담보가 부족한 인천 남동구 소상공인에게 최대 2천만원까지 채무를 보증해주는 제도입니다.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/353000000196",
+      "attractiveness_score": 75
+    },
+    {
+      "id": 291,
+      "name": "한식진흥 및 음식관광활성화",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "전국",
+      "target": "한식 종사자 및 한식에 관심있는 전국민",
+      "summary": "한식 교육, 미식 관광, 해외 한식당 지원 등 한식의 모든 것을 경험하고 지원받으세요.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/154300005020"
     }
   ]
 }
