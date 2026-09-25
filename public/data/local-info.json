@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-24",
+  "lastUpdated": "2026-09-25",
   "source": "공공데이터포털(재구성)",
   "items": [
     {
@@ -3443,6 +3443,62 @@
       "summary": "기술 유출이 걱정되는 중소기업에게 최대 7천만원의 기술보호 바우처 지원!",
       "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/142100000040",
       "attractiveness": 85
+    },
+    {
+      "id": 302,
+      "name": "우리동네 크라우드펀딩",
+      "category": "혜택",
+      "startDate": "2025-07-07",
+      "endDate": "상시",
+      "location": "중소벤처기업부",
+      "target": "소상공인",
+      "summary": "크라우드펀딩 교육, 컨설팅, 수수료까지 지원받아 사업 자금을 마련하세요.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/142100000051"
+    },
+    {
+      "id": 303,
+      "name": "소상공인 도약지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "전국",
+      "target": "소상공인, 로컬크리에이터",
+      "summary": "성장 가능성 있는 소상공인의 사업 확장을 위한 자금 통합 지원",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/142100000052"
+    },
+    {
+      "id": 304,
+      "name": "민관협력 오픈이노베이션 지원",
+      "category": "혜택",
+      "startDate": "2026-01-01",
+      "endDate": "상시",
+      "location": "전국",
+      "target": "창업 7년 이내의 스타트업 및 중소기업",
+      "summary": "창업 7년 이내 기업을 위한 기술검증(PoC), 사업화 자금 지원!",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/142100000055"
+    },
+    {
+      "id": 305,
+      "name": "창업중심대학",
+      "category": "혜택",
+      "attractiveness": 95,
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "전국",
+      "target": "예비 창업자 및 창업기업",
+      "summary": "우수 창업 아이템의 사업화 자금과 대학 인프라를 활용한 성장 프로그램을 지원합니다.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/142100000058"
+    },
+    {
+      "id": 306,
+      "name": "영세관광사업자 금융지원 협약보증",
+      "category": "혜택",
+      "startDate": "2025-09-15",
+      "endDate": "상시",
+      "location": "전국",
+      "target": "영세 관광사업자(소상공인·법인)",
+      "summary": "최대 2억 원, 100% 보증! 어려운 관광 소상공인을 위한 특별 금융 지원",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/142100000066"
     }
   ]
 }
