@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-25",
+  "lastUpdated": "2026-09-26",
   "source": "공공데이터포털(재구성)",
   "items": [
     {
@@ -3499,6 +3499,63 @@
       "target": "영세 관광사업자(소상공인·법인)",
       "summary": "최대 2억 원, 100% 보증! 어려운 관광 소상공인을 위한 특별 금융 지원",
       "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/142100000066"
+    },
+    {
+      "id": 307,
+      "name": "소상공인 경영안정자금지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "보증한도 소진 시까지",
+      "location": "대전광역시 서구",
+      "target": "대전 서구 소상공인",
+      "summary": "대전 서구 소상공인 대상, 최대 3천만원 보증 및 이자/수수료 지원",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/366000000117"
+    },
+    {
+      "id": 308,
+      "name": "대전 서구 고등·대학생 장학금(소상공인)",
+      "category": "혜택",
+      "startDate": "2026-10-01",
+      "endDate": "2026-11-30",
+      "location": "대전광역시 서구",
+      "target": "대전 서구 거주 소상공인 자녀 (고등학생, 대학생)",
+      "summary": "대전 서구 소상공인 가정의 고등학생(100만원), 대학생(150만원) 장학금 지원",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/366000000127",
+      "attractiveness": 85
+    },
+    {
+      "id": 309,
+      "name": "대덕구 출생축하금 지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "대전광역시 대덕구",
+      "target": "대덕구에 거주하는 출생아의 부 또는 모",
+      "summary": "대전 대덕구에서 아이를 낳으면 출생축하금 50만원을 드려요!",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/368000000114",
+      "attraction_score": 90
+    },
+    {
+      "id": 310,
+      "name": "대덕구 산모회복비지원",
+      "category": "혜택",
+      "startDate": "2025-01-01",
+      "endDate": "상시",
+      "location": "대전광역시 대덕구",
+      "target": "대전 대덕구 거주 출산 산모",
+      "summary": "대전 대덕구 출산 산모에게 산후조리, 건강회복비 50만원을 지원합니다!",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/368000000497"
+    },
+    {
+      "id": 311,
+      "name": "저소득 미혼한부모가족 추가아동양육비 지원",
+      "category": "혜택",
+      "startDate": "2021-09-23",
+      "endDate": "상시",
+      "location": "울산광역시 남구",
+      "target": "울산 남구 거주 저소득 미혼 한부모가족",
+      "summary": "5세 이하 자녀를 둔 저소득 미혼 한부모가족에게 월 5만원을 추가 지원합니다.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/370000000101"
     }
   ]
 }
