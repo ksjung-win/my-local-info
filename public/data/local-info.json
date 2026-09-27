@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-26",
+  "lastUpdated": "2026-09-27",
   "source": "공공데이터포털(재구성)",
   "items": [
     {
@@ -3556,6 +3556,63 @@
       "target": "울산 남구 거주 저소득 미혼 한부모가족",
       "summary": "5세 이하 자녀를 둔 저소득 미혼 한부모가족에게 월 5만원을 추가 지원합니다.",
       "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/370000000101"
+    },
+    {
+      "id": 312,
+      "name": "성북구 푸드마켓센터 이용 지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "서울특별시 성북구",
+      "target": "성북구 저소득층 (결식아동, 독거 어르신, 장애인, 차상위계층 등)",
+      "summary": "성북구 저소득 주민이라면, 푸드마켓에서 식품과 생필품을 무료로 지원받으세요!",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/307000000150",
+      "attractiveness": 78
+    },
+    {
+      "id": 313,
+      "name": "성북구 청년 행정체험단",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "서울특별시 성북구",
+      "target": "성북구에 거주하는 19세~29세 청년",
+      "summary": "방학 기간에 구청에서 행정 실무를 경험하며 경력을 쌓을 수 있는 좋은 기회!",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/307000000163",
+      "attractiveness": 85
+    },
+    {
+      "id": 314,
+      "name": "[성북구] 난임부부 약제비 지원",
+      "category": "혜택",
+      "startDate": "2023-11-28",
+      "endDate": "상시",
+      "location": "서울특별시 성북구",
+      "target": "성북구 거주 난임부부",
+      "summary": "성북구 난임부부의 시술 관련 처방 약제비를 정부지원금 한도 내에서 지원합니다.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/307000000175"
+    },
+    {
+      "id": 315,
+      "name": "치아홈메우기 지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "서울특별시 강북구",
+      "target": "강북구 거주 18세 이하 아동 및 청소년",
+      "summary": "강북구 18세 이하 자녀의 충치 예방! 치아홈메우기 본인부담금을 지원해드려요.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/308000000110"
+    },
+    {
+      "id": 316,
+      "name": "의정부시 청년 취업비용 지원 (면접정장 대여, 이력서 사진 촬영)",
+      "category": "혜택",
+      "startDate": "2026-01-01",
+      "endDate": "상시",
+      "location": "경기도 의정부시",
+      "target": "의정부시 거주 또는 소재 학교 재/졸업 청년(18~39세)",
+      "summary": "취업 준비의 첫걸음! 면접 정장과 이력서 사진 촬영을 무료로 지원해요.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/382000000152"
     }
   ]
 }
