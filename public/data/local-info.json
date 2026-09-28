@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-27",
+  "lastUpdated": "2026-09-28",
   "source": "공공데이터포털(재구성)",
   "items": [
     {
@@ -3613,6 +3613,65 @@
       "target": "의정부시 거주 또는 소재 학교 재/졸업 청년(18~39세)",
       "summary": "취업 준비의 첫걸음! 면접 정장과 이력서 사진 촬영을 무료로 지원해요.",
       "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/382000000152"
+    },
+    {
+      "id": 317,
+      "name": "민간건축물 지진안전 인증 비용 지원",
+      "category": "혜택",
+      "startDate": "2024-04-25",
+      "endDate": "상시",
+      "location": "전국",
+      "target": "민간 건축물 소유주 (개인, 소상공인, 법인 등)",
+      "summary": "지진 대비 건물 안전 인증 비용, 국가에서 최대 2,400만원까지 지원해 드립니다.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/174100000071",
+      "attraction_score": 80
+    },
+    {
+      "id": 318,
+      "name": "청년성장프로젝트",
+      "category": "혜택",
+      "startDate": "2024-12-18",
+      "endDate": "상시",
+      "location": "전국 (각 자치단체)",
+      "target": "만 15~34세 미취업 청년",
+      "summary": "구직에 지친 청년에게 맞춤형 상담, 프로그램, 취업 연계를 지원합니다.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/174100000087"
+    },
+    {
+      "id": 319,
+      "name": "구직자 도약보장 패키지",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "전국 고용센터",
+      "target": "구직자, 경력단절자, 진로탐색 청년 등",
+      "summary": "1:1 전담 상담사와 함께 내게 맞는 일자리를 찾는 맞춤형 취업 지원",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/174100000088",
+      "score": 90
+    },
+    {
+      "id": 320,
+      "name": "국가유공상이자 등 교통시설 이용지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "전국",
+      "target": "국가유공상이자, 애국지사, 5.18민주화운동부상자 등",
+      "summary": "국가유공상이자 등이 버스, 지하철, 열차 등 대중교통 요금을 할인 또는 면제받는 혜택",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/183000000008",
+      "attraction_score": 85
+    },
+    {
+      "id": 321,
+      "name": "지역화폐(종로사랑상품권)",
+      "category": "혜택",
+      "startDate": "명절(설, 추석) 약 2주 전",
+      "endDate": "소진 시까지",
+      "location": "서울특별시 종로구",
+      "target": "종로구에서 소비하는 누구나",
+      "summary": "종로구 내 가맹점에서 결제 시 5% 할인과 30% 소득공제 혜택을 받는 상품권",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/300000000104",
+      "attractiveness_score": 95
     }
   ]
 }
