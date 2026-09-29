@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-28",
+  "lastUpdated": "2026-09-29",
   "source": "공공데이터포털(재구성)",
   "items": [
     {
@@ -3672,6 +3672,62 @@
       "summary": "종로구 내 가맹점에서 결제 시 5% 할인과 30% 소득공제 혜택을 받는 상품권",
       "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/300000000104",
       "attractiveness_score": 95
+    },
+    {
+      "id": 322,
+      "name": "스마트소공인 육성 협약보증",
+      "category": "혜택",
+      "startDate": "2025-09-15",
+      "endDate": "상시",
+      "location": "전국",
+      "target": "소상공인 (제조업)",
+      "summary": "제조업 소공인의 스마트화 지원, 최대 2억 원 운전자금 융자 보증!",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/142100000068"
+    },
+    {
+      "id": 323,
+      "name": "온[溫, ON]택트 특례보증",
+      "category": "혜택",
+      "startDate": "2025-09-15",
+      "endDate": "상시",
+      "location": "전국",
+      "target": "사업 1년 이상, 개인신용평점 745점 이상인 소상공인",
+      "summary": "은행 방문 없이 앱으로 최대 3천만원까지 신청하는 비대면 특례보증",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/142100000069",
+      "attraction_score": 95
+    },
+    {
+      "id": 324,
+      "name": "소기업·소상공인 전환보증",
+      "category": "혜택",
+      "startDate": "2025-09-15",
+      "endDate": "상시",
+      "location": "전국",
+      "target": "기존 신용보증재단 보증을 이용 중인 소기업·소상공인",
+      "summary": "기존 보증의 만기상환 구조를 전환하여 경영 안정을 돕는 금융 지원",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/142100000073"
+    },
+    {
+      "id": 325,
+      "name": "첫걸음기업 금융지원 협약보증",
+      "category": "혜택",
+      "startDate": "2025-09-15",
+      "endDate": "상시",
+      "location": "전국",
+      "target": "신용보증을 처음 이용하는 소기업 및 소상공인",
+      "summary": "사업을 막 시작한 소상공인이라면? 최대 5천만원 사업자금 보증을 받으세요!",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/142100000074"
+    },
+    {
+      "id": 326,
+      "name": "KB소호컨설팅과 함께하는 금융지원 협약보증",
+      "category": "혜택",
+      "startDate": "2025-09-15",
+      "endDate": "상시",
+      "location": "전국 (국민은행)",
+      "target": "KB소호컨설팅센터 추천을 받은 소기업/소상공인",
+      "summary": "KB국민은행 컨설팅을 받은 소상공인에게 최대 1억원을 보증 지원하는 금융 상품",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/142100000075"
     }
   ]
 }
