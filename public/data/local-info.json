@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-29",
+  "lastUpdated": "2026-09-30",
   "source": "공공데이터포털(재구성)",
   "items": [
     {
@@ -3728,6 +3728,64 @@
       "target": "KB소호컨설팅센터 추천을 받은 소기업/소상공인",
       "summary": "KB국민은행 컨설팅을 받은 소상공인에게 최대 1억원을 보증 지원하는 금융 상품",
       "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/142100000075"
+    },
+    {
+      "id": 327,
+      "name": "구직자·기업 도약보장 패키지",
+      "category": "혜택",
+      "startDate": "2024-12-18",
+      "endDate": "상시",
+      "location": "전국 (고용센터)",
+      "target": "구직자, 경력단절자, 청년, 실업급여 수급자 등",
+      "summary": "1:1 심층상담으로 나만의 취업 로드맵을 설계해주는 프로그램",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/174100000088"
+    },
+    {
+      "id": 328,
+      "name": "출산장려 건강보험 가입지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "서울특별시 종로구",
+      "target": "서울 종로구 거주, 둘째 이상 출산가구",
+      "summary": "서울 종로구 둘째 이상 출산가정에 5년간 매월 건강보험료를 지원해요!",
+      "attractiveness": 85,
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/300000000108"
+    },
+    {
+      "id": 329,
+      "name": "정신질환자 치료비 지원",
+      "category": "혜택",
+      "startDate": "2021-09-23",
+      "endDate": "상시",
+      "location": "울산광역시 울주군",
+      "target": "정신질환으로 치료받는 주민 (소득기준 상이)",
+      "summary": "정신질환 치료비 걱정, 응급입원부터 외래치료까지 본인부담금을 지원해 드려요.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/373000000126",
+      "attraction_score": 85
+    },
+    {
+      "id": 330,
+      "name": "울주군 임산부 출산장려 교통비 지원",
+      "category": "혜택",
+      "startDate": "2025-12-17",
+      "endDate": "상시",
+      "location": "울산 울주군",
+      "target": "울주군 거주 임산부",
+      "summary": "울주군 임산부에게 진료 교통비 1회 10만원, 최대 100만원까지 현금 지원!",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/373000000139",
+      "attractiveness": 95
+    },
+    {
+      "id": 331,
+      "name": "기초생활보장 교육급여",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "전국",
+      "target": "기준중위소득 50% 이하 초·중·고 자녀가 있는 가구",
+      "summary": "저소득층 초중고 자녀에게 연간 최대 86만원 교육활동비를 지원합니다.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/374000000109"
     }
   ]
 }
