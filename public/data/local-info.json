@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-30",
+  "lastUpdated": "2026-10-01",
   "source": "공공데이터포털(재구성)",
   "items": [
     {
@@ -3786,6 +3786,63 @@
       "target": "기준중위소득 50% 이하 초·중·고 자녀가 있는 가구",
       "summary": "저소득층 초중고 자녀에게 연간 최대 86만원 교육활동비를 지원합니다.",
       "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/374000000109"
+    },
+    {
+      "id": 332,
+      "name": "강남구 영유아 발달 정밀검사 지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "서울 강남구",
+      "target": "발달 정밀검사가 필요한 영유아를 둔 강남구 주민",
+      "summary": "우리 아이 발달이 걱정될 때, 강남구에서 정밀검사비 최대 40만원 지원!",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/322000000124",
+      "attractiveness_score": 85
+    },
+    {
+      "id": 333,
+      "name": "(송파구)임산부 건강관리 서비스 지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "서울특별시 송파구",
+      "target": "송파구 거주 임산부",
+      "summary": "송파구 임산부라면 엽산제, 필수검사, 유축기 대여까지 무료 지원!",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/323000000106"
+    },
+    {
+      "id": 334,
+      "name": "귀산촌인 창업 및 주택 구입 지원",
+      "category": "혜택",
+      "attractiveness": 88,
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "전국 산촌지역",
+      "target": "귀산촌 5년 이내 임업인 또는 예비 귀산촌인",
+      "summary": "산촌으로 이주 시, 창업 자금 최대 3억, 주택 구입비 최대 7.5천만원을 저금리로 융자 지원합니다.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/140000000185"
+    },
+    {
+      "id": 335,
+      "name": "판로진출지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "중소벤처기업부 (전국)",
+      "target": "소상공인, 중소기업",
+      "summary": "내 상품, 홈쇼핑·백화점 입점 기회! 중소기업의 새로운 판로 개척을 지원해요.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/142000000034"
+    },
+    {
+      "id": 336,
+      "name": "혁신 소상공인 창업지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "전국",
+      "target": "창의적인 아이디어를 가진 예비 창업자",
+      "summary": "창업 교육부터 멘토링, 사업화 자금(최대 4천만원)까지 한번에 지원!",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/142000000038"
     }
   ]
 }
