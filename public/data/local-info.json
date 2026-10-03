@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-02",
+  "lastUpdated": "2026-10-03",
   "source": "공공데이터포털(재구성)",
   "items": [
     {
@@ -3901,6 +3901,64 @@
       "target": "평택시 거주 난임부부",
       "summary": "평택시 거주 난임부부의 시술 관련 약제비를 정부지원금 잔액 내에서 추가 지원합니다.",
       "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/391000000549"
+    },
+    {
+      "id": 342,
+      "name": "안양시 청년 학자금 대출 연체자 신용회복 지원",
+      "category": "혜택",
+      "startDate": "2026-03-01",
+      "endDate": "2026-12-31",
+      "location": "경기도 안양시",
+      "target": "안양시 거주 19~39세 학자금 대출 연체 청년",
+      "summary": "학자금 대출 연체로 신용이 하락한 안양 청년에게 최대 100만원을 지원해 신용회복을 도와드려요.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/383000000191",
+      "attractiveness": 85
+    },
+    {
+      "id": 343,
+      "name": "녹물 없는 우리 집 수도관 개량 지원 사업",
+      "category": "혜택",
+      "startDate": "2022-01-06",
+      "endDate": "상시",
+      "location": "경기도 부천시",
+      "target": "부천시 20년 이상 노후주택 소유자 및 사회복지시설",
+      "summary": "녹물 나오는 낡은 수도관, 부천시가 교체 공사비 최대 90%까지 지원!",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/386000000135",
+      "attractiveness": 85
+    },
+    {
+      "id": 344,
+      "name": "자격증 등 응시료 지원",
+      "category": "혜택",
+      "startDate": "2026-01-26",
+      "endDate": "2026-12-15",
+      "location": "부산광역시 사하구",
+      "target": "사하구 거주 미취업 청년 (만 18-39세)",
+      "summary": "취업 준비 청년 주목! 자격증 시험 응시료를 지원해 드려요.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/334000000121"
+    },
+    {
+      "id": 345,
+      "name": "의료급여 건강생활 유지비 지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "전국 (관할 시·군·구청)",
+      "target": "의료급여 1종 수급권자",
+      "summary": "의료급여 1종 수급자에게 외래진료비로 사용 가능한 건강생활유지비 월 6천원을 지원합니다.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/337000000013"
+    },
+    {
+      "id": 346,
+      "name": "저소득층 아동급식 토·공휴일 지원",
+      "category": "혜택",
+      "attractiveness": 95,
+      "startDate": "2021-09-23",
+      "endDate": "상시",
+      "location": "부산광역시 수영구",
+      "target": "결식 우려가 있는 18세 미만 저소득층 아동",
+      "summary": "주말·공휴일, 우리 아이 밥 걱정 끝! 1끼 11,000원 식사 지원",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/338000000109"
     }
   ]
 }
