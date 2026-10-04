@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-03",
+  "lastUpdated": "2026-10-04",
   "source": "공공데이터포털(재구성)",
   "items": [
     {
@@ -3959,6 +3959,63 @@
       "target": "결식 우려가 있는 18세 미만 저소득층 아동",
       "summary": "주말·공휴일, 우리 아이 밥 걱정 끝! 1끼 11,000원 식사 지원",
       "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/338000000109"
+    },
+    {
+      "id": 347,
+      "name": "난임부부 약제비 지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "인천광역시 옹진군",
+      "target": "난임부부",
+      "summary": "아이를 기다리는 난임부부에게 시술 관련 약제비를 현금으로 지원합니다.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/358000000138",
+      "attractiveness_score": 80
+    },
+    {
+      "id": 348,
+      "name": "인천광역시 옹진군 청년 자격증 응시료 지원",
+      "category": "혜택",
+      "startDate": "2026-02-01",
+      "endDate": "2026-11-30",
+      "location": "인천광역시 옹진군",
+      "target": "옹진군 거주 미취업 청년 (18~49세)",
+      "summary": "옹진군 미취업 청년에게 국가자격증 응시료를 연 1회 최대 10만원까지 지원합니다.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/358000000140"
+    },
+    {
+      "id": 349,
+      "name": "동구 출산축하금",
+      "category": "혜택",
+      "startDate": "2026-01-01",
+      "endDate": "상시",
+      "location": "전남광주통합특별시 동구",
+      "target": "광주 동구 거주 출산 가정",
+      "summary": "2026년 이후 동구에서 태어난 아이에게 출산축하금 20만원을 현금으로 지원해요.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/359000000102"
+    },
+    {
+      "id": 350,
+      "name": "청소년 방과후 아카데미 운영",
+      "category": "혜택",
+      "startDate": "2021-09-23",
+      "endDate": "상시",
+      "location": "광주광역시 동구",
+      "target": "광주 동구 초4~중3 청소년",
+      "summary": "방과 후 학습, 활동, 급식, 귀가까지 지원하는 무료 돌봄 아카데미",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/359000000104"
+    },
+    {
+      "id": 351,
+      "name": "위기청소년 특별지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "전남광주통합특별시 동구",
+      "target": "9세~24세 위기 청소년 (중위소득 100% 이하)",
+      "summary": "생활, 건강, 학업, 자립 등 어려움을 겪는 청소년에게 꼭 필요한 비용을 지원해요.",
+      "attractiveness": 85,
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/359000000105"
     }
   ]
 }
