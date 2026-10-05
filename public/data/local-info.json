@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-04",
+  "lastUpdated": "2026-10-05",
   "source": "공공데이터포털(재구성)",
   "items": [
     {
@@ -4016,6 +4016,63 @@
       "summary": "생활, 건강, 학업, 자립 등 어려움을 겪는 청소년에게 꼭 필요한 비용을 지원해요.",
       "attractiveness": 85,
       "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/359000000105"
+    },
+    {
+      "id": 352,
+      "name": "1인가구 전입 생활 지원 은빛SOL 라이프",
+      "category": "혜택",
+      "startDate": "2024-12-20",
+      "endDate": "상시",
+      "location": "서울특별시 은평구",
+      "target": "은평구로 전입한 청년·중장년 1인 가구 (1961~2006년생)",
+      "summary": "서울 은평구로 이사 온 1인 가구에게 생활용품 웰컴박스를 드려요!",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/311000000225"
+    },
+    {
+      "id": 353,
+      "name": "(강서구)난임부부 지원(시술 후 원외약제비 청구)",
+      "category": "혜택",
+      "startDate": "2025-12-09",
+      "endDate": "상시",
+      "location": "서울 강서구",
+      "target": "서울 강서구 거주 난임부부",
+      "summary": "서울 강서구 난임부부 대상, 시술 관련 약제비 현금 지원",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/315000000288",
+      "attraction_score": 90
+    },
+    {
+      "id": 354,
+      "name": "구로형 산후조리비용 지원",
+      "category": "혜택",
+      "startDate": "2025-11-13",
+      "endDate": "상시",
+      "location": "서울특별시 구로구",
+      "target": "구로구 거주 기준중위소득 80% 이하 출산가정",
+      "summary": "구로구 출산가정에 산후조리비용 50만원을 모바일 상품권으로 지원!",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/316000000136"
+    },
+    {
+      "id": 355,
+      "name": "구로형 자립정착금",
+      "category": "혜택",
+      "startDate": "2025-11-14",
+      "endDate": "상시",
+      "location": "서울특별시 구로구",
+      "target": "구로구 거주 자립준비청년(보호종료아동)",
+      "summary": "구로구 자립준비청년의 새 출발을 위해 자립정착금 200만원을 현금 지원합니다.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/316000000142"
+    },
+    {
+      "id": 356,
+      "name": "구로구 전세사기피해지원금(월세) 지원",
+      "category": "혜택",
+      "startDate": "2025-11-17",
+      "endDate": "상시",
+      "location": "서울특별시 구로구",
+      "target": "구로구 거주 전세사기 피해 무주택 임차인",
+      "summary": "전세사기 피해로 힘든 구로구 무주택자에게 월 20만원, 최대 1년간 월세를 지원합니다.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/316000000146",
+      "attractiveness": 95
     }
   ]
 }
