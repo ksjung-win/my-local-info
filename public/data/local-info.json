@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-05",
+  "lastUpdated": "2026-10-06",
   "source": "공공데이터포털(재구성)",
   "items": [
     {
@@ -4073,6 +4073,63 @@
       "summary": "전세사기 피해로 힘든 구로구 무주택자에게 월 20만원, 최대 1년간 월세를 지원합니다.",
       "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/316000000146",
       "attractiveness": 95
+    },
+    {
+      "id": 357,
+      "name": "광진동행버스(교통약자) 무료 운행",
+      "category": "혜택",
+      "startDate": "2025-05-19",
+      "endDate": "상시",
+      "location": "서울특별시 광진구",
+      "target": "광진구 어르신, 장애인, 임산부 등 교통약자",
+      "summary": "광진구 내 어르신, 장애인, 임산부를 위한 무료 셔틀버스로, 병원·복지관 등 주요시설을 편하게 이동하세요.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/304000000160",
+      "attractiveness_score": 88
+    },
+    {
+      "id": 358,
+      "name": "광진구 청년 행정아르바이트",
+      "category": "혜택",
+      "startDate": "2026-12-01",
+      "endDate": "상시",
+      "location": "서울특별시 광진구",
+      "target": "광진구 거주 청년 (19~29세)",
+      "summary": "방학 중 행정 실무 경험과 생활임금을 제공하는 광진구 청년 꿀알바!",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/304000000162"
+    },
+    {
+      "id": 359,
+      "name": "성폭력, 아동학대 등 범죄 피해자 국선변호사 지원",
+      "category": "혜택",
+      "startDate": "2020-12-17",
+      "endDate": "상시",
+      "location": "전국",
+      "target": "성폭력, 아동·장애인학대, 스토킹 등 특정강력범죄 피해자",
+      "summary": "각종 강력범죄 피해자에게 국가가 무료로 국선변호사를 지원하는 제도",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/127000000026",
+      "attractiveness": 90
+    },
+    {
+      "id": 360,
+      "name": "수원시 임산부 및 예비·신혼부부 검사 지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "경기도 수원시",
+      "target": "수원시에 거주하는 예비부부, 신혼부부 및 임산부",
+      "summary": "수원시 예비·신혼부부, 임산부에게 건강한 새출발을 위한 무료 건강검진을 지원합니다.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/374000000572"
+    },
+    {
+      "id": 361,
+      "name": "(수원시 권선구) 임산부 및 예비·신혼부부 검사 지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "경기도 수원시",
+      "target": "수원시에 거주하는 예비부부, 신혼부부, 임산부",
+      "summary": "결혼/임신을 준비하는 수원시민 대상 필수 건강검진 무료 제공",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/374000000573"
     }
   ]
 }
