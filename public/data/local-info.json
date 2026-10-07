@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-06",
+  "lastUpdated": "2026-10-07",
   "source": "공공데이터포털(재구성)",
   "items": [
     {
@@ -4130,6 +4130,64 @@
       "target": "수원시에 거주하는 예비부부, 신혼부부, 임산부",
       "summary": "결혼/임신을 준비하는 수원시민 대상 필수 건강검진 무료 제공",
       "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/374000000573"
+    },
+    {
+      "id": 362,
+      "name": "자치회관 프로그램 신청/감면",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "서울특별시 강서구",
+      "target": "강서구 주민 (기초생활수급자, 장애인, 국가유공자 등 수강료 감면)",
+      "summary": "우리 동네 주민센터에서 저렴한 비용으로 취미·교양 강좌를 수강하세요!",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/315000000297"
+    },
+    {
+      "id": 363,
+      "name": "(구로구)난임부부 지원(시술 후 원외약제비 청구)",
+      "category": "혜택",
+      "startDate": "2022-11-08",
+      "endDate": "상시",
+      "location": "서울특별시 구로구",
+      "target": "구로구에 거주하는 난임부부",
+      "summary": "구로구 난임부부의 시술 관련 약제비를 지원하여 경제적 부담을 덜어드려요.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/316000000124",
+      "attraction_score": 78
+    },
+    {
+      "id": 364,
+      "name": "구로구 전세사기피해지원금(보증료) 지원",
+      "category": "혜택",
+      "attractiveness": 95,
+      "startDate": "2025-11-17",
+      "endDate": "상시",
+      "location": "서울특별시 구로구",
+      "target": "구로구 전세사기 피해 임차인",
+      "summary": "구로구 전세사기 피해 임차인에게 전세보증금 반환보증 보증료를 최대 30만원까지 지원합니다.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/316000000144"
+    },
+    {
+      "id": 365,
+      "name": "구로구 자치회관 수강료 감면 지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "서울특별시 구로구",
+      "target": "기초생활수급자, 장애인, 한부모/다자녀 가정, 국가유공자, 경로우대자 등 구로구민",
+      "summary": "구로구 주민센터의 다양한 강좌 수강료를 최대 전액(100%)까지 지원받으세요!",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/316000000148",
+      "attractiveness": 85
+    },
+    {
+      "id": 366,
+      "name": "어린이집·유치원 신입생 입학준비금 지원",
+      "category": "혜택",
+      "startDate": "2023-02-14",
+      "endDate": "상시",
+      "location": "부산광역시 수영구",
+      "target": "부산 수영구 거주, 어린이집/유치원 최초 입학 영유아 가정",
+      "summary": "우리 아이 어린이집/유치원 첫 입학, 10만원 준비금을 지원받으세요!",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/338000000122"
     }
   ]
 }
