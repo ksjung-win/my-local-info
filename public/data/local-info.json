@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-07",
+  "lastUpdated": "2026-10-08",
   "source": "공공데이터포털(재구성)",
   "items": [
     {
@@ -4188,6 +4188,62 @@
       "target": "부산 수영구 거주, 어린이집/유치원 최초 입학 영유아 가정",
       "summary": "우리 아이 어린이집/유치원 첫 입학, 10만원 준비금을 지원받으세요!",
       "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/338000000122"
+    },
+    {
+      "id": 367,
+      "name": "민간건축물 지진안전 인증 비용 지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "전국",
+      "target": "민간 건축물 소유주 (개인, 소상공인, 법인 등)",
+      "summary": "내 건물의 지진 안전도 강화! 평가·인증 비용의 90% 이상을 지원받으세요.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/174100000071"
+    },
+    {
+      "id": 368,
+      "name": "자치회관 수강료 감면 지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "서울특별시 구로구",
+      "target": "구로구 내 취약계층, 어르신, 다자녀 가정 등",
+      "summary": "구로구 주민이라면 자치회관 인기 강좌 수강료를 전액 면제 또는 50% 할인받으세요!",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/316000000148",
+      "attractiveness": 85
+    },
+    {
+      "id": 369,
+      "name": "동대문구 미취업청년 자격취득 활동비 지원",
+      "category": "혜택",
+      "startDate": "2026-07-09",
+      "endDate": "상시",
+      "location": "서울특별시 동대문구",
+      "target": "19~39세 동대문구 거주 미취업 청년",
+      "summary": "동대문구 청년의 자격증·어학시험 응시료, 합격 여부 없이 최대 20만원 지원!",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/305000000119"
+    },
+    {
+      "id": 370,
+      "name": "저소득층 초·중·고 학생 학습나눔사업",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "서울특별시 동대문구",
+      "target": "동대문구 저소득층 초·중·고 학생",
+      "summary": "동대문구 저소득층 학생에게 학원 무료 수강의 기회를 제공해요.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/305000000122"
+    },
+    {
+      "id": 371,
+      "name": "중소기업육성기금 융자",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "서울특별시 동대문구",
+      "target": "동대문구 소상공인 및 중소기업",
+      "summary": "동대문구 소상공인을 위한 최대 1억원, 연 1.5% 초저금리 융자 지원",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/305000000146"
     }
   ]
 }
