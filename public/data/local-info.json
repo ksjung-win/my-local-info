@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-08",
+  "lastUpdated": "2026-10-09",
   "source": "공공데이터포털(재구성)",
   "items": [
     {
@@ -4244,6 +4244,62 @@
       "target": "동대문구 소상공인 및 중소기업",
       "summary": "동대문구 소상공인을 위한 최대 1억원, 연 1.5% 초저금리 융자 지원",
       "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/305000000146"
+    },
+    {
+      "id": 372,
+      "name": "서구 청년 자격증 응시료 지원",
+      "category": "혜택",
+      "startDate": "2026-02-01",
+      "endDate": "2026-12-15",
+      "location": "부산광역시 서구",
+      "target": "부산 서구 거주 19~39세 미취업 청년",
+      "summary": "취업준비생 필수! 자격증 시험 응시료 최대 20만원 현금 지원",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/326000000247"
+    },
+    {
+      "id": 373,
+      "name": "동구 여성청소년 보건위생용품 지원",
+      "category": "혜택",
+      "startDate": "2026-01-05",
+      "endDate": "2026-12-31",
+      "location": "부산광역시 동구",
+      "target": "부산 동구 거주 만 11-18세 여성청소년",
+      "summary": "매월 13,000원! 생리용품 구입비를 지역화폐로 지원받으세요.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/327000000113"
+    },
+    {
+      "id": 374,
+      "name": "인천e음 상생가맹점 지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "인천광역시 영종구",
+      "target": "인천 영종구 소상공인 (상생가맹점)",
+      "summary": "인천e음 결제 캐시백(1~5%)을 월 최대 30만원까지 지원받으세요.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/349000000115"
+    },
+    {
+      "id": 375,
+      "name": "지역화폐(제물포구사랑상품권)",
+      "category": "혜택",
+      "startDate": "2021-09-23",
+      "endDate": "상시",
+      "location": "인천광역시 제물포구",
+      "target": "제물포구 주민 및 소상공인",
+      "summary": "인천 제물포구에서 사용 시 6% 즉시 할인받는 지역화폐",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/350000000101"
+    },
+    {
+      "id": 376,
+      "name": "생애주기별 맞춤형 구강보건 서비스",
+      "category": "혜택",
+      "attractiveness": 85,
+      "startDate": "2021-09-23",
+      "endDate": "상시",
+      "location": "인천광역시 제물포구",
+      "target": "인천 제물포구 14세 이하 아동, 65세 이상 어르신 등",
+      "summary": "인천 제물포구 아동과 어르신을 위한 치아홈메우기, 틀니 비용 지원!",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/350000000106"
     }
   ]
 }
