@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-09",
+  "lastUpdated": "2026-10-10",
   "source": "공공데이터포털(재구성)",
   "items": [
     {
@@ -4300,6 +4300,64 @@
       "target": "인천 제물포구 14세 이하 아동, 65세 이상 어르신 등",
       "summary": "인천 제물포구 아동과 어르신을 위한 치아홈메우기, 틀니 비용 지원!",
       "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/350000000106"
+    },
+    {
+      "id": 377,
+      "name": "외국인 피해자 지원제도 안내·연계 서비스",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "전국",
+      "target": "국내 체류 외국인",
+      "summary": "국내 거주 외국인 피해자를 위한 법률 상담 및 피해 구조 지원",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/132000000003",
+      "attractiveness": 75
+    },
+    {
+      "id": 378,
+      "name": "교복구입비 지원 (부산 동래구)",
+      "category": "혜택",
+      "startDate": "2026-03-03",
+      "endDate": "2026-11-30",
+      "location": "부산시 동래구",
+      "target": "부산 동래구 거주 중·고등학교 신입생",
+      "summary": "부산 동래구 중·고등학교 신입생 가정에 교복 구입비 30만원을 지원합니다.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/330000000108"
+    },
+    {
+      "id": 379,
+      "name": "부산 남구 청년 자기개발 도서구입비 지원",
+      "category": "혜택",
+      "startDate": "2026-01-15",
+      "endDate": "2026-12-15",
+      "location": "부산광역시 남구",
+      "target": "부산 남구에 1년 이상 거주한 18~39세 미취업 청년",
+      "summary": "부산 남구 청년 주목! 자기개발을 위한 도서구입비 최대 5만원 지원",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/331000000122"
+    },
+    {
+      "id": 380,
+      "name": "부산광역시 남구 구민안전보험",
+      "category": "혜택",
+      "attraction_score": 85,
+      "startDate": "2024-12-22",
+      "endDate": "상시",
+      "location": "부산광역시 남구",
+      "target": "부산 남구 구민 (군 복무 청년, 어린이 포함)",
+      "summary": "부산 남구 구민이라면 별도 신청 없이 상해, 사고 시 최대 3천만원의 안전보험 혜택을 받으세요.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/331000000127"
+    },
+    {
+      "id": 381,
+      "name": "고위험 임산부 가사도우미 지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "부산광역시 북구",
+      "target": "부산 북구 거주 고위험 임산부",
+      "summary": "몸이 힘든 고위험 임산부를 위해 가사, 건강관리, 정서적 지원을 제공해요.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/332000000102",
+      "attractiveness": 75
     }
   ]
 }
