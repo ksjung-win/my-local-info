@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-10",
+  "lastUpdated": "2026-10-11",
   "source": "공공데이터포털(재구성)",
   "items": [
     {
@@ -4358,6 +4358,64 @@
       "summary": "몸이 힘든 고위험 임산부를 위해 가사, 건강관리, 정서적 지원을 제공해요.",
       "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/332000000102",
       "attractiveness": 75
+    },
+    {
+      "id": 382,
+      "name": "디지털 저장매체 파기서비스 운영",
+      "category": "혜택",
+      "startDate": "2022-02-21",
+      "endDate": "상시",
+      "location": "서울특별시 성동구",
+      "target": "성동구민, 성동구 소재 소상공인 및 직장인",
+      "summary": "개인정보 유출 걱정 끝! 낡은 하드디스크, USB 등을 무료로 파기해 드려요.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/303000000343"
+    },
+    {
+      "id": 383,
+      "name": "장애인가정 출산비용 지원(광진구)",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "서울특별시 광진구",
+      "target": "광진구 1년 이상 거주 장애인 가정",
+      "summary": "광진구 거주 장애인 가정에 신생아 1명당 50만원(최대 170만원)의 출산비용을 지원합니다.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/304000000102",
+      "attractiveness": 85
+    },
+    {
+      "id": 384,
+      "name": "수출바우처 지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "산업통상부",
+      "target": "수출을 희망하는 중소·중견기업",
+      "summary": "해외진출에 필요한 컨설팅, 마케팅 비용을 바우처로 지원!",
+      "link": "https://www.exportvoucher.com"
+    },
+    {
+      "id": 385,
+      "name": "[연수구] 난임부부 시술 개인약제비 지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "인천광역시 연수구",
+      "target": "인천 연수구 거주 난임부부",
+      "summary": "난임 시술에 필요한 개인 부담 약제비를 지원받아 경제적 부담을 덜어보세요.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/352000000117",
+      "attractiveness_score": 80
+    },
+    {
+      "id": 386,
+      "name": "[인천 연수구] 산모·신생아 건강관리서비스 본인부담금 지원",
+      "category": "혜택",
+      "startDate": "2024-04-23",
+      "endDate": "상시",
+      "location": "인천광역시 연수구",
+      "target": "중위소득 150% 이하 또는 특정 조건에 해당하는 출산 가정",
+      "summary": "인천 연수구 출산가정에 산후조리 서비스 본인부담금을 현금으로 지원합니다.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/352000000119",
+      "attractiveness_score": 85
     }
   ]
 }
