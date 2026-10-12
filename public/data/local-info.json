@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-11",
+  "lastUpdated": "2026-10-12",
   "source": "공공데이터포털(재구성)",
   "items": [
     {
@@ -4416,6 +4416,62 @@
       "summary": "인천 연수구 출산가정에 산후조리 서비스 본인부담금을 현금으로 지원합니다.",
       "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/352000000119",
       "attractiveness_score": 85
+    },
+    {
+      "id": 387,
+      "name": "소상공인 보증지원제도",
+      "category": "혜택",
+      "startDate": "2022-05-30",
+      "endDate": "상시",
+      "location": "인천광역시 서해구",
+      "target": "인천 서해구 소상공인",
+      "summary": "인천 서해구 소상공인 대상, 최대 5천만원 저금리 대출 보증 및 이자 지원!",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/356000000117"
+    },
+    {
+      "id": 388,
+      "name": "청년센터 서해구1939 공간 대관",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "인천광역시 서해구",
+      "target": "만 19~39세 청년 및 청년 단체",
+      "summary": "스터디, 모임, 미디어 촬영, 공유주방까지 무료로 이용하는 청년 공간",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/356000000236"
+    },
+    {
+      "id": 389,
+      "name": "청년e음 청년스타트업 지원사업",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "인천광역시 서해구",
+      "target": "인천 거주 예비/초기 창업 청년",
+      "summary": "인천 청년 창업가에게 창업 공간(1+1년), 컨설팅, 초기 사업비(최대 30만원)를 지원해요.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/356100000005",
+      "attractiveness": 85
+    },
+    {
+      "id": 390,
+      "name": "저소득 등 청소년 교통비 지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "인천광역시 강화군",
+      "target": "강화군 거주 저소득·다문화·다자녀 가정의 중고등학생",
+      "summary": "강화군 청소년에게 연간 최대 24만원의 교통비를 지원해 드려요.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/357000000106"
+    },
+    {
+      "id": 391,
+      "name": "출생장려금 지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "인천광역시 옹진군",
+      "target": "옹진군에 1년 이상 거주한 출산·입양 가정",
+      "summary": "인천 옹진군에서 아이를 낳거나 입양한 가정에 출산장려금을 현금으로 지원합니다.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/358000000109"
     }
   ]
 }
