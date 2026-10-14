@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-13",
+  "lastUpdated": "2026-10-14",
   "source": "공공데이터포털(재구성)",
   "items": [
     {
@@ -4530,6 +4530,61 @@
       "target": "중소·중견기업",
       "summary": "우리 회사 해외진출, 컨설팅부터 디자인까지 바우처로 한번에 해결!",
       "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/145000000083"
+    },
+    {
+      "id": 397,
+      "name": "기장군 신입생 교복구입비 지원",
+      "category": "혜택",
+      "startDate": "2026-03-03",
+      "endDate": "2026-12-11",
+      "location": "부산광역시 기장군",
+      "target": "부산 기장군 거주 신입생 (고등학생, 특정 중학생 등)",
+      "summary": "부산 기장군 거주 신입생에게 교복 구입비 34만원을 현금으로 지원합니다.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/340000000118"
+    },
+    {
+      "id": 398,
+      "name": "기장군 신입생 입학축하금 지원",
+      "category": "혜택",
+      "startDate": "2026-03-03",
+      "endDate": "2026-12-11",
+      "location": "부산광역시 기장군",
+      "target": "부산 기장군 초·중·고 신입생",
+      "summary": "부산 기장군 초·중·고 신입생에게 입학 축하금 10만원을 현금으로 지원합니다.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/340000000128"
+    },
+    {
+      "id": 399,
+      "name": "기장군 청년 면접수당 지원",
+      "category": "혜택",
+      "startDate": "2026-02-02",
+      "endDate": "2026-12-10",
+      "location": "부산광역시 기장군",
+      "target": "기장군 거주 만 19~44세 미취업 청년",
+      "summary": "취업 면접만 봐도 1회 5만원, 최대 10만원의 수당을 현금으로 지원!",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/340000000130"
+    },
+    {
+      "id": 400,
+      "name": "기장군 청년 자격시험 응시료 지원",
+      "category": "혜택",
+      "startDate": "2026-02-02",
+      "endDate": "2026-12-10",
+      "location": "부산광역시 기장군",
+      "target": "기장군 거주 미취업 청년 (만 19~44세)",
+      "summary": "취업에 필요한 어학, 자격증 시험 응시료를 최대 10만원까지 지원해드려요!",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/340000000134"
+    },
+    {
+      "id": 401,
+      "name": "임산부 영유아 지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "대구광역시 중구",
+      "target": "대구 중구 거주 임산부",
+      "summary": "대구 중구 보건소에서 임산부와 아기의 건강을 위한 혜택을 지원해요.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/341000000111"
     }
   ]
 }
