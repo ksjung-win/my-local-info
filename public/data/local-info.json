@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-14",
+  "lastUpdated": "2026-10-16",
   "source": "공공데이터포털(재구성)",
   "items": [
     {
@@ -4585,6 +4585,63 @@
       "target": "대구 중구 거주 임산부",
       "summary": "대구 중구 보건소에서 임산부와 아기의 건강을 위한 혜택을 지원해요.",
       "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/341000000111"
+    },
+    {
+      "id": 402,
+      "name": "의료급여 건강생활 유지비 지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "전국",
+      "target": "의료급여 1종 수급권자",
+      "summary": "의료급여 1종 수급자에게 병원 외래진료비로 쓸 수 있는 건강생활유지비 월 6천원을 지원합니다.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/337000000013"
+    },
+    {
+      "id": 403,
+      "name": "저소득층 아동급식 평일·방학 지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "부산광역시 수영구",
+      "target": "저소득층 결식우려 아동 (18세 미만)",
+      "summary": "결식 우려가 있는 18세 미만 아동에게 평일과 방학 중 1일 1식(11,000원)을 지원합니다.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/338000000112"
+    },
+    {
+      "id": 404,
+      "name": "1인가구 안심장비 지원사업",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "서울특별시 동대문구",
+      "target": "동대문구 거주 1인 가구 (전월세 보증금 2.5억 이하)",
+      "summary": "동대문구 1인 가구의 안전을 위해 스마트 초인종, CCTV 등 안심홈 4종 세트를 무료로 지원합니다.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/305000000147",
+      "attractiveness": 85
+    },
+    {
+      "id": 405,
+      "name": "IT 희망나눔 사랑의 PC 지원",
+      "category": "혜택",
+      "startDate": "2022-08-17",
+      "endDate": "상시",
+      "location": "서울특별시 동대문구",
+      "target": "동대문구 거주 정보소외계층 (기초생활수급자, 장애인 등)",
+      "summary": "정보 접근이 어려운 동대문구 주민에게 PC 풀세트를 무료로 지원해 드려요.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/305000000158"
+    },
+    {
+      "id": 406,
+      "name": "저소득층 중개보수 지원 (동대문구)",
+      "category": "혜택",
+      "startDate": "2023-02-09",
+      "endDate": "상시",
+      "location": "서울특별시 동대문구",
+      "target": "동대문구 저소득층 (기초생활수급자, 한부모가정 등)",
+      "summary": "동대문구 저소득층 이사 시, 최대 30만원의 부동산 중개보수를 현금으로 지원해요.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/305000000170",
+      "attractiveness": 85
     }
   ]
 }
