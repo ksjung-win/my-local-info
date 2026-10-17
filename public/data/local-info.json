@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-16",
+  "lastUpdated": "2026-10-17",
   "source": "공공데이터포털(재구성)",
   "items": [
     {
@@ -4642,6 +4642,64 @@
       "summary": "동대문구 저소득층 이사 시, 최대 30만원의 부동산 중개보수를 현금으로 지원해요.",
       "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/305000000170",
       "attractiveness": 85
+    },
+    {
+      "id": 407,
+      "name": "수원시 장안구 임산부 우울 선별검사 지원",
+      "category": "혜택",
+      "startDate": "2025-11-10",
+      "endDate": "상시",
+      "location": "경기도 수원시 장안구",
+      "target": "수원시 장안구 보건소에 등록된 임산부",
+      "summary": "수원시 장안구 임산부의 산전·산후 우울증을 무료로 검사하고 상담해드려요.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/374000000576"
+    },
+    {
+      "id": 408,
+      "name": "수원시 권선구 임산부 우울 선별검사 지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "수원시 권선구 보건소",
+      "target": "수원시 권선구 보건소에 등록한 임산부",
+      "summary": "산전/산후 우울감, 혼자 걱정 마세요! 무료 우울 선별검사 및 전문 상담을 지원합니다.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/374000000577",
+      "attractiveness": 85
+    },
+    {
+      "id": 409,
+      "name": "(수원시 팔달구) 임산부 우울 선별검사 지원",
+      "category": "혜택",
+      "startDate": "2026-10-17",
+      "endDate": "상시",
+      "location": "수원시 팔달구 보건소",
+      "target": "수원시 팔달구 보건소에 등록된 임산부",
+      "summary": "수원시 팔달구 예비맘이라면, 산전/산후 우울증 무료 검사와 상담으로 마음 건강 챙기세요!",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/374000000578",
+      "attractiveness": 85
+    },
+    {
+      "id": 410,
+      "name": "(수원시 영통구) 임산부 우울 선별검사 지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "경기도 수원시 영통구 보건소",
+      "target": "수원시 영통구에 등록된 임산부",
+      "summary": "수원 영통구 임산부라면 누구나 산전·산후 우울증 무료 검사와 상담을 받을 수 있어요.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/374000000579"
+    },
+    {
+      "id": 411,
+      "name": "수원시 녹물없는 우리집 수도관 개량사업",
+      "category": "혜택",
+      "startDate": "2026-02-23",
+      "endDate": "2026-11-27",
+      "location": "경기도 수원시",
+      "target": "수원시 20년 이상 노후주택 소유자",
+      "summary": "녹물 나오는 낡은 수도관 교체하고 최대 180만원 지원받으세요!",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/374000000580",
+      "attractiveness_score": 85
     }
   ]
 }
