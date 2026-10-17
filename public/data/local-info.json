@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-17",
+  "lastUpdated": "2026-10-18",
   "source": "공공데이터포털(재구성)",
   "items": [
     {
@@ -4700,6 +4700,64 @@
       "summary": "녹물 나오는 낡은 수도관 교체하고 최대 180만원 지원받으세요!",
       "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/374000000580",
       "attractiveness_score": 85
+    },
+    {
+      "id": 412,
+      "name": "워라밸일자리 장려금 지원(소정근로시간 단축)",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "전국 (관할 고용센터)",
+      "target": "소상공인, 중소/중견기업 사업주",
+      "summary": "직원의 워라밸을 위해 근로시간 단축을 허용한 사업주에게 월 최대 50만원의 장려금을 지원합니다.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/149200000034",
+      "attractiveness": 85
+    },
+    {
+      "id": 413,
+      "name": "중장년내일센터",
+      "category": "혜택",
+      "attractiveness": 90,
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "전국",
+      "target": "40대 이상 중장년 (재직자, 구직자)",
+      "summary": "40대 이상 중장년의 재취업, 전직, 생애경력설계를 돕는 맞춤형 고용지원 서비스",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/149200000041"
+    },
+    {
+      "id": 414,
+      "name": "직장어린이집 지원",
+      "category": "혜택",
+      "attraction_score": 85,
+      "startDate": "2020-12-17",
+      "endDate": "상시",
+      "location": "전국",
+      "target": "직장어린이집 설치/운영 사업주",
+      "summary": "우리 회사에 어린이집 만들면 설치비, 교사 인건비, 운영비까지 지원!",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/149200000044"
+    },
+    {
+      "id": 415,
+      "name": "차별 개선 센터",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "전국",
+      "target": "비정규직 근로자, 소상공인 및 사업주",
+      "summary": "비정규직 차별 문제? 사업장 진단, 컨설팅, 예방 교육을 무료로 지원합니다.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/149200000047"
+    },
+    {
+      "id": 416,
+      "name": "조기재취업수당",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "전국 (고용노동부 관할 고용센터)",
+      "target": "실업급여 수급자 중 조기 재취업자",
+      "summary": "실업급여를 받다 빨리 취업하면, 남은 실업급여의 절반을 한번에 드려요!",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/149200000063"
     }
   ]
 }
