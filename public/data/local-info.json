@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-18",
+  "lastUpdated": "2026-10-19",
   "source": "공공데이터포털(재구성)",
   "items": [
     {
@@ -4758,6 +4758,62 @@
       "target": "실업급여 수급자 중 조기 재취업자",
       "summary": "실업급여를 받다 빨리 취업하면, 남은 실업급여의 절반을 한번에 드려요!",
       "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/149200000063"
+    },
+    {
+      "id": 417,
+      "name": "미혼모·부 양육지원",
+      "category": "혜택",
+      "startDate": "2022-02-08",
+      "endDate": "상시",
+      "location": "서울특별시 강서구",
+      "target": "서울 강서구 거주 미혼모·부, 예비 미혼모",
+      "summary": "서울 강서구 거주 미혼모·부 가정에 아동양육비, 냉난방비, 임신출산 의료비를 지원합니다.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/315000000114"
+    },
+    {
+      "id": 418,
+      "name": "강서구 전세피해지원금(청년 월세) 지원",
+      "category": "혜택",
+      "startDate": "2023-09-06",
+      "endDate": "2027-07-25",
+      "location": "서울특별시 강서구",
+      "target": "서울 강서구 전세사기 피해 청년 (만 19~39세)",
+      "summary": "서울 강서구 거주 전세사기 피해 청년에게 월 20만원씩 최대 1년간 월세를 지원합니다.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/315000000269"
+    },
+    {
+      "id": 419,
+      "name": "임산부·영유아 도서 택배 서비스",
+      "category": "혜택",
+      "startDate": "2025-12-09",
+      "endDate": "상시",
+      "location": "부산광역시 수영구",
+      "target": "부산 수영구 거주 임산부 및 24개월 이하 영유아 보호자",
+      "summary": "도서관 방문이 힘든 임산부·영유아 가정에 원하는 책을 집으로 배달해드려요.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/338000000416"
+    },
+    {
+      "id": 420,
+      "name": "청년 구정참여 마일리지 및 인센티브 제공",
+      "category": "혜택",
+      "startDate": "2026-01-01",
+      "endDate": "2026-12-18",
+      "location": "부산광역시 수영구",
+      "target": "18세~39세 전국 청년",
+      "summary": "부산 수영구 구정에 참여하고 연 최대 10만원의 지역화폐 포인트를 받으세요!",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/338000000417"
+    },
+    {
+      "id": 421,
+      "name": "청년 신혼부부 주거자금 대출이자 지원",
+      "category": "혜택",
+      "startDate": "2026-08-01",
+      "endDate": "2026-10-31",
+      "location": "부산광역시 수영구",
+      "target": "부산 수영구의 18~39세 청년 및 신혼부부",
+      "summary": "부산 수영구 청년·신혼부부에게 주거 대출이자를 최대 100만원 지원합니다.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/338000000419",
+      "attraction_score": 90
     }
   ]
 }
