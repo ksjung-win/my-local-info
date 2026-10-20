@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-19",
+  "lastUpdated": "2026-10-20",
   "source": "공공데이터포털(재구성)",
   "items": [
     {
@@ -4814,6 +4814,65 @@
       "summary": "부산 수영구 청년·신혼부부에게 주거 대출이자를 최대 100만원 지원합니다.",
       "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/338000000419",
       "attraction_score": 90
+    },
+    {
+      "id": 422,
+      "name": "고위험 임산부 의료비 지원",
+      "category": "혜택",
+      "startDate": "2020-12-17",
+      "endDate": "상시",
+      "location": "전국",
+      "target": "고위험 임산부 및 그 가족",
+      "summary": "예기치 못한 임신 질환 발생 시, 부담 큰 입원치료비의 90%를 지원해드려요.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/135200000114",
+      "attractiveness": 95
+    },
+    {
+      "id": 423,
+      "name": "인플루엔자 국가예방접종 지원",
+      "category": "혜택",
+      "startDate": "2026-09-21",
+      "endDate": "2027-04-30",
+      "location": "전국 지정 의료기관 및 보건소",
+      "target": "생후 6개월~14세 어린이, 임신부, 65세 이상 어르신",
+      "summary": "어린이, 임신부, 어르신 대상 독감 예방접종을 전국에서 무료 지원해요!",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/135200000115",
+      "attraction_score": 95
+    },
+    {
+      "id": 424,
+      "name": "학교 흡연예방 사업",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "전국",
+      "target": "초·중·고등학생, 교사, 학부모",
+      "summary": "청소년의 건강을 지키는 학교 내 흡연예방 교육 및 금연 캠페인 지원",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/135200000116"
+    },
+    {
+      "id": 425,
+      "name": "아동수당",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "전국",
+      "target": "만 8세 미만 아동을 둔 가족",
+      "summary": "만 8세 미만 모든 아동에게 매달 10만 원을 현금으로 지원하는 제도",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/135200000120",
+      "attractiveness": 95
+    },
+    {
+      "id": 426,
+      "name": "첫만남이용권 지원",
+      "category": "혜택",
+      "startDate": "2022-01-01",
+      "endDate": "상시",
+      "location": "전국",
+      "target": "출산 가구",
+      "summary": "아이의 탄생을 축하! 첫째 200만원, 둘째 이상 300만원을 지원합니다.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/135200005015",
+      "attractiveness": 95
     }
   ]
 }
