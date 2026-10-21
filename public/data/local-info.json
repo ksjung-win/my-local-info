@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-20",
+  "lastUpdated": "2026-10-21",
   "source": "공공데이터포털(재구성)",
   "items": [
     {
@@ -4873,6 +4873,62 @@
       "summary": "아이의 탄생을 축하! 첫째 200만원, 둘째 이상 300만원을 지원합니다.",
       "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/135200005015",
       "attractiveness": 95
+    },
+    {
+      "id": 427,
+      "name": "장애인 및 가족치료 지원",
+      "category": "혜택",
+      "startDate": "2021-09-23",
+      "endDate": "상시",
+      "location": "서울특별시 서대문구",
+      "target": "서대문구 거주, 중위소득 180% 이하 심한 장애인 및 그 가족",
+      "summary": "장애인과 그 가족에게 언어, 미술 등 재활치료와 양육 코칭을 지원합니다.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/312000000117"
+    },
+    {
+      "id": 428,
+      "name": "평생교육이용권 지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "전국",
+      "target": "저소득층 성인 (기초생활수급자, 차상위계층 등)",
+      "summary": "저소득층 성인에게 연 35만원의 평생교육 강좌 수강료를 지원합니다.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/134200000045",
+      "attractiveness_score": 90
+    },
+    {
+      "id": 429,
+      "name": "중소기업 취업연계 장학금 (희망사다리Ⅰ유형)",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "전국",
+      "target": "대학생, 청년",
+      "summary": "중소기업 취업 희망 대학생에게 등록금 전액과 장려금 200만원 지원!",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/134200000046"
+    },
+    {
+      "id": 430,
+      "name": "고졸 후학습자 장학금 (희망사다리Ⅱ유형)",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "전국",
+      "target": "고졸 후 1년 이상(중소/중견) 또는 2년 이상 재직자",
+      "summary": "일하면서 대학 가자! 고졸 재직자에게 등록금 전액을 지원하는 꿀혜택!",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/134200005001"
+    },
+    {
+      "id": 431,
+      "name": "가정양육수당 지원",
+      "category": "혜택",
+      "startDate": "2024-07-26",
+      "endDate": "상시",
+      "location": "전국",
+      "target": "가정에서 영유아(24~86개월)를 양육하는 가족",
+      "summary": "어린이집, 유치원 안 보내는 24~86개월 아이, 매월 10만원 이상 현금 지원!",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/134200005012"
     }
   ]
 }
