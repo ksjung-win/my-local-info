@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-22",
+  "lastUpdated": "2026-10-23",
   "source": "공공데이터포털(재구성)",
   "items": [
     {
@@ -4987,6 +4987,66 @@
       "target": "평택시 거주 난임부부",
       "summary": "평택시 난임부부를 위해, 시술 관련 약제비 부담을 덜어드리는 현금 지원입니다.",
       "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/391000000550"
+    },
+    {
+      "id": 437,
+      "name": "민간건축물 지진안전 시설물 인증 비용 지원",
+      "category": "혜택",
+      "startDate": "2024-04-25",
+      "endDate": "상시",
+      "location": "전국",
+      "target": "민간 건축물 소유주 (개인, 소상공인, 법인 등)",
+      "summary": "우리 집/가게 지진 대비! 내진성능평가 및 인증 비용 최대 90% 이상 지원받으세요.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/174100000071",
+      "attractiveness": 75
+    },
+    {
+      "id": 438,
+      "name": "임산부 서비스 지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "서울특별시 관악구",
+      "target": "관악구 거주 임산부 및 임신 가정",
+      "summary": "관악구 예비맘 필수! 엽산제, 검사비, 유축기 대여 등 혜택 받으세요.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/320000000105",
+      "attraction_score": 90
+    },
+    {
+      "id": 439,
+      "name": "관악구 장애인 관광활동 이동비용 지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "서울특별시 관악구",
+      "target": "휠체어 이용 장애인이 포함된 가족, 모임, 단체",
+      "summary": "휠체어 이용 장애인 포함 단체 여행 시, 차량 대절 등 이동비용을 1회 최대 30만원까지 지원해요.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/320000000122",
+      "attraction_score": 85
+    },
+    {
+      "id": 440,
+      "name": "관악 청년 1인 가구 안심 건강검진",
+      "category": "혜택",
+      "startDate": "2024-01-02",
+      "endDate": "상시",
+      "location": "서울특별시 관악구",
+      "target": "만 19~39세 관악구 거주 청년 1인 가구",
+      "summary": "관악구 19~39세 1인 가구 청년이라면 47종의 종합 건강검진을 무료로 받으세요!",
+      "attractiveness": 85,
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/320000000124"
+    },
+    {
+      "id": 441,
+      "name": "관악구 깡충깡충 성장양육지원금",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "서울특별시 관악구",
+      "target": "관악구 거주 2~4세 영유아 보호자",
+      "summary": "관악구 거주 2, 3, 4세 자녀가 있다면 1인당 30만원 상품권을 받으세요.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/320000000299",
+      "attractiveness": 90
     }
   ]
 }
