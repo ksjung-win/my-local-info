@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-25",
+  "lastUpdated": "2026-10-26",
   "source": "공공데이터포털(재구성)",
   "items": [
     {
@@ -5161,6 +5161,63 @@
       "target": "서울 관악구 거주 난임부부",
       "summary": "난임 시술 과정에서 발생하는 원외 처방 약제비를 현금으로 지원받으세요.",
       "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/320000000295"
+    },
+    {
+      "id": 452,
+      "name": "평택시 출산축하지원금 지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "경기도 평택시",
+      "target": "평택시 거주 출산/입양 가정",
+      "summary": "평택시 출산 가정에 첫째 50만원, 둘째 120만원 등 출산축하금을 현금으로 지원해요.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/391000000117",
+      "attraction_score": 92
+    },
+    {
+      "id": 453,
+      "name": "국가보훈대상자 명예수당",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "경기도 평택시",
+      "target": "평택시 거주 국가보훈대상자 및 그 유족",
+      "summary": "나라를 위해 헌신한 평택시 국가보훈대상자에게 매월 10만원의 명예수당을 지원합니다.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/391000000147"
+    },
+    {
+      "id": 454,
+      "name": "평택시 난임부부 약제비 지원(송탄보건소)",
+      "category": "혜택",
+      "startDate": "2026-09-15",
+      "endDate": "상시",
+      "location": "경기도 평택시 (송탄보건소)",
+      "target": "평택시 거주 난임부부",
+      "summary": "난임 시술비 지원 후 남은 잔액으로, 원외처방 약제비를 추가 지원받으세요.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/391000000549"
+    },
+    {
+      "id": 455,
+      "name": "평택시 난임부부 약제비 지원",
+      "category": "혜택",
+      "startDate": "2025-10-31",
+      "endDate": "상시",
+      "location": "경기도 평택시",
+      "target": "평택시 거주 난임부부",
+      "summary": "난임 시술에 필요한 원외처방 약제비를 정부지원금 잔액 내에서 지원합니다.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/391000000550"
+    },
+    {
+      "id": 456,
+      "name": "청년 합격지원세트 지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "경기도 동두천시",
+      "target": "동두천시 거주 만 19~39세 청년",
+      "summary": "면접정장, 사진촬영, 시험응시료 등 취업 준비 비용을 지원합니다.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/392000000105",
+      "attractiveness": 85
     }
   ]
 }
