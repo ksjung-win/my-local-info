@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-24",
+  "lastUpdated": "2026-10-25",
   "source": "공공데이터포털(재구성)",
   "items": [
     {
@@ -5102,6 +5102,65 @@
       "target": "신청일 기준 1년 이상 강남구에 거주한 출산 가정",
       "summary": "산후관리 서비스 본인부담금, 최대 100만원까지 현금으로 돌려드려요!",
       "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/322000000107"
+    },
+    {
+      "id": 447,
+      "name": "동작구 전세피해임차인 지원금(소송수행비 실비 지원)",
+      "category": "혜택",
+      "startDate": "2025-03-17",
+      "endDate": "예산 소진 시까지",
+      "location": "서울특별시 동작구",
+      "target": "전세사기 피해를 입은 동작구 무주택 임차인",
+      "summary": "전세사기 피해로 힘든 동작구민에게 소송 비용을 최대 100만원까지 지원해드려요.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/319000000166"
+    },
+    {
+      "id": 448,
+      "name": "동작구 전세피해임차인 보증금반환보증료 지원",
+      "category": "혜택",
+      "startDate": "2025-07-14",
+      "endDate": "예산소진 시까지",
+      "location": "서울특별시 동작구",
+      "target": "동작구 전세사기 피해 임차인",
+      "summary": "전세사기 피해를 입은 동작구민에게 보증금반환보증료를 최대 100만원까지 지원합니다.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/319000000167",
+      "attractiveness_score": 82
+    },
+    {
+      "id": 449,
+      "name": "동작구 전세피해임차인 심리치료비 지원",
+      "category": "혜택",
+      "startDate": "2025-07-14",
+      "endDate": "예산 소진 시까지",
+      "location": "서울특별시 동작구",
+      "target": "동작구 거주 전세사기 피해자",
+      "summary": "전세사기로 마음 다친 동작구민에게 심리치료비 최대 100만원을 실비 지원합니다.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/319000000170",
+      "attractiveness": 85
+    },
+    {
+      "id": 450,
+      "name": "기초생활수급자 명절위문금 지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "서울특별시 관악구",
+      "target": "관악구 거주 기초 생계·의료급여 수급자",
+      "summary": "관악구 기초수급자 가구에 설, 추석 명절마다 현금 4만원을 지원합니다.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/320000000112",
+      "attractiveness_score": 78
+    },
+    {
+      "id": 451,
+      "name": "관악구 난임부부 시술 약제비 지원",
+      "category": "혜택",
+      "attractiveness": 85,
+      "startDate": "2024-02-15",
+      "endDate": "상시",
+      "location": "서울특별시 관악구",
+      "target": "서울 관악구 거주 난임부부",
+      "summary": "난임 시술 과정에서 발생하는 원외 처방 약제비를 현금으로 지원받으세요.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/320000000295"
     }
   ]
 }
