@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-26",
+  "lastUpdated": "2026-10-27",
   "source": "공공데이터포털(재구성)",
   "items": [
     {
@@ -5217,6 +5217,64 @@
       "target": "동두천시 거주 만 19~39세 청년",
       "summary": "면접정장, 사진촬영, 시험응시료 등 취업 준비 비용을 지원합니다.",
       "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/392000000105",
+      "attractiveness": 85
+    },
+    {
+      "id": 457,
+      "name": "고교입학생 등 교복구입비 지원",
+      "category": "혜택",
+      "attraction_score": 85,
+      "startDate": "2026-03-03",
+      "endDate": "2026-12-13",
+      "location": "부산광역시 북구",
+      "target": "부산 북구 거주 고등학교 등 신입생",
+      "summary": "부산 북구에 사는 고등학교 신입생 가정에 교복 구입비 30만원을 지원합니다.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/332000000101"
+    },
+    {
+      "id": 458,
+      "name": "해운대구 임산부 건강관리 지원",
+      "category": "혜택",
+      "startDate": "2021-09-23",
+      "endDate": "상시",
+      "location": "부산광역시 해운대구",
+      "target": "해운대구 거주 임산부",
+      "summary": "해운대구 거주 임산부에게 필수 엽산제, 철분제 및 임신 초기 검사를 무료 지원해요.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/333000000375"
+    },
+    {
+      "id": 459,
+      "name": "해운대구 산모·신생아 건강관리 지원(확대)",
+      "category": "혜택",
+      "startDate": "2021-09-23",
+      "endDate": "상시",
+      "location": "부산광역시 해운대구",
+      "target": "부산시 거주 기준중위소득 150% 초과 산모",
+      "summary": "부산 해운대구 출산 가정에 산모와 신생아 건강관리 바우처를 지원해요.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/333000000377"
+    },
+    {
+      "id": 460,
+      "name": "해운대구 입학지원금 지원",
+      "category": "혜택",
+      "attractiveness": 90,
+      "startDate": "2026-03-03",
+      "endDate": "2026-12-11",
+      "location": "부산광역시 해운대구",
+      "target": "해운대구 거주 중·고등학교 입학생 자녀를 둔 가족",
+      "summary": "해운대구 거주 중·고교 입학생에게 소득 무관 1인당 30만원 현금 지원!",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/333000000378"
+    },
+    {
+      "id": 461,
+      "name": "해운대구 출산지원금 지원",
+      "category": "혜택",
+      "startDate": "2026-01-01",
+      "endDate": "상시",
+      "location": "부산광역시 해운대구",
+      "target": "해운대구에 거주하는 신생아 출산 가정",
+      "summary": "해운대구에서 아이 낳으면 첫째 50만원, 둘째부터 100만원 현금 지원!",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/333000000381",
       "attractiveness": 85
     }
   ]
