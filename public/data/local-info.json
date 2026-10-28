@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-27",
+  "lastUpdated": "2026-10-28",
   "source": "공공데이터포털(재구성)",
   "items": [
     {
@@ -5275,6 +5275,64 @@
       "target": "해운대구에 거주하는 신생아 출산 가정",
       "summary": "해운대구에서 아이 낳으면 첫째 50만원, 둘째부터 100만원 현금 지원!",
       "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/333000000381",
+      "attractiveness": 85
+    },
+    {
+      "id": 462,
+      "name": "성북구 청년 행정체험단",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "서울특별시 성북구",
+      "target": "성북구에 거주하는 만 19~29세 청년",
+      "summary": "방학 기간, 구청에서 행정 실무를 경험하며 돈도 버는 꿀알바 기회!",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/307000000163",
+      "attractiveness": 78
+    },
+    {
+      "id": 463,
+      "name": "지역화폐(강북사랑상품권)",
+      "category": "혜택",
+      "startDate": "2021-09-23",
+      "endDate": "상시",
+      "location": "서울시 강북구",
+      "target": "강북구 소상공인 및 주민",
+      "summary": "강북구에서 최대 10% 할인! 강북사랑상품권으로 알뜰 소비하세요.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/308000000127"
+    },
+    {
+      "id": 464,
+      "name": "강서구 사랑의 PC 나눔센터",
+      "category": "혜택",
+      "startDate": "2023-11-09",
+      "endDate": "상시",
+      "location": "서울시 강서구",
+      "target": "강서구 내 정보취약계층 (기초생활수급자, 차상위, 장애인 등)",
+      "summary": "정보 소외 계층을 위해 무료로 중고 PC를 보급하고 수리해 드립니다.",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/315000000266"
+    },
+    {
+      "id": 465,
+      "name": "모성보건사업 지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "서울특별시 강북구",
+      "target": "강북구 관내 임산부",
+      "summary": "강북구 예비 엄마 필수! 엽산제, 철분제, 각종 검사 무료 지원",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/308000000128",
+      "attractiveness_score": 85
+    },
+    {
+      "id": 466,
+      "name": "여성과 어린이 건강증진 지원",
+      "category": "혜택",
+      "startDate": "2021-09-23",
+      "endDate": "상시",
+      "location": "서울특별시 도봉구",
+      "target": "도봉구 거주 임산부 및 영유아",
+      "summary": "도봉구 임산부 대상 임신초기·기형아검사, 출산·육아교실 무료 지원",
+      "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/309000000124",
       "attractiveness": 85
     }
   ]
