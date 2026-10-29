@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-28",
+  "lastUpdated": "2026-10-29",
   "source": "공공데이터포털(재구성)",
   "items": [
     {
@@ -5334,6 +5334,62 @@
       "summary": "도봉구 임산부 대상 임신초기·기형아검사, 출산·육아교실 무료 지원",
       "link": "https://www.gov.kr/portal/rcvfvrSvc/dtlEx/309000000124",
       "attractiveness": 85
+    },
+    {
+      "id": 467,
+      "name": "햇살론(자영업자) 신용보증",
+      "category": "혜택",
+      "startDate": "2025-09-15",
+      "endDate": "상시",
+      "location": "전국",
+      "target": "저신용 또는 저소득 소상공인 및 자영업자",
+      "summary": "신용·소득이 낮아도 OK! 최대 5천만원 정부 보증 서민금융",
+      "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=2156616&bnefType=all&svcId=142100000076"
+    },
+    {
+      "id": 468,
+      "name": "주인없는 노후 위험간판 무상철거 사업",
+      "category": "혜택",
+      "startDate": "2024-06-26",
+      "endDate": "상시",
+      "location": "부산광역시 영도구",
+      "target": "소상공인, 건물주",
+      "summary": "폐업/이전 후 방치된 낡고 위험한 간판을 구청에서 무료로 철거해 드립니다.",
+      "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=2121907&bnefType=all&svcId=328000000115"
+    },
+    {
+      "id": 469,
+      "name": "교복구입비 지원(부산 동래구)",
+      "category": "혜택",
+      "startDate": "2026-03-03",
+      "endDate": "2026-11-30",
+      "location": "부산광역시 동래구",
+      "target": "부산 동래구 거주 중·고교 신입생 자녀를 둔 학부모",
+      "summary": "부산 동래구 거주 특정 중·고등학교 신입생 가정에 교복 구입비 30만원을 지원합니다.",
+      "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=802988&bnefType=all&svcId=330000000108",
+      "attractiveness": 85
+    },
+    {
+      "id": 470,
+      "name": "농번기 아이돌봄방 지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "전국 농촌지역",
+      "target": "농촌 거주 영유아 자녀를 둔 농업인 가족",
+      "summary": "바쁜 농번기, 주말 동안 아이를 맡길 수 있도록 농촌 아이돌봄방 시설 및 운영비를 지원합니다.",
+      "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=594680&bnefType=all&svcId=154300000056"
+    },
+    {
+      "id": 471,
+      "name": "귀농·귀촌 교육 지원",
+      "category": "혜택",
+      "startDate": "2027-02-01",
+      "endDate": "상시",
+      "location": "전국 (지자체 및 위탁 교육기관)",
+      "target": "귀농·귀촌을 준비하는 국민",
+      "summary": "성공적인 귀농귀촌 첫걸음! 정부가 교육비 70~90%를 지원합니다.",
+      "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=999089&bnefType=all&svcId=154300000138"
     }
   ]
 }
