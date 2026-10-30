@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-29",
+  "lastUpdated": "2026-10-30",
   "source": "공공데이터포털(재구성)",
   "items": [
     {
@@ -5390,6 +5390,63 @@
       "target": "귀농·귀촌을 준비하는 국민",
       "summary": "성공적인 귀농귀촌 첫걸음! 정부가 교육비 70~90%를 지원합니다.",
       "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=999089&bnefType=all&svcId=154300000138"
+    },
+    {
+      "id": 472,
+      "name": "연수구 난임부부 시술 약제비 지원",
+      "category": "혜택",
+      "startDate": "2024-04-17",
+      "endDate": "상시",
+      "location": "인천광역시 연수구",
+      "target": "인천 연수구 거주 난임부부",
+      "summary": "인천 연수구 거주 난임부부에게 시술 관련 약제비를 현금으로 지원합니다.",
+      "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=2119301&bnefType=all&svcId=352000000117"
+    },
+    {
+      "id": 473,
+      "name": "[연수구] 산모·신생아 건강관리서비스 본인부담금 지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "인천광역시 연수구",
+      "target": "연수구 거주 산모, 신생아 및 출산가정",
+      "summary": "인천 연수구 출산가정에 산모·신생아 건강관리 서비스 본인부담금을 지원합니다.",
+      "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=2119703&bnefType=all&svcId=352000000119",
+      "attractiveness": 88
+    },
+    {
+      "id": 474,
+      "name": "동구 어린이식당 지원",
+      "category": "혜택",
+      "startDate": "2026-10-26",
+      "endDate": "상시",
+      "location": "부산광역시 동구",
+      "target": "부산 동구 거주, 결식 우려 아동",
+      "summary": "부산 동구의 결식 우려 아동에게 주 1회 놀이와 돌봄이 있는 저녁 식사를 제공해요.",
+      "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=1001735&bnefType=all&svcId=327000000104",
+      "attraction_score": 85
+    },
+    {
+      "id": 475,
+      "name": "[연수구] 산모·신생아 건강관리서비스 본인부담금 지원",
+      "category": "혜택",
+      "startDate": "2024-04-23",
+      "endDate": "상시",
+      "location": "인천광역시 연수구",
+      "target": "인천 연수구 거주, 중위소득 150% 이하 출산가정 등",
+      "summary": "출산 가정의 산후조리 비용 부담을 덜어주는 현금 지원! (셋째아 이상 전액 지원)",
+      "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=2119703&bnefType=all&svcId=352000000119"
+    },
+    {
+      "id": 476,
+      "name": "아동수당플러스 지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "경기도 성남시",
+      "target": "경기도 성남시에 거주하는 8세 미만 아동",
+      "summary": "성남시 8세 미만 아동에게 매월 2만원의 체크카드 포인트를 지원합니다.",
+      "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=1001318&bnefType=all&svcId=378000000145"
     }
   ]
 }
