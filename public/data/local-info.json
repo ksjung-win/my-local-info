@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-30",
+  "lastUpdated": "2026-10-31",
   "source": "공공데이터포털(재구성)",
   "items": [
     {
@@ -5447,6 +5447,63 @@
       "target": "경기도 성남시에 거주하는 8세 미만 아동",
       "summary": "성남시 8세 미만 아동에게 매월 2만원의 체크카드 포인트를 지원합니다.",
       "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=1001318&bnefType=all&svcId=378000000145"
+    },
+    {
+      "id": 477,
+      "name": "지역화폐(성동사랑상품권)",
+      "category": "혜택",
+      "startDate": "2021-09-23",
+      "endDate": "상시",
+      "location": "서울특별시 성동구",
+      "target": "전국민, 성동구 관내 소상공인",
+      "summary": "성동구에서 할인받고 소상공인도 돕는 똑똑한 소비 찬스!",
+      "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=1006347&bnefType=all&svcId=303000000113"
+    },
+    {
+      "id": 478,
+      "name": "[연수구] 난임부부 시술 개인약제비 지원",
+      "category": "혜택",
+      "startDate": "2024-04-17",
+      "endDate": "상시",
+      "location": "인천광역시 연수구",
+      "target": "연수구에 거주하는 난임부부",
+      "summary": "인천 연수구 난임부부를 위한 시술 관련 약제비를 현금으로 지원합니다.",
+      "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=2119301&bnefType=all&svcId=352000000117",
+      "attractiveness_score": 78
+    },
+    {
+      "id": 479,
+      "name": "[연수구] 산모·신생아 건강관리서비스 본인부담금 지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "인천광역시 연수구",
+      "target": "인천 연수구 내 출산가정 (중위소득 150% 이하 등)",
+      "summary": "산후조리 서비스 이용 시 발생하는 본인부담금을 현금으로 지원받으세요.",
+      "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=2119703&bnefType=all&svcId=352000000119",
+      "attractiveness": 85
+    },
+    {
+      "id": 480,
+      "name": "지역화폐(중랑사랑상품권)",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "서울특별시 중랑구",
+      "target": "중랑구 소상공인 및 주민",
+      "summary": "중랑구 내 가게에서 현금처럼 쓰고 할인 혜택도 받는 지역화폐",
+      "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=1004062&bnefType=all&svcId=306000000107"
+    },
+    {
+      "id": 481,
+      "name": "중랑구 난임부부 약제비 지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "서울특별시 중랑구",
+      "target": "서울시 거주 난임부부 (사실혼 포함)",
+      "summary": "난임 시술 이후 발생한 원외처방 약제비를 현금으로 지원하는 혜택",
+      "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=2117202&bnefType=all&svcId=306000000210"
     }
   ]
 }
