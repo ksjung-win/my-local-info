@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-02",
+  "lastUpdated": "2026-11-03",
   "source": "공공데이터포털(재구성)",
   "items": [
     {
@@ -5617,6 +5617,64 @@
       "target": "대구 북구 거주 24~28주 임산부",
       "summary": "대구 북구 임산부라면 임신성 당뇨검사를 무료로 지원받으세요.",
       "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=1001576&bnefType=all&svcId=345000000101"
+    },
+    {
+      "id": 492,
+      "name": "학교 밖 청소년지원(급식지원)",
+      "category": "혜택",
+      "startDate": "2026-09-21",
+      "endDate": "상시",
+      "location": "전남광주통합특별시 동구",
+      "target": "학교 밖 청소년",
+      "summary": "학교 밖 청소년에게 상담, 취업 지원과 함께 따뜻한 식사를 제공해요.",
+      "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=1001740&bnefType=all&svcId=359000000106",
+      "attractiveness": 85
+    },
+    {
+      "id": 493,
+      "name": "동구 맘택시 교통비 지원",
+      "category": "혜택",
+      "startDate": "2023-06-12",
+      "endDate": "상시",
+      "location": "전남광주통합특별시 동구",
+      "target": "동구 거주 임산부 및 0~24개월 영유아 가정",
+      "summary": "광주 동구 임산부·영유아 가정에 병원 방문 택시비 월 최대 3만원 지원!",
+      "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=2107906&bnefType=all&svcId=359000000113"
+    },
+    {
+      "id": 494,
+      "name": "장애인가정출산 지원",
+      "category": "혜택",
+      "startDate": "2021-09-23",
+      "endDate": "상시",
+      "location": "광주광역시 서구",
+      "target": "광주 서구 거주 출산 장애인 가정",
+      "summary": "아이를 출산한 광주 서구 장애인 가정에 최대 100만원의 출산지원금을 지급해요.",
+      "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=1001566&bnefType=all&svcId=360000000103",
+      "attractiveness": 85
+    },
+    {
+      "id": 495,
+      "name": "희망 아이출생 산모 산후관리비 지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "광주 서구",
+      "target": "광주 서구 거주 저소득/한부모/셋째 이상 출산가정",
+      "summary": "광주 서구 출산가정 주목! 아이 낳을 때마다 현금 100만원 지원",
+      "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=1004261&bnefType=all&svcId=360000000112",
+      "attraction_score": 85
+    },
+    {
+      "id": 496,
+      "name": "소상공인 특례보증 대출이자 지원",
+      "category": "혜택",
+      "startDate": "2026-02-10",
+      "endDate": "한도 소진 시까지",
+      "location": "전남광주통합특별시 서구",
+      "target": "전남광주 서구 소상공인",
+      "summary": "광주 서구 소상공인에게 최대 2천만원 대출의 1년치 이자 일부를 지원해요.",
+      "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=2174316&bnefType=all&svcId=360000000258"
     }
   ]
 }
