@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-04",
+  "lastUpdated": "2026-11-05",
   "source": "공공데이터포털(재구성)",
   "items": [
     {
@@ -5734,6 +5734,64 @@
       "summary": "난임 시술에 필요한 약제비를 현금으로 지원받아 경제적 부담을 덜어보세요.",
       "attractiveness_score": 85,
       "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=2152418&bnefType=all&svcId=390000000436"
+    },
+    {
+      "id": 502,
+      "name": "산재근로자 직장 복귀 지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "전국",
+      "target": "산재근로자를 고용한 사업주",
+      "summary": "산재근로자 재고용 시 사업주에게 최대 12개월간 지원금을 지급합니다.",
+      "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=708149&bnefType=all&svcId=149200000021",
+      "attractiveness": 85
+    },
+    {
+      "id": 503,
+      "name": "장애인고용장려금지원",
+      "category": "혜택",
+      "attractiveness": 88,
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "전국",
+      "target": "장애인을 의무고용률 이상 고용한 사업주",
+      "summary": "장애인 근로자 1인당 월 최대 90만원까지 고용장려금을 지원하여 기업 부담을 덜어주는 제도",
+      "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=999032&bnefType=all&svcId=149200000053"
+    },
+    {
+      "id": 504,
+      "name": "사업주 직업능력개발 지원",
+      "category": "혜택",
+      "attraction_score": 85,
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "전국",
+      "target": "고용보험에 가입한 사업주",
+      "summary": "소속 직원 직업 훈련 시 필요한 훈련비, 인건비, 수당 등을 지원받으세요!",
+      "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=516544&bnefType=all&svcId=149200000066"
+    },
+    {
+      "id": 505,
+      "name": "장애인 인턴제",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시 (예산 소진 시까지)",
+      "location": "전국 (접수: 한국장애인고용공단)",
+      "target": "장애인 구직자 및 이들을 채용하는 사업주",
+      "summary": "장애인 인턴 채용 시, 기업에 최대 6개월간 인건비 80%를 지원합니다.",
+      "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=709127&bnefType=all&svcId=149200000081"
+    },
+    {
+      "id": 506,
+      "name": "유연근무제 장려금 지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "전국",
+      "target": "중소·중견기업 사업주",
+      "summary": "재택·원격근무 도입 시 근로자 1인당 월 최대 30만원을 지원받으세요!",
+      "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=730437&bnefType=all&svcId=149200000083"
     }
   ]
 }
