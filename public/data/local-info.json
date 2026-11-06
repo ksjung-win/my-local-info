@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-05",
+  "lastUpdated": "2026-11-06",
   "source": "공공데이터포털(재구성)",
   "items": [
     {
@@ -5792,6 +5792,62 @@
       "target": "중소·중견기업 사업주",
       "summary": "재택·원격근무 도입 시 근로자 1인당 월 최대 30만원을 지원받으세요!",
       "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=730437&bnefType=all&svcId=149200000083"
+    },
+    {
+      "id": 507,
+      "name": "가정위탁아동 및 입양가정 지원",
+      "category": "혜택",
+      "startDate": "2021-09-23",
+      "endDate": "상시",
+      "location": "서울특별시 종로구",
+      "target": "종로구 거주 가정위탁아동 및 입양가정",
+      "summary": "종로구 내 위탁아동 및 입양가정에 입양장려금, 격려품 등을 지원합니다.",
+      "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=1006539&bnefType=all&svcId=300000000111"
+    },
+    {
+      "id": 508,
+      "name": "의료급여 수급권자 우체국 실손 의료보험료 할인",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "전국",
+      "target": "의료급여 수급권자",
+      "summary": "의료급여 수급권자라면 우체국 실손의료보험료 5%를 할인받을 수 있어요.",
+      "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=747031&bnefType=all&svcId=171000000009",
+      "attraction": 85
+    },
+    {
+      "id": 509,
+      "name": "사망자 및 피후견인 재산조회 통합처리 신청(안심상속서비스)",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "전국",
+      "target": "상속인, 후견인 등 재산조회가 필요한 국민",
+      "summary": "사망자의 금융, 토지, 연금 등 모든 상속재산을 한 번에 조회하는 필수 원스톱 서비스",
+      "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=593068&bnefType=all&svcId=174000000013"
+    },
+    {
+      "id": 510,
+      "name": "취업성공 디딤돌 청년인턴 사업",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "인천광역시 서해구",
+      "target": "인천 서해구 거주 19~34세 미취업 청년",
+      "summary": "인천 서해구 미취업 청년에게 공공기관 인턴 경력과 취업 역량 강화 기회를 제공합니다.",
+      "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=2186922&bnefType=all&svcId=356100000003"
+    },
+    {
+      "id": 511,
+      "name": "출산지원금 등 지원",
+      "category": "혜택",
+      "startDate": "2021-09-23",
+      "endDate": "상시",
+      "location": "인천광역시 강화군",
+      "target": "강화군에 2년 이상 거주한 출산 부모",
+      "summary": "첫째 500만원! 강화군 거주 부모에게 출산·양육·생일축하금을 지원합니다.",
+      "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=1005935&bnefType=all&svcId=357000000119"
     }
   ]
 }
