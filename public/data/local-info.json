@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-06",
+  "lastUpdated": "2026-11-07",
   "source": "공공데이터포털(재구성)",
   "items": [
     {
@@ -5848,6 +5848,64 @@
       "target": "강화군에 2년 이상 거주한 출산 부모",
       "summary": "첫째 500만원! 강화군 거주 부모에게 출산·양육·생일축하금을 지원합니다.",
       "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=1005935&bnefType=all&svcId=357000000119"
+    },
+    {
+      "id": 512,
+      "name": "기초학습 지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "전국",
+      "target": "다문화·외국인·난민가족 자녀 (미취학 및 초등학생)",
+      "summary": "우리 아이 한글, 수학 기초학습! 다문화가정 자녀를 위한 맞춤 학습 지원.",
+      "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=2147892&bnefType=all&svcId=138300000058",
+      "attractiveness": 85
+    },
+    {
+      "id": 513,
+      "name": "국가유공자 등의 국가정원 관람료 면제",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "전국 국가정원 (순천만, 태화강 등)",
+      "target": "국가유공자, 장애인, 7세 이하·65세 이상, 기초생활수급자 등",
+      "summary": "해당된다면 순천만 국가정원 등 아름다운 정원을 무료로 관람하세요!",
+      "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=510252&bnefType=all&svcId=140000000171"
+    },
+    {
+      "id": 514,
+      "name": "저소득층 격려 지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "대구광역시 달성군",
+      "target": "달성군 내 저소득층(장애인, 독거노인, 조손가정), 사회복지시설 입소자, 초등학교 입학 예정 아동 등",
+      "summary": "대구 달성군 저소득층에게 위문품, 초등학생 책가방 구입비 등을 지원합니다.",
+      "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=1006346&bnefType=all&svcId=348000000376",
+      "attractiveness": 75
+    },
+    {
+      "id": 515,
+      "name": "(관악구) 난임부부 시술 약제비 지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "서울특별시 관악구",
+      "target": "관악구 거주 난임부부",
+      "summary": "관악구 난임부부의 시술 관련 원외 처방 약제비를 지원해 드립니다.",
+      "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=2117121&bnefType=all&svcId=320000000295"
+    },
+    {
+      "id": 516,
+      "name": "광진구 장학금 지원",
+      "category": "혜택",
+      "attraction_score": 85,
+      "startDate": "2027-01-01",
+      "endDate": "2027-12-31",
+      "location": "서울특별시 광진구",
+      "target": "광진구 1년 이상 거주 학생 (초·중·고·대학생)",
+      "summary": "광진구 거주 학생에게 최대 500만원의 현금 장학금을 지원합니다.",
+      "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=2130716&bnefType=all&svcId=304000000232"
     }
   ]
 }
