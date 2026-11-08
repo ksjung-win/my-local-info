@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-07",
+  "lastUpdated": "2026-11-08",
   "source": "공공데이터포털(재구성)",
   "items": [
     {
@@ -5906,6 +5906,65 @@
       "target": "광진구 1년 이상 거주 학생 (초·중·고·대학생)",
       "summary": "광진구 거주 학생에게 최대 500만원의 현금 장학금을 지원합니다.",
       "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=2130716&bnefType=all&svcId=304000000232"
+    },
+    {
+      "id": 517,
+      "name": "경증장애인 장애수당",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "경기도 성남시",
+      "target": "성남시 거주 경증장애인",
+      "summary": "성남시 거주 경증장애인에게 매월 10,000원의 장애수당을 지원합니다.",
+      "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=1000779&bnefType=all&svcId=378000000138",
+      "attractiveness": 75
+    },
+    {
+      "id": 518,
+      "name": "임산부 유축기 대여 지원",
+      "category": "혜택",
+      "attractiveness": 85,
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "경기도 성남시",
+      "target": "성남시에 거주하는 출산 후 3개월 이내 산모",
+      "summary": "성남시 산모라면 비싼 유축기를 한 달간 무료로 대여하세요!",
+      "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=1003416&bnefType=all&svcId=378000000150"
+    },
+    {
+      "id": 519,
+      "name": "성남시 노동취약계층 유급병가비 지원",
+      "category": "혜택",
+      "attractiveness": 85,
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "경기도 성남시",
+      "target": "성남시 거주 소상공인, 일용근로자, 특수고용직 등 노동취약계층",
+      "summary": "아파서 일하지 못하는 성남시 취약노동자에게 연 13일의 유급병가비를 지원합니다.",
+      "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=806103&bnefType=all&svcId=378000000164"
+    },
+    {
+      "id": 520,
+      "name": "성남시 저소득 한부모가족 냉난방비 지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "경기도 성남시",
+      "target": "성남시 저소득 한부모가족",
+      "summary": "성남시 저소득 한부모가족에게 별도 신청 없이 월 5만원의 냉난방비를 지원합니다.",
+      "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=2114236&bnefType=all&svcId=378000000182"
+    },
+    {
+      "id": 521,
+      "name": "의정부시 청년 취업비용 지원(면접정장 대여, 이력서 사진 촬영)",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "경기도 의정부시",
+      "target": "의정부 거주 또는 관내 학교 재/졸업 청년(18~39세)",
+      "summary": "취업을 준비하는 의정부 청년에게 면접정장과 이력서 사진 촬영을 무료 지원!",
+      "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=2128393&bnefType=all&svcId=382000000152",
+      "attractiveness": 88
     }
   ]
 }
