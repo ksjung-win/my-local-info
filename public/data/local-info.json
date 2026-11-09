@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-08",
+  "lastUpdated": "2026-11-09",
   "source": "공공데이터포털(재구성)",
   "items": [
     {
@@ -5965,6 +5965,61 @@
       "summary": "취업을 준비하는 의정부 청년에게 면접정장과 이력서 사진 촬영을 무료 지원!",
       "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=2128393&bnefType=all&svcId=382000000152",
       "attractiveness": 88
+    },
+    {
+      "id": 522,
+      "name": "중랑구 난임부부 약제비 지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "서울특별시 중랑구",
+      "target": "서울시 거주 난임부부",
+      "summary": "난임 시술 후 발생하는 부담되는 약제비를 현금으로 지원받으세요.",
+      "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=2117202&bnefType=all&svcId=306000000210"
+    },
+    {
+      "id": 523,
+      "name": "건강한 치아만들기",
+      "category": "혜택",
+      "startDate": "2026-11-09",
+      "endDate": "상시",
+      "location": "서울특별시 성북구",
+      "target": "성북구민 (아동, 청소년, 임산부, 중장년 등)",
+      "summary": "성북구 아동, 청소년, 임산부, 중장년층 대상 무료 불소도포, 실런트 등 구강 관리 지원",
+      "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=1004777&bnefType=all&svcId=307000000111"
+    },
+    {
+      "id": 524,
+      "name": "성북구민 자전거보험",
+      "category": "혜택",
+      "startDate": "2022-02-15",
+      "endDate": "상시",
+      "location": "서울특별시 성북구",
+      "target": "성북구민 (등록외국인 포함)",
+      "summary": "성북구민이면 자동 가입! 자전거 사고 시 진단비, 벌금 등 최대 3천만원까지 보장받으세요.",
+      "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=808092&bnefType=all&svcId=307000000124"
+    },
+    {
+      "id": 525,
+      "name": "사랑의 PC 지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "서울특별시 성북구",
+      "target": "기초생활수급자, 장애인, 다문화가족 등 정보취약계층",
+      "summary": "정보 취약계층에게 중고 PC를 무료로 보급하고 2년간 사후 관리까지 지원합니다.",
+      "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=810324&bnefType=all&svcId=307000000134"
+    },
+    {
+      "id": 526,
+      "name": "강서구 전세피해지원금(이사비) 지원",
+      "category": "혜택",
+      "startDate": "2023-09-06",
+      "endDate": "2027-07-25",
+      "location": "서울특별시 강서구",
+      "target": "강서구 거주 전세사기 피해자",
+      "summary": "전세사기 피해로 공공임대주택 입주 시 이사비 최대 100만원 실비 지원",
+      "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=2114409&bnefType=all&svcId=315000000270"
     }
   ]
 }
