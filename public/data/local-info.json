@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-10",
+  "lastUpdated": "2026-11-11",
   "source": "공공데이터포털(재구성)",
   "items": [
     {
@@ -6078,6 +6078,64 @@
       "target": "안양시에 거주하며 어린이집에 처음 입소하는 만 0~5세 자녀를 둔 가족",
       "summary": "안양시 어린이집에 처음 입소하는 만 0~5세 아동에게 입학 준비금 10만원을 지원해요.",
       "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=1001406&bnefType=all&svcId=383000000114"
+    },
+    {
+      "id": 532,
+      "name": "국가유공자 등 보상금",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "전국",
+      "target": "국가유공자 본인 및 유가족 (배우자, 자녀, 손자녀 등)",
+      "summary": "국가유공자와 보훈가족의 영예로운 삶을 위해 매월 보상금을 지원합니다.",
+      "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=2156419&bnefType=all&svcId=183000000015",
+      "attractiveness_score": 95
+    },
+    {
+      "id": 533,
+      "name": "시간제보육 지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "전국",
+      "target": "가정에서 영유아를 돌보는 부모",
+      "summary": "가정양육 부모가 급한 일이 생겼을 때 시간당 2천원으로 아이를 맡길 수 있는 정부 지원",
+      "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=2123215&bnefType=all&svcId=134200005031"
+    },
+    {
+      "id": 534,
+      "name": "영유아보육료 지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "전국",
+      "target": "0~5세 영유아를 둔 가족",
+      "summary": "소득 상관없이 0~5세 자녀의 어린이집 보육료를 지원받으세요.",
+      "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=2132016&bnefType=all&svcId=134200005036",
+      "attractiveness_score": 95
+    },
+    {
+      "id": 535,
+      "name": "초·중·고 교육비 지원",
+      "category": "혜택",
+      "startDate": "2025-07-14",
+      "endDate": "상시",
+      "location": "전국",
+      "target": "저소득층 초·중·고 학생 가구",
+      "summary": "저소득층 학생의 학비, 급식비, PC 및 통신비를 지원하는 핵심 교육복지",
+      "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=2149816&bnefType=all&svcId=134200005044"
+    },
+    {
+      "id": 536,
+      "name": "유아교육비·보육료 추가지원",
+      "category": "혜택",
+      "attraction_score": 90,
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "전국",
+      "target": "유아 자녀를 둔 학부모",
+      "summary": "자녀 양육비 부담 DOWN! 유아 1인당 월 5만원 추가 지원금 받으세요.",
+      "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=2149924&bnefType=all&svcId=134200005047"
     }
   ]
 }
