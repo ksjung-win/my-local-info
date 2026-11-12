@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-11",
+  "lastUpdated": "2026-11-12",
   "source": "공공데이터포털(재구성)",
   "items": [
     {
@@ -6136,6 +6136,64 @@
       "target": "유아 자녀를 둔 학부모",
       "summary": "자녀 양육비 부담 DOWN! 유아 1인당 월 5만원 추가 지원금 받으세요.",
       "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=2149924&bnefType=all&svcId=134200005047"
+    },
+    {
+      "id": 537,
+      "name": "광진동행버스(교통약자) 무료버스 지원",
+      "category": "혜택",
+      "startDate": "2025-05-19",
+      "endDate": "상시",
+      "location": "서울특별시 광진구",
+      "target": "어르신, 장애인, 임산부 등 광진구 교통약자 및 보호자",
+      "summary": "광진구 교통약자(어르신, 임산부 등)를 위한 무료 셔틀버스! 휠체어도 탑승 가능해요.",
+      "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=803508&bnefType=all&svcId=304000000160",
+      "attraction_score": 78
+    },
+    {
+      "id": 538,
+      "name": "청년 행정아르바이트",
+      "category": "혜택",
+      "startDate": "매년 6월경",
+      "endDate": "매년 12월경",
+      "location": "서울특별시 광진구",
+      "target": "광진구 거주 만 19~29세 청년",
+      "summary": "광진구 청년에게 행정 실무 경험과 생활임금을 제공하는 인기 알바!",
+      "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=803612&bnefType=all&svcId=304000000162"
+    },
+    {
+      "id": 539,
+      "name": "동작구 전세피해임차인 지원금(이사비 실비 지원)",
+      "category": "혜택",
+      "startDate": "2025-07-14",
+      "endDate": "예산 소진 시까지",
+      "location": "서울특별시 동작구",
+      "target": "동작구 거주 전세사기피해자",
+      "summary": "전세사기 피해로 이사하는 동작구민에게 이사비, 중개수수료 등 최대 100만원 지원",
+      "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=2147906&bnefType=all&svcId=319000000168"
+    },
+    {
+      "id": 540,
+      "name": "동작구 전세피해임차인 지원금(심리치료비 실비 지원)",
+      "category": "혜택",
+      "startDate": "2025-07-14",
+      "endDate": "예산 소진 시까지",
+      "location": "서울특별시 동작구",
+      "target": "동작구 전세사기 피해 구민",
+      "summary": "동작구 전세사기 피해 구민 대상, 최대 100만원의 심리치료 실비를 지원합니다.",
+      "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=2147909&bnefType=all&svcId=319000000170",
+      "attraction_score": 85
+    },
+    {
+      "id": 541,
+      "name": "관악구 난임부부 시술 약제비 지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "서울특별시 관악구",
+      "target": "관악구 거주 난임부부",
+      "summary": "난임 시술의 경제적 부담을 덜어드리는 약제비 현금 지원 혜택",
+      "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=2117121&bnefType=all&svcId=320000000295",
+      "attractiveness": 85
     }
   ]
 }
