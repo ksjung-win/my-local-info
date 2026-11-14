@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-13",
+  "lastUpdated": "2026-11-14",
   "source": "공공데이터포털(재구성)",
   "items": [
     {
@@ -6250,6 +6250,63 @@
       "target": "구직자, 청년",
       "summary": "취업 준비에 막막함을 느끼는 구직자를 위한 맞춤형 상담 및 특강",
       "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=999016&bnefType=all&svcId=149200000147"
+    },
+    {
+      "id": 547,
+      "name": "임산부 및 영유아 영양플러스",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "전국 (관할 보건소)",
+      "target": "임산부, 영유아",
+      "summary": "소득과 영양 기준을 충족하는 임산부와 영유아에게 식품 패키지를 지원해요.",
+      "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=999156&bnefType=all&svcId=135200000005"
+    },
+    {
+      "id": 548,
+      "name": "장애인·노인 보조기기 맞춤형 서비스",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "전국 (중앙 및 지역보조기기센터)",
+      "target": "장애인, 노인, 국가유공자 등 보조기기가 필요한 국민",
+      "summary": "나와 가족에게 꼭 맞는 보조기기를 전문가와 상담하고 직접 체험해볼 수 있는 서비스입니다.",
+      "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=172402&bnefType=all&svcId=135200000017"
+    },
+    {
+      "id": 549,
+      "name": "치매관리 서비스 (치매안심센터)",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "전국 치매안심센터",
+      "target": "치매 위험군 어르신 및 가족, 지역주민",
+      "summary": "부모님 치매 걱정? 전국 치매안심센터에서 무료 검진과 치료비를 지원받으세요.",
+      "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=999168&bnefType=all&svcId=135200000080"
+    },
+    {
+      "id": 550,
+      "name": "장애인법률구조지원",
+      "category": "혜택",
+      "attractiveness": 90,
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "전국",
+      "target": "저소득 등록 장애인",
+      "summary": "법률 문제로 어려움을 겪는 저소득 장애인에게 무료 법률 상담 및 소송 지원",
+      "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=999158&bnefType=all&svcId=135200000103"
+    },
+    {
+      "id": 551,
+      "name": "임신축하금 및 출산지원금 지원 (안양시)",
+      "category": "혜택",
+      "attractiveness": 95,
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "경기도 안양시",
+      "target": "안양시 거주 임신부 및 출산 가정",
+      "summary": "안양시 임신부에게 10만원, 첫째 200만원~셋째 이상 1,000만원 출산지원금 현금 지급",
+      "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=1005771&bnefType=all&svcId=383000000127"
     }
   ]
 }
