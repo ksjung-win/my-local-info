@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-15",
+  "lastUpdated": "2026-11-16",
   "source": "공공데이터포털(재구성)",
   "items": [
     {
@@ -6362,6 +6362,64 @@
       "target": "동두천시 거주 신혼부부 및 청년 (만 19~39세)",
       "summary": "동두천시 신혼부부·청년에게 전·월세 대출이자를 최대 100만원까지 현금 지원!",
       "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=2114209&bnefType=all&svcId=392000000162"
+    },
+    {
+      "id": 557,
+      "name": "서초 아이돌보미·손주돌보미·119아이돌보미 지원",
+      "category": "혜택",
+      "attraction_score": 85,
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "서울특별시 서초구",
+      "target": "서초구 거주 영유아 및 아동 양육가정",
+      "summary": "서초구 거주 가정의 양육 공백을 메워주는 맞춤형 아이돌봄 서비스를 지원합니다.",
+      "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=1000146&bnefType=all&svcId=321000000102"
+    },
+    {
+      "id": 558,
+      "name": "강남구 산후건강관리비용 지원사업",
+      "category": "혜택",
+      "attractiveness": 90,
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "서울특별시 강남구",
+      "target": "강남구 거주 출산가정",
+      "summary": "강남구 출산가정, 산후 건강관리 서비스 본인부담금 최대 100만원 환급 지원!",
+      "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=1001448&bnefType=all&svcId=322000000107"
+    },
+    {
+      "id": 559,
+      "name": "출산양육지원금 지원",
+      "category": "혜택",
+      "startDate": "2023-01-01",
+      "endDate": "상시",
+      "location": "서울특별시 강남구",
+      "target": "서울특별시 강남구 거주 출산 가정",
+      "summary": "강남구 출산 가정에 첫째 200만원, 넷째 이상 500만원의 양육지원금을 지급합니다.",
+      "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=1003224&bnefType=all&svcId=322000000109"
+    },
+    {
+      "id": 560,
+      "name": "구강보건서비스",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "서울특별시 강남구",
+      "target": "강남구 영유아, 청소년, 어르신, 임산부, 장애인 등",
+      "summary": "생애주기별 맞춤형 구강보건사업으로 우리 가족 구강 건강을 지켜요.",
+      "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=1004378&bnefType=all&svcId=322000000112",
+      "attractiveness": 85
+    },
+    {
+      "id": 561,
+      "name": "어린이 국가예방접종 지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "전국 지정 의료기관 및 보건소",
+      "target": "만 12세 이하 어린이",
+      "summary": "만 12세 이하 어린이라면 전국 어디서나 필수 예방접종 19종을 무료로 받을 수 있어요.",
+      "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=2100509&bnefType=all&svcId=300000000135"
     }
   ]
 }
