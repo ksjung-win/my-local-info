@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-19",
+  "lastUpdated": "2026-11-20",
   "source": "공공데이터포털(재구성)",
   "items": [
     {
@@ -6591,6 +6591,63 @@
       "target": "강남구 거주 출산가정",
       "summary": "강남구 출산가정이라면 산후조리 본인부담금 최대 100만원을 현금으로 지원받으세요!",
       "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=1001448&bnefType=all&svcId=322000000107"
+    },
+    {
+      "id": 577,
+      "name": "한국폴리텍대학 훈련생 훈련장려금등 지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "한국폴리텍대학",
+      "target": "한국폴리텍대학 직업훈련 훈련생",
+      "summary": "직업훈련을 받는 훈련생에게 교통비와 훈련장려금(월 최대 11.6만원)을 지원합니다.",
+      "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=744475&bnefType=all&svcId=149200000135"
+    },
+    {
+      "id": 578,
+      "name": "심리안정지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "전국 고용센터",
+      "target": "구직자, 실업급여 수급자, 장기실직자 등 취업취약계층",
+      "summary": "실직, 구직 스트레스로 지친 마음을 전문가 심리상담으로 위로받으세요.",
+      "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=699170&bnefType=all&svcId=149200000146"
+    },
+    {
+      "id": 579,
+      "name": "산재근로자 대체인력지원 사업",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "전국",
+      "target": "산재근로자가 발생한 50인 미만 소상공인/사업주",
+      "summary": "산재 직원의 빈자리를 채울 대체인력 고용 시, 인건비 월 최대 60만원 지원!",
+      "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=708901&bnefType=all&svcId=149200000149",
+      "attractiveness_score": 85
+    },
+    {
+      "id": 580,
+      "name": "직업능력개발수당",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "전국",
+      "target": "실업급여 수급자",
+      "summary": "실업급여 받으며 직업훈련 시, 교통비/식대 1일 1만원대 지원!",
+      "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=999034&bnefType=all&svcId=149200005001"
+    },
+    {
+      "id": 581,
+      "name": "청년 일경험 지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "전국 (고용노동부)",
+      "target": "15세 이상 34세 이하 미취업 청년",
+      "summary": "미취업 청년에게 인턴, 프로젝트 등 실무 경험을 제공해 직무 역량을 키워주는 지원 사업",
+      "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=797590&bnefType=all&svcId=149200005006",
+      "attractiveness": 95
     }
   ]
 }
