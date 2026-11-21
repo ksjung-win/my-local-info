@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-20",
+  "lastUpdated": "2026-11-21",
   "source": "공공데이터포털(재구성)",
   "items": [
     {
@@ -6648,6 +6648,62 @@
       "summary": "미취업 청년에게 인턴, 프로젝트 등 실무 경험을 제공해 직무 역량을 키워주는 지원 사업",
       "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=797590&bnefType=all&svcId=149200005006",
       "attractiveness": 95
+    },
+    {
+      "id": 582,
+      "name": "입양축하금 지원(구비)",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "서울특별시 광진구",
+      "target": "서울 광진구에 6개월 이상 거주한 입양 가정",
+      "summary": "광진구 입양 가정에 아동 1명당 50만원(장애아동 100만원)을 지원합니다.",
+      "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=1001660&bnefType=all&svcId=304000000109"
+    },
+    {
+      "id": 583,
+      "name": "광진동행버스 무료 이용 지원",
+      "category": "혜택",
+      "startDate": "2025-05-19",
+      "endDate": "상시",
+      "location": "서울시 광진구",
+      "target": "광진구 교통약자 (어르신, 장애인, 임산부 등) 및 보호자",
+      "summary": "광진구 내 어르신, 임산부 등 교통약자를 위해 주요 거점을 순환하는 무료 셔틀버스",
+      "attractiveness": 85,
+      "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=803508&bnefType=all&svcId=304000000160"
+    },
+    {
+      "id": 584,
+      "name": "어린이집‧유치원 틈새돌봄 운영 기관 안내",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "전국",
+      "target": "어린이집·유치원생 자녀를 둔 가족",
+      "summary": "급한 야근, 주말 근무에도 걱정 없이 아이를 맡길 수 있는 돌봄 서비스입니다.",
+      "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=2189824&bnefType=all&svcId=134200005050"
+    },
+    {
+      "id": 585,
+      "name": "아토피 천식 예방관리 서비스 지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "울산광역시 북구",
+      "target": "알레르기 질환(아토피, 천식 등)을 진단받은 만 18세 이하 아동 및 청소년",
+      "summary": "아토피, 천식 앓는 우리 아이에게 보습제 등 필수 관리 물품을 지원해요.",
+      "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=1000979&bnefType=all&svcId=372000000105"
+    },
+    {
+      "id": 586,
+      "name": "효도이용권(노인 목욕 및 이·미용비) 지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "울산광역시 울주군",
+      "target": "울주군 거주 65세 이상 어르신",
+      "summary": "울산 울주군 65세 이상 어르신께 목욕·이미용 효도이용권 연 12만원을 지원합니다.",
+      "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=1000108&bnefType=all&svcId=373000000105"
     }
   ]
 }
