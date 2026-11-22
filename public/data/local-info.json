@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-21",
+  "lastUpdated": "2026-11-22",
   "source": "공공데이터포털(재구성)",
   "items": [
     {
@@ -6704,6 +6704,63 @@
       "target": "울주군 거주 65세 이상 어르신",
       "summary": "울산 울주군 65세 이상 어르신께 목욕·이미용 효도이용권 연 12만원을 지원합니다.",
       "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=1000108&bnefType=all&svcId=373000000105"
+    },
+    {
+      "id": 587,
+      "name": "동작구 전세피해임차인 지원금(보증금반환보증료 실비 지원)",
+      "category": "혜택",
+      "startDate": "2025-07-14",
+      "endDate": "예산 소진 시까지",
+      "location": "서울특별시 동작구",
+      "target": "동작구 거주 전세사기 피해자",
+      "summary": "동작구 전세사기 피해 구민에게 보증금반환보증료를 최대 100만원 현금 지원합니다.",
+      "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=2147905&bnefType=all&svcId=319000000167",
+      "attraction_score": 85
+    },
+    {
+      "id": 588,
+      "name": "(관악구) 난임부부 시술 약제비 지원",
+      "category": "혜택",
+      "startDate": "2024-02-15",
+      "endDate": "상시",
+      "location": "서울특별시 관악구",
+      "target": "서울 관악구에 거주하는 난임부부",
+      "summary": "난임 시술 시 발생하는 원외 처방 약제비를 정부지원금 한도 내에서 지원합니다.",
+      "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=2117121&bnefType=all&svcId=320000000295"
+    },
+    {
+      "id": 589,
+      "name": "부천시 취약계층 아동치과주치의사업",
+      "category": "혜택",
+      "startDate": "2026-04-01",
+      "endDate": "2026-11-30",
+      "location": "경기도 부천시",
+      "target": "부천시 거주 6~17세 취약계층 아동",
+      "summary": "우리 아이 충치 걱정 끝! 부천시가 치과 치료비 30만원을 지원해요.",
+      "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=2187416&bnefType=all&svcId=386000000147"
+    },
+    {
+      "id": 590,
+      "name": "부모채무 대물림 방지 법률지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "경기도 부천시",
+      "target": "부천시 거주 아동·청소년",
+      "summary": "부모의 빚 상속으로 힘들어하는 부천시 청소년에게 법률지원을 해드려요.",
+      "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=2187616&bnefType=all&svcId=386000000149",
+      "attractiveness_score": 75
+    },
+    {
+      "id": 591,
+      "name": "광명시 난임부부 시술비 약제비 지원",
+      "category": "혜택",
+      "startDate": "2025-08-18",
+      "endDate": "상시",
+      "location": "경기도 광명시",
+      "target": "광명시 거주 난임부부",
+      "summary": "광명시 난임부부를 위한 시술 관련 약제비 지원으로 경제적 부담을 덜어드려요.",
+      "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=2152418&bnefType=all&svcId=390000000436"
     }
   ]
 }
