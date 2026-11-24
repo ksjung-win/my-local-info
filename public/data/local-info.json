@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-23",
+  "lastUpdated": "2026-11-24",
   "source": "공공데이터포털(재구성)",
   "items": [
     {
@@ -6817,6 +6817,61 @@
       "target": "서울 구로구에 거주하는 전세사기 피해자",
       "summary": "전세사기 피해로 이사하는 구로구민에게 이사비 최대 100만원 지원",
       "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=2167021&bnefType=all&svcId=316000000145"
+    },
+    {
+      "id": 597,
+      "name": "(마포구)청년 취업준비 비용 지원사업",
+      "category": "혜택",
+      "startDate": "2026-02-02",
+      "endDate": "2026-12-11",
+      "location": "서울시 마포구",
+      "target": "마포구 거주 19~39세 미취업 청년",
+      "summary": "자격증 응시료, 면접 스타일링 비용 등 취업준비에 필요한 비용을 1인당 최대 10만원 지원해요.",
+      "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=2128502&bnefType=all&svcId=313000000127"
+    },
+    {
+      "id": 598,
+      "name": "저소득한부모가족 지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "서울특별시 마포구",
+      "target": "저소득 한부모·조손가족",
+      "summary": "저소득 한부모가족의 생활안정을 위해 아동양육비, 학용품비 등을 현금으로 지원합니다.",
+      "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=2147869&bnefType=all&svcId=313000000149"
+    },
+    {
+      "id": 599,
+      "name": "(마포구)청년 면접정장 대여사업",
+      "category": "혜택",
+      "startDate": "2026-01-26",
+      "endDate": "2026-12-18",
+      "location": "서울시 마포구",
+      "target": "마포구에 거주하는 구직 청년",
+      "summary": "취업 면접을 앞둔 마포구 청년에게 2박 3일간 정장을 무료로 빌려드려요.",
+      "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=2149716&bnefType=all&svcId=313000000155"
+    },
+    {
+      "id": 600,
+      "name": "아동 예술멘토링 지원서비스",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "서울특별시 마포구",
+      "target": "소득 기준 120% 이하 가정의 만 4~12세 아동",
+      "summary": "예술 교육, 심리검사, 문화체험으로 우리 아이의 정서 발달을 지원해요.",
+      "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=2149823&bnefType=all&svcId=313000000159"
+    },
+    {
+      "id": 601,
+      "name": "예비부모 웨딩건강검진 지원",
+      "category": "혜택",
+      "startDate": "2026-03-01",
+      "endDate": "상시",
+      "location": "대구광역시 북구",
+      "target": "대구 북구 거주 예비부부 및 결혼 3년 이내 신혼부부",
+      "summary": "결혼을 앞둔 예비/신혼부부에게 필수 건강검진 19종을 무료 지원!",
+      "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=1004233&bnefType=all&svcId=345000000103"
     }
   ]
 }
