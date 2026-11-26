@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-25",
+  "lastUpdated": "2026-11-26",
   "source": "공공데이터포털(재구성)",
   "items": [
     {
@@ -6930,6 +6930,63 @@
       "summary": "부산 동래구 중/고교 신입생 자녀에게 교복 구입비 30만원을 현금으로 지원합니다.",
       "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=802988&bnefType=all&svcId=330000000108",
       "attractiveness": 85
+    },
+    {
+      "id": 607,
+      "name": "귀농·귀촌인 귀농귀촌 교육 지원",
+      "category": "혜택",
+      "startDate": "2026-02-01",
+      "endDate": "상시",
+      "location": "전국",
+      "target": "예비 귀농귀촌인, 귀농귀촌 희망자",
+      "summary": "성공적인 귀농귀촌의 첫걸음! 교육비의 최대 90%를 지원받으세요.",
+      "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=999089&bnefType=all&svcId=154300000138"
+    },
+    {
+      "id": 608,
+      "name": "학대피해아동쉼터 지원",
+      "category": "혜택",
+      "attractiveness_score": 95,
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "전국 시·군·구청",
+      "target": "학대피해아동 (만 18세 미만)",
+      "summary": "학대받은 아이들을 위한 안전한 쉼터. 숙식, 생활, 심리치료까지 모두 지원해요.",
+      "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=69948&bnefType=all&svcId=135200000012"
+    },
+    {
+      "id": 609,
+      "name": "평택시 난임부부 약제비 지원",
+      "category": "혜택",
+      "startDate": "2025-10-31",
+      "endDate": "상시",
+      "location": "경기도 평택시",
+      "target": "평택시 거주 난임부부",
+      "summary": "난임 시술 중 발생하는 약제비 부담, 남은 정부지원금으로 추가 지원받으세요!",
+      "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=2163231&bnefType=all&svcId=391000000550",
+      "attractiveness": 75
+    },
+    {
+      "id": 610,
+      "name": "위생해충 방역을 위한 방역소독장비 무료대여 서비스",
+      "category": "혜택",
+      "startDate": "2025-12-11",
+      "endDate": "상시",
+      "location": "서울특별시 강서구",
+      "target": "서울 강서구 주민 및 소상공인",
+      "summary": "우리집, 우리 가게 해충 방역! 강서구에서 방역 장비를 무료 대여하세요.",
+      "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=2169624&bnefType=all&svcId=315000000295"
+    },
+    {
+      "id": 611,
+      "name": "임산부 선천성 태아 기형아 검사 및 풍진 항체검사",
+      "category": "혜택",
+      "startDate": "2022-10-27",
+      "endDate": "상시",
+      "location": "서울특별시 종로구",
+      "target": "종로구 거주 임산부",
+      "summary": "종로구 임산부라면, 필수적인 태아 기형아 및 풍진 검사를 무료로 받으세요!",
+      "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=2100609&bnefType=all&svcId=300000000140"
     }
   ]
 }
