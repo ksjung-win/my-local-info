@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-26",
+  "lastUpdated": "2026-11-27",
   "source": "공공데이터포털(재구성)",
   "items": [
     {
@@ -6987,6 +6987,63 @@
       "target": "종로구 거주 임산부",
       "summary": "종로구 임산부라면, 필수적인 태아 기형아 및 풍진 검사를 무료로 받으세요!",
       "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=2100609&bnefType=all&svcId=300000000140"
+    },
+    {
+      "id": 612,
+      "name": "동구 맘택시 교통비 지원",
+      "category": "혜택",
+      "attractiveness": 85,
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "광주광역시 동구",
+      "target": "광주 동구 거주 임산부 및 0~24개월 영유아 가정",
+      "summary": "광주 동구 임산부·영유아 가정에 병원 방문 등 의료목적 택시비 월 최대 3만원 지원",
+      "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=2107906&bnefType=all&svcId=359000000113"
+    },
+    {
+      "id": 613,
+      "name": "(수원시 장안구) 임산부 및 예비·신혼부부 검사 지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "경기도 수원시 장안구",
+      "target": "수원시 거주 예비·신혼부부",
+      "summary": "결혼을 앞둔 수원시 예비부부, 신혼부부에게 필수 건강검진을 무료로 지원해요!",
+      "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=2165318&bnefType=all&svcId=374000000572",
+      "attractiveness": 85
+    },
+    {
+      "id": 614,
+      "name": "(수원시 팔달구) 임산부 및 예비·신혼부부 검사 지원",
+      "category": "혜택",
+      "startDate": "2025-11-10",
+      "endDate": "상시",
+      "location": "수원시 팔달구",
+      "target": "수원시 거주 예비·신혼부부",
+      "summary": "결혼을 앞둔 수원시 예비부부, 신혼부부에게 필수 건강검진을 무료로 지원해요.",
+      "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=2165321&bnefType=all&svcId=374000000574"
+    },
+    {
+      "id": 615,
+      "name": "(수원시 영통구) 임산부 및 예비·신혼부부 검사 지원",
+      "category": "혜택",
+      "startDate": "2025-11-10",
+      "endDate": "상시",
+      "location": "경기도 수원시",
+      "target": "수원시 거주 임산부, 예비·신혼부부",
+      "summary": "수원시 예비·신혼부부와 임산부에게 필수 건강검진을 무료로 지원!",
+      "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=2165322&bnefType=all&svcId=374000000575"
+    },
+    {
+      "id": 616,
+      "name": "(수원시 장안구) 임산부 우울 선별검사 지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "수원시 장안구",
+      "target": "수원시 장안구 보건소에 등록된 임산부",
+      "summary": "엄마의 마음 건강까지! 산전·산후 우울증 무료 검사 및 상담 지원",
+      "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=2165323&bnefType=all&svcId=374000000576"
     }
   ]
 }
