@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-27",
+  "lastUpdated": "2026-11-28",
   "source": "공공데이터포털(재구성)",
   "items": [
     {
@@ -7044,6 +7044,63 @@
       "target": "수원시 장안구 보건소에 등록된 임산부",
       "summary": "엄마의 마음 건강까지! 산전·산후 우울증 무료 검사 및 상담 지원",
       "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=2165323&bnefType=all&svcId=374000000576"
+    },
+    {
+      "id": 617,
+      "name": "저소득주민자녀 장학금",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "울산광역시 동구",
+      "target": "울산 동구의 저소득층(기초수급자, 차상위계층) 자녀인 중·고등학생",
+      "summary": "울산 동구 저소득층 중·고등학생이라면, 성적에 따라 장학금을 드려요!",
+      "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=1002726&bnefType=all&svcId=371000000108"
+    },
+    {
+      "id": 618,
+      "name": "민원실 구민 맞춤형 편의 서비스 제공",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "부산광역시 수영구",
+      "target": "부산 수영구민 및 민원실 방문자",
+      "summary": "수영구청 방문 시 복사, 팩스, 휴대폰 충전, 휠체어 등 각종 편의 서비스를 무료로 이용하세요.",
+      "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=2152218&bnefType=all&svcId=338000000405"
+    },
+    {
+      "id": 619,
+      "name": "임산부·영유아 도서 택배 서비스",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "부산광역시 수영구",
+      "target": "수영구 거주 임산부 및 24개월 이하 영유아 보호자",
+      "summary": "도서관 방문이 힘든 임산부·영유아 가정을 위해 책 5권을 집으로 무료 배달해 드려요.",
+      "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=2168598&bnefType=all&svcId=338000000416",
+      "attractiveness": 85
+    },
+    {
+      "id": 620,
+      "name": "다자녀 출산지원금 지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "부산광역시 기장군",
+      "target": "부산 기장군 거주 둘째 이상 출산 가정",
+      "summary": "부산 기장군, 둘째 50만원, 셋째부터는 360만원 이상 현금 지원!",
+      "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=1003706&bnefType=all&svcId=340000000115"
+    },
+    {
+      "id": 621,
+      "name": "평택시 난임부부 약제비 지원",
+      "category": "혜택",
+      "startDate": "상시",
+      "endDate": "상시",
+      "location": "경기도 평택시",
+      "target": "평택시 거주 난임부부",
+      "summary": "난임 시술 후 남은 정부지원금 한도 내에서 약제비를 현금으로 지원받는 혜택",
+      "link": "https://plus.gov.kr/portal/benefitV2/benefitTotalSrvcList/benefitSrvcDtl?svcSeq=2163231&bnefType=all&svcId=391000000550",
+      "매력도": 85
     }
   ]
 }
